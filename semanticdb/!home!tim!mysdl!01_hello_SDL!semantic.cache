@@ -1,0 +1,52 @@
+;; Object 01_hello_SDL/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "01_hello_SDL/"
+  :tables
+  (list
+    (semanticdb-table "01_hello_SDL.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SDL2/SDL.h" include (:system-flag t) nil [61 82])
+            ("stdio.h" include (:system-flag t) nil [83 101])
+            ("SCREEN_WIDTH" variable
+               (:constant-flag t
+                :default-value "640"
+                :type "int")
+                nil [134 163])
+            ("SCREEN_HEIGHT" variable
+               (:constant-flag t
+                :default-value "480"
+                :type "int")
+                nil [164 194])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [205 214])
+                    ("args" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [215 228]))                  
+                :type "int")
+                nil [196 1664]))          
+      :file "01_hello_SDL.cpp"
+      :pointmax 1665
+      :fsize 1664
+      :lastmodtime '(23048 63302 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("OBJS" variable (:default-value ("01_hello_SDL.cpp")) nil [63 87])
+            ("CC" variable (:default-value ("g++")) nil [129 138])
+            ("COMPILER_FLAGS" variable (:default-value ("-w")) nil [241 261])
+            ("LINKER_FLAGS" variable (:default-value ("-lSDL2")) nil [322 344])
+            ("OBJ_NAME" variable (:default-value ("01_hello_SDL")) nil [392 416])
+            ("all" function (:arguments ("$(OBJS)")) nil [466 544]))          
+      :file "Makefile"
+      :pointmax 544
+      :fsize 543
+      :lastmodtime '(23037 50721 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!mysdl!01_hello_SDL!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

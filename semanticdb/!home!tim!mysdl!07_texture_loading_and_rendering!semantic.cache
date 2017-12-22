@@ -1,0 +1,87 @@
+;; Object 07_texture_loading_and_rendering/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "07_texture_loading_and_rendering/"
+  :tables
+  (list
+    (semanticdb-table "07_texture_loading_and_rendering.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SDL2/SDL.h" include (:system-flag t) nil [32 53])
+            ("SDL2/SDL_image.h" include (:system-flag t) nil [54 81])
+            ("stdio.h" include (:system-flag t) nil [82 100])
+            ("string" include (:system-flag t) nil [101 118])
+            ("SCREEN_WIDTH" variable
+               (:constant-flag t
+                :default-value "640"
+                :type "int")
+                nil [149 178])
+            ("SCREEN_HEIGT" variable
+               (:constant-flag t
+                :default-value "480"
+                :type "int")
+                nil [179 208])
+            ("init" function
+               (:prototype-flag t
+                :type "bool")
+                nil [249 261])
+            ("loadMedia" function
+               (:prototype-flag t
+                :type "bool")
+                nil [277 294])
+            ("close" function
+               (:prototype-flag t
+                :type "void")
+                nil [330 343])
+            ("loadTexture" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [408 425]))                  
+                :type ("SDL_Texture" type (:type "class") nil nil))
+                nil [383 426])
+            ("gWindow" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Window" type (:type "class") nil nil))
+                nil [464 491])
+            ("gRenderer" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Renderer" type (:type "class") nil nil))
+                nil [516 547])
+            ("gTexture" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Texture" type (:type "class") nil nil))
+                nil [578 607])
+            ("init" function (:type "bool") nil [609 1937])
+            ("loadTexture" function
+               (:pointer 1
+                :arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1964 1981]))                  
+                :type ("SDL_Texture" type (:type "class") nil nil))
+                nil [1939 2624])
+            ("loadMedia" function (:type "bool") nil [2626 2877])
+            ("close" function (:type "void") nil [2879 3144])
+            ("main" function (:type "int") nil [3148 3976]))          
+      :file "07_texture_loading_and_rendering.cpp"
+      :pointmax 3988
+      :fsize 3987
+      :lastmodtime '(23054 58567 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("OBJS" variable (:default-value ("07_texture_loading_and_rendering.cpp")) nil [63 107])
+            ("CC" variable (:default-value ("g++")) nil [149 158])
+            ("COMPILER_FLAGS" variable (:default-value ("-w")) nil [261 281])
+            ("LINKER_FLAGS" variable (:default-value ("-lSDL2")) nil [342 364])
+            ("all" function (:arguments ("$(OBJS)")) nil [502 565]))          
+      :file "Makefile"
+      :pointmax 565
+      :fsize 564
+      :lastmodtime '(23051 57377 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!mysdl!07_texture_loading_and_rendering!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

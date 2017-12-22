@@ -1,0 +1,81 @@
+;; Object 1.1.hello_window/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "1.1.hello_window/"
+  :tables
+  (list
+    (semanticdb-table "hello_window.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [47 58])
+            ("GL/glew.h" include (:system-flag t) nil [59 79])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [88 111])
+            ("iostream" include (:system-flag t) nil [137 156])
+            ("key_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [199 218])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [219 227])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [246 259])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [260 271])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [272 281]))                  
+                :type "void")
+                nil [181 282])
+            ("WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [304 343])
+            ("HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [304 343])
+            ("vertexShaderSource" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"#version 330 core\\n\"
+  \"layout (location = 0) in vec3 position;\\n\"
+  \"void main() {\\n\"
+  \"gl_Position = vec4(position.x, position.y, position.z, 1.0);\\n\"
+  \"}\\n\\0\""
+                :type ("GLchar" type (:type "class") nil nil))
+                nil [354 554])
+            ("fragmentShaderSource" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"#version 330 core\\n\"
+    \"out vec4 color;\\n\"
+    \"void main() {\\n\"
+    \"color = vec4(1.0f, 0.5, 0.2f, 1.0f);\\n\"
+    \"}\\n\\0\""
+                :type ("GLchar" type (:type "class") nil nil))
+                nil [565 727])
+            ("main" function (:type "int") nil [742 5369])
+            ("key_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5389 5408])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [5409 5417])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [5436 5449])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [5450 5461])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [5462 5471]))                  
+                :type "void")
+                nil [5371 5644]))          
+      :file "hello_window.cpp"
+      :pointmax 1393
+      :fsize 1515
+      :lastmodtime '(23099 27027 168884 740000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLEW_STATIC")
+          )
+)
+)
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!1.1.hello_window!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

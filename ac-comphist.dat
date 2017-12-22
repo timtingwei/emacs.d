@@ -1,0 +1,50 @@
+((("my:add-semantic-to-autocomplete" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("c-mode-common-hook" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("ac-source-semantic" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("ac-source" .
+   [1 0 0 0 0 0 0 0 0])
+  ("MyAdd" .
+   [0 0 1 0 0])
+  ("C++" .
+   [0 0 1])
+  ("my:flymake-google-init" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("c-mode-hook" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("c-mode" .
+   [2 0 0 0 0 0])
+  ("add-hook" .
+   [1 0 0 0 0 0 1 0])
+  ("add" .
+   [4 0 0])
+  ("flymake" .
+   [1 0 0 0 0 0 0])
+  ("require" .
+   [1 0 0 0 0 0 0])
+  ("defun" .
+   [2 0 0 0 0])
+  ("yas-global-mode" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("yasnippet" .
+   [0 0 0 0 1 0 0 0 0])
+  ("define-key" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("global-map" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("kbd" .
+   [1 0 0])
+  ("iedit-mode" .
+   [0 0 0 0 0 0 0 0 1 0])
+  ("semantic-mode" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ac-sources" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("global-ede-mode" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("ede" .
+   [1 0 0])
+  (":file" .
+   [1 0 0 0 0])))

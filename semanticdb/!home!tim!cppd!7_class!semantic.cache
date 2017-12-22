@@ -1,0 +1,546 @@
+;; Object 7_class/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "7_class/"
+  :tables
+  (list
+    (semanticdb-table "7.2_encapsulation.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("Sales_data" type
+               (:members 
+                  ( ("add" function
+                       (:prototype-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [122 140])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [141 159]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [100 160])
+                    ("read" function
+                       (:prototype-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [189 203])
+                            ("" variable
+                               (:reference 1
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [204 216]))                          
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [163 217])
+                    ("print" function
+                       (:prototype-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [249 263])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [264 282]))                          
+                        :type ("std::iostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [220 283])
+                    ("public" label nil (reparse-symbol classsubparts) [288 295])
+                    ("dafault" variable (:type "int") (reparse-symbol classsubparts) [351 359])
+                    ("Sales_data" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [373 394])
+                            ("n" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [395 406])
+                            ("p" variable (:type "double") (reparse-symbol arg-sub-list) [407 416]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [362 463])
+                    ("Sales_data" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [477 498]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [466 511])
+                    ("Sales_data" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [525 539]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [514 540])
+                    ("isbn" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [543 585])
+                    ("combine" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [608 626]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [588 627])
+                    ("private" label nil (reparse-symbol classsubparts) [628 636])
+                    ("bookNo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [752 771])
+                    ("units_sold" variable
+                       (:default-value "0"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [774 798])
+                    ("revenue" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [801 822]))                  
+                :type "class")
+                nil [22 825])
+            ("add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [845 863])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [864 882]))                  
+                :type ("Sales_data" type (:type "class") nil nil))
+                nil [830 883])
+            ("read" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [903 917])
+                    ("" variable
+                       (:reference 1
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [918 930]))                  
+                :type ("std::istream" type (:type "class") nil nil))
+                nil [884 931])
+            ("print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [952 966])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [967 985]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [932 986]))          
+      :file "7.2_encapsulation.cpp"
+      :pointmax 989
+      :fsize 792
+      :lastmodtime '(23015 41913 0 0)
+      :unmatched-syntax '((punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 951 . 984) (symbol 946 . 951) (punctuation 945 . 946) (symbol 937 . 944) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 951 . 965) (symbol 946 . 951) (punctuation 945 . 946) (symbol 937 . 944) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 951 . 965) (symbol 946 . 951) (punctuation 945 . 946) (symbol 937 . 944) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 951 . 965) (symbol 946 . 951) (punctuation 945 . 946) (symbol 937 . 944) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 951 . 964) (symbol 946 . 951) (punctuation 945 . 946) (symbol 937 . 944) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 951 . 960) (symbol 946 . 951) (punctuation 945 . 946) (symbol 937 . 944) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 951 . 959) (symbol 946 . 951) (punctuation 945 . 946) (symbol 937 . 944) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 951 . 958) (symbol 946 . 951) (punctuation 956 . 957) (punctuation 955 . 956) (punctuation 945 . 946) (symbol 937 . 944) (punctuation 956 . 957) (punctuation 955 . 956) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 956 . 957) (punctuation 955 . 956) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 951 . 958) (symbol 946 . 951) (punctuation 956 . 957) (punctuation 955 . 956) (punctuation 945 . 946) (symbol 937 . 944) (punctuation 956 . 957) (punctuation 955 . 956) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 956 . 957) (punctuation 955 . 956) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (punctuation 945 . 946) (symbol 937 . 944) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 937 . 944) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 937 . 940) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 937 . 939) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 937 . 940) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 937 . 940) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 937 . 939) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 937 . 939) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 937 . 939) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (punctuation 954 . 955) (symbol 947 . 954) (punctuation 946 . 947) (symbol 938 . 945) (punctuation 937 . 938) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 937 . 939) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 932 . 935) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 902 . 924) (symbol 898 . 902) (punctuation 897 . 898) (symbol 889 . 896) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 902 . 916) (symbol 898 . 902) (punctuation 897 . 898) (symbol 889 . 896) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 902 . 912) (symbol 898 . 902) (punctuation 897 . 898) (symbol 889 . 896) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 902 . 913) (symbol 898 . 902) (punctuation 897 . 898) (symbol 889 . 896) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 902 . 914) (symbol 898 . 902) (punctuation 897 . 898) (symbol 889 . 896) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 902 . 909) (symbol 898 . 902) (punctuation 907 . 908) (punctuation 906 . 907) (punctuation 897 . 898) (symbol 889 . 896) (punctuation 907 . 908) (punctuation 906 . 907) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 907 . 908) (punctuation 906 . 907) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 902 . 909) (symbol 898 . 902) (punctuation 907 . 908) (punctuation 906 . 907) (punctuation 897 . 898) (symbol 889 . 896) (punctuation 907 . 908) (punctuation 906 . 907) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 907 . 908) (punctuation 906 . 907) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 898 . 902) (punctuation 897 . 898) (symbol 889 . 896) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 889 . 896) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 889 . 894) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 889 . 892) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (symbol 889 . 891) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (punctuation 888 . 889) (punctuation 887 . 888) (symbol 884 . 887) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 844 . 881) (symbol 841 . 844) (symbol 830 . 840) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 844 . 862) (symbol 841 . 844) (symbol 830 . 840) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (semantic-list 844 . 851) (symbol 841 . 844) (CONST 845 . 850) (symbol 830 . 840) (CONST 845 . 850) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346) (punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346)))
+
+    (semanticdb-table "7.2.1_friend.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("Sales_data" type
+               (:members 
+                  ( ("add" function
+                       (:prototype-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [122 140])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [141 159]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [100 160])
+                    ("read" function
+                       (:prototype-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [189 203])
+                            ("" variable
+                               (:reference 1
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [204 216]))                          
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [163 217])
+                    ("print" function
+                       (:prototype-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [249 263])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [264 282]))                          
+                        :type ("std::iostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [220 283])
+                    ("public" label nil (reparse-symbol classsubparts) [288 295])
+                    ("dafault" variable (:type "int") (reparse-symbol classsubparts) [351 359])
+                    ("Sales_data" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [373 394])
+                            ("n" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [395 406])
+                            ("p" variable (:type "double") (reparse-symbol arg-sub-list) [407 416]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [362 463])
+                    ("Sales_data" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [477 498]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [466 511])
+                    ("Sales_data" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [525 539]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [514 540])
+                    ("isbn" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [543 585])
+                    ("combine" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [608 626]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [588 627])
+                    ("private" label nil (reparse-symbol classsubparts) [628 636])
+                    ("bookNo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [752 771])
+                    ("units_sold" variable
+                       (:default-value "0"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [774 798])
+                    ("revenue" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [801 822]))                  
+                :type "class")
+                nil [22 825])
+            ("add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [845 863])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [864 882]))                  
+                :type ("Sales_data" type (:type "class") nil nil))
+                nil [830 883])
+            ("read" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [903 917])
+                    ("" variable
+                       (:reference 1
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [918 930]))                  
+                :type ("std::istream" type (:type "class") nil nil))
+                nil [884 931])
+            ("print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [952 966])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [967 985]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [932 986]))          
+      :file "7.2.1_friend.cpp"
+      :pointmax 989
+      :fsize 988
+      :lastmodtime '(23015 45047 0 0)
+      :unmatched-syntax '((punctuation 349 . 350) (semantic-list 346 . 348) (symbol 336 . 346)))
+    (semanticdb-table "7.3.1_againMember.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("Screen" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [36 43])
+                    ("pos" type
+                       (:typedef ("std::string::size_type" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [46 81])
+                    ("Screen" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ht" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [250 257])
+                            ("wd" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [258 265])
+                            ("c" variable (:type "char") (reparse-symbol arg-sub-list) [266 273]))                          
+                        :type ("Screen" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [243 320])
+                    ("get" function (:type "char") (reparse-symbol classsubparts) [323 367])
+                    ("get" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("ht" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [415 422])
+                            ("wd" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [423 430]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [399 437])
+                    ("move" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [488 494])
+                            ("c" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [495 501]))                          
+                        :type ("Screen" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [475 502])
+                    ("get" function
+                       (:parent "Screen"
+                        :arguments 
+                          ( ("r" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [579 585])
+                            ("c" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [586 592]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [562 763])
+                    ("private" label nil (reparse-symbol classsubparts) [770 778])
+                    ("cursor" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [781 792])
+                    ("height" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [795 813])
+                    ("width" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [795 813])
+                    ("contents" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [816 837]))                  
+                :type "class")
+                nil [22 843])
+            ("move" function
+               (:parent "Screen"
+                :arguments 
+                  ( ("r" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [866 872])
+                    ("c" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [873 879]))                  
+                :type "int")
+                nil [853 1074])
+            ("Window_mgr" variable (:type ("Class" type (:type "class") nil nil)) nil [1077 1265])
+            ("main" function (:type "int") nil [1267 1423]))          
+      :file "7.3.1_againMember.cpp"
+      :pointmax 1424
+      :fsize 1103
+      :lastmodtime '(23025 32860 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "mutable.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("Screen" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [36 43])
+                    ("some_member" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [46 71])
+                    ("private" label nil (reparse-symbol classsubparts) [72 80])
+                    ("access_ctr" variable
+                       (:typemodifiers ("mutable")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [83 109]))                  
+                :type "class")
+                nil [22 178])
+            ("some_member" function
+               (:parent "Screen"
+                :type "void")
+                nil [179 347]))          
+      :file "mutable.cpp"
+      :pointmax 348
+      :fsize 347
+      :lastmodtime '(23025 33695 0 0)
+      :unmatched-syntax '((CONST 146 . 151) (semantic-list 143 . 145) (symbol 132 . 143) (punctuation 131 . 132) (punctuation 130 . 131) (symbol 124 . 130) (VOID 119 . 123) (symbol 132 . 143) (punctuation 131 . 132) (punctuation 130 . 131) (symbol 124 . 130) (VOID 119 . 123) (symbol 132 . 137) (punctuation 131 . 132) (punctuation 130 . 131) (symbol 124 . 130) (VOID 119 . 123) (symbol 132 . 135) (punctuation 131 . 132) (punctuation 130 . 131) (symbol 124 . 130) (VOID 119 . 123) (symbol 132 . 135) (punctuation 131 . 132) (punctuation 130 . 131) (symbol 124 . 130) (VOID 119 . 123) (symbol 132 . 136) (punctuation 131 . 132) (punctuation 130 . 131) (symbol 124 . 130) (VOID 119 . 123) (symbol 132 . 136) (punctuation 131 . 132) (punctuation 130 . 131) (symbol 124 . 130) (VOID 119 . 123) (punctuation 131 . 132) (punctuation 130 . 131) (symbol 124 . 130) (VOID 119 . 123) (VOID 119 . 123) (MUTABLE 83 . 90) (MUTABLE 83 . 90) (PRIVATE 72 . 79) (PRIVATE 72 . 79) (CONST 65 . 70) (semantic-list 62 . 64) (symbol 51 . 62) (VOID 46 . 50) (CONST 65 . 70) (semantic-list 62 . 64) (symbol 51 . 62) (VOID 46 . 50) (VOID 46 . 50) (VOID 46 . 50) (PUBLIC 38 . 44) (CLASS 22 . 27)))
+    (semanticdb-table "screens.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "screens.cpp"
+      :pointmax 10
+      :fsize 10
+      :lastmodtime '(23025 63435 0 0)
+      :unmatched-syntax '((symbol 2 . 9) (punctuation 1 . 2)))
+    (semanticdb-table "7.3.3_classType.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("First" type
+               (:members 
+                  ( ("memi" variable (:type "int") (reparse-symbol classsubparts) [38 47])
+                    ("getMem" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [50 63]))                  
+                :type "struct")
+                nil [22 66])
+            ("Second" type
+               (:members 
+                  ( ("memi" variable (:type "int") (reparse-symbol classsubparts) [86 95])
+                    ("getMem" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [98 111]))                  
+                :type "struct")
+                nil [68 114])
+            ("obj1" variable (:type ("First" type (:type "class") nil nil)) nil [116 127]))          
+      :file "7.3.3_classType.cpp"
+      :pointmax 201
+      :fsize 200
+      :lastmodtime '(23025 63415 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "7.1.2_membFunc.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("Sales_data" type
+               (:members 
+                  ( ("isbn" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [52 94])
+                    ("combine" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [119 137]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [99 138])
+                    ("avg_price" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [143 168])
+                    ("transp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [194 208])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [209 223]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [173 224])
+                    ("bookNo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [229 248])
+                    ("units_sold" variable (:type "unsigned int") (reparse-symbol classsubparts) [253 273])
+                    ("revenue" variable (:type "double") (reparse-symbol classsubparts) [278 293]))                  
+                :type "struct")
+                nil [22 296])
+            ("add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [335 353])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [354 372]))                  
+                :type ("Sales_data" type (:type "class") nil nil))
+                nil [320 373])
+            ("print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [394 408])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [409 427]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [374 428])
+            ("read" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [448 462])
+                    ("" variable
+                       (:reference 1
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [463 475]))                  
+                :type ("std::istream" type (:type "class") nil nil))
+                nil [429 476])
+            ("avg_price" function
+               (:parent "Sales_data"
+                :type "double")
+                nil [478 599])
+            ("combine" function
+               (:parent "Sales_data"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [633 655]))                  
+                :type ("Sales_data" type (:type "class") nil nil))
+                nil [601 792])
+            ("main" function (:type "int") nil [794 1093]))          
+      :file "7.1.2_membFunc.cpp"
+      :pointmax 1094
+      :fsize 1093
+      :lastmodtime '(23008 57688 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!cppd!7_class!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

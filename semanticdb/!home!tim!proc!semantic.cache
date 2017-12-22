@@ -1,0 +1,16 @@
+;; Object proc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "proc/"
+  :tables
+  (list
+    (semanticdb-table "file.c"
+      :major-mode 'c-mode
+      :tags nil
+      :file "file.c"
+      :pointmax 47
+      :fsize 46
+      :lastmodtime '(23063 56140 0 0)
+      :unmatched-syntax '((symbol 37 . 46) (symbol 28 . 35) (symbol 26 . 27) (symbol 23 . 25) (symbol 21 . 22) (symbol 19 . 20) (symbol 17 . 18) (symbol 14 . 16) (symbol 12 . 13) (symbol 7 . 11) (symbol 1 . 5))))
+  :file "!home!tim!proc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,94 @@
+;; Object tim/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tim/"
+  :tables
+  (list
+    (semanticdb-table "example.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("GL/glut.h" include (:system-flag t) nil [1 21])
+            ("init" function
+               (:prototype-flag t
+                :type "void")
+                nil [23 35])
+            ("display" function
+               (:prototype-flag t
+                :type "void")
+                nil [36 51])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [62 71])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [72 85]))                  
+                :type "int")
+                nil [53 328])
+            ("init" function (:type "void") nil [330 510])
+            ("display" function (:type "void") nil [512 621]))          
+      :file "example.c"
+      :pointmax 622
+      :fsize 621
+      :lastmodtime '(23097 61163 70848 540000)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "example.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "example.cpp"
+      :pointmax 1
+      :unmatched-syntax nil)
+    (semanticdb-table "temp.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [38 49])
+            ("GL/glew.h" include (:system-flag t) nil [50 70])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [80 103])
+            ("key_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147 166])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [167 175])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [176 189])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [190 201])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [202 211]))                  
+                :type "void")
+                nil [129 212])
+            ("WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [235 274])
+            ("HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [235 274])
+            ("main" function (:type "int") nil [355 2188])
+            ("key_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2265 2284])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [2285 2293])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [2294 2307])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [2308 2319])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [2320 2329]))                  
+                :type "void")
+                nil [2247 2475]))          
+      :file "temp.cpp"
+      :pointmax 2475
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLEW_STATIC")
+          )
+))
+  :file "!home!tim!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,95 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("myadd.h" include (:system-flag t) nil [1 19])
+            ("iostream" include (:system-flag t) nil [20 39])
+            ("helper.h" include nil nil [40 59])
+            ("main" function (:type "int") nil [61 182]))          
+      :file "main.cpp"
+      :pointmax 183
+      :fsize 505
+      :lastmodtime '(23013 31706 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ISbit" (spp-arg-list ("bit") 1504 . 1509) . ((semantic-list "(1 << (bit))" 1510 . 1522)))
+          ("__isgraph_l" (spp-arg-list ("c" "l") 9904 . 9909) . ((symbol "__isctype_l" 9910 . 9921) (semantic-list "((c), _ISgraph, (l))" 9921 . 9941)))
+          ("isdigit_l" (spp-arg-list ("c" "l") 10618 . 10623) . ((symbol "__isdigit_l" 10624 . 10635) (semantic-list "((c), (l))" 10636 . 10646)))
+          ("isprint_l" (spp-arg-list ("c" "l") 10762 . 10767) . ((symbol "__isprint_l" 10768 . 10779) (semantic-list "((c), (l))" 10780 . 10790)))
+          ("__ispunct_l" (spp-arg-list ("c" "l") 10022 . 10027) . ((symbol "__isctype_l" 10028 . 10039) (semantic-list "((c), _ISpunct, (l))" 10039 . 10059)))
+          ("toascii_l" (spp-arg-list ("c" "l") 11151 . 11156) . ((symbol "__toascii_l" 11157 . 11168) (semantic-list "((c), (l))" 11169 . 11179)))
+          ("__tobody" (spp-arg-list ("c" "f" "a" "args") 5305 . 5320) . ((semantic-list "(__extension__							      \\
+   ({ int __res;							      \\
+      if (sizeof (c) > 1)						      \\
+	{								      \\
+	  if (__builtin_constant_p (c))					      \\
+	    {								      \\
+	      int __c = (c);						      \\
+	      __res = __c < -128 || __c > 255 ? __c : (a)[__c];		      \\
+	    }								      \\
+	  else								      \\
+	    __res = f args;						      \\
+	}								      \\
+      else								      \\
+	__res = (a)[(int) (c)];						      \\
+      __res; }))" 5325 . 5787)))
+          ("isxdigit_l" (spp-arg-list ("c" "l") 10955 . 10960) . ((symbol "__isxdigit_l" 10961 . 10973) (semantic-list "((c), (l))" 10974 . 10984)))
+          ("isascii_l" (spp-arg-list ("c" "l") 11102 . 11107) . ((symbol "__isascii_l" 11108 . 11119) (semantic-list "((c), (l))" 11120 . 11130)))
+          ("__isascii" (spp-arg-list ("c") 3593 . 3596) . ((semantic-list "(((c) & ~0x7f) == 0)" 3597 . 3617)))
+          ("__isalnum_l" (spp-arg-list ("c" "l") 9609 . 9614) . ((symbol "__isctype_l" 9615 . 9626) (semantic-list "((c), _ISalnum, (l))" 9626 . 9646)))
+          ("__iscntrl_l" (spp-arg-list ("c" "l") 9727 . 9732) . ((symbol "__isctype_l" 9733 . 9744) (semantic-list "((c), _IScntrl, (l))" 9744 . 9764)))
+          ("__isupper_l" (spp-arg-list ("c" "l") 10140 . 10145) . ((symbol "__isctype_l" 10146 . 10157) (semantic-list "((c), _ISupper, (l))" 10157 . 10177)))
+          ("__isxdigit_l" (spp-arg-list ("c" "l") 10200 . 10205) . ((symbol "__isctype_l" 10206 . 10217) (semantic-list "((c), _ISxdigit, (l))" 10217 . 10238)))
+          ("__isctype" (spp-arg-list ("c" "type") 3500 . 3509) . ((semantic-list "((*__ctype_b_loc ())[(int) (c)] & (unsigned short int) type)" 3514 . 3574)))
+          ("__toascii" (spp-arg-list ("c") 3665 . 3668) . ((semantic-list "((c) & 0x7f)" 3669 . 3681)))
+          ("isgraph_l" (spp-arg-list ("c" "l") 10714 . 10719) . ((symbol "__isgraph_l" 10720 . 10731) (semantic-list "((c), (l))" 10732 . 10742)))
+          ("_CTYPE_H" . ((number "1" 1003 . 1004)))
+          ("__exctype_l" (spp-arg-list ("name") 8232 . 8238) . 
+              ((EXTERN "extern" 8255 . 8261) (INT "int" 8262 . 8265) (symbol "name" 8266 . 8270) (semantic-list "(int, __locale_t)" 8271 . 8288) (symbol "__THROW" 8289 . 8296)))
+          ("__isalpha_l" (spp-arg-list ("c" "l") 9668 . 9673) . ((symbol "__isctype_l" 9674 . 9685) (semantic-list "((c), _ISalpha, (l))" 9685 . 9705)))
+          ("__isblank_l" (spp-arg-list ("c" "l") 10261 . 10266) . ((symbol "__isctype_l" 10267 . 10278) (semantic-list "((c), _ISblank, (l))" 10278 . 10298)))
+          ("ispunct_l" (spp-arg-list ("c" "l") 10810 . 10815) . ((symbol "__ispunct_l" 10816 . 10827) (semantic-list "((c), (l))" 10828 . 10838)))
+          ("__exctype" (spp-arg-list ("name") 3728 . 3734) . 
+              ((EXTERN "extern" 3735 . 3741) (INT "int" 3742 . 3745) (symbol "name" 3746 . 3750) (semantic-list "(int)" 3751 . 3756) (symbol "__THROW" 3757 . 3764)))
+          ("__islower_l" (spp-arg-list ("c" "l") 9845 . 9850) . ((symbol "__isctype_l" 9851 . 9862) (semantic-list "((c), _ISlower, (l))" 9862 . 9882)))
+          ("__isspace_l" (spp-arg-list ("c" "l") 10081 . 10086) . ((symbol "__isctype_l" 10087 . 10098) (semantic-list "((c), _ISspace, (l))" 10098 . 10118)))
+          ("name"nil ;; bogus macro found.
+)
+          ("__isctype_l" (spp-arg-list ("c" "type" "locale") 8128 . 8145) . ((semantic-list "((locale)->__ctype_b[(int) (c)] & (unsigned short int) type)" 8150 . 8210)))
+          ("isalnum_l" (spp-arg-list ("c" "l") 10474 . 10479) . ((symbol "__isalnum_l" 10480 . 10491) (semantic-list "((c), (l))" 10492 . 10502)))
+          ("iscntrl_l" (spp-arg-list ("c" "l") 10570 . 10575) . ((symbol "__iscntrl_l" 10576 . 10587) (semantic-list "((c), (l))" 10588 . 10598)))
+          ("isupper_l" (spp-arg-list ("c" "l") 10906 . 10911) . ((symbol "__isupper_l" 10912 . 10923) (semantic-list "((c), (l))" 10924 . 10934)))
+          ("__isdigit_l" (spp-arg-list ("c" "l") 9786 . 9791) . ((symbol "__isctype_l" 9792 . 9803) (semantic-list "((c), _ISdigit, (l))" 9803 . 9823)))
+          ("__isprint_l" (spp-arg-list ("c" "l") 9963 . 9968) . ((symbol "__isctype_l" 9969 . 9980) (semantic-list "((c), _ISprint, (l))" 9980 . 10000)))
+          ("isalpha_l" (spp-arg-list ("c" "l") 10522 . 10527) . ((symbol "__isalpha_l" 10528 . 10539) (semantic-list "((c), (l))" 10540 . 10550)))
+          ("isblank_l" (spp-arg-list ("c" "l") 11005 . 11010) . ((symbol "__isblank_l" 11011 . 11022) (semantic-list "((c), (l))" 11023 . 11033)))
+          ("__toascii_l" (spp-arg-list ("c" "l") 10418 . 10423) . ((semantic-list "((l), __toascii (c))" 10424 . 10444)))
+          ("islower_l" (spp-arg-list ("c" "l") 10666 . 10671) . ((symbol "__islower_l" 10672 . 10683) (semantic-list "((c), (l))" 10684 . 10694)))
+          ("isspace_l" (spp-arg-list ("c" "l") 10858 . 10863) . ((symbol "__isspace_l" 10864 . 10875) (semantic-list "((c), (l))" 10876 . 10886)))
+          ("__isascii_l" (spp-arg-list ("c" "l") 10369 . 10374) . ((semantic-list "((l), __isascii (c))" 10375 . 10395)))
+          )
+)
+    (semanticdb-table "helper.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Helper" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [15 22])
+                    ("help" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [36 48]))                  
+                :type "class")
+                nil [1 51]))          
+      :file "helper.h"
+      :pointmax 52
+      :fsize 51
+      :lastmodtime '(23013 29656 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

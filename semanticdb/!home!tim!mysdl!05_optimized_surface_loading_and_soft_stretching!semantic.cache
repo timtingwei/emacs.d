@@ -1,0 +1,86 @@
+;; Object 05_optimized_surface_loading_and_soft_stretching/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "05_optimized_surface_loading_and_soft_stretching/"
+  :tables
+  (list
+    (semanticdb-table "05_optimized_surface_loading_and_soft_stretching.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SDL2/SDL.h" include (:system-flag t) nil [32 53])
+            ("stdio.h" include (:system-flag t) nil [54 72])
+            ("string" include (:system-flag t) nil [73 90])
+            ("SCREEN_WIDTH" variable
+               (:constant-flag t
+                :default-value "640"
+                :type "int")
+                nil [122 151])
+            ("SCREEN_HEIGHT" variable
+               (:constant-flag t
+                :default-value "480"
+                :type "int")
+                nil [152 182])
+            ("init" function
+               (:prototype-flag t
+                :type "bool")
+                nil [221 233])
+            ("loadMedia" function
+               (:prototype-flag t
+                :type "bool")
+                nil [250 267])
+            ("close" function
+               (:prototype-flag t
+                :type "bool")
+                nil [303 316])
+            ("loadSurface" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [383 400]))                  
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [358 401])
+            ("gWindow" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Window" type (:type "class") nil nil))
+                nil [440 467])
+            ("gScreenSurface" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [508 543])
+            ("gStretchedSurface" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [589 627])
+            ("init" function (:type "bool") nil [629 1407])
+            ("loadSurface" function
+               (:pointer 1
+                :arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1435 1452]))                  
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [1410 2181])
+            ("loadMedia" function (:type "bool") nil [2183 2434])
+            ("close" function (:type "bool") nil [2436 2651])
+            ("main" function (:type "int") nil [2653 3760]))          
+      :file "05_optimized_surface_loading_and_soft_stretching.cpp"
+      :pointmax 3761
+      :fsize 3760
+      :lastmodtime '(23049 41931 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("OBJS" variable (:default-value ("05_optimized_surface_loading_and_soft_stretching.cpp")) nil [63 123])
+            ("CC" variable (:default-value ("g++")) nil [165 174])
+            ("COMPILER_FLAGS" variable (:default-value ("-w")) nil [277 297])
+            ("LINKER_FLAGS" variable (:default-value ("-lSDL2")) nil [358 380])
+            ("all" function (:arguments ("$(OBJS)")) nil [518 581]))          
+      :file "Makefile"
+      :pointmax 581
+      :fsize 580
+      :lastmodtime '(23049 40633 0 0)
+      :unmatched-syntax '((shell-command 533 . 580) (bol 532 . 532))))
+  :file "!home!tim!mysdl!05_optimized_surface_loading_and_soft_stretching!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,205 @@
+;; Object cpl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cpl/"
+  :tables
+  (list
+    (semanticdb-table "tour2_name.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [31 50])
+            ("string" include (:system-flag t) nil [51 68])
+            ("list" include (:system-flag t) nil [69 84])
+            ("std::string" using (:type ("std::string" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [109 127])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [128 144])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [145 161])
+            ("main" function (:type "int") nil [200 338]))          
+      :file "tour2_name.cpp"
+      :pointmax 339
+      :fsize 338
+      :lastmodtime '(23051 48274 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tour2_vector.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [31 50])
+            ("string" include (:system-flag t) nil [51 68])
+            ("vector" include (:system-flag t) nil [69 86])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [88 108])
+            ("Entry" type
+               (:members 
+                  ( ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [185 197])
+                    ("number" variable (:type "int") (reparse-symbol classsubparts) [200 211]))                  
+                :type "struct")
+                nil [169 214])
+            ("phone_book" function
+               (:prototype-flag t
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("Entry" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [281 312])
+            ("phone_book1" variable
+               (:dereference 1
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("Entry" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [343 375])
+            ("phone_e" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("Entry" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [412 434])
+            ("print_entry" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [493 499]))                  
+                :type "void")
+                nil [476 573])
+            ("add_entries" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [593 599]))                  
+                :type "void")
+                nil [576 670])
+            ("f" function
+               (:arguments 
+                  ( ("v" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Entry" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [731 748]))                  
+                :type "void")
+                nil [724 795])
+            ("main" function (:type "int") nil [797 1053]))          
+      :file "tour2_vector.cpp"
+      :pointmax 1054
+      :fsize 1053
+      :lastmodtime '(23054 23580 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tour2_range.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [32 51])
+            ("string" include (:system-flag t) nil [52 69])
+            ("vector" include (:system-flag t) nil [70 87])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [89 109])
+            ("Entry" type
+               (:members 
+                  ( ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [128 140])
+                    ("number" variable (:type "int") (reparse-symbol classsubparts) [143 154]))                  
+                :type "struct")
+                nil [111 157])
+            ("Vec" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [461 468])
+                    ("Vec" function
+                       (:constructor-flag t
+                        :type ("Vec" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [471 494])
+                    ("Vec" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable (:type "int") (reparse-symbol arg-sub-list) [501 507]))                          
+                        :type ("Vec" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [497 526])
+                    ("[]" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [544 550]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [530 572])
+                    ("[]" function
+                       (:operator-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [629 635]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [608 663]))                  
+                :superclasses 
+                  ( ("vector" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [412 686])
+            ("phone_book" function
+               (:prototype-flag t
+                :type ("Vec" type
+                     (:template-specifier 
+                        ( ("Entry" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [688 716])
+            ("print_entry" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [735 741]))                  
+                :type "void")
+                nil [718 814])
+            ("f" function (:type "void") nil [816 940])
+            ("f" function (:type "void") nil [944 1059])
+            ("main" function (:type "int") nil [1064 1106]))          
+      :file "tour2_range.cpp"
+      :pointmax 1117
+      :fsize 1116
+      :lastmodtime '(23054 18037 0 0)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "ref_list_front.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [48 67])
+            ("list" include (:system-flag t) nil [68 83])
+            ("main" function (:type "int") nil [85 417]))          
+      :file "ref_list_front.cpp"
+      :pointmax 418
+      :fsize 417
+      :lastmodtime '(23054 21667 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tour2_map.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [31 50])
+            ("string" include (:system-flag t) nil [51 68])
+            ("vector" include (:system-flag t) nil [69 86])
+            ("list" include (:system-flag t) nil [87 102])
+            ("map" include (:system-flag t) nil [103 117])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [119 139])
+            ("Entry" type
+               (:members 
+                  ( ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [157 169])
+                    ("number" variable (:type "int") (reparse-symbol classsubparts) [172 183]))                  
+                :type "struct")
+                nil [141 186])
+            ("main" function (:type "int") nil [188 734]))          
+      :file "tour2_map.cpp"
+      :pointmax 735
+      :fsize 588
+      :lastmodtime '(23054 24627 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!cppd!cpl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

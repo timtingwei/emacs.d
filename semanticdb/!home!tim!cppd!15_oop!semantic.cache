@@ -1,0 +1,1176 @@
+;; Object 15_oop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "15_oop/"
+  :tables
+  (list
+    (semanticdb-table "15.1a.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [45 64])
+            ("Quote" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [80 87])
+                    ("Quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [117 141])
+                            ("sales_price" variable (:type "double") (reparse-symbol arg-sub-list) [142 161]))                          
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [111 203])
+                    ("isbn" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [206 248])
+                    ("net_price" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [277 291]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [252 316])
+                    ("private" label nil (reparse-symbol classsubparts) [388 396])
+                    ("bookNo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [399 418])
+                    ("protected" label nil (reparse-symbol classsubparts) [457 467])
+                    ("price" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [470 489]))                  
+                :type "class")
+                nil [66 532])
+            ("Bulk_quote" type
+               (:superclasses 
+                  ( ("Quote" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [602 609])
+                    ("Bulk_quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [649 673])
+                            ("p" variable (:type "double") (reparse-symbol arg-sub-list) [674 683])
+                            ("qty" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [684 700])
+                            ("disc" variable (:type "double") (reparse-symbol arg-sub-list) [700 712]))                          
+                        :type ("Bulk_quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [638 765])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [801 816])
+                    ("private" label nil (reparse-symbol classsubparts) [853 861])
+                    ("min_qty" variable
+                       (:default-value "0"
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [864 888])
+                    ("discount" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [943 965]))                  
+                :type "class")
+                nil [534 1008])
+            ("print_total" function
+               (:arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1029 1046])
+                    ("item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1052 1070])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1071 1080]))                  
+                :type "double")
+                nil [1010 1371])
+            ("net_price" function
+               (:parent "Bulk_quote"
+                :arguments 
+                  ( ("cnt" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1402 1413]))                  
+                :type "double")
+                nil [1373 1515])
+            ("Base" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1532 1539])
+                    ("statmem" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1542 1564]))                  
+                :type "class")
+                nil [1520 1567])
+            ("Derived" type
+               (:superclasses 
+                  ( ("Base" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("f" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Derived" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1608 1623]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1601 1624]))                  
+                :type "class")
+                nil [1569 1627])
+            ("f" function
+               (:parent "Derived"
+                :arguments 
+                  ( ("derived_obj" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Derived" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1645 1672]))                  
+                :type "void")
+                nil [1629 1982])
+            ("Base" type (:type "class") nil [2018 2039])
+            ("D1" type
+               (:superclasses 
+                  ( ("Base" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :type "class")
+                nil [2040 2072])
+            ("D2" type
+               (:superclasses 
+                  ( ("D1" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :type "class")
+                nil [2073 2103])
+            ("final" variable (:type ("NoDerived" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [2130 2162])
+            ("Base" type (:type "class") nil [2202 2223])
+            ("Base" variable (:type "int") nil [2243 2258])
+            ("main" function (:type "int") nil [2498 2800]))          
+      :file "15.1a.cpp"
+      :pointmax 2801
+      :fsize 838
+      :lastmodtime '(23030 38288 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "defining_a_base_class.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "defining_a_base_class.cpp"
+      :pointmax 1
+      :fsize 1204
+      :lastmodtime '(23030 39513 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "prac_154.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("Base" type (:type "class") nil [22 43])
+            ("Derived" type
+               (:superclasses 
+                  ( ("Base" type
+                       (:protection "private"
+                        :type "class")
+                        nil nil))                  
+                :type "class")
+                nil [91 132])
+            ("main" function (:type "int") nil [165 191]))          
+      :file "prac_154.cpp"
+      :pointmax 192
+      :fsize 191
+      :lastmodtime '(23030 42766 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "prac_157.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [32 51])
+            ("Quote" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [68 75])
+                    ("Quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [105 129])
+                            ("sales_price" variable (:type "double") (reparse-symbol arg-sub-list) [130 149]))                          
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [99 191])
+                    ("isbn" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [195 237])
+                    ("net_price" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [265 279]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [240 304])
+                    ("private" label nil (reparse-symbol classsubparts) [378 386])
+                    ("bookNo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [389 408])
+                    ("protected" label nil (reparse-symbol classsubparts) [449 459])
+                    ("price" variable
+                       (:default-value "1.8"
+                        :type "double")
+                        (reparse-symbol classsubparts) [462 481]))                  
+                :type "class")
+                nil [53 524])
+            ("Disc_quote" type
+               (:superclasses 
+                  ( ("Quote" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [555 562])
+                    ("Disc_quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [602 626])
+                            ("sales_price" variable (:type "double") (reparse-symbol arg-sub-list) [627 646])
+                            ("lmc" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [660 676])
+                            ("disc" variable (:type "double") (reparse-symbol arg-sub-list) [677 689]))                          
+                        :type ("Disc_quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [591 755])
+                    ("net_price" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [775 787]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [758 798])
+                    ("protected" label nil (reparse-symbol classsubparts) [800 810])
+                    ("min_lmc" variable
+                       (:default-value "0"
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [813 837])
+                    ("discount" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [880 902]))                  
+                :type "class")
+                nil [527 945])
+            ("main" function (:type "int") nil [948 1046]))          
+      :file "prac_157.cpp"
+      :pointmax 1577
+      :fsize 1631
+      :lastmodtime '(23033 53132 0 0)
+      :unmatched-syntax '((punctuation 587 . 588) (DEFAULT 580 . 587) (punctuation 578 . 579) (semantic-list 575 . 577) (symbol 565 . 575) (punctuation 334 . 335) (DEFAULT 327 . 334) (punctuation 325 . 326) (semantic-list 322 . 324) (symbol 317 . 322) (punctuation 316 . 317) (VIRTUAL 308 . 315) (punctuation 95 . 96) (DEFAULT 88 . 95) (punctuation 86 . 87) (semantic-list 83 . 85) (symbol 78 . 83) (punctuation 587 . 588) (DEFAULT 580 . 587) (punctuation 578 . 579) (semantic-list 575 . 577) (symbol 565 . 575) (punctuation 334 . 335) (DEFAULT 327 . 334) (punctuation 325 . 326) (semantic-list 322 . 324) (symbol 317 . 322) (punctuation 316 . 317) (VIRTUAL 308 . 315) (punctuation 95 . 96) (DEFAULT 88 . 95) (punctuation 86 . 87) (semantic-list 83 . 85) (symbol 78 . 83) (punctuation 587 . 588) (DEFAULT 580 . 587) (punctuation 578 . 579) (semantic-list 575 . 577) (symbol 565 . 575) (punctuation 334 . 335) (DEFAULT 327 . 334) (punctuation 325 . 326) (semantic-list 322 . 324) (symbol 317 . 322) (punctuation 316 . 317) (VIRTUAL 308 . 315) (punctuation 95 . 96) (DEFAULT 88 . 95) (punctuation 86 . 87) (semantic-list 83 . 85) (symbol 78 . 83) (punctuation 587 . 588) (DEFAULT 580 . 587) (punctuation 578 . 579) (semantic-list 575 . 577) (symbol 565 . 575) (punctuation 334 . 335) (DEFAULT 327 . 334) (punctuation 325 . 326) (semantic-list 322 . 324) (symbol 317 . 322) (punctuation 316 . 317) (VIRTUAL 308 . 315) (punctuation 95 . 96) (DEFAULT 88 . 95) (punctuation 86 . 87) (semantic-list 83 . 85) (symbol 78 . 83) (punctuation 587 . 588) (DEFAULT 580 . 587) (punctuation 578 . 579) (semantic-list 575 . 577) (symbol 565 . 575) (punctuation 334 . 335) (DEFAULT 327 . 334) (punctuation 325 . 326) (semantic-list 322 . 324) (symbol 317 . 322) (punctuation 316 . 317) (VIRTUAL 308 . 315) (punctuation 95 . 96) (DEFAULT 88 . 95) (punctuation 86 . 87) (semantic-list 83 . 85) (symbol 78 . 83) (punctuation 587 . 588) (DEFAULT 580 . 587) (punctuation 578 . 579) (semantic-list 575 . 577) (symbol 565 . 575) (punctuation 334 . 335) (DEFAULT 327 . 334) (punctuation 325 . 326) (semantic-list 322 . 324) (symbol 317 . 322) (punctuation 316 . 317) (VIRTUAL 308 . 315) (punctuation 95 . 96) (DEFAULT 88 . 95) (punctuation 86 . 87) (semantic-list 83 . 85) (symbol 78 . 83) (punctuation 587 . 588) (DEFAULT 580 . 587) (punctuation 578 . 579) (semantic-list 575 . 577) (symbol 565 . 575) (punctuation 334 . 335) (DEFAULT 327 . 334) (punctuation 325 . 326) (semantic-list 322 . 324) (symbol 317 . 322) (punctuation 316 . 317) (VIRTUAL 308 . 315) (punctuation 95 . 96) (DEFAULT 88 . 95) (punctuation 86 . 87) (semantic-list 83 . 85) (symbol 78 . 83)))
+    (semanticdb-table "defining_a_derived_class.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [70 89])
+            ("Quote" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [106 113])
+                    ("Quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [143 167])
+                            ("sales_price" variable (:type "double") (reparse-symbol arg-sub-list) [168 187]))                          
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [137 229])
+                    ("isbn" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [232 274])
+                    ("net_price" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [303 317]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [278 342])
+                    ("private" label nil (reparse-symbol classsubparts) [416 424])
+                    ("bookNo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [427 446])
+                    ("protected" label nil (reparse-symbol classsubparts) [487 497])
+                    ("price" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [500 519]))                  
+                :type "class")
+                nil [91 562])
+            ("Bulk_quote" type
+               (:superclasses 
+                  ( ("Quote" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [634 641])
+                    ("Bulk_quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [681 705])
+                            ("p" variable (:type "double") (reparse-symbol arg-sub-list) [706 715])
+                            ("qty" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [716 732])
+                            ("disc" variable (:type "double") (reparse-symbol arg-sub-list) [733 745]))                          
+                        :type ("Bulk_quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [670 799])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [832 847])
+                    ("private" label nil (reparse-symbol classsubparts) [885 893])
+                    ("min_qty" variable
+                       (:default-value "0"
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [896 920])
+                    ("discount" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [976 998]))                  
+                :type "class")
+                nil [564 1042])
+            ("print_total" function
+               (:arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1063 1080])
+                    ("item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1100 1118])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1119 1128]))                  
+                :type "double")
+                nil [1044 1424])
+            ("net_price" function
+               (:parent "Bulk_quote"
+                :arguments 
+                  ( ("cnt" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1455 1466]))                  
+                :type "double")
+                nil [1426 1568])
+            ("Base" type (:type "class") nil [2072 2093])
+            ("D1" type
+               (:superclasses 
+                  ( ("Base" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :type "class")
+                nil [2094 2126])
+            ("D2" type
+               (:superclasses 
+                  ( ("D1" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :type "class")
+                nil [2127 2157])
+            ("final" variable (:type ("NoDerived" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [2185 2217])
+            ("Base" type (:type "class") nil [2258 2279])
+            ("Base" variable (:type "int") nil [2299 2314])
+            ("main" function (:type "int") nil [2560 2873]))          
+      :file "defining_a_derived_class.cpp"
+      :pointmax 2874
+      :fsize 2885
+      :lastmodtime '(23033 53162 0 0)
+      :unmatched-syntax '((punctuation 2297 . 2298) (symbol 2291 . 2296) (symbol 2286 . 2290) (CLASS 2280 . 2285) (punctuation 882 . 883) (DEFAULT 875 . 882) (punctuation 873 . 874) (semantic-list 870 . 872) (symbol 860 . 870) (punctuation 859 . 860) (VIRTUAL 851 . 858) (semantic-list 818 . 831) (symbol 809 . 818) (DOUBLE 802 . 808) (punctuation 666 . 667) (DEFAULT 659 . 666) (punctuation 657 . 658) (semantic-list 654 . 656) (symbol 644 . 654) (punctuation 372 . 373) (DEFAULT 365 . 372) (punctuation 363 . 364) (semantic-list 360 . 362) (symbol 355 . 360) (punctuation 354 . 355) (VIRTUAL 346 . 353) (punctuation 133 . 134) (DEFAULT 126 . 133) (punctuation 124 . 125) (semantic-list 121 . 123) (symbol 116 . 121) (string 1 . 24)))
+    (semanticdb-table "prac_159.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [158 177])
+            ("Quote" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [194 201])
+                    ("Quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [231 255])
+                            ("sales_price" variable (:type "double") (reparse-symbol arg-sub-list) [256 275]))                          
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [225 317])
+                    ("isbn" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [320 362])
+                    ("net_price" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [391 405]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [366 411])
+                    ("debug" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [437 464])
+                    ("private" label nil (reparse-symbol classsubparts) [538 546])
+                    ("bookNo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [549 568])
+                    ("protected" label nil (reparse-symbol classsubparts) [609 619])
+                    ("price" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [622 641]))                  
+                :type "class")
+                nil [179 684])
+            ("Bulk_quote" type
+               (:superclasses 
+                  ( ("Quote" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [756 763])
+                    ("Bulk_quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [803 827])
+                            ("p" variable (:type "double") (reparse-symbol arg-sub-list) [828 837])
+                            ("qty" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [838 854])
+                            ("disc" variable (:type "double") (reparse-symbol arg-sub-list) [855 867]))                          
+                        :type ("Bulk_quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [792 921])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [955 970])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [986 1001])
+                    ("private" label nil (reparse-symbol classsubparts) [1039 1047])
+                    ("min_qty" variable
+                       (:default-value "0"
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1050 1074])
+                    ("discount" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [1130 1152]))                  
+                :type "class")
+                nil [686 1196])
+            ("print_total" function
+               (:arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1217 1234])
+                    ("item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1254 1272])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1273 1282]))                  
+                :type "double")
+                nil [1198 1578])
+            ("net_price" function
+               (:parent "Quote"
+                :arguments 
+                  ( ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1604 1613]))                  
+                :type "double")
+                nil [1580 1641])
+            ("net_price" function
+               (:parent "Bulk_quote"
+                :arguments 
+                  ( ("cnt" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1672 1683]))                  
+                :type "double")
+                nil [1643 1785])
+            ("debug" function
+               (:parent "Quote"
+                :type "void")
+                nil [1918 2089])
+            ("debug" function
+               (:parent "Bulk_quote"
+                :type "void")
+                nil [2091 2339])
+            ("main" function (:type "int") nil [2344 2674]))          
+      :file "prac_159.cpp"
+      :pointmax 2675
+      :fsize 1737
+      :lastmodtime '(23033 15942 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "prac_1513.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [148 167])
+            ("base" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [183 190])
+                    ("base" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [218 242]))                          
+                        :type ("base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [213 261])
+                    ("name" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [265 367])
+                    ("print" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [389 406]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [370 503])
+                    ("private" label nil (reparse-symbol classsubparts) [535 543])
+                    ("basename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [546 567]))                  
+                :type "class")
+                nil [169 570])
+            ("derived" type
+               (:superclasses 
+                  ( ("base" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [604 611])
+                    ("derived" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [645 669])
+                            ("ival" variable (:type "int") (reparse-symbol arg-sub-list) [670 679]))                          
+                        :type ("derived" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [637 707])
+                    ("private" label nil (reparse-symbol classsubparts) [907 915])
+                    ("mem" variable (:type "int") (reparse-symbol classsubparts) [918 926]))                  
+                :type "class")
+                nil [573 929])
+            ("main" function (:type "int") nil [932 1855]))          
+      :file "prac_1513.cpp"
+      :pointmax 2294
+      :fsize 781
+      :lastmodtime '(23033 21713 0 0)
+      :unmatched-syntax '((punctuation 904 . 905) (DEFAULT 897 . 904) (punctuation 895 . 896) (semantic-list 892 . 894) (symbol 885 . 892) (punctuation 884 . 885) (VIRTUAL 876 . 883) (semantic-list 749 . 872) (symbol 740 . 748) (semantic-list 721 . 739) (symbol 716 . 721) (VOID 711 . 715) (punctuation 633 . 634) (DEFAULT 626 . 633) (punctuation 624 . 625) (semantic-list 621 . 623) (symbol 614 . 621) (punctuation 532 . 533) (DEFAULT 525 . 532) (punctuation 523 . 524) (semantic-list 520 . 522) (symbol 516 . 520) (punctuation 515 . 516) (VIRTUAL 507 . 514) (punctuation 209 . 210) (DEFAULT 202 . 209) (punctuation 200 . 201) (semantic-list 197 . 199) (symbol 193 . 197) (punctuation 904 . 905) (DEFAULT 897 . 904) (punctuation 895 . 896) (semantic-list 892 . 894) (symbol 885 . 892) (punctuation 884 . 885) (VIRTUAL 876 . 883) (semantic-list 749 . 872) (symbol 740 . 748) (semantic-list 721 . 739) (symbol 716 . 721) (VOID 711 . 715) (punctuation 633 . 634) (DEFAULT 626 . 633) (punctuation 624 . 625) (semantic-list 621 . 623) (symbol 614 . 621) (punctuation 532 . 533) (DEFAULT 525 . 532) (punctuation 523 . 524) (semantic-list 520 . 522) (symbol 516 . 520) (punctuation 515 . 516) (VIRTUAL 507 . 514) (punctuation 209 . 210) (DEFAULT 202 . 209) (punctuation 200 . 201) (semantic-list 197 . 199) (symbol 193 . 197) (punctuation 904 . 905) (DEFAULT 897 . 904) (punctuation 895 . 896) (semantic-list 892 . 894) (symbol 885 . 892) (punctuation 884 . 885) (VIRTUAL 876 . 883) (semantic-list 749 . 872) (symbol 740 . 748) (semantic-list 721 . 739) (symbol 716 . 721) (VOID 711 . 715) (punctuation 633 . 634) (DEFAULT 626 . 633) (punctuation 624 . 625) (semantic-list 621 . 623) (symbol 614 . 621) (punctuation 532 . 533) (DEFAULT 525 . 532) (punctuation 523 . 524) (semantic-list 520 . 522) (symbol 516 . 520) (punctuation 515 . 516) (VIRTUAL 507 . 514) (punctuation 209 . 210) (DEFAULT 202 . 209) (punctuation 200 . 201) (semantic-list 197 . 199) (symbol 193 . 197) (punctuation 2299 . 2300) (punctuation 2298 . 2299) (symbol 2294 . 2295) (semantic-list 2277 . 2294) (number 2275 . 2276) (punctuation 2274 . 2275) (punctuation 2273 . 2274) (symbol 2271 . 2272) (symbol 2268 . 2270) (symbol 2264 . 2267) (punctuation 2262 . 2263) (punctuation 2261 . 2262) (punctuation 2260 . 2261) (symbol 2253 . 2260) (semantic-list 2250 . 2252) (symbol 2245 . 2250) (punctuation 2244 . 2245) (punctuation 2243 . 2244) (symbol 2239 . 2243) (punctuation 2237 . 2238) (punctuation 2236 . 2237) (punctuation 2235 . 2236) (symbol 2228 . 2235) (semantic-list 2225 . 2227) (symbol 2220 . 2225) (punctuation 2219 . 2220) (punctuation 2218 . 2219) (symbol 2211 . 2218) (semantic-list 2199 . 2210) (symbol 2194 . 2199) (punctuation 2193 . 2194) (symbol 2190 . 2193) (punctuation 2189 . 2190) (punctuation 2188 . 2189) (number 2187 . 2188) (symbol 2182 . 2186) (symbol 2179 . 2181) (symbol 2175 . 2178) (punctuation 2173 . 2174) (punctuation 2172 . 2173) (punctuation 2171 . 2172) (symbol 2164 . 2171) (semantic-list 2161 . 2163) (symbol 2156 . 2161) (punctuation 2155 . 2156) (punctuation 2154 . 2155) (symbol 2150 . 2154) (semantic-list 2138 . 2149) (symbol 2133 . 2138) (punctuation 2132 . 2133) (symbol 2129 . 2132) (punctuation 2128 . 2129) (punctuation 2127 . 2128) (number 2126 . 2127) (punctuation 2124 . 2125) (punctuation 2123 . 2124) (punctuation 2122 . 2123) (symbol 2115 . 2122) (semantic-list 2112 . 2114) (symbol 2108 . 2112) (punctuation 2107 . 2108) (punctuation 2106 . 2107) (symbol 2102 . 2106) (semantic-list 2099 . 2101) (symbol 2095 . 2099) (punctuation 2094 . 2095) (punctuation 2093 . 2094) (symbol 2090 . 2093) (punctuation 2089 . 2090) (punctuation 2088 . 2089) (number 2087 . 2088) (punctuation 2085 . 2086) (punctuation 2084 . 2085) (punctuation 2083 . 2084) (symbol 2076 . 2083) (semantic-list 2073 . 2075) (symbol 2069 . 2073) (punctuation 2068 . 2069) (punctuation 2067 . 2068) (symbol 2063 . 2067) (semantic-list 2060 . 2062) (symbol 2056 . 2060) (punctuation 2055 . 2056) (punctuation 2054 . 2055) (symbol 2051 . 2054) (punctuation 2050 . 2051) (punctuation 2049 . 2050) (number 2048 . 2049) (number 2046 . 2047) (punctuation 2045 . 2046) (punctuation 2044 . 2045) (symbol 2042 . 2043) (symbol 2039 . 2041) (symbol 2035 . 2038) (punctuation 2033 . 2034) (punctuation 2032 . 2033) (punctuation 2031 . 2032) (symbol 2024 . 2031) (semantic-list 2021 . 2023) (symbol 2016 . 2021) (punctuation 2015 . 2016) (punctuation 2014 . 2015) (symbol 2010 . 2014) (punctuation 2008 . 2009) (punctuation 2007 . 2008) (punctuation 2006 . 2007) (symbol 1999 . 2006) (semantic-list 1996 . 1998) (symbol 1991 . 1996) (punctuation 1990 . 1991) (punctuation 1989 . 1990) (symbol 1982 . 1989) (semantic-list 1970 . 1981) (symbol 1965 . 1970) (punctuation 1964 . 1965) (symbol 1960 . 1964) (punctuation 1959 . 1960) (punctuation 1958 . 1959) (number 1957 . 1958) (symbol 1952 . 1956) (symbol 1949 . 1951) (symbol 1945 . 1948) (punctuation 1943 . 1944) (punctuation 1942 . 1943) (punctuation 1941 . 1942) (symbol 1934 . 1941) (semantic-list 1931 . 1933) (symbol 1926 . 1931) (punctuation 1925 . 1926) (punctuation 1924 . 1925) (symbol 1920 . 1924) (semantic-list 1908 . 1919) (symbol 1903 . 1908) (punctuation 1902 . 1903) (symbol 1898 . 1902) (punctuation 1897 . 1898) (punctuation 1896 . 1897) (number 1895 . 1896) (symbol 1891 . 1894) (punctuation 1890 . 1891) (symbol 1889 . 1890) (punctuation 1888 . 1889) (punctuation 1887 . 1888) (symbol 1885 . 1886) (semantic-list 1868 . 1885) (punctuation 1864 . 1865) (punctuation 904 . 905) (DEFAULT 897 . 904) (punctuation 895 . 896) (semantic-list 892 . 894) (symbol 885 . 892) (punctuation 884 . 885) (VIRTUAL 876 . 883) (semantic-list 749 . 872) (symbol 740 . 748) (semantic-list 721 . 739) (symbol 716 . 721) (VOID 711 . 715) (punctuation 633 . 634) (DEFAULT 626 . 633) (punctuation 624 . 625) (semantic-list 621 . 623) (symbol 614 . 621) (punctuation 532 . 533) (DEFAULT 525 . 532) (punctuation 523 . 524) (semantic-list 520 . 522) (symbol 516 . 520) (punctuation 515 . 516) (VIRTUAL 507 . 514) (punctuation 209 . 210) (DEFAULT 202 . 209) (punctuation 200 . 201) (semantic-list 197 . 199) (symbol 193 . 197) (punctuation 904 . 905) (DEFAULT 897 . 904) (punctuation 895 . 896) (semantic-list 892 . 894) (symbol 885 . 892) (punctuation 884 . 885) (VIRTUAL 876 . 883) (semantic-list 749 . 872) (symbol 740 . 748) (semantic-list 721 . 739) (symbol 716 . 721) (VOID 711 . 715) (punctuation 633 . 634) (DEFAULT 626 . 633) (punctuation 624 . 625) (semantic-list 621 . 623) (symbol 614 . 621) (punctuation 532 . 533) (DEFAULT 525 . 532) (punctuation 523 . 524) (semantic-list 520 . 522) (symbol 516 . 520) (punctuation 515 . 516) (VIRTUAL 507 . 514) (punctuation 209 . 210) (DEFAULT 202 . 209) (punctuation 200 . 201) (semantic-list 197 . 199) (symbol 193 . 197) (punctuation 904 . 905) (DEFAULT 897 . 904) (punctuation 895 . 896) (semantic-list 892 . 894) (symbol 885 . 892) (punctuation 884 . 885) (VIRTUAL 876 . 883) (semantic-list 749 . 872) (symbol 740 . 748) (semantic-list 721 . 739) (symbol 716 . 721) (VOID 711 . 715) (punctuation 633 . 634) (DEFAULT 626 . 633) (punctuation 624 . 625) (semantic-list 621 . 623) (symbol 614 . 621) (punctuation 532 . 533) (DEFAULT 525 . 532) (punctuation 523 . 524) (semantic-list 520 . 522) (symbol 516 . 520) (punctuation 515 . 516) (VIRTUAL 507 . 514) (punctuation 209 . 210) (DEFAULT 202 . 209) (punctuation 200 . 201) (semantic-list 197 . 199) (symbol 193 . 197) (VOID 711 . 715) (punctuation 633 . 634) (DEFAULT 626 . 633) (punctuation 624 . 625) (semantic-list 621 . 623) (symbol 614 . 621) (punctuation 532 . 533) (DEFAULT 525 . 532) (punctuation 523 . 524) (semantic-list 520 . 522) (symbol 516 . 520) (punctuation 515 . 516) (VIRTUAL 507 . 514) (punctuation 209 . 210) (DEFAULT 202 . 209) (punctuation 200 . 201) (semantic-list 197 . 199) (symbol 193 . 197) (punctuation 904 . 905) (DEFAULT 897 . 904) (punctuation 895 . 896) (semantic-list 892 . 894) (symbol 885 . 892) (punctuation 884 . 885) (VIRTUAL 876 . 883) (semantic-list 749 . 872) (symbol 740 . 748) (semantic-list 721 . 739) (symbol 716 . 721) (VOID 711 . 715) (punctuation 633 . 634) (DEFAULT 626 . 633) (punctuation 624 . 625) (semantic-list 621 . 623) (symbol 614 . 621) (punctuation 532 . 533) (DEFAULT 525 . 532) (punctuation 523 . 524) (semantic-list 520 . 522) (symbol 516 . 520) (punctuation 515 . 516) (VIRTUAL 507 . 514) (punctuation 209 . 210) (DEFAULT 202 . 209) (punctuation 200 . 201) (semantic-list 197 . 199) (symbol 193 . 197)))
+    (semanticdb-table "prac_1514.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [148 167])
+            ("base" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [183 190])
+                    ("base" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [218 242]))                          
+                        :type ("base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [213 261])
+                    ("name" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [265 367])
+                    ("print" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [389 406]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [370 503])
+                    ("private" label nil (reparse-symbol classsubparts) [535 543])
+                    ("basename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [546 567]))                  
+                :type "class")
+                nil [169 570])
+            ("derived" type
+               (:superclasses 
+                  ( ("base" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [614 621])
+                    ("derived" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [655 679])
+                            ("ival" variable (:type "int") (reparse-symbol arg-sub-list) [680 689]))                          
+                        :type ("derived" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [647 717])
+                    ("private" label nil (reparse-symbol classsubparts) [917 925])
+                    ("mem" variable (:type "int") (reparse-symbol classsubparts) [928 936]))                  
+                :type "class")
+                nil [583 939])
+            ("main" function (:type "int") nil [942 1865]))          
+      :file "prac_1514.cpp"
+      :pointmax 2304
+      :fsize 2293
+      :lastmodtime '(23033 53144 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "abstract_base_classes.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [94 113])
+            ("Base" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [129 136])
+                    ("fcn" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [139 157]))                  
+                :type "class")
+                nil [115 160])
+            ("D1" type
+               (:superclasses 
+                  ( ("Base" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [188 195])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [208 217])
+                    ("f2" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [264 282]))                  
+                :type "class")
+                nil [162 338])
+            ("D2" type
+               (:superclasses 
+                  ( ("D1" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [364 371])
+                    ("fcn" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [382 386]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [374 387])
+                    ("fcn" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [437 447])
+                    ("f2" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [492 502]))                  
+                :type "class")
+                nil [340 544])
+            ("main" function (:type "int") nil [546 1205]))          
+      :file "abstract_base_classes.cpp"
+      :pointmax 1207
+      :fsize 2731
+      :lastmodtime '(23033 52849 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "virtual_functions.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [65 84])
+            ("Quote" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [101 108])
+                    ("Quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [138 162])
+                            ("sales_price" variable (:type "double") (reparse-symbol arg-sub-list) [163 182]))                          
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [132 224])
+                    ("isbn" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [227 269])
+                    ("net_price" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [298 312]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [273 318])
+                    ("private" label nil (reparse-symbol classsubparts) [415 423])
+                    ("bookNo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [426 445])
+                    ("protected" label nil (reparse-symbol classsubparts) [486 496])
+                    ("price" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [499 518]))                  
+                :type "class")
+                nil [86 561])
+            ("Disc_quote" type
+               (:superclasses 
+                  ( ("Quote" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1100 1107])
+                    ("Disc_quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1147 1171])
+                            ("price" variable (:type "double") (reparse-symbol arg-sub-list) [1172 1185])
+                            ("qty" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1199 1215])
+                            ("disc" variable (:type "double") (reparse-symbol arg-sub-list) [1216 1228]))                          
+                        :type ("Disc_quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1136 1288])
+                    ("net_price" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1308 1320]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [1291 1331])
+                    ("protected" label nil (reparse-symbol classsubparts) [1333 1343])
+                    ("quantity" variable
+                       (:default-value "0"
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1346 1371])
+                    ("discount" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [1420 1442]))                  
+                :type "class")
+                nil [1048 1483])
+            ("Bulk_quote" type
+               (:superclasses 
+                  ( ("Disc_quote" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1560 1567])
+                    ("Bulk_quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1607 1631])
+                            ("p" variable (:type "double") (reparse-symbol arg-sub-list) [1632 1641])
+                            ("qty" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1655 1671])
+                            ("disc" variable (:type "double") (reparse-symbol arg-sub-list) [1672 1684]))                          
+                        :type ("Bulk_quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1596 1724])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1757 1772]))                  
+                :type "class")
+                nil [1485 1966])
+            ("print_total" function
+               (:arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1987 2004])
+                    ("item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2024 2042])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2043 2052]))                  
+                :type "double")
+                nil [1968 2348])
+            ("net_price" function
+               (:parent "Quote"
+                :arguments 
+                  ( ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2374 2383]))                  
+                :type "double")
+                nil [2350 2411])
+            ("net_price" function
+               (:parent "Bulk_quote"
+                :arguments 
+                  ( ("cnt" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2442 2453]))                  
+                :type "double")
+                nil [2413 2555])
+            ("main" function (:type "int") nil [2560 2731]))          
+      :file "virtual_functions.cpp"
+      :pointmax 2732
+      :fsize 2490
+      :lastmodtime '(23033 17691 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "prac_1516.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [32 51])
+            ("Quote" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [68 75])
+                    ("Quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [105 129])
+                            ("sales_price" variable (:type "double") (reparse-symbol arg-sub-list) [130 149]))                          
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [99 191])
+                    ("isbn" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [195 237])
+                    ("net_price" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [265 279]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [240 304])
+                    ("private" label nil (reparse-symbol classsubparts) [378 386])
+                    ("bookNo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [389 408])
+                    ("protected" label nil (reparse-symbol classsubparts) [449 459])
+                    ("price" variable
+                       (:default-value "1.8"
+                        :type "double")
+                        (reparse-symbol classsubparts) [462 481]))                  
+                :type "class")
+                nil [53 524])
+            ("Disc_quote" type
+               (:superclasses 
+                  ( ("Quote" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [562 569])
+                    ("Disc_quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [609 633])
+                            ("sales_price" variable (:type "double") (reparse-symbol arg-sub-list) [634 653])
+                            ("lmc" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [667 683])
+                            ("disc" variable (:type "double") (reparse-symbol arg-sub-list) [684 696]))                          
+                        :type ("Disc_quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [598 762])
+                    ("net_price" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [782 794]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [765 805])
+                    ("protected" label nil (reparse-symbol classsubparts) [807 817])
+                    ("min_lmc" variable
+                       (:default-value "0"
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [820 844])
+                    ("discount" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [887 909]))                  
+                :type "class")
+                nil [527 952])
+            ("Limit_Quote" type
+               (:superclasses 
+                  ( ("Disc_quote" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [995 1002])
+                    ("Limit_Quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1044 1068])
+                            ("p" variable (:type "double") (reparse-symbol arg-sub-list) [1069 1078])
+                            ("lmc" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1079 1095])
+                            ("disc" variable (:type "double") (reparse-symbol arg-sub-list) [1096 1108]))                          
+                        :type ("Limit_Quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1032 1150])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1184 1199]))                  
+                :type "class")
+                nil [954 1268])
+            ("net_price" function
+               (:parent "Limit_Quote"
+                :arguments 
+                  ( ("cnt" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1300 1311]))                  
+                :type "double")
+                nil [1270 1456])
+            ("print_total" function
+               (:arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1477 1494])
+                    ("item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1514 1532])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1533 1542]))                  
+                :type "double")
+                nil [1458 1840])
+            ("main" function (:type "int") nil [1842 2013]))          
+      :file "prac_1516.cpp"
+      :pointmax 2014
+      :fsize 2013
+      :lastmodtime '(23033 52961 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "access_control_interitance.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [31 50])
+            ("Base" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2822 2829])
+                    ("size" function (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2832 2868])
+                    ("protected" label nil (reparse-symbol classsubparts) [2870 2880])
+                    ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2883 2897]))                  
+                :type "class")
+                nil [2808 2900])
+            ("Derived" type
+               (:superclasses 
+                  ( ("Base" type
+                       (:protection "private"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2967 2974])
+                    ("Base::size" variable (:type "int") (reparse-symbol classsubparts) [3057 3068])
+                    ("protected" label nil (reparse-symbol classsubparts) [3070 3080])
+                    ("j" variable
+                       (:default-value "n"
+                        :type "int")
+                        (reparse-symbol classsubparts) [3103 3113]))                  
+                :type "class")
+                nil [2902 3116])
+            ("main" function (:type "int") nil [3120 3146]))          
+      :file "access_control_interitance.cpp"
+      :pointmax 3149
+      :fsize 3148
+      :lastmodtime '(23034 32543 0 0)
+      :unmatched-syntax '((USING 3051 . 3056)))
+    (semanticdb-table "prac_1521.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [32 51])
+            ("Primitive" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [188 195])
+                    ("Primitive" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [236 243])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [244 251]))                          
+                        :type ("Primitive" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [226 252])
+                    ("protected" label nil (reparse-symbol classsubparts) [349 359])
+                    ("x_size" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [362 382])
+                    ("y_size" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [385 405]))                  
+                :type "class")
+                nil [169 408])
+            ("Primitive_2d" type
+               (:superclasses 
+                  ( ("Primitive" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [451 458])
+                    ("Primitive_2d" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [505 512])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [513 520]))                          
+                        :type ("Primitive_2d" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [492 521])
+                    ("area" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "double")
+                        (reparse-symbol classsubparts) [524 550])
+                    ("pcrimeter" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "double")
+                        (reparse-symbol classsubparts) [588 619]))                  
+                :type "class")
+                nil [410 710])
+            ("Primitive_3d" type
+               (:superclasses 
+                  ( ("Primitive" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [753 760])
+                    ("Primitive_3d" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [851 858])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [859 866])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [867 874]))                          
+                        :type ("Primitive_3d" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [838 875])
+                    ("cubage" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "double")
+                        (reparse-symbol classsubparts) [878 906]))                  
+                :type "class")
+                nil [712 1047])
+            ("Rectangle" type
+               (:superclasses 
+                  ( ("Primitive_2d" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1090 1097])
+                    ("Rectangle" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [1199 1206])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [1207 1214]))                          
+                        :type ("Rectangle" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1189 1215]))                  
+                :type "class")
+                nil [1049 1390])
+            ("Circle" type
+               (:superclasses 
+                  ( ("Primitive_2d" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1430 1437])
+                    ("Circle" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [1510 1517])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [1518 1525]))                          
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1503 1526])
+                    ("protected" label nil (reparse-symbol classsubparts) [1713 1723])
+                    ("radius" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [1726 1746]))                  
+                :type "class")
+                nil [1392 1749])
+            ("Box" type
+               (:superclasses 
+                  ( ("Primitive_3d" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1786 1793])
+                    ("Box" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [1908 1915])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [1916 1923])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [1924 1931]))                          
+                        :type ("Box" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1904 1932])
+                    ("protected" label nil (reparse-symbol classsubparts) [2002 2012])
+                    ("height" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [2015 2035])
+                    ("x_size" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [2038 2058])
+                    ("y_size" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [2061 2081]))                  
+                :type "class")
+                nil [1751 2084])
+            ("Cone" type
+               (:superclasses 
+                  ( ("Primitive_3d" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2122 2129])
+                    ("height" function
+                       (:arguments 
+                          ( ("" variable (:type ("h" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2306 2308]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2299 2311])
+                    ("Cone" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type "double") (reparse-symbol arg-sub-list) [2319 2328])
+                            ("h" variable (:type "double") (reparse-symbol arg-sub-list) [2329 2338])
+                            ("s" variable (:type "double") (reparse-symbol arg-sub-list) [2339 2348]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2314 2349])
+                    ("protected" label nil (reparse-symbol classsubparts) [2492 2502])
+                    ("radius" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [2505 2525])
+                    ("height" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [2528 2548]))                  
+                :type "class")
+                nil [2086 2551])
+            ("main" function (:type "int") nil [2553 2608]))          
+      :file "prac_1521.cpp"
+      :pointmax 2610
+      :fsize 2609
+      :lastmodtime '(23035 106 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!cppd!15_oop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

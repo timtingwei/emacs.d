@@ -1,0 +1,83 @@
+;; Object myflasky/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "myflasky/"
+  :tables
+  (list
+    (semanticdb-table "hello.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("flask" include nil nil [11 85])
+            ("flask_script" include nil nil [86 118])
+            ("flask_bootstrap" include nil nil [119 156])
+            ("flask.ext.moment" include nil nil [157 192])
+            ("datetime" include nil nil [193 222])
+            ("flask.ext.wtf" include nil nil [223 253])
+            ("wtforms" include nil nil [254 325])
+            ("wtforms.validators" include nil nil [326 365])
+            ("flask.ext.sqlalchemy" include nil nil [366 409])
+            ("basedir" variable nil nil [411 463])
+            ("NameForm" type
+               (:superclasses ("Form")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [492 556])
+                    ("submit" variable nil (reparse-symbol indented_block_body) [561 591]))                  
+                :type "class")
+                nil [466 592])
+            ("app" variable nil nil [593 614])
+            ("app" variable nil nil [615 664])
+            ("app" code nil nil [665 776])
+            ("app" variable nil nil [777 827])
+            ("manager" variable nil nil [830 852])
+            ("bootstrap" variable nil nil [853 879])
+            ("moment" variable nil nil [880 900])
+            ("db" variable nil nil [901 921])
+            ("Role" type
+               (:superclasses ("db.Model")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [950 973])
+                    ("id" variable nil (reparse-symbol indented_block_body) [978 1022])
+                    ("name" variable nil (reparse-symbol indented_block_body) [1027 1072])
+                    ("users" variable nil (reparse-symbol indented_block_body) [1077 1140])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1159 1163]))                          )
+                        (reparse-symbol indented_block_body) [1146 1205]))                  
+                :type "class")
+                nil [924 1205])
+            ("User" type
+               (:superclasses ("db.Model")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [1231 1254])
+                    ("id" variable nil (reparse-symbol indented_block_body) [1259 1303])
+                    ("username" variable nil (reparse-symbol indented_block_body) [1308 1367])
+                    ("role_id" variable nil (reparse-symbol indented_block_body) [1372 1430])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1449 1453]))                          )
+                        (reparse-symbol indented_block_body) [1436 1499]))                  
+                :type "class")
+                nil [1205 1499])
+            ("" code nil nil [1515 1544])
+            ("index" function nil nil [1545 2066])
+            ("" code nil nil [2142 2158])
+            ("user" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [2168 2172]))              ) nil [2159 2226])
+            ("" code nil nil [2245 2250])
+            ("page_not_found" function (:arguments 
+              ( ("e" variable nil (reparse-symbol function_parameters) [2270 2271]))              ) nil [2251 2317])
+            ("" code nil nil [2335 2340])
+            ("internal_server_error" function (:arguments 
+              ( ("e" variable nil (reparse-symbol function_parameters) [2367 2368]))              ) nil [2341 2414])
+            ("if" code nil nil [2415 2460]))          
+      :file "hello.py"
+      :pointmax 2460
+      :fsize 2459
+      :lastmodtime '(23029 50867 0 0)
+      :unmatched-syntax '((NEWLINE 1498 . 1499) ($EOI 2577 . 2577) ($EOI 2555 . 2555) ($EOI 2541 . 2541) ($EOI 2542 . 2542)))
+)
+  :file "!home!tim!myflasky!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

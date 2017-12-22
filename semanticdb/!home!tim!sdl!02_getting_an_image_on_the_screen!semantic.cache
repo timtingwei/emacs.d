@@ -1,0 +1,68 @@
+;; Object 02_getting_an_image_on_the_screen/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "02_getting_an_image_on_the_screen/"
+  :tables
+  (list
+    (semanticdb-table "02_getting_an_image_on_the_screen.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SDL.h" include (:system-flag t) nil [157 173])
+            ("stdio.h" include (:system-flag t) nil [174 192])
+            ("SCREEN_WIDTH" variable
+               (:constant-flag t
+                :default-value "640"
+                :type "int")
+                nil [223 252])
+            ("SCREEN_HEIGHT" variable
+               (:constant-flag t
+                :default-value "480"
+                :type "int")
+                nil [253 283])
+            ("init" function
+               (:prototype-flag t
+                :type "bool")
+                nil [320 332])
+            ("loadMedia" function
+               (:prototype-flag t
+                :type "bool")
+                nil [348 365])
+            ("close" function
+               (:prototype-flag t
+                :type "void")
+                nil [400 413])
+            ("gWindow" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Window" type (:type "class") nil nil))
+                nil [450 477])
+            ("gScreenSurface" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [518 553])
+            ("gHelloWorld" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [603 635])
+            ("init" function (:type "bool") nil [637 1266])
+            ("loadMedia" function (:type "bool") nil [1268 1634])
+            ("close" function (:type "void") nil [1636 1832])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1844 1853])
+                    ("args" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1854 1868]))                  
+                :type "int")
+                nil [1834 2328]))          
+      :file "02_getting_an_image_on_the_screen.cpp"
+      :pointmax 2328
+      :fsize 2327
+      :lastmodtime '(21719 11686 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!sdl!02_getting_an_image_on_the_screen!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

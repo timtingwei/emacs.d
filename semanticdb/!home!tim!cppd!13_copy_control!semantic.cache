@@ -1,0 +1,244 @@
+;; Object 13_copy_control/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "13_copy_control/"
+  :tables
+  (list
+    (semanticdb-table "copy_assign_and_destroy.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [32 51])
+            ("vector" include (:system-flag t) nil [52 69])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [70 88])
+            ("Foo" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [104 111])
+                    ("Foo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Foo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [114 120])
+                    ("Foo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Foo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [162 173]))                          
+                        :type ("Foo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [158 174]))                  
+                :type "class")
+                nil [91 209])
+            ("Sales_data" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [231 238])
+                    ("Sales_data" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [252 270]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [241 271])
+                    ("private" label nil (reparse-symbol classsubparts) [273 281])
+                    ("bookNo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [284 303])
+                    ("units_sold" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [306 325])
+                    ("revenue" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [328 349]))                  
+                :type "class")
+                nil [211 352])
+            ("Sales_data" function
+               (:constructor-flag t
+                :parent "Sales_data"
+                :arguments 
+                  ( ("orig" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [456 479]))                  
+                :type ("Sales_data" type (:type "class") nil nil))
+                nil [433 645])
+            ("main" function (:type "int") nil [677 1356]))          
+      :file "copy_assign_and_destroy.cpp"
+      :pointmax 1358
+      :fsize 1357
+      :lastmodtime '(23042 26001 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "prac_134.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [31 50])
+            ("gloabl" variable (:type ("Point" type (:type "class") nil nil)) nil [52 65])
+            ("foo_bar" function
+               (:arguments 
+                  ( ("arg" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80 90]))                  
+                :type ("Point" type (:type "class") nil nil))
+                nil [66 207]))          
+      :file "prac_134.cpp"
+      :pointmax 209
+      :fsize 208
+      :lastmodtime '(23042 26772 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "prac_135.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("HasPtr" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [49 56])
+                    ("HasPtr" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "std::string()"
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [66 102]))                          
+                        :type ("HasPtr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [59 142])
+                    ("private" label nil (reparse-symbol classsubparts) [144 152])
+                    ("ps" variable
+                       (:pointer 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [155 171])
+                    ("i" variable (:type "int") (reparse-symbol classsubparts) [174 180]))                  
+                :type "class")
+                nil [33 183])
+            ("HasPtr" function
+               (:constructor-flag t
+                :parent "HasPtr"
+                :arguments 
+                  ( ("hp" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("HasPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [200 217]))                  
+                :type ("HasPtr" type (:type "class") nil nil))
+                nil [185 260])
+            ("=" function
+               (:operator-flag t
+                :parent "HasPtr"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("HasPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [288 306]))                  
+                :type ("HasPtr" type (:type "class") nil nil))
+                nil [262 407]))          
+      :file "prac_135.cpp"
+      :pointmax 409
+      :fsize 261
+      :lastmodtime '(23042 27149 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "the_copy-assignment-operator.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Sales_data" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [53 60])
+                    ("Sales_data" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sales_data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [74 92]))                          
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [63 93])
+                    ("private" label nil (reparse-symbol classsubparts) [95 103])
+                    ("bookNo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106 125])
+                    ("units_sold" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [128 147])
+                    ("revenue" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [150 171]))                  
+                :type "class")
+                nil [33 174])
+            ("Sales_data" function
+               (:constructor-flag t
+                :parent "Sales_data"
+                :arguments 
+                  ( ("orig" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [278 301]))                  
+                :type ("Sales_data" type (:type "class") nil nil))
+                nil [255 467])
+            ("Foo" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [512 519])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Foo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [537 548]))                          
+                        :type ("Foo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [522 549])
+                    ("Foo" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [578 585]))                  
+                :type "class")
+                nil [499 634])
+            ("=" function
+               (:operator-flag t
+                :parent "Sales_data"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [670 692]))                  
+                :type ("Sales_data" type (:type "class") nil nil))
+                nil [636 792])
+            ("main" function (:type "int") nil [794 870]))          
+      :file "the_copy-assignment-operator.cpp"
+      :pointmax 1331
+      :fsize 1330
+      :lastmodtime '(23047 39392 0 0)
+      :unmatched-syntax '((semantic-list 872 . 1330) (semantic-list 872 . 1331) (semantic-list 872 . 1339) (semantic-list 872 . 1328) (semantic-list 872 . 1325) (semantic-list 872 . 1280) (semantic-list 872 . 1277) (semantic-list 872 . 1271) (semantic-list 872 . 1256) (semantic-list 872 . 1211) (semantic-list 872 . 1211) (semantic-list 872 . 1209) (semantic-list 872 . 1209) (semantic-list 872 . 1211) (semantic-list 872 . 1211) (semantic-list 872 . 1208) (semantic-list 872 . 1208) (semantic-list 872 . 1207) (semantic-list 872 . 1207) (semantic-list 872 . 1206) (semantic-list 872 . 1206) (semantic-list 872 . 1205) (semantic-list 872 . 1204) (semantic-list 872 . 1203) (semantic-list 872 . 1198) (semantic-list 872 . 1163) (semantic-list 872 . 1158) (semantic-list 872 . 1146) (semantic-list 872 . 1141) (semantic-list 872 . 1140) (semantic-list 872 . 1144) (semantic-list 872 . 1144) (semantic-list 872 . 1126) (semantic-list 872 . 1125) (semantic-list 872 . 1095) (semantic-list 872 . 1077) (semantic-list 872 . 1074) (semantic-list 872 . 1045) (semantic-list 872 . 1032) (semantic-list 872 . 1030) (semantic-list 872 . 1015) (semantic-list 872 . 1009) (semantic-list 872 . 1006) (semantic-list 872 . 1005) (semantic-list 872 . 995) (semantic-list 872 . 987) (semantic-list 872 . 960) (semantic-list 872 . 878)))
+    (semanticdb-table "prac_138.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("fcn" function
+               (:arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("Sales_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42 60])
+                    ("" variable (:type ("trans" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60 66])
+                    ("accum" variable (:type ("Sales_data" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67 84]))                  
+                :type "bool")
+                nil [33 169]))          
+      :file "prac_138.cpp"
+      :pointmax 171
+      :fsize 408
+      :lastmodtime '(23042 32835 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!cppd!13_copy_control!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

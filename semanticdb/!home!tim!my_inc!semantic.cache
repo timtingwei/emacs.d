@@ -1,0 +1,16 @@
+;; Object my_inc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "my_inc/"
+  :tables
+  (list
+    (semanticdb-table "myadd.h"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "myadd.h"
+      :pointmax 86
+      :fsize 85
+      :lastmodtime '(23013 29275 0 0)
+      :unmatched-syntax '((semantic-list 12 . 85) (symbol 7 . 12) (CLASS 1 . 6))))
+  :file "!home!tim!my_inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,27 @@
+;; Object templates/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "templates/"
+  :tables
+  (list
+
+    (semanticdb-table "index.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Hello World!" section nil nil [122 308]))          
+      :file "index.html"
+      :pointmax 308
+      :fsize 281
+      :lastmodtime '(23029 42451 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "base.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Home" anchor nil nil [971 974]))          
+      :file "base.html"
+      :pointmax 1472
+      :fsize 1471
+      :lastmodtime '(23029 47327 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!flasky!templates!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

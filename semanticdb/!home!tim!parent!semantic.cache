@@ -1,0 +1,18 @@
+;; Object parent/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "parent/"
+  :tables
+  (list
+    (semanticdb-table "test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [30 49])
+            ("main" function (:type "int") nil [51 85]))          
+      :file "test.cpp"
+      :pointmax 134
+      :fsize 133
+      :lastmodtime '(23063 50920 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!parent!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

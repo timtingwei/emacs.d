@@ -1,0 +1,90 @@
+;; Object 04_key_presses/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "04_key_presses/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("OBJS" variable (:default-value ("04_key_presses.cpp")) nil [63 89])
+            ("CC" variable (:default-value ("g++")) nil [131 140])
+            ("COMPILER_FLAGS" variable (:default-value ("-w")) nil [243 263])
+            ("LINKER_FLAGS" variable (:default-value ("-lSDL2")) nil [324 346])
+            ("all" function (:arguments ("$(OBJS)")) nil [484 547]))          
+      :file "Makefile"
+      :pointmax 547
+      :fsize 546
+      :lastmodtime '(23049 10649 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "04_key_presses.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SDL2/SDL.h" include (:system-flag t) nil [32 53])
+            ("stdio.h" include (:system-flag t) nil [54 72])
+            ("string" include (:system-flag t) nil [73 90])
+            ("SCREEN_WIDTH" variable
+               (:constant-flag t
+                :default-value "640"
+                :type "int")
+                nil [122 151])
+            ("SCREEN_HEIGHT" variable
+               (:constant-flag t
+                :default-value "480"
+                :type "int")
+                nil [152 182])
+            ("init" function
+               (:prototype-flag t
+                :type "bool")
+                nil [221 233])
+            ("loadMedia" function
+               (:prototype-flag t
+                :type "bool")
+                nil [250 267])
+            ("close" function
+               (:prototype-flag t
+                :type "bool")
+                nil [303 316])
+            ("loadSurface" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [383 400]))                  
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [358 401])
+            ("gWindow" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Window" type (:type "class") nil nil))
+                nil [440 467])
+            ("gScreenSurface" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [508 543])
+            ("gStretchedSurface" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [589 627])
+            ("init" function (:type "bool") nil [629 1407])
+            ("loadSurface" function
+               (:pointer 1
+                :arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1435 1452]))                  
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [1410 2181])
+            ("loadMedia" function (:type "bool") nil [2183 2434])
+            ("close" function (:type "bool") nil [2436 2651])
+            ("main" function (:type "int") nil [2653 3760])
+            ("close" function
+               (:prototype-flag t
+                :type "int")
+                nil [3737 3745]))          
+      :file "04_key_presses.cpp"
+      :pointmax 5024
+      :fsize 5023
+      :lastmodtime '(23049 29547 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!mysdl!04_key_presses!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

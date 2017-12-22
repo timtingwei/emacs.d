@@ -1,0 +1,96 @@
+;; Object 06_extension_libraries_and_loading_other_image_formats/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "06_extension_libraries_and_loading_other_image_formats/"
+  :tables
+  (list
+    (semanticdb-table "06_extension_libraries_and_loading_other_image_formats.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SDL2/SDL.h" include (:system-flag t) nil [178 199])
+            ("SDL2/SDL_image.h" include (:system-flag t) nil [200 227])
+            ("stdio.h" include (:system-flag t) nil [228 246])
+            ("string" include (:system-flag t) nil [247 264])
+            ("SCREEN_WIDTH" variable
+               (:constant-flag t
+                :default-value "640"
+                :type "int")
+                nil [295 324])
+            ("SCREEN_HEIGHT" variable
+               (:constant-flag t
+                :default-value "480"
+                :type "int")
+                nil [325 355])
+            ("init" function
+               (:prototype-flag t
+                :type "bool")
+                nil [392 404])
+            ("loadMedia" function
+               (:prototype-flag t
+                :type "bool")
+                nil [420 437])
+            ("close" function
+               (:prototype-flag t
+                :type "void")
+                nil [472 485])
+            ("loadSurface" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [538 556]))                  
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [512 557])
+            ("gWindow" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Window" type (:type "class") nil nil))
+                nil [594 621])
+            ("gScreenSurface" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [662 697])
+            ("gPNGSurface" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [729 761])
+            ("init" function (:type "bool") nil [763 1636])
+            ("loadMedia" function (:type "bool") nil [1638 1937])
+            ("close" function (:type "void") nil [1939 2147])
+            ("loadSurface" function
+               (:pointer 1
+                :arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2175 2193]))                  
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [2149 2848])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2860 2869])
+                    ("args" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2870 2884]))                  
+                :type "int")
+                nil [2850 3618]))          
+      :file "06_extension_libraries_and_loading_other_image_formats.cpp"
+      :pointmax 3619
+      :fsize 3618
+      :lastmodtime '(23054 45918 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("OBJS" variable (:default-value ("06_extension_libraries_and_loading_other_image_formats.cpp")) nil [63 129])
+            ("CC" variable (:default-value ("g++")) nil [171 180])
+            ("COMPILER_FLAGS" variable (:default-value ("-w")) nil [283 303])
+            ("LINKER_FLAGS" variable (:default-value ("-lSDL2" "-lSDL2_image")) nil [364 399])
+            ("all" function (:arguments ("$(OBJS)")) nil [537 600]))          
+      :file "Makefile"
+      :pointmax 600
+      :fsize 599
+      :lastmodtime '(23054 46067 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!sdl!06_extension_libraries_and_loading_other_image_formats!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

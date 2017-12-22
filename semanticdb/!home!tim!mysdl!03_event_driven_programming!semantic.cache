@@ -1,0 +1,21 @@
+;; Object 03_event_driven_programming/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "03_event_driven_programming/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("OBJS" variable (:default-value ("03_event_driven_programming.cpp")) nil [63 102])
+            ("CC" variable (:default-value ("g++")) nil [144 153])
+            ("COMPILER_FLAGS" variable (:default-value ("-w")) nil [256 276])
+            ("LINKER_FLAGS" variable (:default-value ("-lSDL2")) nil [337 359])
+            ("all" function (:arguments ("$(OBJS)")) nil [497 560]))          
+      :file "Makefile"
+      :pointmax 560
+      :fsize 559
+      :lastmodtime '(23049 4996 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!mysdl!03_event_driven_programming!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

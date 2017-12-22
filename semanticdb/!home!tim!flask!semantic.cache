@@ -1,0 +1,16 @@
+;; Object flask/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "flask/"
+  :tables
+  (list
+    (semanticdb-table "test.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "test.py"
+      :pointmax 37
+      :fsize 36
+      :lastmodtime '(23026 38000 0 0)
+      :unmatched-syntax '(($EOI 37 . 37))))
+  :file "!home!tim!flask!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

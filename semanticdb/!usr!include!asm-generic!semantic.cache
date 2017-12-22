@@ -1,0 +1,41 @@
+;; Object asm-generic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "asm-generic/"
+  :tables
+  (list
+    (semanticdb-table "int-ll64.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ASM_GENERIC_INT_LL64_H" variable (:constant-flag t) nil [163 186])
+            ("__s8" variable (:type "char") nil [347 357])
+            ("__u8" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [358 385])
+            ("__s16" variable (:type "short") nil [406 418])
+            ("__u16" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [419 448])
+            ("__s32" variable (:type "int") nil [469 479])
+            ("__u32" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [480 507])
+            ("__s64" variable (:type "long long") nil [558 574])
+            ("__u64" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [589 622]))          
+      :file "int-ll64.h"
+      :pointmax 772
+      :fsize 771
+      :lastmodtime '(19315 43980 0 0)
+      :unmatched-syntax '((symbol 575 . 588) (symbol 547 . 557) (TYPEDEF 539 . 546) (symbol 525 . 538) (symbol 458 . 468) (TYPEDEF 450 . 457) (symbol 395 . 405) (TYPEDEF 387 . 394) (symbol 336 . 346) (TYPEDEF 328 . 335))
+      :lexical-table 
+        '(("_ASM_GENERIC_INT_LL64_H")
+          )
+))
+  :file "!usr!include!asm-generic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

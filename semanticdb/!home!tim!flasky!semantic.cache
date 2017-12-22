@@ -1,0 +1,44 @@
+;; Object flasky/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "flasky/"
+  :tables
+  (list
+    (semanticdb-table "hello.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [1 41])
+            ("flask_script" include nil nil [42 74])
+            ("flask_bootstrap" include nil nil [75 112])
+            ("flask_moment" include nil nil [113 144])
+            ("flask_wtf" include nil nil [145 176])
+            ("wtforms" include nil nil [177 221])
+            ("wtforms.validators" include nil nil [222 261])
+            ("app" variable nil nil [263 284])
+            ("app" variable nil nil [285 334])
+            ("manager" variable nil nil [336 358])
+            ("bootstrap" variable nil nil [359 385])
+            ("moment" variable nil nil [386 406])
+            ("NameForm" type
+               (:superclasses ("FlaskForm")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [440 505])
+                    ("submit" variable nil (reparse-symbol indented_block_body) [510 540]))                  
+                :type "class")
+                nil [409 541])
+            ("" code nil nil [560 565])
+            ("page_not_found" function (:arguments 
+              ( ("e" variable nil (reparse-symbol function_parameters) [585 586]))              ) nil [566 633])
+            ("" code nil nil [652 657])
+            ("internal_server_error" function (:arguments 
+              ( ("e" variable nil (reparse-symbol function_parameters) [684 685]))              ) nil [658 732])
+            ("" code nil nil [744 774])
+            ("index" function nil nil [775 981])
+            ("if" code nil nil [983 1028]))          
+      :file "hello.py"
+      :pointmax 1028
+      :fsize 1027
+      :lastmodtime '(23033 30950 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!flasky!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

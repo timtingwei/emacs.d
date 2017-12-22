@@ -1,0 +1,33 @@
+;; Object 02_getting_an_image_on_the_screen/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "02_getting_an_image_on_the_screen/"
+  :tables
+  (list
+    (semanticdb-table "02_getting_an_image_on_the_screen.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [32 50])
+            ("iostream" include (:system-flag t) nil [51 70])
+            ("string" include (:system-flag t) nil [71 88])
+            ("main" function (:type "int") nil [93 230]))          
+      :file "02_getting_an_image_on_the_screen.cpp"
+      :pointmax 231
+      :fsize 2537
+      :lastmodtime '(23049 3018 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("OBJS" variable (:default-value ("02_getting_an_image_on_the_screen.cpp")) nil [63 108])
+            ("CC" variable (:default-value ("g++")) nil [150 159])
+            ("COMPILER_FLAGS" variable (:default-value ("-w")) nil [262 282])
+            ("LINKER_FLAGS" variable (:default-value ("-lSDL2")) nil [343 365])
+            ("all" function (:arguments ("$(OBJS)")) nil [509 572]))          
+      :file "Makefile"
+      :pointmax 572
+      :fsize 571
+      :lastmodtime '(23049 752 0 0)
+      :unmatched-syntax nil))
+  :file "!home!tim!mysdl!02_getting_an_image_on_the_screen!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
