@@ -63,7 +63,8 @@
 
 ;;(advice-add 'split-window-right: filter-args
 ;;	    'split-window-right-ignore)
-
+(visual-line-mode 1)
+(org-indent-mode 1)
 
 ;;alpha
 ;;(global-set-key (kbd"<f10>")'loop-alpha)
@@ -79,6 +80,9 @@
 ;;    (setq alpha-list(cdr (append alpha-list(list h))))))
 ;;automatic start alpha
 ;;(loop-alpha)
+
+
+;;Since Emacs 23.2 you can use visual-line-mode and org-indent-mode. The view is much cleaner, long lines fold (which solves bill's problem) and the resulting .org file is easier to read with other text editors, which helps sharing documents with other people.
 
 
 

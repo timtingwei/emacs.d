@@ -1,0 +1,103 @@
+;; Object 14.Exception_Handling/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "14.Exception_Handling/"
+  :tables
+  (list
+    (semanticdb-table "except_derived.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [31 50])
+            ("INT_MAX" variable
+               (:default-value "5"
+                :type "int")
+                nil [58 74])
+            ("INT_MIN" variable
+               (:default-value "-4"
+                :type "int")
+                nil [75 92])
+            ("Matherr" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [120 127])
+                    ("Matherr" function (:type "int") (reparse-symbol classsubparts) [130 200])
+                    ("debug_print" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [203 277]))                  
+                :type "class")
+                nil [94 280])
+            ("Int_overflow" type
+               (:superclasses 
+                  ( ("Matherr" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("op" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [322 337])
+                    ("a1" variable (:type "int") (reparse-symbol classsubparts) [340 347])
+                    ("a2" variable (:type "int") (reparse-symbol classsubparts) [350 357])
+                    ("public" label nil (reparse-symbol classsubparts) [359 366])
+                    ("Int_overflow" function
+                       (:arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [382 396])
+                            ("a" variable (:type "int") (reparse-symbol arg-sub-list) [397 403])
+                            ("b" variable (:type "int") (reparse-symbol arg-sub-list) [404 410]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [369 504])
+                    ("debug_print" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [507 604]))                  
+                :type "class")
+                nil [282 607])
+            ("Overflow" type
+               (:superclasses 
+                  ( ("Matherr" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :type "class")
+                nil [609 645])
+            ("Underflow" type
+               (:superclasses 
+                  ( ("Matherr" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :type "class")
+                nil [646 683])
+            ("Zerodivide" type
+               (:superclasses 
+                  ( ("Matherr" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :type "class")
+                nil [684 722])
+            ("g" function
+               (:prototype-flag t
+                :type "void")
+                nil [724 733])
+            ("add" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [743 749])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [750 756]))                  
+                :type "int")
+                nil [735 1041])
+            ("g" function (:type "void") nil [1044 1639])
+            ("main" function (:type "int") nil [1641 1673]))          
+      :file "except_derived.cpp"
+      :pointmax 1675
+      :fsize 1796
+      :lastmodtime '(23105 43860 249806 702000)
+      :unmatched-syntax nil))
+  :file "!home!tim!timspace!cppd!CPL!14.Exception_Handling!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

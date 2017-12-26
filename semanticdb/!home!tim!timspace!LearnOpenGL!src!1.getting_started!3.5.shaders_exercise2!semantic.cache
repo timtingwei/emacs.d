@@ -1,39 +1,8 @@
-;; Object tim/
+;; Object 3.5.shaders_exercise2/
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "tim/"
+(semanticdb-project-database-file "3.5.shaders_exercise2/"
   :tables
   (list
-    (semanticdb-table "example.c"
-      :major-mode 'c-mode
-      :tags 
-        '( ("GL/glut.h" include (:system-flag t) nil [1 21])
-            ("init" function
-               (:prototype-flag t
-                :type "void")
-                nil [23 35])
-            ("display" function
-               (:prototype-flag t
-                :type "void")
-                nil [36 51])
-            ("main" function
-               (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [62 71])
-                    ("argv" variable
-                       (:pointer 1
-                        :dereference 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [72 85]))                  
-                :type "int")
-                nil [53 328])
-            ("init" function (:type "void") nil [330 510])
-            ("display" function (:type "void") nil [512 621]))          
-      :file "example.c"
-      :pointmax 622
-      :fsize 621
-      :lastmodtime '(23097 61163 70848 540000)
-      :unmatched-syntax nil)
-
-
     (semanticdb-table "shader_s.h"
       :major-mode 'c++-mode
       :tags 
@@ -66,58 +35,55 @@
                     ("use" function (:type "void") (reparse-symbol classsubparts) [2155 2216])
                     ("setBool" function
                        (:arguments 
-                          ( ("ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2249 2265])
-                            ("name" variable
+                          ( ("name" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("std::string" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2266 2290])
-                            ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [2291 2302]))                          
+                                (reparse-symbol arg-sub-list) [2249 2273])
+                            ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [2274 2285]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2236 2383])
+                        (reparse-symbol classsubparts) [2236 2366])
                     ("setInt" function
                        (:arguments 
-                          ( ("ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2398 2414])
-                            ("name" variable
+                          ( ("name" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("std::string" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2415 2439])
-                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2440 2450]))                          
+                                (reparse-symbol arg-sub-list) [2381 2405])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2406 2416]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2386 2526])
+                        (reparse-symbol classsubparts) [2369 2492])
                     ("setFloat" function
                        (:arguments 
-                          ( ("ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2543 2559])
-                            ("name" variable
+                          ( ("name" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("std::string" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2560 2584])
-                            ("value" variable (:type "float") (reparse-symbol arg-sub-list) [2585 2597]))                          
+                                (reparse-symbol arg-sub-list) [2509 2533])
+                            ("value" variable (:type "float") (reparse-symbol arg-sub-list) [2534 2546]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2529 2673])
-                    ("private" label nil (reparse-symbol classsubparts) [2676 2684])
+                        (reparse-symbol classsubparts) [2495 2622])
+                    ("private" label nil (reparse-symbol classsubparts) [2625 2633])
                     ("checkCompileErrors" function
                        (:arguments 
-                          ( ("shader" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2780 2800])
+                          ( ("shader" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2729 2749])
                             ("type" variable
                                (:constant-flag t
                                 :type ("std::string" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2801 2824]))                          
+                                (reparse-symbol arg-sub-list) [2750 2773]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2756 3556]))                  
+                        (reparse-symbol classsubparts) [2705 3505]))                  
                 :type "class")
-                nil [252 3559]))          
+                nil [252 3508]))          
       :file "shader_s.h"
-      :pointmax 3567
-      :fsize 3838
-      :lastmodtime '(23105 34869 56093 72000)
+      :pointmax 3516
+      :fsize 3787
+      :lastmodtime '(23105 46002 325903 540000)
       :unmatched-syntax nil
       :lexical-table 
         '(("SHADER_H")
           )
 ))
-  :file "!home!tim!semantic.cache"
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!3.5.shaders_exercise2!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

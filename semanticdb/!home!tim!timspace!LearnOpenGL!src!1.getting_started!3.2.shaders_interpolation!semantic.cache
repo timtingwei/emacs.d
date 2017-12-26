@@ -1,43 +1,22 @@
-;; Object tim/
+;; Object 3.2.shaders_interpolation/
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "tim/"
+(semanticdb-project-database-file "3.2.shaders_interpolation/"
   :tables
   (list
-    (semanticdb-table "example.c"
-      :major-mode 'c-mode
-      :tags 
-        '( ("GL/glut.h" include (:system-flag t) nil [1 21])
-            ("init" function
-               (:prototype-flag t
-                :type "void")
-                nil [23 35])
-            ("display" function
-               (:prototype-flag t
-                :type "void")
-                nil [36 51])
-            ("main" function
-               (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [62 71])
-                    ("argv" variable
-                       (:pointer 1
-                        :dereference 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [72 85]))                  
-                :type "int")
-                nil [53 328])
-            ("init" function (:type "void") nil [330 510])
-            ("display" function (:type "void") nil [512 621]))          
-      :file "example.c"
-      :pointmax 622
-      :fsize 621
-      :lastmodtime '(23097 61163 70848 540000)
-      :unmatched-syntax nil)
-
-
-    (semanticdb-table "shader_s.h"
+    (semanticdb-table "shaders_interpolation.cpp"
       :major-mode 'c++-mode
       :tags 
         '( ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("SHADER_H" variable (:constant-flag t) nil [103 111])
             ("GL/glew.h" include (:system-flag t) nil [121 141])
             ("GLFW/glfw3.h" include (:system-flag t) nil [150 173])
             ("fstream" include (:system-flag t) nil [175 193])
@@ -47,10 +26,9 @@
             ("Shader" type
                (:members 
                   ( ("public" label nil (reparse-symbol classsubparts) [268 275])
-                    ("ID" variable (:type "unsigned int") (reparse-symbol classsubparts) [288 304])
+                    ("ID" variable (:type "int") (reparse-symbol classsubparts) [297 304])
                     ("Shader" function
-                       (:constructor-flag t
-                        :arguments 
+                       (:arguments 
                           ( ("vertexPath" variable
                                (:pointer 1
                                 :constant-flag t
@@ -61,7 +39,7 @@
                                 :constant-flag t
                                 :type ("GLchar" type (:type "class") nil nil))
                                 (reparse-symbol arg-sub-list) [358 385]))                          
-                        :type ("Shader" type (:type "class") nil nil))
+                        :type "int")
                         (reparse-symbol classsubparts) [325 2139])
                     ("use" function (:type "void") (reparse-symbol classsubparts) [2155 2216])
                     ("setBool" function
@@ -109,15 +87,15 @@
                         (reparse-symbol classsubparts) [2756 3556]))                  
                 :type "class")
                 nil [252 3559]))          
-      :file "shader_s.h"
+      :file "shaders_interpolation.cpp"
       :pointmax 3567
-      :fsize 3838
-      :lastmodtime '(23105 34869 56093 72000)
+      :fsize 7702
+      :lastmodtime '(23104 60793 967009 988000)
       :unmatched-syntax nil
       :lexical-table 
         '(("SHADER_H")
           )
 ))
-  :file "!home!tim!semantic.cache"
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!3.2.shaders_interpolation!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

@@ -1,0 +1,75 @@
+;; Object 10.Classes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "10.Classes/"
+  :tables
+  (list
+    (semanticdb-table "class_static.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [187 206])
+            ("string" include (:system-flag t) nil [207 224])
+            ("cache" type
+               (:members 
+                  ( ("cache" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("cb" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [719 733])
+                            ("cs" variable
+                               (:default-value "\"tim\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [735 757]))                          
+                        :type ("cache" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [713 788])
+                    ("valid" variable (:type "bool") (reparse-symbol classsubparts) [791 802])
+                    ("rep" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [840 856]))                  
+                :type "struct")
+                nil [670 859])
+            ("c" variable
+               (:pointer 1
+                :type ("cache" type (:type "class") nil nil))
+                nil [911 920])
+            ("c" function
+               (:arguments 
+                  ( ("" variable (:type ("c_smp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1004 1010]))                  
+                :type "int")
+                nil [1002 1013])
+            ("compute_cache_value" function (:type "void") nil [1016 1051])
+            ("string_rep" function
+               (:prototype-flag t
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1067 1098])
+            ("rep" variable (:type "int") nil [1227 1231])
+            ("c5" variable (:type ("cache" type (:type "class") nil nil)) nil [1467 1476])
+            ("c6" variable (:type ("cache" type (:type "class") nil nil)) nil [1479 1488])
+            ("d5" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("c5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1501 1504]))                  
+                :type ("Date" type (:type "class") nil nil))
+                nil [1492 1505])
+            ("d6" function
+               (:prototype-flag t
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type ("c6" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1523 1526]))                  
+                :type ("Date" type (:type "class") nil nil))
+                nil [1508 1527])
+            ("s5" variable
+               (:default-value "d5.string_rep()"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1530 1563])
+            ("s6" variable
+               (:default-value "d6.string_rep()"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1566 1599]))          
+      :file "class_static.cpp"
+      :pointmax 1617
+      :fsize 2405
+      :lastmodtime '(23103 5849 475938 172000)
+      :unmatched-syntax '((close-paren 1615 . 1616) (punctuation 1613 . 1614) (number 1612 . 1613) (RETURN 1605 . 1611) (punctuation 1522 . 1523) (punctuation 1500 . 1501) (open-paren 1248 . 1249) (close-paren 1246 . 1247) (open-paren 1245 . 1246) (symbol 1241 . 1245) (INT 1237 . 1240) (close-paren 1232 . 1233) (punctuation 1226 . 1227) (punctuation 1225 . 1226) (symbol 1224 . 1225) (RETURN 1217 . 1223) (semantic-list 1161 . 1214) (semantic-list 1147 . 1160) (IF 1144 . 1146) (open-paren 1140 . 1141) (CONST 1134 . 1139) (close-paren 1132 . 1133) (open-paren 1131 . 1132) (symbol 1121 . 1131) (punctuation 1120 . 1121) (punctuation 1119 . 1120) (symbol 1115 . 1119) (symbol 1108 . 1114) (punctuation 1107 . 1108) (punctuation 1106 . 1107) (symbol 1103 . 1106) (punctuation 1100 . 1101) (close-paren 1099 . 1100) (punctuation 1001 . 1002) (semantic-list 987 . 1001) (symbol 983 . 987) (EXPLICIT 974 . 982) (punctuation 970 . 971) (PUBLIC 964 . 970) (symbol 867 . 871) (CLASS 861 . 866) (EXPLICIT 704 . 712) (punctuation 1100 . 1101) (close-paren 1099 . 1100) (punctuation 1001 . 1002) (semantic-list 987 . 1001) (symbol 983 . 987) (EXPLICIT 974 . 982) (punctuation 970 . 971) (PUBLIC 964 . 970) (symbol 867 . 871) (CLASS 861 . 866))))
+  :file "!home!tim!timspace!cppd!CPL!10.Classes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

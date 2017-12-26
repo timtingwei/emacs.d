@@ -1,0 +1,76 @@
+;; Object 15_oop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "15_oop/"
+  :tables
+  (list
+    (semanticdb-table "defining_a_base_class.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [45 64])
+            ("Quote" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [80 87])
+                    ("Quote" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("book" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [117 141])
+                            ("sales_price" variable (:type "double") (reparse-symbol arg-sub-list) [142 161]))                          
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [111 203])
+                    ("isbn" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [206 248])
+                    ("net_price" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [277 291]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [252 316])
+                    ("private" label nil (reparse-symbol classsubparts) [388 396])
+                    ("bookNo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [399 418])
+                    ("protected" label nil (reparse-symbol classsubparts) [457 467])
+                    ("price" variable
+                       (:default-value "0.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [470 489]))                  
+                :type "class")
+                nil [66 532])
+            ("Bulk_quote" type
+               (:superclasses 
+                  ( ("Quote" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [568 575])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [608 623]))                  
+                :type "class")
+                nil [534 626])
+            ("print_total" function
+               (:arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [647 664])
+                    ("item" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Quote" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [670 688])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [689 698]))                  
+                :type "double")
+                nil [628 989])
+            ("main" function (:type "int") nil [991 1204]))          
+      :file "defining_a_base_class.cpp"
+      :pointmax 1205
+      :fsize 1204
+      :lastmodtime '(23103 6137 566615 12000)
+      :unmatched-syntax '((semantic-list 594 . 607) (symbol 585 . 594) (DOUBLE 578 . 584) (punctuation 346 . 347) (DEFAULT 339 . 346) (punctuation 337 . 338) (semantic-list 334 . 336) (symbol 329 . 334) (punctuation 328 . 329) (VIRTUAL 320 . 327) (punctuation 107 . 108) (DEFAULT 100 . 107) (punctuation 98 . 99) (semantic-list 95 . 97) (symbol 90 . 95))))
+  :file "!home!tim!timspace!cppd!Primer!15_oop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

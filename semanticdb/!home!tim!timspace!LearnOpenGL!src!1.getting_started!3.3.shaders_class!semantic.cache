@@ -1,0 +1,143 @@
+;; Object 3.3.shaders_class/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "3.3.shaders_class/"
+  :tables
+  (list
+    (semanticdb-table "shaders_class.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [47 58])
+            ("GL/glew.h" include (:system-flag t) nil [59 79])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [88 111])
+            ("learnopengl/shader_s.h" include (:system-flag t) nil [136 169])
+            ("math.h" include (:system-flag t) nil [170 187])
+            ("iostream" include (:system-flag t) nil [188 207])
+            ("key_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [251 270])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [271 279])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [298 311])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [312 323])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [324 333]))                  
+                :type "void")
+                nil [233 334])
+            ("WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [356 395])
+            ("HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [356 395])
+            ("main" function (:type "int") nil [409 3626])
+            ("key_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3646 3665])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3666 3674])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [3693 3706])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [3707 3718])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [3719 3728]))                  
+                :type "void")
+                nil [3628 3901]))          
+      :file "shaders_class.cpp"
+      :pointmax 4397
+      :fsize 4855
+      :lastmodtime '(23105 6275 147964 737000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLEW_STATIC")
+          )
+)
+    (semanticdb-table "shader_s.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("GL/glew.h" include (:system-flag t) nil [121 141])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [150 173])
+            ("fstream" include (:system-flag t) nil [175 193])
+            ("sstream" include (:system-flag t) nil [194 212])
+            ("string" include (:system-flag t) nil [213 230])
+            ("iostream" include (:system-flag t) nil [231 250])
+            ("Shader" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [268 275])
+                    ("ID" variable (:type "int") (reparse-symbol classsubparts) [297 304])
+                    ("Shader" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("vertexPath" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("GLchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [332 357])
+                            ("fragmentPath" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("GLchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [358 385]))                          
+                        :type ("Shader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [325 2121])
+                    ("use" function (:type "void") (reparse-symbol classsubparts) [2137 2175])
+                    ("setBool" function
+                       (:arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2208 2232])
+                            ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [2233 2244]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2195 2325])
+                    ("setInt" function
+                       (:arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2340 2364])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2365 2375]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2328 2450])
+                    ("setFloat" function
+                       (:arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2467 2491])
+                            ("value" variable (:type "float") (reparse-symbol arg-sub-list) [2492 2504]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2453 2580])
+                    ("private" label nil (reparse-symbol classsubparts) [2583 2591])
+                    ("checkCompileErrors" function
+                       (:arguments 
+                          ( ("shader" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2687 2707])
+                            ("type" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2708 2731]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2663 3463]))                  
+                :type "class")
+                nil [252 3466]))          
+      :file "shader_s.h"
+      :pointmax 3474
+      :fsize 3838
+      :lastmodtime '(23105 7202 47948 138000)
+      :unmatched-syntax '((symbol 288 . 296))
+      :lexical-table 
+        '(("SHADER_H")
+          )
+))
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!3.3.shaders_class!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,24 @@
+;; Object 2.5.hello_triangle_exercise3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "2.5.hello_triangle_exercise3/"
+  :tables
+  (list
+    (semanticdb-table "hello_triangle_exercise3.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
+            ("GL/glew.h" include (:system-flag t) nil [239 259])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [268 291])
+            ("iostream" include (:system-flag t) nil [317 336]))          
+      :file "hello_triangle_exercise3.cpp"
+      :pointmax 7845
+      :fsize 9246
+      :lastmodtime '(23104 40883 374313 356000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLEW_STATIC")
+          )
+))
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!2.5.hello_triangle_exercise3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

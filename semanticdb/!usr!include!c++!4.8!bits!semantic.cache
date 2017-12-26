@@ -19027,6 +19027,1437 @@
       :lexical-table 
         '(("_BASIC_STRING_TCC" . ((number "1" 1520 . 1521)))
           )
+)
+    (semanticdb-table "codecvt.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CODECVT_H" variable (:constant-flag t) nil [1376 1386])
+            ("std" type
+               (:members 
+                  ( ("codecvt_base" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1576 1583])
+                            ("result" type
+                               (:members 
+                                  ( ("ok" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1612 1615])
+                                    ("partial" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1622 1630])
+                                    ("error" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1637 1643])
+                                    ("noconv" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1650 1662]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1588 1663]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1551 1668])
+                    ("__codecvt_abstract_base" type
+                       (:template 
+                          ( ("_InternT" type (:type "class") nil nil)
+                            ("_ExternT" type (:type "class") nil nil)
+                            ("_StateT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2121 2128])
+                            ("result" type
+                               (:typedef ("codecvt_base::result" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2151 2187])
+                            ("intern_type" type
+                               (:typedef ("_InternT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2194 2225])
+                            ("extern_type" type
+                               (:typedef ("_ExternT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2232 2263])
+                            ("state_type" type
+                               (:typedef ("_StateT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2270 2299])
+                            ("out" function
+                               (:arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4177 4197])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4198 4224])
+                                    ("__from_end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4228 4258])
+                                    ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4259 4278])
+                                    ("" variable (:type ("__from_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4279 4291])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4295 4313])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4314 4336])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4340 4353])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4354 4364]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4160 4484])
+                            ("unshift" function
+                               (:arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6042 6062])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6063 6081])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6082 6104])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6112 6125])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6126 6136]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6021 6211])
+                            ("in" function
+                               (:arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8051 8071])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8072 8098])
+                                    ("__from_end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8101 8131])
+                                    ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8132 8151])
+                                    ("" variable (:type ("__from_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8152 8164])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8167 8185])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8186 8208])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8211 8224])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8225 8235]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8035 8353])
+                            ("encoding" function (:type "int") (reparse-symbol classsubparts) [8361 8433])
+                            ("always_noconv" function (:type "bool") (reparse-symbol classsubparts) [8441 8524])
+                            ("length" function
+                               (:arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8549 8569])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8570 8596])
+                                    ("__end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8603 8628])
+                                    ("__max" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8629 8642]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [8532 8713])
+                            ("max_length" function (:type "int") (reparse-symbol classsubparts) [8721 8797])
+                            ("protected" label nil (reparse-symbol classsubparts) [8803 8813])
+                            ("__codecvt_abstract_base" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__refs" variable
+                                       (:default-value "0"
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8859 8876]))                                  
+                                :type ("__codecvt_abstract_base" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8835 8905])
+                            ("__codecvt_abstract_base" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [8913 8957])
+                            ("do_out" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9295 9315])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9316 9342])
+                                    ("__from_end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9349 9379])
+                                    ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9380 9399])
+                                    ("" variable (:type ("__from_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9400 9412])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9419 9437])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9438 9460])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9467 9480])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9481 9491]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9267 9502])
+                            ("do_unshift" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9542 9562])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9563 9581])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9585 9607])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9608 9621])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9622 9632]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9510 9643])
+                            ("do_in" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9678 9698])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9699 9725])
+                                    ("__from_end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9731 9761])
+                                    ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9762 9781])
+                                    ("" variable (:type ("__from_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9782 9794])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9800 9818])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9819 9841])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9847 9860])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9861 9871]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9651 9882])
+                            ("do_encoding" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [9890 9940])
+                            ("do_always_noconv" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9948 10004])
+                            ("do_length" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10040 10052])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10053 10079])
+                                    ("__end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10082 10107])
+                                    ("__max" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10108 10121]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [10012 10132])
+                            ("do_max_length" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [10140 10192]))                          
+                        :superclasses 
+                          ( ("locale::facet" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("codecvt_base" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1964 10199])
+                    ("codecvt" type
+                       (:template 
+                          ( ("_InternT" type (:type "class") nil nil)
+                            ("_ExternT" type (:type "class") nil nil)
+                            ("_StateT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [10505 10512])
+                            ("result" type
+                               (:typedef ("codecvt_base::result" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10535 10571])
+                            ("intern_type" type
+                               (:typedef ("_InternT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10578 10609])
+                            ("extern_type" type
+                               (:typedef ("_ExternT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10616 10647])
+                            ("state_type" type
+                               (:typedef ("_StateT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10654 10683])
+                            ("protected" label nil (reparse-symbol classsubparts) [10689 10699])
+                            ("_M_c_locale_codecvt" variable (:type ("__c_locale" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10706 10739])
+                            ("public" label nil (reparse-symbol classsubparts) [10745 10752])
+                            ("id" variable
+                               (:typemodifiers ("static")
+                                :type ("locale::id" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10759 10782])
+                            ("codecvt" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__refs" variable
+                                       (:default-value "0"
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10813 10830]))                                  
+                                :type ("codecvt" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10805 10936])
+                            ("codecvt" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("__cloc" variable (:type ("__c_locale" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10967 10985])
+                                    ("__refs" variable
+                                       (:default-value "0"
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10986 11003]))                                  
+                                :type ("codecvt" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10959 11005])
+                            ("protected" label nil (reparse-symbol classsubparts) [11011 11021])
+                            ("codecvt" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [11028 11056])
+                            ("do_out" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11092 11112])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11113 11139])
+                                    ("__from_end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11146 11176])
+                                    ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11177 11196])
+                                    ("" variable (:type ("__from_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11197 11209])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11216 11234])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11235 11257])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11264 11277])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11278 11288]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11064 11295])
+                            ("do_unshift" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11335 11355])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11356 11374])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11378 11400])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11401 11414])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11415 11425]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11303 11432])
+                            ("do_in" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11467 11487])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11488 11514])
+                                    ("__from_end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11520 11550])
+                                    ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11551 11570])
+                                    ("" variable (:type ("__from_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11571 11583])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11589 11607])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11608 11630])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11636 11649])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11650 11660]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11440 11667])
+                            ("do_encoding" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [11675 11721])
+                            ("do_always_noconv" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11729 11781])
+                            ("do_length" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11817 11829])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11830 11856])
+                                    ("__end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11859 11884])
+                                    ("__max" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11885 11898]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [11789 11905])
+                            ("do_max_length" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [11913 11961]))                          
+                        :superclasses 
+                          ( ("__codecvt_abstract_base" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [10346 11968])
+                    ("codecvt::id" variable (:type ("locale::id" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [11972 12093])
+                    ("codecvt" type
+                       (:type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [12278 12285])
+                            ("intern_type" type
+                               (:typedef ("char")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12308 12335])
+                            ("extern_type" type
+                               (:typedef ("char")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12342 12369])
+                            ("state_type" type
+                               (:typedef ("mbstate_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12376 12407])
+                            ("protected" label nil (reparse-symbol classsubparts) [12413 12423])
+                            ("_M_c_locale_codecvt" variable (:type ("__c_locale" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12430 12463])
+                            ("public" label nil (reparse-symbol classsubparts) [12469 12476])
+                            ("id" variable
+                               (:typemodifiers ("static")
+                                :type ("locale::id" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12483 12504])
+                            ("codecvt" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("__refs" variable
+                                       (:default-value "0"
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12535 12552]))                                  
+                                :type ("codecvt" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12527 12554])
+                            ("codecvt" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("__cloc" variable (:type ("__c_locale" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12585 12603])
+                                    ("__refs" variable
+                                       (:default-value "0"
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12604 12621]))                                  
+                                :type ("codecvt" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12577 12623])
+                            ("protected" label nil (reparse-symbol classsubparts) [12629 12639])
+                            ("codecvt" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [12646 12671])
+                            ("do_out" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12707 12727])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12728 12754])
+                                    ("__from_end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12761 12791])
+                                    ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12792 12811])
+                                    ("" variable (:type ("__from_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12812 12824])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12831 12849])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12850 12872])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12879 12892])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12893 12903]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12679 12910])
+                            ("do_unshift" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12950 12970])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12971 12989])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12993 13015])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13016 13029])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13030 13040]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12918 13047])
+                            ("do_in" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13082 13102])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13103 13129])
+                                    ("__from_end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13135 13165])
+                                    ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13166 13185])
+                                    ("" variable (:type ("__from_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13186 13198])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13204 13222])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13223 13245])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13251 13264])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13265 13275]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13055 13282])
+                            ("do_encoding" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [13290 13336])
+                            ("do_always_noconv" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13344 13396])
+                            ("do_length" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13432 13444])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13445 13471])
+                                    ("__end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13474 13499])
+                                    ("__max" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13500 13513]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [13404 13520])
+                            ("do_max_length" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [13528 13576]))                          
+                        :superclasses 
+                          ( ("__codecvt_abstract_base" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("char" type nil nil nil)
+                            ("char" type nil nil nil)
+                            ("mbstate_t" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [12156 13581])
+                    ("codecvt" type
+                       (:type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [13803 13810])
+                            ("intern_type" type
+                               (:typedef ("wchar_t")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [13833 13863])
+                            ("extern_type" type
+                               (:typedef ("char")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [13870 13897])
+                            ("state_type" type
+                               (:typedef ("mbstate_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [13904 13935])
+                            ("protected" label nil (reparse-symbol classsubparts) [13941 13951])
+                            ("_M_c_locale_codecvt" variable (:type ("__c_locale" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13958 13991])
+                            ("public" label nil (reparse-symbol classsubparts) [13997 14004])
+                            ("id" variable
+                               (:typemodifiers ("static")
+                                :type ("locale::id" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14011 14034])
+                            ("codecvt" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("__refs" variable
+                                       (:default-value "0"
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14065 14082]))                                  
+                                :type ("codecvt" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14057 14084])
+                            ("codecvt" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("__cloc" variable (:type ("__c_locale" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14115 14133])
+                                    ("__refs" variable
+                                       (:default-value "0"
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14134 14151]))                                  
+                                :type ("codecvt" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14107 14153])
+                            ("protected" label nil (reparse-symbol classsubparts) [14159 14169])
+                            ("codecvt" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [14176 14201])
+                            ("do_out" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14237 14257])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14258 14284])
+                                    ("__from_end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14291 14321])
+                                    ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14322 14341])
+                                    ("" variable (:type ("__from_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14342 14354])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14361 14379])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14380 14402])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14409 14422])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14423 14433]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14209 14440])
+                            ("do_unshift" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14480 14500])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14504 14522])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14523 14545])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14549 14562])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14563 14573]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14448 14580])
+                            ("do_in" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14615 14635])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14642 14668])
+                                    ("__from_end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14669 14699])
+                                    ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14706 14725])
+                                    ("" variable (:type ("__from_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14726 14738])
+                                    ("__to" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14745 14763])
+                                    ("__to_end" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14764 14786])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("intern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14793 14806])
+                                    ("" variable (:type ("__to_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14807 14817]))                                  
+                                :type ("result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14588 14824])
+                            ("do_encoding" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [14832 14878])
+                            ("do_always_noconv" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [14886 14938])
+                            ("do_length" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14974 14986])
+                                    ("__from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14987 15013])
+                                    ("__end" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("extern_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15020 15045])
+                                    ("__max" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15046 15059]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [14946 15066])
+                            ("do_max_length" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [15074 15122]))                          
+                        :superclasses 
+                          ( ("__codecvt_abstract_base" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("wchar_t" type nil nil nil)
+                            ("char" type nil nil nil)
+                            ("mbstate_t" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [13675 15129])
+                    ("codecvt_byname" type
+                       (:template 
+                          ( ("_InternT" type (:type "class") nil nil)
+                            ("_ExternT" type (:type "class") nil nil)
+                            ("_StateT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [15348 15355])
+                            ("codecvt_byname" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [15392 15408])
+                                    ("__refs" variable
+                                       (:default-value "0"
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15409 15426]))                                  
+                                :type ("codecvt_byname" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15377 15710])
+                            ("protected" label nil (reparse-symbol classsubparts) [15716 15726])
+                            ("codecvt_byname" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [15733 15768]))                          
+                        :superclasses 
+                          ( ("codecvt" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [15202 15775])
+                    ("codecvt_byname" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("char" type nil nil nil)
+                            ("char" type nil nil nil)
+                            ("mbstate_t" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [15952 15996])
+                    ("use_facet" function
+                       (:template-specifier 
+                          ( ("codecvt" type nil nil nil))                          
+                        :prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("locale" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16105 16119]))                          
+                        :type ("codecvt" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil)
+                                  ("char" type nil nil nil)
+                                  ("mbstate_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [16020 16120])
+                    ("has_facet" function
+                       (:template-specifier 
+                          ( ("codecvt" type nil nil nil))                          
+                        :prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("locale" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16196 16210]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [16144 16211])
+                    ("codecvt_byname" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("wchar_t" type nil nil nil)
+                            ("char" type nil nil nil)
+                            ("mbstate_t" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [16259 16306])
+                    ("use_facet" function
+                       (:template-specifier 
+                          ( ("codecvt" type nil nil nil))                          
+                        :prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("locale" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16421 16435]))                          
+                        :type ("codecvt" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil)
+                                  ("char" type nil nil nil)
+                                  ("mbstate_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [16330 16436])
+                    ("has_facet" function
+                       (:template-specifier 
+                          ( ("codecvt" type nil nil nil))                          
+                        :prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("locale" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16515 16529]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [16460 16530]))                  
+                :type "namespace")
+                nil [1417 16578]))          
+      :file "codecvt.h"
+      :pointmax 16618
+      :fsize 16617
+      :lastmodtime '(22317 53275 0 0)
+      :unmatched-syntax '((symbol 16568 . 16576) (TEMPLATE 16447 . 16455) (EXTERN 16440 . 16446) (TEMPLATE 16317 . 16325) (EXTERN 16310 . 16316) (TEMPLATE 16250 . 16258) (EXTERN 16243 . 16249) (TEMPLATE 16131 . 16139) (EXTERN 16124 . 16130) (TEMPLATE 16007 . 16015) (EXTERN 16000 . 16006) (TEMPLATE 15943 . 15951) (EXTERN 15936 . 15942) (EXPLICIT 15362 . 15370) (punctuation 14805 . 14806) (punctuation 14724 . 14725) (punctuation 14561 . 14562) (punctuation 14421 . 14422) (punctuation 14340 . 14341) (EXPLICIT 14092 . 14100) (EXPLICIT 14042 . 14050) (punctuation 13263 . 13264) (punctuation 13184 . 13185) (punctuation 13028 . 13029) (punctuation 12891 . 12892) (punctuation 12810 . 12811) (EXPLICIT 12562 . 12570) (EXPLICIT 12512 . 12520) (punctuation 11648 . 11649) (punctuation 11569 . 11570) (punctuation 11413 . 11414) (punctuation 11276 . 11277) (punctuation 11195 . 11196) (EXPLICIT 10944 . 10952) (EXPLICIT 10790 . 10798) (punctuation 9859 . 9860) (punctuation 9780 . 9781) (punctuation 9620 . 9621) (punctuation 9479 . 9480) (punctuation 9398 . 9399) (EXPLICIT 8820 . 8828) (punctuation 8223 . 8224) (punctuation 8150 . 8151) (punctuation 6124 . 6125) (punctuation 4352 . 4353) (punctuation 4277 . 4278) (symbol 1402 . 1415) (symbol 1398 . 1401) (symbol 1391 . 1397) (punctuation 1390 . 1391))
+      :lexical-table 
+        '(("_CODECVT_H" . ((number "1" 1387 . 1388)))
+          )
+)
+    (semanticdb-table "fstream.tcc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_FSTREAM_TCC" variable (:constant-flag t) nil [1319 1331])
+            ("bits/cxxabi_forced.h" include (:system-flag t) nil [1362 1393])
+            ("std" type
+               (:members 
+                  ( ("_M_allocate_internal_buffer" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "void"
+                        :parent "basic_filebuf")
+                        (reparse-symbol namespacesubparts) [1476 1857])
+                    ("_M_destroy_internal_buffer" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "void"
+                        :parent "basic_filebuf")
+                        (reparse-symbol namespacesubparts) [1861 2224])
+                    ("basic_filebuf" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type ("basic_filebuf" type (:type "class") nil nil)
+                        :parent "basic_filebuf"
+                        :constructor-flag t)
+                        (reparse-symbol namespacesubparts) [2228 2872])
+                    ("open" function
+                       (:pointer 1
+                        :parent "basic_filebuf"
+                        :arguments 
+                          ( ("__s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3027 3043])
+                            ("__mode" variable (:type ("ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3044 3070]))                          
+                        :type ("__filebuf_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2965 3703])
+                    ("close" function
+                       (:pointer 1
+                        :parent "basic_filebuf"
+                        :type ("__filebuf_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3796 4784])
+                    ("showmanyc" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type ("streamsize" type (:type "class") nil nil)
+                        :parent "basic_filebuf")
+                        (reparse-symbol namespacesubparts) [4788 5572])
+                    ("underflow" function
+                       (:parent "basic_filebuf"
+                        :type ("int_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5665 10327])
+                    ("pbackfail" function
+                       (:parent "basic_filebuf"
+                        :arguments 
+                          ( ("__i" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10480 10493]))                          
+                        :type ("int_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10420 12095])
+                    ("overflow" function
+                       (:parent "basic_filebuf"
+                        :arguments 
+                          ( ("__c" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12247 12260]))                          
+                        :type ("int_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12188 13851])
+                    ("_M_convert_to_external" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("__ibuf" variable
+                               (:pointer 1
+                                :type ("_CharT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13972 13987])
+                            ("__ilen" variable (:type ("streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13988 14006]))                          
+                        :parent "basic_filebuf")
+                        (reparse-symbol namespacesubparts) [13855 15734])
+                    ("xsgetn" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type ("streamsize" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("__s" variable
+                               (:pointer 1
+                                :type ("_CharT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15845 15857])
+                            ("__n" variable (:type ("streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15858 15873]))                          
+                        :parent "basic_filebuf")
+                        (reparse-symbol namespacesubparts) [15738 18045])
+                    ("xsputn" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type ("streamsize" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("__s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("_CharT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18156 18174])
+                            ("__n" variable (:type ("streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18175 18190]))                          
+                        :parent "basic_filebuf")
+                        (reparse-symbol namespacesubparts) [18049 19497])
+                    ("setbuf" function
+                       (:pointer 1
+                        :parent "basic_filebuf"
+                        :arguments 
+                          ( ("__s" variable
+                               (:pointer 1
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19656 19671])
+                            ("__n" variable (:type ("streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19672 19687]))                          
+                        :type ("__streambuf_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [19590 20423])
+                    ("seekoff" function
+                       (:parent "basic_filebuf"
+                        :arguments 
+                          ( ("__off" variable (:type ("off_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20677 20692])
+                            ("__way" variable (:type ("ios_base::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20693 20717])
+                            ("" variable (:type ("ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20718 20737]))                          
+                        :type ("pos_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20619 22418])
+                    ("seekpos" function
+                       (:parent "basic_filebuf"
+                        :arguments 
+                          ( ("__pos" variable (:type ("pos_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22772 22787])
+                            ("" variable (:type ("ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22788 22807]))                          
+                        :type ("pos_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22714 23060])
+                    ("_M_seek" function
+                       (:parent "basic_filebuf"
+                        :arguments 
+                          ( ("__off" variable (:type ("off_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23211 23226])
+                            ("__way" variable (:type ("ios_base::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23227 23251])
+                            ("__state" variable (:type ("__state_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23252 23273]))                          
+                        :type ("pos_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23153 23714])
+                    ("_M_get_ext_pos" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("__state" variable
+                               (:reference 1
+                                :type ("__state_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24008 24030]))                          
+                        :parent "basic_filebuf")
+                        (reparse-symbol namespacesubparts) [23904 24542])
+                    ("_M_terminate_output" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :parent "basic_filebuf")
+                        (reparse-symbol namespacesubparts) [24550 26309])
+                    ("sync" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "int"
+                        :parent "basic_filebuf")
+                        (reparse-symbol namespacesubparts) [26313 26747])
+                    ("imbue" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("__loc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("locale" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26851 26871]))                          
+                        :parent "basic_filebuf")
+                        (reparse-symbol namespacesubparts) [26751 28300])
+                    ("basic_filebuf" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("char" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [28477 28503])
+                    ("basic_ifstream" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("char" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [28522 28549])
+                    ("basic_ofstream" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("char" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [28568 28595])
+                    ("basic_fstream" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("char" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [28614 28640])
+                    ("basic_filebuf" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("wchar_t" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [28688 28717])
+                    ("basic_ifstream" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("wchar_t" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [28736 28766])
+                    ("basic_ofstream" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("wchar_t" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [28785 28815])
+                    ("basic_fstream" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("wchar_t" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [28834 28863]))                  
+                :type "namespace")
+                nil [1395 28911]))          
+      :file "fstream.tcc"
+      :pointmax 28937
+      :fsize 28936
+      :lastmodtime '(22317 53275 0 0)
+      :unmatched-syntax '((symbol 28901 . 28909) (TEMPLATE 28825 . 28833) (EXTERN 28818 . 28824) (TEMPLATE 28776 . 28784) (EXTERN 28769 . 28775) (TEMPLATE 28727 . 28735) (EXTERN 28720 . 28726) (TEMPLATE 28679 . 28687) (EXTERN 28672 . 28678) (TEMPLATE 28605 . 28613) (EXTERN 28598 . 28604) (TEMPLATE 28559 . 28567) (EXTERN 28552 . 28558) (TEMPLATE 28513 . 28521) (EXTERN 28506 . 28512) (TEMPLATE 28468 . 28476) (EXTERN 28461 . 28467) (punctuation 23152 . 23153) (punctuation 23151 . 23152) (punctuation 23150 . 23151) (symbol 23143 . 23150) (punctuation 23141 . 23142) (symbol 23135 . 23141) (punctuation 23134 . 23135) (symbol 23121 . 23134) (TYPENAME 23112 . 23120) (punctuation 23106 . 23107) (symbol 23099 . 23106) (TYPENAME 23090 . 23098) (punctuation 23088 . 23089) (symbol 23082 . 23088) (TYPENAME 23073 . 23081) (punctuation 23072 . 23073) (TEMPLATE 23064 . 23072) (punctuation 22713 . 22714) (punctuation 22712 . 22713) (punctuation 22711 . 22712) (symbol 22704 . 22711) (punctuation 22702 . 22703) (symbol 22696 . 22702) (punctuation 22695 . 22696) (symbol 22682 . 22695) (TYPENAME 22673 . 22681) (punctuation 22667 . 22668) (symbol 22660 . 22667) (TYPENAME 22651 . 22659) (punctuation 22649 . 22650) (symbol 22643 . 22649) (TYPENAME 22634 . 22642) (punctuation 22633 . 22634) (TEMPLATE 22625 . 22633) (punctuation 20618 . 20619) (punctuation 20617 . 20618) (punctuation 20616 . 20617) (symbol 20609 . 20616) (punctuation 20607 . 20608) (symbol 20601 . 20607) (punctuation 20600 . 20601) (symbol 20587 . 20600) (TYPENAME 20578 . 20586) (punctuation 20572 . 20573) (symbol 20565 . 20572) (TYPENAME 20556 . 20564) (punctuation 20554 . 20555) (symbol 20548 . 20554) (TYPENAME 20539 . 20547) (punctuation 20538 . 20539) (TEMPLATE 20530 . 20538) (punctuation 19589 . 19590) (punctuation 19588 . 19589) (punctuation 19587 . 19588) (symbol 19580 . 19587) (punctuation 19578 . 19579) (symbol 19572 . 19578) (punctuation 19571 . 19572) (symbol 19558 . 19571) (TYPENAME 19549 . 19557) (punctuation 19543 . 19544) (symbol 19536 . 19543) (TYPENAME 19527 . 19535) (punctuation 19525 . 19526) (symbol 19519 . 19525) (TYPENAME 19510 . 19518) (punctuation 19509 . 19510) (TEMPLATE 19501 . 19509) (punctuation 12187 . 12188) (punctuation 12186 . 12187) (punctuation 12185 . 12186) (symbol 12178 . 12185) (punctuation 12176 . 12177) (symbol 12170 . 12176) (punctuation 12169 . 12170) (symbol 12156 . 12169) (TYPENAME 12147 . 12155) (punctuation 12141 . 12142) (symbol 12134 . 12141) (TYPENAME 12125 . 12133) (punctuation 12123 . 12124) (symbol 12117 . 12123) (TYPENAME 12108 . 12116) (punctuation 12107 . 12108) (TEMPLATE 12099 . 12107) (punctuation 10419 . 10420) (punctuation 10418 . 10419) (punctuation 10417 . 10418) (symbol 10410 . 10417) (punctuation 10408 . 10409) (symbol 10402 . 10408) (punctuation 10401 . 10402) (symbol 10388 . 10401) (TYPENAME 10379 . 10387) (punctuation 10373 . 10374) (symbol 10366 . 10373) (TYPENAME 10357 . 10365) (punctuation 10355 . 10356) (symbol 10349 . 10355) (TYPENAME 10340 . 10348) (punctuation 10339 . 10340) (TEMPLATE 10331 . 10339) (punctuation 5664 . 5665) (punctuation 5663 . 5664) (punctuation 5662 . 5663) (symbol 5655 . 5662) (punctuation 5653 . 5654) (symbol 5647 . 5653) (punctuation 5646 . 5647) (symbol 5633 . 5646) (TYPENAME 5624 . 5632) (punctuation 5618 . 5619) (symbol 5611 . 5618) (TYPENAME 5602 . 5610) (punctuation 5600 . 5601) (symbol 5594 . 5600) (TYPENAME 5585 . 5593) (punctuation 5584 . 5585) (TEMPLATE 5576 . 5584) (punctuation 3795 . 3796) (punctuation 3794 . 3795) (punctuation 3793 . 3794) (symbol 3786 . 3793) (punctuation 3784 . 3785) (symbol 3778 . 3784) (punctuation 3777 . 3778) (symbol 3764 . 3777) (TYPENAME 3755 . 3763) (punctuation 3749 . 3750) (symbol 3742 . 3749) (TYPENAME 3733 . 3741) (punctuation 3731 . 3732) (symbol 3725 . 3731) (TYPENAME 3716 . 3724) (punctuation 3715 . 3716) (TEMPLATE 3707 . 3715) (punctuation 2964 . 2965) (punctuation 2963 . 2964) (punctuation 2962 . 2963) (symbol 2955 . 2962) (punctuation 2953 . 2954) (symbol 2947 . 2953) (punctuation 2946 . 2947) (symbol 2933 . 2946) (TYPENAME 2924 . 2932) (punctuation 2918 . 2919) (symbol 2911 . 2918) (TYPENAME 2902 . 2910) (punctuation 2900 . 2901) (symbol 2894 . 2900) (TYPENAME 2885 . 2893) (punctuation 2884 . 2885) (TEMPLATE 2876 . 2884) (symbol 1347 . 1360) (symbol 1343 . 1346) (symbol 1336 . 1342) (punctuation 1335 . 1336))
+      :lexical-table 
+        '(("_FSTREAM_TCC" . ((number "1" 1332 . 1333)))
+          )
+)
+    (semanticdb-table "sstream.tcc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_SSTREAM_TCC" variable (:constant-flag t) nil [1323 1335])
+            ("std" type
+               (:members 
+                  ( ("pbackfail" function
+                       (:parent "basic_stringbuf"
+                        :arguments 
+                          ( ("__c" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1625 1638]))                          
+                        :type ("int_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1555 2410])
+                    ("overflow" function
+                       (:parent "basic_stringbuf"
+                        :arguments 
+                          ( ("__c" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2591 2604]))                          
+                        :type ("int_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2522 4359])
+                    ("underflow" function
+                       (:parent "basic_stringbuf"
+                        :type ("int_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4471 4868])
+                    ("seekoff" function
+                       (:parent "basic_stringbuf"
+                        :arguments 
+                          ( ("__off" variable (:type ("off_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5048 5063])
+                            ("__way" variable (:type ("ios_base::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5064 5088])
+                            ("__mode" variable (:type ("ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5089 5115]))                          
+                        :type ("pos_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4980 6524])
+                    ("seekpos" function
+                       (:parent "basic_stringbuf"
+                        :arguments 
+                          ( ("__sp" variable (:type ("pos_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6704 6718])
+                            ("__mode" variable (:type ("ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6719 6745]))                          
+                        :type ("pos_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6636 7472])
+                    ("_M_sync" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil)
+                            ("_Alloc" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("__base" variable
+                               (:pointer 1
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7597 7615])
+                            ("__i" variable (:type ("__size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7616 7632])
+                            ("__o" variable (:type ("__size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7633 7649]))                          
+                        :parent "basic_stringbuf")
+                        (reparse-symbol namespacesubparts) [7476 8391])
+                    ("_M_pbump" function
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil)
+                            ("_Alloc" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("__pbeg" variable
+                               (:pointer 1
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8517 8535])
+                            ("__pend" variable
+                               (:pointer 1
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8536 8554])
+                            ("__off" variable (:type ("off_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8555 8570]))                          
+                        :parent "basic_stringbuf")
+                        (reparse-symbol namespacesubparts) [8395 8820])
+                    ("basic_stringbuf" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("char" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [8997 9025])
+                    ("basic_istringstream" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("char" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9044 9076])
+                    ("basic_ostringstream" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("char" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9095 9127])
+                    ("basic_stringstream" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("char" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9146 9177])
+                    ("basic_stringbuf" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("wchar_t" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9225 9256])
+                    ("basic_istringstream" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("wchar_t" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9275 9310])
+                    ("basic_ostringstream" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("wchar_t" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9329 9364])
+                    ("basic_stringstream" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("wchar_t" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9383 9417]))                  
+                :type "namespace")
+                nil [1366 9465]))          
+      :file "sstream.tcc"
+      :pointmax 9491
+      :fsize 9490
+      :lastmodtime '(22317 53275 0 0)
+      :unmatched-syntax '((symbol 9455 . 9463) (TEMPLATE 9374 . 9382) (EXTERN 9367 . 9373) (TEMPLATE 9320 . 9328) (EXTERN 9313 . 9319) (TEMPLATE 9266 . 9274) (EXTERN 9259 . 9265) (TEMPLATE 9216 . 9224) (EXTERN 9209 . 9215) (TEMPLATE 9137 . 9145) (EXTERN 9130 . 9136) (TEMPLATE 9086 . 9094) (EXTERN 9079 . 9085) (TEMPLATE 9035 . 9043) (EXTERN 9028 . 9034) (TEMPLATE 8988 . 8996) (EXTERN 8981 . 8987) (punctuation 6635 . 6636) (punctuation 6634 . 6635) (punctuation 6633 . 6634) (symbol 6627 . 6633) (punctuation 6625 . 6626) (symbol 6618 . 6625) (punctuation 6616 . 6617) (symbol 6610 . 6616) (punctuation 6609 . 6610) (symbol 6594 . 6609) (TYPENAME 6585 . 6593) (punctuation 6579 . 6580) (symbol 6573 . 6579) (CLASS 6567 . 6572) (punctuation 6565 . 6566) (symbol 6558 . 6565) (CLASS 6552 . 6557) (punctuation 6550 . 6551) (symbol 6544 . 6550) (CLASS 6538 . 6543) (punctuation 6537 . 6538) (TEMPLATE 6528 . 6536) (punctuation 4979 . 4980) (punctuation 4978 . 4979) (punctuation 4977 . 4978) (symbol 4971 . 4977) (punctuation 4969 . 4970) (symbol 4962 . 4969) (punctuation 4960 . 4961) (symbol 4954 . 4960) (punctuation 4953 . 4954) (symbol 4938 . 4953) (TYPENAME 4929 . 4937) (punctuation 4923 . 4924) (symbol 4917 . 4923) (CLASS 4911 . 4916) (punctuation 4909 . 4910) (symbol 4902 . 4909) (CLASS 4896 . 4901) (punctuation 4894 . 4895) (symbol 4888 . 4894) (CLASS 4882 . 4887) (punctuation 4881 . 4882) (TEMPLATE 4872 . 4880) (punctuation 4470 . 4471) (punctuation 4469 . 4470) (punctuation 4468 . 4469) (symbol 4462 . 4468) (punctuation 4460 . 4461) (symbol 4453 . 4460) (punctuation 4451 . 4452) (symbol 4445 . 4451) (punctuation 4444 . 4445) (symbol 4429 . 4444) (TYPENAME 4420 . 4428) (punctuation 4414 . 4415) (symbol 4408 . 4414) (CLASS 4402 . 4407) (punctuation 4400 . 4401) (symbol 4393 . 4400) (CLASS 4387 . 4392) (punctuation 4385 . 4386) (symbol 4379 . 4385) (CLASS 4373 . 4378) (punctuation 4372 . 4373) (TEMPLATE 4363 . 4371) (punctuation 2521 . 2522) (punctuation 2520 . 2521) (punctuation 2519 . 2520) (symbol 2513 . 2519) (punctuation 2511 . 2512) (symbol 2504 . 2511) (punctuation 2502 . 2503) (symbol 2496 . 2502) (punctuation 2495 . 2496) (symbol 2480 . 2495) (TYPENAME 2471 . 2479) (punctuation 2465 . 2466) (symbol 2459 . 2465) (CLASS 2453 . 2458) (punctuation 2451 . 2452) (symbol 2444 . 2451) (CLASS 2438 . 2443) (punctuation 2436 . 2437) (symbol 2430 . 2436) (CLASS 2424 . 2429) (punctuation 2423 . 2424) (TEMPLATE 2414 . 2422) (punctuation 1554 . 1555) (punctuation 1553 . 1554) (punctuation 1552 . 1553) (symbol 1546 . 1552) (punctuation 1544 . 1545) (symbol 1537 . 1544) (punctuation 1535 . 1536) (symbol 1529 . 1535) (punctuation 1528 . 1529) (symbol 1513 . 1528) (TYPENAME 1504 . 1512) (punctuation 1498 . 1499) (symbol 1492 . 1498) (CLASS 1486 . 1491) (punctuation 1484 . 1485) (symbol 1477 . 1484) (CLASS 1471 . 1476) (punctuation 1469 . 1470) (symbol 1463 . 1469) (CLASS 1457 . 1462) (punctuation 1456 . 1457) (TEMPLATE 1447 . 1455) (symbol 1351 . 1364) (symbol 1347 . 1350) (symbol 1340 . 1346) (punctuation 1339 . 1340))
+      :lexical-table 
+        '(("_SSTREAM_TCC" . ((number "1" 1336 . 1337)))
+          )
 ))
   :file "!usr!include!c++!4.8!bits!semantic.cache"
   :semantic-tag-version "2.0"

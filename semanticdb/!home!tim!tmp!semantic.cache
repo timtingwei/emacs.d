@@ -1,43 +1,14 @@
-;; Object tim/
+;; Object tmp/
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "tim/"
+(semanticdb-project-database-file "tmp/"
   :tables
   (list
-    (semanticdb-table "example.c"
-      :major-mode 'c-mode
-      :tags 
-        '( ("GL/glut.h" include (:system-flag t) nil [1 21])
-            ("init" function
-               (:prototype-flag t
-                :type "void")
-                nil [23 35])
-            ("display" function
-               (:prototype-flag t
-                :type "void")
-                nil [36 51])
-            ("main" function
-               (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [62 71])
-                    ("argv" variable
-                       (:pointer 1
-                        :dereference 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [72 85]))                  
-                :type "int")
-                nil [53 328])
-            ("init" function (:type "void") nil [330 510])
-            ("display" function (:type "void") nil [512 621]))          
-      :file "example.c"
-      :pointmax 622
-      :fsize 621
-      :lastmodtime '(23097 61163 70848 540000)
-      :unmatched-syntax nil)
-
-
     (semanticdb-table "shader_s.h"
       :major-mode 'c++-mode
       :tags 
         '( ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("SHADER_H" variable (:constant-flag t) nil [103 111])
             ("GL/glew.h" include (:system-flag t) nil [121 141])
             ("GLFW/glfw3.h" include (:system-flag t) nil [150 173])
             ("fstream" include (:system-flag t) nil [175 193])
@@ -112,12 +83,12 @@
       :file "shader_s.h"
       :pointmax 3567
       :fsize 3838
-      :lastmodtime '(23105 34869 56093 72000)
+      :lastmodtime '(23105 35419 284117 946000)
       :unmatched-syntax nil
       :lexical-table 
         '(("SHADER_H")
           )
 ))
-  :file "!home!tim!semantic.cache"
+  :file "!home!tim!tmp!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

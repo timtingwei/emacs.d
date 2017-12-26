@@ -1,0 +1,196 @@
+;; Object timspace/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "timspace/"
+  :tables
+  (list
+    (semanticdb-table "class_access.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Date" type
+               (:members 
+                  ( ("d" variable (:type "int") (reparse-symbol classsubparts) [48 60])
+                    ("m" variable (:type "int") (reparse-symbol classsubparts) [48 60])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [48 60])
+                    ("public" label nil (reparse-symbol classsubparts) [62 69])
+                    ("Date" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [173 178])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [179 183])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [184 188]))                          
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [168 189])
+                    ("Date" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [238 243])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [244 248])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [249 253]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [233 254])
+                    ("Date" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [262 266])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [267 271]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [257 272])
+                    ("Date" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [280 284]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [275 285])
+                    ("add_day" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [364 370]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [351 371])
+                    ("add_mouth" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [421 427]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [406 428])
+                    ("add_year" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [477 483]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [463 484]))                  
+                :type "class")
+                nil [34 519])
+            ("add_day" function
+               (:parent "Date"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [548 554]))                  
+                :type "void")
+                nil [522 568])
+            ("main" function (:type "int") nil [666 791]))          
+      :file "class_access.cpp"
+      :pointmax 792
+      :fsize 478
+      :lastmodtime '(23102 28182 883972 907000)
+      :unmatched-syntax nil)
+    (semanticdb-table "class_ctor.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [61 80])
+            ("Date" type
+               (:members 
+                  ( ("d" variable (:type "int") (reparse-symbol classsubparts) [98 110])
+                    ("m" variable (:type "int") (reparse-symbol classsubparts) [98 110])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [98 110])
+                    ("default_date" variable
+                       (:typemodifiers ("static")
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [113 138])
+                    ("public" label nil (reparse-symbol classsubparts) [179 186])
+                    ("set_default" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [264 268])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [269 273])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [274 278]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [240 279])
+                    ("Date" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("dd" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [297 307])
+                            ("mm" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [310 320])
+                            ("yy" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [322 332]))                          
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [292 334])
+                    ("Date" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [367 379]))                          
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [362 380])
+                    ("add_day" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [438 444]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [425 445])
+                    ("add_mouth" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [495 501]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [480 502])
+                    ("add_year" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [551 557]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [537 558])
+                    ("print_date" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [593 611]))                  
+                :type "class")
+                nil [83 649])
+            ("default_date" function
+               (:prototype-flag t
+                :parent "Date"
+                :type ("Date" type (:type "class") nil nil))
+                nil [814 851])
+            ("set_default" function
+               (:parent "Date"
+                :arguments 
+                  ( ("dd" variable (:type "int") (reparse-symbol arg-sub-list) [933 940])
+                    ("mm" variable (:type "int") (reparse-symbol arg-sub-list) [941 948])
+                    ("yy" variable (:type "int") (reparse-symbol arg-sub-list) [949 956]))                  
+                :type "void")
+                nil [910 1007])
+            ("add_day" function
+               (:parent "Date"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1035 1041]))                  
+                :type "void")
+                nil [1009 1055])
+            ("Date" function
+               (:constructor-flag t
+                :parent "Date"
+                :arguments 
+                  ( ("dd" variable (:type "int") (reparse-symbol arg-sub-list) [1069 1076])
+                    ("mm" variable (:type "int") (reparse-symbol arg-sub-list) [1077 1084])
+                    ("yy" variable (:type "int") (reparse-symbol arg-sub-list) [1085 1092]))                  
+                :type ("Date" type (:type "class") nil nil))
+                nil [1058 1256])
+            ("print_date" function
+               (:parent "Date"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [1259 1461])
+            ("main" function (:type "int") nil [1463 2073]))          
+      :file "class_ctor.cpp"
+      :pointmax 2074
+      :fsize 1824
+      :lastmodtime '(23103 957 762803 758000)
+      :unmatched-syntax nil))
+  :file "!home!tim!timspace!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

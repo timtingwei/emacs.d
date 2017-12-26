@@ -1,0 +1,20 @@
+;; Object 2.1.hello_triangle/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "2.1.hello_triangle/"
+  :tables
+  (list
+    (semanticdb-table "hello_triangle.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "hello_triangle.cpp"
+      :pointmax 6869
+      :fsize 5659
+      :lastmodtime '(23099 43711 451415 446000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLEW_STATIC")
+          )
+))
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!2.1.hello_triangle!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -2946,6 +2946,1280 @@
       :lexical-table 
         '(("_NEW")
           )
+)
+    (semanticdb-table "fstream"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_FSTREAM" variable (:constant-flag t) nil [1233 1249])
+            ("istream" include (:system-flag t) nil [1280 1298])
+            ("ostream" include (:system-flag t) nil [1299 1317])
+            ("bits/codecvt.h" include (:system-flag t) nil [1318 1343])
+            ("cstdio" include (:system-flag t) nil [1344 1361])
+            ("bits/basic_file.h" include (:system-flag t) nil [1388 1416])
+            ("std" type
+               (:members 
+                  ( ("basic_filebuf" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2652 2659])
+                            ("char_type" type
+                               (:typedef ("_CharT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2682 2736])
+                            ("traits_type" type
+                               (:typedef ("_Traits" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2743 2799])
+                            ("int_type" type
+                               (:typedef ("traits_type::int_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2806 2856])
+                            ("pos_type" type
+                               (:typedef ("traits_type::pos_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2863 2913])
+                            ("off_type" type
+                               (:typedef ("traits_type::off_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2920 2970])
+                            ("__streambuf_type" type
+                               (:typedef ("basic_streambuf" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2978 3045])
+                            ("__filebuf_type" type
+                               (:typedef ("basic_filebuf" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3052 3117])
+                            ("__file_type" type
+                               (:typedef ("__basic_file" type
+                                     (:template-specifier 
+                                        ( ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3124 3172])
+                            ("__state_type" type
+                               (:typedef ("traits_type::state_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3179 3242])
+                            ("__codecvt_type" type
+                               (:typedef ("codecvt" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("char" type nil nil nil)
+                                          ("__state_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3249 3314])
+                            ("ios_base" friend nil (reparse-symbol classsubparts) [3322 3343])
+                            ("protected" label nil (reparse-symbol classsubparts) [3374 3384])
+                            ("_M_lock" variable (:type ("__c_lock" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3483 3510])
+                            ("_M_file" variable (:type ("__file_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3544 3566])
+                            ("_M_mode" variable (:type ("ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3651 3679])
+                            ("_M_state_beg" variable (:type ("__state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3730 3758])
+                            ("_M_state_cur" variable (:type ("__state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3915 3942])
+                            ("_M_state_last" variable (:type ("__state_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4057 4085])
+                            ("_M_buf" variable
+                               (:pointer 1
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4148 4167])
+                            ("_M_buf_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4369 4390])
+                            ("_M_buf_allocated" variable (:type "bool") (reparse-symbol classsubparts) [4476 4500])
+                            ("_M_reading" variable (:type "bool") (reparse-symbol classsubparts) [4776 4813])
+                            ("_M_writing" variable (:type "bool") (reparse-symbol classsubparts) [4820 4857])
+                            ("_M_pback" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5035 5056])
+                            ("_M_pback_cur_save" variable
+                               (:pointer 1
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5063 5093])
+                            ("_M_pback_end_save" variable
+                               (:pointer 1
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5100 5130])
+                            ("_M_pback_init" variable (:type "bool") (reparse-symbol classsubparts) [5137 5158])
+                            ("_M_codecvt" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("__codecvt_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5208 5242])
+                            ("_M_ext_buf" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [5428 5447])
+                            ("_M_ext_buf_size" variable (:type ("streamsize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5520 5548])
+                            ("_M_ext_next" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [5777 5802])
+                            ("_M_ext_end" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [5809 5828])
+                            ("_M_create_pback" function (:type "void") (reparse-symbol classsubparts) [6000 6235])
+                            ("_M_destroy_pback" function (:type "void") (reparse-symbol classsubparts) [6410 6693])
+                            ("public" label nil (reparse-symbol classsubparts) [6699 6706])
+                            ("basic_filebuf" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("basic_filebuf" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6920 6936])
+                            ("basic_filebuf" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [7020 7075])
+                            ("is_open" function (:type "bool") (reparse-symbol classsubparts) [7182 7252])
+                            ("open" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("__s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [9613 9629])
+                                    ("__mode" variable (:type ("ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9630 9656]))                                  
+                                :type ("__filebuf_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9586 9657])
+                            ("close" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("__filebuf_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10478 10508])
+                            ("protected" label nil (reparse-symbol classsubparts) [10514 10524])
+                            ("_M_allocate_internal_buffer" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [10531 10572])
+                            ("_M_destroy_internal_buffer" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [10580 10628])
+                            ("showmanyc" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("streamsize" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10685 10722])
+                            ("underflow" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10948 10983])
+                            ("pbackfail" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__c" variable
+                                       (:default-value "_Traits::eof()"
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11024 11053]))                                  
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10991 11055])
+                            ("overflow" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__c" variable
+                                       (:default-value "_Traits::eof()"
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11450 11479]))                                  
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11418 11481])
+                            ("_M_convert_to_external" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11618 11629])
+                                    ("" variable (:type ("streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11630 11641]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11584 11642])
+                            ("setbuf" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__s" variable
+                                       (:pointer 1
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12148 12163])
+                                    ("__n" variable (:type ("streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12164 12179]))                                  
+                                :type ("__streambuf_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12109 12180])
+                            ("seekoff" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__off" variable (:type ("off_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12219 12234])
+                                    ("__way" variable (:type ("ios_base::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12235 12259])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12267 12303])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12305 12309])
+                                    ("" variable (:type ("ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12310 12324]))                                  
+                                :type ("pos_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12188 12325])
+                            ("seekpos" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__pos" variable (:type ("pos_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12364 12379])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12387 12423])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12425 12429])
+                                    ("" variable (:type ("ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12430 12444]))                                  
+                                :type ("pos_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12333 12445])
+                            ("_M_seek" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("__off" variable (:type ("off_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12532 12547])
+                                    ("__way" variable (:type ("ios_base::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12548 12572])
+                                    ("__state" variable (:type ("__state_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12573 12594]))                                  
+                                :type ("pos_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12509 12595])
+                            ("_M_get_ext_pos" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("__state" variable
+                                       (:reference 1
+                                        :type ("__state_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12634 12656]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [12609 12657])
+                            ("sync" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [12665 12690])
+                            ("imbue" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__loc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("locale" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12723 12743]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12698 12744])
+                            ("xsgetn" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__s" variable
+                                       (:pointer 1
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12784 12799])
+                                    ("__n" variable (:type ("streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12800 12815]))                                  
+                                :type ("streamsize" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12752 12816])
+                            ("xsputn" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12856 12877])
+                                    ("__n" variable (:type ("streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12878 12893]))                                  
+                                :type ("streamsize" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12824 12894])
+                            ("_M_terminate_output" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12964 12997])
+                            ("_M_set_buffer" function
+                               (:arguments 
+                                  ( ("__off" variable (:type ("streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13583 13600]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13558 13963]))                          
+                        :superclasses 
+                          ( ("basic_streambuf" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2532 13970])
+                    ("basic_ifstream" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [14617 14624])
+                            ("char_type" type
+                               (:typedef ("_CharT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [14647 14677])
+                            ("traits_type" type
+                               (:typedef ("_Traits" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [14684 14717])
+                            ("int_type" type
+                               (:typedef ("traits_type::int_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [14724 14774])
+                            ("pos_type" type
+                               (:typedef ("traits_type::pos_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [14781 14831])
+                            ("off_type" type
+                               (:typedef ("traits_type::off_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [14838 14888])
+                            ("__filebuf_type" type
+                               (:typedef ("basic_filebuf" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [14925 14987])
+                            ("__istream_type" type
+                               (:typedef ("basic_istream" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [14994 15055])
+                            ("private" label nil (reparse-symbol classsubparts) [15061 15069])
+                            ("_M_filebuf" variable (:type ("__filebuf_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15076 15102])
+                            ("public" label nil (reparse-symbol classsubparts) [15108 15115])
+                            ("basic_ifstream" function
+                               (:constructor-flag t
+                                :type ("basic_ifstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15421 15505])
+                            ("basic_ifstream" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [15972 15988])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15989 16025])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16027 16030]))                                  
+                                :type ("basic_ifstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15957 16137])
+                            ("basic_ifstream" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [16838 16865])
+                            ("rdbuf" function
+                               (:pointer 1
+                                :type ("__filebuf_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17089 17183])
+                            ("is_open" function (:type "bool") (reparse-symbol classsubparts) [17304 17363])
+                            ("is_open" function (:type "bool") (reparse-symbol classsubparts) [17464 17529])
+                            ("open" function
+                               (:arguments 
+                                  ( ("__s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [17997 18013])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18014 18050])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18052 18055]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [17981 18274])
+                            ("close" function (:type "void") (reparse-symbol classsubparts) [19122 19220]))                          
+                        :superclasses 
+                          ( ("basic_istream" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [14498 19227])
+                    ("basic_ofstream" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [19875 19882])
+                            ("char_type" type
+                               (:typedef ("_CharT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [19905 19935])
+                            ("traits_type" type
+                               (:typedef ("_Traits" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [19942 19975])
+                            ("int_type" type
+                               (:typedef ("traits_type::int_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [19982 20032])
+                            ("pos_type" type
+                               (:typedef ("traits_type::pos_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [20039 20089])
+                            ("off_type" type
+                               (:typedef ("traits_type::off_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [20096 20146])
+                            ("__filebuf_type" type
+                               (:typedef ("basic_filebuf" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [20183 20245])
+                            ("__ostream_type" type
+                               (:typedef ("basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [20252 20313])
+                            ("private" label nil (reparse-symbol classsubparts) [20319 20327])
+                            ("_M_filebuf" variable (:type ("__filebuf_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20334 20360])
+                            ("public" label nil (reparse-symbol classsubparts) [20366 20373])
+                            ("basic_ofstream" function
+                               (:constructor-flag t
+                                :type ("basic_ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20667 20750])
+                            ("basic_ofstream" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [21250 21266])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21274 21310])
+                                    ("" variable (:type ("out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21312 21316])
+                                    ("" variable (:type ("ios_base::trunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21316 21332]))                                  
+                                :type ("basic_ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21235 21439])
+                            ("basic_ofstream" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [22190 22217])
+                            ("rdbuf" function
+                               (:pointer 1
+                                :type ("__filebuf_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22441 22535])
+                            ("is_open" function (:type "bool") (reparse-symbol classsubparts) [22656 22715])
+                            ("is_open" function (:type "bool") (reparse-symbol classsubparts) [22816 22881])
+                            ("open" function
+                               (:arguments 
+                                  ( ("__s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [23358 23374])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23379 23415])
+                                    ("" variable (:type ("out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23417 23422])
+                                    ("" variable (:type ("ios_base::trunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23423 23439]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [23342 23659])
+                            ("close" function (:type "void") (reparse-symbol classsubparts) [24534 24632]))                          
+                        :superclasses 
+                          ( ("basic_ostream" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [19757 24639])
+                    ("basic_fstream" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [25314 25321])
+                            ("char_type" type
+                               (:typedef ("_CharT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [25344 25374])
+                            ("traits_type" type
+                               (:typedef ("_Traits" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [25381 25414])
+                            ("int_type" type
+                               (:typedef ("traits_type::int_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [25421 25471])
+                            ("pos_type" type
+                               (:typedef ("traits_type::pos_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [25478 25528])
+                            ("off_type" type
+                               (:typedef ("traits_type::off_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [25535 25585])
+                            ("__filebuf_type" type
+                               (:typedef ("basic_filebuf" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [25622 25684])
+                            ("__ios_type" type
+                               (:typedef ("basic_ios" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [25691 25745])
+                            ("__iostream_type" type
+                               (:typedef ("basic_iostream" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [25752 25815])
+                            ("private" label nil (reparse-symbol classsubparts) [25821 25829])
+                            ("_M_filebuf" variable (:type ("__filebuf_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25836 25862])
+                            ("public" label nil (reparse-symbol classsubparts) [25868 25875])
+                            ("basic_fstream" function
+                               (:constructor-flag t
+                                :type ("basic_fstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26180 26270])
+                            ("basic_fstream" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [26668 26684])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26691 26727])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26729 26733])
+                                    ("" variable (:type ("ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26734 26748]))                                  
+                                :type ("basic_fstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26654 26857])
+                            ("basic_fstream" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [27517 27543])
+                            ("rdbuf" function
+                               (:pointer 1
+                                :type ("__filebuf_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27767 27861])
+                            ("is_open" function (:type "bool") (reparse-symbol classsubparts) [27982 28041])
+                            ("is_open" function (:type "bool") (reparse-symbol classsubparts) [28142 28207])
+                            ("open" function
+                               (:arguments 
+                                  ( ("__s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [28674 28690])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28695 28731])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28733 28737])
+                                    ("" variable (:type ("ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28738 28752]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [28658 28956])
+                            ("close" function (:type "void") (reparse-symbol classsubparts) [29806 29904]))                          
+                        :superclasses 
+                          ( ("basic_iostream" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [25195 29911]))                  
+                :type "namespace")
+                nil [1543 29945])
+            ("bits/fstream.tcc" include (:system-flag t) nil [29960 29987]))          
+      :file "fstream"
+      :pointmax 30019
+      :fsize 30018
+      :lastmodtime '(22317 53277 0 0)
+      :unmatched-syntax '((symbol 29935 . 29943) (punctuation 28736 . 28737) (punctuation 28732 . 28733) (punctuation 28731 . 28732) (punctuation 26732 . 26733) (punctuation 26728 . 26729) (punctuation 26727 . 26728) (EXPLICIT 26639 . 26647) (punctuation 23421 . 23422) (punctuation 23416 . 23417) (punctuation 23415 . 23416) (punctuation 21315 . 21316) (punctuation 21311 . 21312) (punctuation 21310 . 21311) (EXPLICIT 21220 . 21228) (punctuation 18051 . 18052) (punctuation 18050 . 18051) (punctuation 16026 . 16027) (punctuation 16025 . 16026) (EXPLICIT 15942 . 15950) (punctuation 12428 . 12429) (punctuation 12424 . 12425) (punctuation 12423 . 12424) (punctuation 12308 . 12309) (punctuation 12304 . 12305) (punctuation 12303 . 12304) (punctuation 3343 . 3344) (symbol 1265 . 1278) (symbol 1261 . 1264) (symbol 1254 . 1260) (punctuation 1253 . 1254))
+      :lexical-table 
+        '(("_GLIBCXX_FSTREAM" . ((number "1" 1250 . 1251)))
+          )
+)
+    (semanticdb-table "sstream"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_SSTREAM" variable (:constant-flag t) nil [1237 1253])
+            ("istream" include (:system-flag t) nil [1284 1302])
+            ("ostream" include (:system-flag t) nil [1303 1321])
+            ("std" type
+               (:members 
+                  ( ("basic_stringbuf" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil)
+                            ("_Alloc" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2334 2341])
+                            ("char_type" type
+                               (:typedef ("_CharT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2364 2394])
+                            ("traits_type" type
+                               (:typedef ("_Traits" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2401 2434])
+                            ("allocator_type" type
+                               (:typedef ("_Alloc" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2532 2573])
+                            ("int_type" type
+                               (:typedef ("traits_type::int_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2580 2630])
+                            ("pos_type" type
+                               (:typedef ("traits_type::pos_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2637 2687])
+                            ("off_type" type
+                               (:typedef ("traits_type::off_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2694 2744])
+                            ("__streambuf_type" type
+                               (:typedef ("basic_streambuf" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2752 2819])
+                            ("__string_type" type
+                               (:typedef ("basic_string" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("_Traits" type nil nil nil)
+                                          ("_Alloc" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2826 2890])
+                            ("__size_type" type
+                               (:typedef ("__string_type::size_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2897 2952])
+                            ("protected" label nil (reparse-symbol classsubparts) [2958 2968])
+                            ("_M_mode" variable (:type ("ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3054 3082])
+                            ("_M_string" variable (:type ("__string_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3113 3139])
+                            ("public" label nil (reparse-symbol classsubparts) [3145 3152])
+                            ("basic_stringbuf" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3470 3506])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3508 3512])
+                                    ("" variable (:type ("ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3513 3527]))                                  
+                                :type ("basic_stringbuf" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3454 3594])
+                            ("basic_stringbuf" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__string_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3950 3977])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3986 4022])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4024 4028])
+                                    ("" variable (:type ("ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4029 4043]))                                  
+                                :type ("basic_stringbuf" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3934 4157])
+                            ("str" function (:type ("__string_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4536 4908])
+                            ("str" function
+                               (:arguments 
+                                  ( ("__s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__string_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5159 5184]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5144 5330])
+                            ("protected" label nil (reparse-symbol classsubparts) [5336 5346])
+                            ("_M_stringbuf_init" function
+                               (:arguments 
+                                  ( ("__mode" variable (:type ("ios_base::openmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5429 5455]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5400 5653])
+                            ("showmanyc" function
+                               (:typemodifiers ("virtual")
+                                :type ("streamsize" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5661 5859])
+                            ("underflow" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5867 5902])
+                            ("pbackfail" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__c" variable
+                                       (:default-value "traits_type::eof()"
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5943 5976]))                                  
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5910 5978])
+                            ("overflow" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__c" variable
+                                       (:default-value "traits_type::eof()"
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6018 6051]))                                  
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5986 6053])
+                            ("setbuf" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__s" variable
+                                       (:pointer 1
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6520 6535])
+                                    ("__n" variable (:type ("streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6536 6551]))                                  
+                                :type ("__streambuf_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6481 6989])
+                            ("seekoff" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__off" variable (:type ("off_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7028 7043])
+                                    ("__way" variable (:type ("ios_base::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7044 7068])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7076 7112])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7114 7118])
+                                    ("" variable (:type ("ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7119 7133]))                                  
+                                :type ("pos_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6997 7134])
+                            ("seekpos" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("__sp" variable (:type ("pos_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7173 7187])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7195 7231])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7233 7237])
+                                    ("" variable (:type ("ios_base::out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7238 7252]))                                  
+                                :type ("pos_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7142 7253])
+                            ("_M_sync" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("__base" variable
+                                       (:pointer 1
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7457 7475])
+                                    ("__i" variable (:type ("__size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7476 7492])
+                                    ("__o" variable (:type ("__size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7493 7509]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7438 7510])
+                            ("_M_update_egptr" function (:type "void") (reparse-symbol classsubparts) [7611 7915])
+                            ("_M_pbump" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("__pbeg" variable
+                                       (:pointer 1
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8068 8086])
+                                    ("__pend" variable
+                                       (:pointer 1
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8087 8105])
+                                    ("__off" variable (:type ("off_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8106 8121]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8048 8122]))                          
+                        :superclasses 
+                          ( ("basic_streambuf" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2195 8129])
+                    ("basic_istringstream" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil)
+                            ("_Alloc" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8900 8907])
+                            ("char_type" type
+                               (:typedef ("_CharT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8930 8960])
+                            ("traits_type" type
+                               (:typedef ("_Traits" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8967 9000])
+                            ("allocator_type" type
+                               (:typedef ("_Alloc" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9098 9139])
+                            ("int_type" type
+                               (:typedef ("traits_type::int_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9146 9196])
+                            ("pos_type" type
+                               (:typedef ("traits_type::pos_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9203 9253])
+                            ("off_type" type
+                               (:typedef ("traits_type::off_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9260 9310])
+                            ("__string_type" type
+                               (:typedef ("basic_string" type
+                                     (:template-specifier 
+                                        ( ("_CharT" type nil nil nil)
+                                          ("_Traits" type nil nil nil)
+                                          ("_Alloc" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9347 9408])
+                            ("__stringbuf_type" type
+                               (:typedef ("basic_stringbuf" type
+                                     (:template-specifier 
+                                        ( ("_CharT" type nil nil nil)
+                                          ("_Traits" type nil nil nil)
+                                          ("_Alloc" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9415 9482])
+                            ("__istream_type" type
+                               (:typedef ("basic_istream" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9489 9550])
+                            ("private" label nil (reparse-symbol classsubparts) [9556 9564])
+                            ("_M_stringbuf" variable (:type ("__stringbuf_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9571 9601])
+                            ("public" label nil (reparse-symbol classsubparts) [9607 9614])
+                            ("basic_istringstream" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10209 10245])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10247 10250]))                                  
+                                :type ("basic_istringstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10189 10349])
+                            ("basic_istringstream" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__string_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10945 10972])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10978 11014])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11016 11019]))                                  
+                                :type ("basic_istringstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10925 11125])
+                            ("basic_istringstream" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [11306 11338])
+                            ("rdbuf" function
+                               (:pointer 1
+                                :type ("__stringbuf_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11563 11663])
+                            ("str" function (:type ("__string_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11776 11844])
+                            ("str" function
+                               (:arguments 
+                                  ( ("__s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__string_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12031 12056]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12016 12089]))                          
+                        :superclasses 
+                          ( ("basic_istream" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [8759 12096])
+                    ("basic_ostringstream" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil)
+                            ("_Alloc" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [12867 12874])
+                            ("char_type" type
+                               (:typedef ("_CharT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12897 12927])
+                            ("traits_type" type
+                               (:typedef ("_Traits" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12934 12967])
+                            ("allocator_type" type
+                               (:typedef ("_Alloc" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [13065 13106])
+                            ("int_type" type
+                               (:typedef ("traits_type::int_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [13113 13163])
+                            ("pos_type" type
+                               (:typedef ("traits_type::pos_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [13170 13220])
+                            ("off_type" type
+                               (:typedef ("traits_type::off_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [13227 13277])
+                            ("__string_type" type
+                               (:typedef ("basic_string" type
+                                     (:template-specifier 
+                                        ( ("_CharT" type nil nil nil)
+                                          ("_Traits" type nil nil nil)
+                                          ("_Alloc" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [13314 13375])
+                            ("__stringbuf_type" type
+                               (:typedef ("basic_stringbuf" type
+                                     (:template-specifier 
+                                        ( ("_CharT" type nil nil nil)
+                                          ("_Traits" type nil nil nil)
+                                          ("_Alloc" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [13382 13449])
+                            ("__ostream_type" type
+                               (:typedef ("basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [13456 13517])
+                            ("private" label nil (reparse-symbol classsubparts) [13523 13531])
+                            ("_M_stringbuf" variable (:type ("__stringbuf_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13538 13568])
+                            ("public" label nil (reparse-symbol classsubparts) [13574 13581])
+                            ("basic_ostringstream" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14185 14221])
+                                    ("" variable (:type ("out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14223 14227]))                                  
+                                :type ("basic_ostringstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14165 14327])
+                            ("basic_ostringstream" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__string_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14925 14952])
+                                    ("__mode" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14958 14994])
+                                    ("" variable (:type ("out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14996 15000]))                                  
+                                :type ("basic_ostringstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14905 15107])
+                            ("basic_ostringstream" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [15288 15320])
+                            ("rdbuf" function
+                               (:pointer 1
+                                :type ("__stringbuf_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15545 15645])
+                            ("str" function (:type ("__string_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15758 15826])
+                            ("str" function
+                               (:arguments 
+                                  ( ("__s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__string_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16013 16038]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15998 16071]))                          
+                        :superclasses 
+                          ( ("basic_ostream" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [12725 16078])
+                    ("basic_stringstream" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil)
+                            ("_Alloc" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [16876 16883])
+                            ("char_type" type
+                               (:typedef ("_CharT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [16906 16936])
+                            ("traits_type" type
+                               (:typedef ("_Traits" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [16943 16976])
+                            ("allocator_type" type
+                               (:typedef ("_Alloc" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [17074 17115])
+                            ("int_type" type
+                               (:typedef ("traits_type::int_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [17122 17172])
+                            ("pos_type" type
+                               (:typedef ("traits_type::pos_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [17179 17229])
+                            ("off_type" type
+                               (:typedef ("traits_type::off_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [17236 17286])
+                            ("__string_type" type
+                               (:typedef ("basic_string" type
+                                     (:template-specifier 
+                                        ( ("_CharT" type nil nil nil)
+                                          ("_Traits" type nil nil nil)
+                                          ("_Alloc" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [17323 17384])
+                            ("__stringbuf_type" type
+                               (:typedef ("basic_stringbuf" type
+                                     (:template-specifier 
+                                        ( ("_CharT" type nil nil nil)
+                                          ("_Traits" type nil nil nil)
+                                          ("_Alloc" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [17391 17458])
+                            ("__iostream_type" type
+                               (:typedef ("basic_iostream" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [17465 17528])
+                            ("private" label nil (reparse-symbol classsubparts) [17534 17542])
+                            ("_M_stringbuf" variable (:type ("__stringbuf_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17549 17579])
+                            ("public" label nil (reparse-symbol classsubparts) [17585 17592])
+                            ("basic_stringstream" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__m" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18137 18170])
+                                    ("" variable (:type ("out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18172 18177])
+                                    ("" variable (:type ("ios_base::in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18178 18191]))                                  
+                                :type ("basic_stringstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18118 18273])
+                            ("basic_stringstream" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__string_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18790 18817])
+                                    ("__m" variable
+                                       (:default-value "ios_base"
+                                        :type ("ios_base::openmode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18822 18855])
+                                    ("" variable (:type ("out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18857 18862])
+                                    ("" variable (:type ("ios_base::in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18863 18876]))                                  
+                                :type ("basic_stringstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18771 18965])
+                            ("basic_stringstream" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [19146 19177])
+                            ("rdbuf" function
+                               (:pointer 1
+                                :type ("__stringbuf_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19402 19502])
+                            ("str" function (:type ("__string_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19615 19683])
+                            ("str" function
+                               (:arguments 
+                                  ( ("__s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__string_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19870 19895]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [19855 19928]))                          
+                        :superclasses 
+                          ( ("basic_iostream" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [16734 19935]))                  
+                :type "namespace")
+                nil [1323 19969])
+            ("bits/sstream.tcc" include (:system-flag t) nil [19984 20011]))          
+      :file "sstream"
+      :pointmax 20043
+      :fsize 20042
+      :lastmodtime '(22317 53278 0 0)
+      :unmatched-syntax '((symbol 19959 . 19967) (punctuation 18861 . 18862) (punctuation 18856 . 18857) (punctuation 18855 . 18856) (EXPLICIT 18756 . 18764) (punctuation 18176 . 18177) (punctuation 18171 . 18172) (punctuation 18170 . 18171) (EXPLICIT 18103 . 18111) (punctuation 14995 . 14996) (punctuation 14994 . 14995) (EXPLICIT 14890 . 14898) (punctuation 14222 . 14223) (punctuation 14221 . 14222) (EXPLICIT 14150 . 14158) (punctuation 11015 . 11016) (punctuation 11014 . 11015) (EXPLICIT 10910 . 10918) (punctuation 10246 . 10247) (punctuation 10245 . 10246) (EXPLICIT 10174 . 10182) (punctuation 7236 . 7237) (punctuation 7232 . 7233) (punctuation 7231 . 7232) (punctuation 7117 . 7118) (punctuation 7113 . 7114) (punctuation 7112 . 7113) (punctuation 4027 . 4028) (punctuation 4023 . 4024) (punctuation 4022 . 4023) (EXPLICIT 3919 . 3927) (punctuation 3511 . 3512) (punctuation 3507 . 3508) (punctuation 3506 . 3507) (EXPLICIT 3439 . 3447) (symbol 1269 . 1282) (symbol 1265 . 1268) (symbol 1258 . 1264) (punctuation 1257 . 1258))
+      :lexical-table 
+        '(("_GLIBCXX_SSTREAM" . ((number "1" 1254 . 1255)))
+          )
+)
+    (semanticdb-table "cstdio"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("bits/c++config.h" include (:system-flag t) nil [1574 1601])
+            ("stdio.h" include (:system-flag t) nil [1602 1620])
+            ("_GLIBCXX_CSTDIO" variable (:constant-flag t) nil [1654 1669])
+            ("std" type
+               (:members 
+                  ( ("FILE" variable (:type "int") (reparse-symbol namespacesubparts) [2444 2449])
+                    ("fpos_t" variable (:type "int") (reparse-symbol namespacesubparts) [2460 2467])
+                    ("clearerr" variable (:type "int") (reparse-symbol namespacesubparts) [2479 2488])
+                    ("fclose" variable (:type "int") (reparse-symbol namespacesubparts) [2499 2506])
+                    ("feof" variable (:type "int") (reparse-symbol namespacesubparts) [2517 2522])
+                    ("ferror" variable (:type "int") (reparse-symbol namespacesubparts) [2533 2540])
+                    ("fflush" variable (:type "int") (reparse-symbol namespacesubparts) [2551 2558])
+                    ("fgetc" variable (:type "int") (reparse-symbol namespacesubparts) [2569 2575])
+                    ("fgetpos" variable (:type "int") (reparse-symbol namespacesubparts) [2586 2594])
+                    ("fgets" variable (:type "int") (reparse-symbol namespacesubparts) [2605 2611])
+                    ("fopen" variable (:type "int") (reparse-symbol namespacesubparts) [2622 2628])
+                    ("fprintf" variable (:type "int") (reparse-symbol namespacesubparts) [2639 2647])
+                    ("fputc" variable (:type "int") (reparse-symbol namespacesubparts) [2658 2664])
+                    ("fputs" variable (:type "int") (reparse-symbol namespacesubparts) [2675 2681])
+                    ("fread" variable (:type "int") (reparse-symbol namespacesubparts) [2692 2698])
+                    ("freopen" variable (:type "int") (reparse-symbol namespacesubparts) [2709 2717])
+                    ("fscanf" variable (:type "int") (reparse-symbol namespacesubparts) [2728 2735])
+                    ("fseek" variable (:type "int") (reparse-symbol namespacesubparts) [2746 2752])
+                    ("fsetpos" variable (:type "int") (reparse-symbol namespacesubparts) [2763 2771])
+                    ("ftell" variable (:type "int") (reparse-symbol namespacesubparts) [2782 2788])
+                    ("fwrite" variable (:type "int") (reparse-symbol namespacesubparts) [2799 2806])
+                    ("getc" variable (:type "int") (reparse-symbol namespacesubparts) [2817 2822])
+                    ("getchar" variable (:type "int") (reparse-symbol namespacesubparts) [2833 2841])
+                    ("gets" variable (:type "int") (reparse-symbol namespacesubparts) [2852 2857])
+                    ("perror" variable (:type "int") (reparse-symbol namespacesubparts) [2868 2875])
+                    ("printf" variable (:type "int") (reparse-symbol namespacesubparts) [2886 2893])
+                    ("putc" variable (:type "int") (reparse-symbol namespacesubparts) [2904 2909])
+                    ("putchar" variable (:type "int") (reparse-symbol namespacesubparts) [2920 2928])
+                    ("puts" variable (:type "int") (reparse-symbol namespacesubparts) [2939 2944])
+                    ("remove" variable (:type "int") (reparse-symbol namespacesubparts) [2955 2962])
+                    ("rename" variable (:type "int") (reparse-symbol namespacesubparts) [2973 2980])
+                    ("rewind" variable (:type "int") (reparse-symbol namespacesubparts) [2991 2998])
+                    ("scanf" variable (:type "int") (reparse-symbol namespacesubparts) [3009 3015])
+                    ("setbuf" variable (:type "int") (reparse-symbol namespacesubparts) [3026 3033])
+                    ("setvbuf" variable (:type "int") (reparse-symbol namespacesubparts) [3044 3052])
+                    ("sprintf" variable (:type "int") (reparse-symbol namespacesubparts) [3063 3071])
+                    ("sscanf" variable (:type "int") (reparse-symbol namespacesubparts) [3082 3089])
+                    ("tmpfile" variable (:type "int") (reparse-symbol namespacesubparts) [3100 3108])
+                    ("tmpnam" variable (:type "int") (reparse-symbol namespacesubparts) [3119 3126])
+                    ("ungetc" variable (:type "int") (reparse-symbol namespacesubparts) [3137 3144])
+                    ("vfprintf" variable (:type "int") (reparse-symbol namespacesubparts) [3155 3164])
+                    ("vprintf" variable (:type "int") (reparse-symbol namespacesubparts) [3175 3183])
+                    ("vsprintf" variable (:type "int") (reparse-symbol namespacesubparts) [3194 3203]))                  
+                :type "namespace")
+                nil [2418 3205])
+            ("__gnu_cxx" type
+               (:members 
+                  ( ("snprintf" variable (:type "int") (reparse-symbol namespacesubparts) [3935 3944])
+                    ("vfscanf" variable (:type "int") (reparse-symbol namespacesubparts) [3955 3963])
+                    ("vscanf" variable (:type "int") (reparse-symbol namespacesubparts) [3974 3981])
+                    ("vsnprintf" variable (:type "int") (reparse-symbol namespacesubparts) [3992 4002])
+                    ("vsscanf" variable (:type "int") (reparse-symbol namespacesubparts) [4013 4021]))                  
+                :type "namespace")
+                nil [3320 4030])
+            ("std" type
+               (:members 
+                  ( ("__gnu_cxx::snprintf" variable (:type "int") (reparse-symbol namespacesubparts) [4081 4101])
+                    ("__gnu_cxx::vfscanf" variable (:type "int") (reparse-symbol namespacesubparts) [4112 4131])
+                    ("__gnu_cxx::vscanf" variable (:type "int") (reparse-symbol namespacesubparts) [4142 4160])
+                    ("__gnu_cxx::vsnprintf" variable (:type "int") (reparse-symbol namespacesubparts) [4171 4192])
+                    ("__gnu_cxx::vsscanf" variable (:type "int") (reparse-symbol namespacesubparts) [4203 4222]))                  
+                :type "namespace")
+                nil [4055 4224]))          
+      :file "cstdio"
+      :pointmax 4278
+      :fsize 4277
+      :lastmodtime '(22317 53277 0 0)
+      :unmatched-syntax '((punctuation 4202 . 4203) (punctuation 4201 . 4202) (USING 4195 . 4200) (punctuation 4170 . 4171) (punctuation 4169 . 4170) (USING 4163 . 4168) (punctuation 4141 . 4142) (punctuation 4140 . 4141) (USING 4134 . 4139) (punctuation 4111 . 4112) (punctuation 4110 . 4111) (USING 4104 . 4109) (punctuation 4080 . 4081) (punctuation 4079 . 4080) (USING 4073 . 4078) (punctuation 4012 . 4013) (punctuation 4011 . 4012) (USING 4005 . 4010) (punctuation 3991 . 3992) (punctuation 3990 . 3991) (USING 3984 . 3989) (punctuation 3973 . 3974) (punctuation 3972 . 3973) (USING 3966 . 3971) (punctuation 3954 . 3955) (punctuation 3953 . 3954) (USING 3947 . 3952) (punctuation 3934 . 3935) (punctuation 3933 . 3934) (USING 3927 . 3932) (punctuation 3193 . 3194) (punctuation 3192 . 3193) (USING 3186 . 3191) (punctuation 3174 . 3175) (punctuation 3173 . 3174) (USING 3167 . 3172) (punctuation 3154 . 3155) (punctuation 3153 . 3154) (USING 3147 . 3152) (punctuation 3136 . 3137) (punctuation 3135 . 3136) (USING 3129 . 3134) (punctuation 3118 . 3119) (punctuation 3117 . 3118) (USING 3111 . 3116) (punctuation 3099 . 3100) (punctuation 3098 . 3099) (USING 3092 . 3097) (punctuation 3081 . 3082) (punctuation 3080 . 3081) (USING 3074 . 3079) (punctuation 3062 . 3063) (punctuation 3061 . 3062) (USING 3055 . 3060) (punctuation 3043 . 3044) (punctuation 3042 . 3043) (USING 3036 . 3041) (punctuation 3025 . 3026) (punctuation 3024 . 3025) (USING 3018 . 3023) (punctuation 3008 . 3009) (punctuation 3007 . 3008) (USING 3001 . 3006) (punctuation 2990 . 2991) (punctuation 2989 . 2990) (USING 2983 . 2988) (punctuation 2972 . 2973) (punctuation 2971 . 2972) (USING 2965 . 2970) (punctuation 2954 . 2955) (punctuation 2953 . 2954) (USING 2947 . 2952) (punctuation 2938 . 2939) (punctuation 2937 . 2938) (USING 2931 . 2936) (punctuation 2919 . 2920) (punctuation 2918 . 2919) (USING 2912 . 2917) (punctuation 2903 . 2904) (punctuation 2902 . 2903) (USING 2896 . 2901) (punctuation 2885 . 2886) (punctuation 2884 . 2885) (USING 2878 . 2883) (punctuation 2867 . 2868) (punctuation 2866 . 2867) (USING 2860 . 2865) (punctuation 2851 . 2852) (punctuation 2850 . 2851) (USING 2844 . 2849) (punctuation 2832 . 2833) (punctuation 2831 . 2832) (USING 2825 . 2830) (punctuation 2816 . 2817) (punctuation 2815 . 2816) (USING 2809 . 2814) (punctuation 2798 . 2799) (punctuation 2797 . 2798) (USING 2791 . 2796) (punctuation 2781 . 2782) (punctuation 2780 . 2781) (USING 2774 . 2779) (punctuation 2762 . 2763) (punctuation 2761 . 2762) (USING 2755 . 2760) (punctuation 2745 . 2746) (punctuation 2744 . 2745) (USING 2738 . 2743) (punctuation 2727 . 2728) (punctuation 2726 . 2727) (USING 2720 . 2725) (punctuation 2708 . 2709) (punctuation 2707 . 2708) (USING 2701 . 2706) (punctuation 2691 . 2692) (punctuation 2690 . 2691) (USING 2684 . 2689) (punctuation 2674 . 2675) (punctuation 2673 . 2674) (USING 2667 . 2672) (punctuation 2657 . 2658) (punctuation 2656 . 2657) (USING 2650 . 2655) (punctuation 2638 . 2639) (punctuation 2637 . 2638) (USING 2631 . 2636) (punctuation 2621 . 2622) (punctuation 2620 . 2621) (USING 2614 . 2619) (punctuation 2604 . 2605) (punctuation 2603 . 2604) (USING 2597 . 2602) (punctuation 2585 . 2586) (punctuation 2584 . 2585) (USING 2578 . 2583) (punctuation 2568 . 2569) (punctuation 2567 . 2568) (USING 2561 . 2566) (punctuation 2550 . 2551) (punctuation 2549 . 2550) (USING 2543 . 2548) (punctuation 2532 . 2533) (punctuation 2531 . 2532) (USING 2525 . 2530) (punctuation 2516 . 2517) (punctuation 2515 . 2516) (USING 2509 . 2514) (punctuation 2498 . 2499) (punctuation 2497 . 2498) (USING 2491 . 2496) (punctuation 2478 . 2479) (punctuation 2477 . 2478) (USING 2471 . 2476) (punctuation 2459 . 2460) (punctuation 2458 . 2459) (USING 2452 . 2457) (punctuation 2443 . 2444) (punctuation 2442 . 2443) (USING 2436 . 2441) (symbol 1559 . 1572) (symbol 1555 . 1558) (symbol 1548 . 1554) (punctuation 1547 . 1548))
+      :lexical-table 
+        '(("_GLIBCXX_CSTDIO" . ((number "1" 1670 . 1671)))
+          )
 ))
   :file "!usr!include!c++!4.8!semantic.cache"
   :semantic-tag-version "2.0"
