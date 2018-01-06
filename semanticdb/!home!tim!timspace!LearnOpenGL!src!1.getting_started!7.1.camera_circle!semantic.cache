@@ -47,30 +47,31 @@
                 :default-value "600"
                 :type ("GLuint" type (:type "class") nil nil))
                 nil [663 702])
-            ("main" function (:type "int") nil [776 8804])
+            ("main" function (:type "int") nil [776 9000])
             ("framebuffer_size_callback" function
                (:arguments 
                   ( ("window" variable
                        (:pointer 1
                         :type ("GLFWwindow" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [8837 8856])
-                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [8857 8867])
-                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [8868 8879]))                  
+                        (reparse-symbol arg-sub-list) [9033 9052])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [9053 9063])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [9064 9075]))                  
                 :type "void")
-                nil [8806 8981])
+                nil [9002 9177])
             ("processInput" function
                (:arguments 
                   ( ("window" variable
                        (:pointer 1
                         :type ("GLFWwindow" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [9001 9020]))                  
+                        (reparse-symbol arg-sub-list) [9197 9216]))                  
                 :type "void")
-                nil [8983 9181]))          
+                nil [9179 9377])
+            ("set_cameraPos" function (:type "void") nil [9380 10409]))          
       :file "camera_circle.cpp"
-      :pointmax 9212
-      :fsize 10017
-      :lastmodtime '(23120 21902 978267 709000)
-      :unmatched-syntax '((symbol 9209 . 9211) (punctuation 9208 . 9209) (punctuation 9207 . 9208) (symbol 9204 . 9207) (punctuation 9202 . 9203) (symbol 9188 . 9201) (VOID 9183 . 9187) (symbol 9209 . 9211) (punctuation 9208 . 9209) (punctuation 9207 . 9208) (symbol 9204 . 9207) (punctuation 9202 . 9203) (symbol 9188 . 9201) (VOID 9183 . 9187) (symbol 9209 . 9211) (punctuation 9208 . 9209) (punctuation 9207 . 9208) (symbol 9204 . 9207) (punctuation 9202 . 9203) (symbol 9188 . 9201) (VOID 9183 . 9187) (punctuation 9208 . 9209) (punctuation 9207 . 9208) (symbol 9204 . 9207) (punctuation 9202 . 9203) (symbol 9188 . 9201) (VOID 9183 . 9187) (punctuation 9208 . 9209) (punctuation 9207 . 9208) (symbol 9204 . 9207) (punctuation 9202 . 9203) (symbol 9188 . 9201) (VOID 9183 . 9187) (symbol 9209 . 9211) (punctuation 9208 . 9209) (punctuation 9207 . 9208) (symbol 9204 . 9207) (punctuation 9202 . 9203) (symbol 9188 . 9201) (VOID 9183 . 9187) (symbol 9209 . 9211) (punctuation 9208 . 9209) (punctuation 9207 . 9208) (symbol 9204 . 9207) (punctuation 9202 . 9203) (symbol 9188 . 9201) (VOID 9183 . 9187) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (symbol 9210 . 9214) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (symbol 9210 . 9214) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (symbol 9210 . 9214) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (symbol 9210 . 9214) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (symbol 9189 . 9199) (VOID 9184 . 9188) (string 1761 . 1780) (string 1740 . 1759) (number 7107 . 7111) (number 7075 . 7079))
+      :pointmax 10412
+      :fsize 11950
+      :lastmodtime '(23120 25903 326196 71000)
+      :unmatched-syntax nil
       :lexical-table 
         '(("GLEW_STATIC")
           ("STB_IMAGE_IMPLEMENTATION")

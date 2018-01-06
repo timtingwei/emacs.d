@@ -1,0 +1,82 @@
+;; Object 7.2.camera_circle_keyboard_dt/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "7.2.camera_circle_keyboard_dt/"
+  :tables
+  (list
+    (semanticdb-table "camera_circle_keyboard_dt.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [205 216])
+            ("GL/glew.h" include (:system-flag t) nil [217 237])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [246 269])
+            ("STB_IMAGE_IMPLEMENTATION" variable (:constant-flag t) nil [293 317])
+            ("stb_image.h" include (:system-flag t) nil [318 340])
+            ("learnopengl/shader_s.h" include (:system-flag t) nil [342 375])
+            ("math.h" include (:system-flag t) nil [376 393])
+            ("iostream" include (:system-flag t) nil [394 413])
+            ("glm/glm.hpp" include (:system-flag t) nil [430 452])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [453 492])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [493 524])
+            ("framebuffer_size_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [579 598])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [599 609])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [610 621]))                  
+                :type "void")
+                nil [548 622])
+            ("processInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [641 660]))                  
+                :type "void")
+                nil [623 661])
+            ("WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [684 723])
+            ("HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [684 723])
+            ("main" function (:type "int") nil [797 8483])
+            ("framebuffer_size_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8516 8535])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [8536 8546])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [8547 8558]))                  
+                :type "void")
+                nil [8485 8660])
+            ("processInput" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8680 8699]))                  
+                :type "void")
+                nil [8662 8860])
+            ("set_cameraPos" function (:type "void") nil [8863 9892]))          
+      :file "camera_circle_keyboard_dt.cpp"
+      :pointmax 9895
+      :fsize 10438
+      :lastmodtime '(23120 50705 707990 335000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLEW_STATIC")
+          ("STB_IMAGE_IMPLEMENTATION")
+          )
+))
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!7.2.camera_circle_keyboard_dt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

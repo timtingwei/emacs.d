@@ -152,15 +152,15 @@
 
 
 ;;turn on Semantic
-(semantic-mode 1)
+;(semantic-mode 1)
 ;;close Semantic
 ;(setq semantic-mode nil)
 ;;let's define a function which add semantic as a suggestion backend to auto complete
 ;;and hook this function to c-mode-common-hook
-(defun my:add-semantic-to-autocomplete()
-  (add-to-list 'ac-sources 'ac-source-semantic)
-)
-(add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
+;(defun my:add-semantic-to-autocomplete()
+;  (add-to-list 'ac-sources 'ac-source-semantic)
+;)
+;(add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
 
 ;;turn on ede mode-line
 (global-ede-mode 1)
@@ -169,7 +169,7 @@
 ;;		      :include-path '("/usr/lib/gcc/i586-redhat-linux/4.4.1/include"))
 ;;you can use system-include-path for setting up the system header file locations.
 ;;turn on automatic reparsing of open buffers in semantic
-(global-semantic-idle-scheduler-mode 1)
+;;(global-semantic-idle-scheduler-mode 1)
 
 
 

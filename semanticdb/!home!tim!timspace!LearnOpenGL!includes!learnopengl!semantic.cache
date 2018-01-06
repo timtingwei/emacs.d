@@ -1,0 +1,105 @@
+;; Object learnopengl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "learnopengl/"
+  :tables
+  (list
+    (semanticdb-table "shader_s.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SHADER_H" variable (:constant-flag t) nil [103 111])
+            ("GL/glew.h" include (:system-flag t) nil [121 141])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [150 173])
+            ("fstream" include (:system-flag t) nil [175 193])
+            ("sstream" include (:system-flag t) nil [194 212])
+            ("string" include (:system-flag t) nil [213 230])
+            ("iostream" include (:system-flag t) nil [231 250])
+            ("glm/glm.hpp" include (:system-flag t) nil [267 289])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [290 329])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [330 361])
+            ("Shader" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [380 387])
+                    ("ID" variable (:type "unsigned int") (reparse-symbol classsubparts) [400 416])
+                    ("Shader" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("vertexPath" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("GLchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [444 469])
+                            ("fragmentPath" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("GLchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [470 497]))                          
+                        :type ("Shader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [437 2251])
+                    ("use" function (:type "void") (reparse-symbol classsubparts) [2267 2328])
+                    ("setBool" function
+                       (:arguments 
+                          ( ("ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2361 2377])
+                            ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2378 2402])
+                            ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [2403 2414]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2348 2495])
+                    ("setInt" function
+                       (:arguments 
+                          ( ("ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2510 2526])
+                            ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2527 2551])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2552 2562]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2498 2638])
+                    ("setFloat" function
+                       (:arguments 
+                          ( ("ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2655 2671])
+                            ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2672 2696])
+                            ("value" variable (:type "float") (reparse-symbol arg-sub-list) [2697 2709]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2641 2785])
+                    ("setMat4" function
+                       (:arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2801 2825])
+                            ("value" variable (:type ("glm::mat4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2826 2842]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2788 2992])
+                    ("private" label nil (reparse-symbol classsubparts) [2995 3003])
+                    ("checkCompileErrors" function
+                       (:arguments 
+                          ( ("shader" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3099 3119])
+                            ("type" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3120 3143]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3075 3875]))                  
+                :type "class")
+                nil [364 3878]))          
+      :file "shader_s.h"
+      :pointmax 3886
+      :fsize 4157
+      :lastmodtime '(23120 26691 766181 951000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SHADER_H")
+          )
+))
+  :file "!home!tim!timspace!LearnOpenGL!includes!learnopengl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
