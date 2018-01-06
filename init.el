@@ -97,8 +97,8 @@
 (require 'auto-complete-config)
 (ac-config-default)
 ;;auto complete using clang is CPU sensitive
-(setq ac-auto-start nil)
-(ac-set-trigger-key "<C-return>")
+;(setq ac-auto-start nil)
+;(ac-set-trigger-key "<C-return>")
 
 ;;start yasnippet
 (require 'yasnippet)
@@ -153,12 +153,15 @@
 
 ;;turn on Semantic
 (semantic-mode 1)
+;;close Semantic
+(setq semantic-mode nil)
 ;;let's define a function which add semantic as a suggestion backend to auto complete
 ;and hook this function to c-mode-common-hook
-(defun my:add-semantic-to-autocomplete()
+;(defun my:add-semantic-to-autocomplete()
   (add-to-list 'ac-sources 'ac-source-semantic)
 )
 (add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
+
 ;;turn on ede mode-line
 (global-ede-mode 1)
 ;;create a project for your program;  !!each time you create a project??

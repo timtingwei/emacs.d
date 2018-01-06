@@ -83,12 +83,80 @@
       :file "shader_s.h"
       :pointmax 3567
       :fsize 3838
-      :lastmodtime '(23105 35419 284117 946000)
+      :lastmodtime '(23105 54935 486307 388000)
       :unmatched-syntax nil
       :lexical-table 
         '(("SHADER_H")
           )
-))
+)
+    (semanticdb-table "RAM.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [218 237])
+            ("print_ram" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [254 267])
+                    ("d" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [268 281])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [282 295])
+                    ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [296 309]))                  
+                :type "void")
+                nil [239 310])
+            ("f" function (:type "int") nil [312 887])
+            ("print_ram" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [904 917])
+                    ("d" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [918 931])
+                    ("x" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [932 945])
+                    ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [946 959]))                  
+                :type "void")
+                nil [889 1117])
+            ("Name" type
+               (:members 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1134 1142]))                  
+                :type "class")
+                nil [1119 1145])
+            ("main" function (:type "int") nil [1150 1253]))          
+      :file "RAM.cpp"
+      :pointmax 1258
+      :fsize 1207
+      :lastmodtime '(23106 23081 717760 381000)
+      :unmatched-syntax nil))
   :file "!home!tim!tmp!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")
