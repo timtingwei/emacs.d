@@ -1,0 +1,14 @@
+;; Object notes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "notes/"
+  :tables
+  (list
+    (semanticdb-table "sum.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "sum.cpp"
+      :pointmax 1
+      :unmatched-syntax nil))
+  :file "!home!tim!timspace!dsacpp!notes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

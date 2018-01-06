@@ -9,9 +9,75 @@
         '( ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
             ("GL/glew.h" include (:system-flag t) nil [239 259])
             ("GLFW/glfw3.h" include (:system-flag t) nil [268 291])
-            ("iostream" include (:system-flag t) nil [317 336]))          
+            ("iostream" include (:system-flag t) nil [317 336])
+            ("key_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [379 398])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [399 407])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [426 439])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [440 451])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [452 461]))                  
+                :type "void")
+                nil [361 462])
+            ("WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [484 523])
+            ("HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [484 523])
+            ("vertexShaderSource" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"#version 330 core\\n\"
+  \"layout (location = 0) in vec3 position;\\n\"
+  \"void main() {\\n\"
+  \"gl_Position = vec4(position.x, position.y, position.z, 1.0);\\n\"
+  \"}\\n\\0\""
+                :type ("GLchar" type (:type "class") nil nil))
+                nil [534 734])
+            ("fragmentShaderSource0" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"#version 330 core\\n\"
+    \"out vec4 color;\\n\"
+    \"void main() {\\n\"
+    \"color = vec4(1.0f, 0.5f, 0.2f, 1.0f);\\n\"   // orange
+    \"}\\n\\0\""
+                :type ("GLchar" type (:type "class") nil nil))
+                nil [746 922])
+            ("fragmentShaderSource1" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"#version 330 core\\n\"
+    \"out vec4 color;\\n\"
+    \"void main() {\\n\"
+    \"color = vec4(1.0f, 1.0f, 0.0f, 1.0f);\\n\"   // yellow
+    \"}\\n\\0\""
+                :type ("GLchar" type (:type "class") nil nil))
+                nil [934 1110])
+            ("main" function (:type "int") nil [1125 7554])
+            ("key_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7574 7593])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [7594 7602])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [7621 7634])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [7635 7646])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [7647 7656]))                  
+                :type "void")
+                nil [7556 7829]))          
       :file "hello_triangle_exercise3.cpp"
-      :pointmax 7845
+      :pointmax 7837
       :fsize 9246
       :lastmodtime '(23104 40883 374313 356000)
       :unmatched-syntax nil

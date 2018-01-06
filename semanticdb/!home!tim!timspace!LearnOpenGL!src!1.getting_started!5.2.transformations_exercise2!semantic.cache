@@ -1,0 +1,115 @@
+;; Object 5.2.transformations_exercise2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "5.2.transformations_exercise2/"
+  :tables
+  (list
+    (semanticdb-table "transformations_exercise2.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [311 322])
+            ("GL/glew.h" include (:system-flag t) nil [323 343])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [352 375])
+            ("STB_IMAGE_IMPLEMENTATION" variable (:constant-flag t) nil [399 423])
+            ("stb_image.h" include (:system-flag t) nil [424 446])
+            ("learnopengl/shader_s.h" include (:system-flag t) nil [448 481])
+            ("math.h" include (:system-flag t) nil [482 499])
+            ("iostream" include (:system-flag t) nil [500 519])
+            ("glm/glm.hpp" include (:system-flag t) nil [536 558])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [559 598])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [599 630])
+            ("framebuffer_size_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [685 704])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [705 715])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [716 727]))                  
+                :type "void")
+                nil [654 728])
+            ("processInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [747 766]))                  
+                :type "void")
+                nil [729 767])
+            ("WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [791 830])
+            ("HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [791 830])
+            ("main" function (:type "int") nil [846 7156])
+            ("glDeleteVertexArrays" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("VAO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7044 7048]))                  
+                :type "int")
+                nil [7019 7049])
+            ("glDeleteBuffers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("VBO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7072 7076]))                  
+                :type "int")
+                nil [7052 7077])
+            ("glDeleteBuffers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EBO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7100 7104]))                  
+                :type "int")
+                nil [7080 7105])
+            ("glfwTerminate" function
+               (:prototype-flag t
+                :type "int")
+                nil [7126 7142])
+            ("glViewport" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("width" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7316 7322])
+                    ("" variable (:type ("height" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7323 7330]))                  
+                :type "int")
+                nil [7299 7331])
+            ("glfwSetWindowShouldClose" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("window" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7517 7524])
+                    ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7525 7530]))                  
+                :type "int")
+                nil [7492 7531])
+            ("vec" function
+               (:prototype-flag t
+                :type ("glm::vec4" type (:type "class") nil nil))
+                nil [7631 7631])
+            ("trans" function
+               (:prototype-flag t
+                :type ("glm::mat4" type (:type "class") nil nil))
+                nil [7631 7631])
+            ("trans" variable
+               (:default-value "glm::translate(trans, glm::vec3(1.0f, 1.0f, 0.0f))"
+                :type "int")
+                nil [7631 7631])
+            ("vec" variable
+               (:default-value "trans * vec"
+                :type "int")
+                nil [7631 7631]))          
+      :file "transformations_exercise2.cpp"
+      :pointmax 7536
+      :fsize 8529
+      :lastmodtime '(23118 15484 404817 919000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLEW_STATIC")
+          ("STB_IMAGE_IMPLEMENTATION")
+          )
+))
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!5.2.transformations_exercise2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

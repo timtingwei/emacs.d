@@ -96,6 +96,9 @@
 ;;do default config for auto-complete
 (require 'auto-complete-config)
 (ac-config-default)
+;;auto complete using clang is CPU sensitive
+(setq ac-auto-start nil)
+(ac-set-trigger-key "<C-return>")
 
 ;;start yasnippet
 (require 'yasnippet)

@@ -1,0 +1,83 @@
+;; Object 6.1.coordinate_systems_exercise3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "6.1.coordinate_systems_exercise3/"
+  :tables
+  (list
+    (semanticdb-table "coordinate_systems_exercise3.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [449 460])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [449 460])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [449 460])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [449 460])
+            ("GL/glew.h" include (:system-flag t) nil [461 481])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [490 513])
+            ("STB_IMAGE_IMPLEMENTATION" variable (:constant-flag t) nil [537 561])
+            ("stb_image.h" include (:system-flag t) nil [562 584])
+            ("learnopengl/shader_s.h" include (:system-flag t) nil [586 619])
+            ("math.h" include (:system-flag t) nil [620 637])
+            ("iostream" include (:system-flag t) nil [638 657])
+            ("glm/glm.hpp" include (:system-flag t) nil [674 696])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [697 736])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [737 768])
+            ("framebuffer_size_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [823 842])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [843 853])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [854 865]))                  
+                :type "void")
+                nil [792 866])
+            ("processInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [885 904]))                  
+                :type "void")
+                nil [867 905])
+            ("WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [928 967])
+            ("HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [928 967])
+            ("main" function (:type "int") nil [1041 8881])
+            ("framebuffer_size_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8914 8933])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [8934 8944])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [8945 8956]))                  
+                :type "void")
+                nil [8883 9058])
+            ("processInput" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9078 9097]))                  
+                :type "void")
+                nil [9060 9258]))          
+      :file "coordinate_systems_exercise3.cpp"
+      :pointmax 9261
+      :fsize 10316
+      :lastmodtime '(23119 12177 685417 826000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLEW_STATIC")
+          )
+))
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!6.1.coordinate_systems_exercise3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

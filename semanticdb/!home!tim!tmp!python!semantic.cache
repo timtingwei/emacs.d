@@ -1,0 +1,61 @@
+;; Object python/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python/"
+  :tables
+  (list
+    (semanticdb-table "draw_a_gray_cross_over_a_image.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("PIL" include nil nil [23 55])
+            ("sys" include nil nil [56 66])
+            ("width" variable nil nil [131 145])
+            ("im_init" variable nil nil [148 202])
+            ("im_init" code nil nil [203 217])
+            ("im_init" code nil nil [231 246])
+            ("im_welcome" variable nil nil [322 372])
+            ("im_welcome" code nil nil [453 477]))          
+      :file "draw_a_gray_cross_over_a_image.py"
+      :pointmax 1107
+      :fsize 1604
+      :lastmodtime '(23109 45488 481028 323000)
+      :unmatched-syntax nil)
+    (semanticdb-table "first-program.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("PIL" include nil nil [23 55])
+            ("sys" include nil nil [56 66])
+            ("random" include nil nil [67 80])
+            ("width" variable nil nil [128 139])
+            ("height" code nil nil [140 158])
+            ("size" variable nil nil [160 182])
+            ("\"\"\"
+height = 400
+width = height 
+
+im_init = Image.new(\"RGB\", (width, height), (0, 0, 0))
+im_init.show()
+#del im_init
+im_init.close()
+\"\"\"" code nil nil [183 319])
+            ("im_welcome" variable nil nil [391 441])
+            ("im_welcome" variable nil nil [524 560])
+            ("im_welcome" code nil nil [561 585])
+            ("name" variable nil nil [630 657])
+            ("print" code nil nil [658 733])
+            ("age" variable nil nil [753 775])
+            ("number" variable nil nil [819 845])
+            ("while" code nil nil [846 935])
+            ("poem" variable nil nil [961 1035])
+            ("poem_success" variable nil nil [1037 1092])
+            ("if" code nil nil [1093 1264])
+            ("print" code nil nil [1335 1365])
+            ("ready_ok" variable nil nil [1367 1398])
+            ("while" code nil nil [1400 1854]))          
+      :file "first-program.py"
+      :pointmax 2263
+      :fsize 2730
+      :lastmodtime '(23109 48139 415366 700000)
+      :unmatched-syntax nil))
+  :file "!home!tim!tmp!python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

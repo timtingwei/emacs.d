@@ -1,9 +1,9 @@
-;; Object 4.1.textures/
+;; Object 4.2.textures_combined/
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "4.1.textures/"
+(semanticdb-project-database-file "4.2.textures_combined/"
   :tables
   (list
-    (semanticdb-table "textures.cpp"
+    (semanticdb-table "textures_combined.cpp"
       :major-mode 'c++-mode
       :tags 
         '( ("GLEW_STATIC" variable (:constant-flag t) nil [98 109])
@@ -63,16 +63,17 @@
                         (reparse-symbol arg-sub-list) [5365 5384]))                  
                 :type "void")
                 nil [5347 5545]))          
-      :file "textures.cpp"
+      :file "textures_combined.cpp"
       :pointmax 7247
       :fsize 8212
-      :lastmodtime '(23106 10071 348723 158000)
+      :lastmodtime '(23116 32133 224105 977000)
       :unmatched-syntax nil
       :lexical-table 
         '(("GLEW_STATIC")
           ("STB_IMAGE_IMPLEMENTATION")
           )
-))
-  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!4.1.textures!semantic.cache"
+)
+)
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!4.2.textures_combined!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

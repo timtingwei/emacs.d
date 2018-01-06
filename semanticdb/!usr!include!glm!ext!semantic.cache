@@ -1,0 +1,1267 @@
+;; Object ext/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ext/"
+  :tables
+  (list
+    (semanticdb-table "vec1.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("../fwd.hpp" include nil nil [272 293])
+            ("../detail/type_vec.hpp" include nil nil [294 327])
+            ("../detail/_swizzle_func.hpp" include nil nil [443 483])
+            ("cstddef" include (:system-flag t) nil [513 531])
+            ("glm" type
+               (:members 
+                  ( ("vec" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("qualifier" type nil nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [815 836])
+                            ("type" type
+                               (:typedef ("vec" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [839 856])
+                            ("bool_type" type
+                               (:typedef ("vec" type
+                                     (:template-specifier (("1") ("bool" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [859 893])
+                            ("" type
+                               (:members 
+                                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2021 2031])
+                                    ("r" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2021 2031])
+                                    ("s" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2021 2031]))                                  
+                                :type "union")
+                                (reparse-symbol classsubparts) [2014 2033])
+                            ("length_type" type
+                               (:typedef ("length_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2266 2295])
+                            ("length" function (:type ("length_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2333 2364])
+                            ("[]" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("length_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2397 2411]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2382 2412])
+                            ("[]" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("length_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2449 2463]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2429 2470])
+                            ("GLM_DEFAULT" variable (:type "int") (reparse-symbol classsubparts) [2553 2565])
+                            ("GLM_DEFAULT" variable (:type "int") (reparse-symbol classsubparts) [2619 2631])
+                            ("vec" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("T" type nil nil nil) ("P" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2695 2717]))                                  
+                                :type ("GLM_CONSTEXPR_CTOR" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2672 2718])
+                            ("vec" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2808 2817]))                                  
+                                :type ("vec" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2804 2818])
+                            ("vec" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("2") ("U" type nil nil nil) ("P" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3064 3086]))                                  
+                                :type ("GLM_EXPLICIT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3047 3087])
+                            ("vec" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("3") ("U" type nil nil nil) ("P" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3289 3311]))                                  
+                                :type ("GLM_EXPLICIT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3272 3312])
+                            ("vec" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("4") ("U" type nil nil nil) ("P" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3514 3536]))                                  
+                                :type ("GLM_EXPLICIT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3497 3537])
+                            ("vec" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("U" type nil nil nil) ("P" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3740 3762]))                                  
+                                :type ("GLM_EXPLICIT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3723 3763])
+                            ("GLM_DEFAULT" variable (:type "int") (reparse-symbol classsubparts) [4175 4187])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("U" type nil nil nil) ("Q" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4244 4266]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4228 4267])
+                            ("+=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4324 4333]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4307 4334])
+                            ("+=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("U" type nil nil nil) ("Q" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4391 4413]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4374 4414])
+                            ("-=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4471 4480]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4454 4481])
+                            ("-=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("U" type nil nil nil) ("Q" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4538 4560]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4521 4561])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4618 4627]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4601 4628])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("U" type nil nil nil) ("Q" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4685 4707]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4668 4708])
+                            ("/=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4765 4774]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4748 4775])
+                            ("/=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("U" type nil nil nil) ("Q" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4832 4854]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4815 4855])
+                            ("++" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4919 4938])
+                            ("--" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4955 4974])
+                            ("++" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5006 5010]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4991 5011])
+                            ("--" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5043 5047]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5028 5048])
+                            ("%=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5138 5147]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5121 5148])
+                            ("%=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("U" type nil nil nil) ("Q" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5205 5227]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5188 5228])
+                            ("&=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5285 5294]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5268 5295])
+                            ("&=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("U" type nil nil nil) ("Q" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5352 5374]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5335 5375])
+                            ("|=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5432 5441]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5415 5442])
+                            ("|=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("U" type nil nil nil) ("Q" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5499 5521]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5482 5522])
+                            ("^=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5579 5588]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5562 5589])
+                            ("^=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("U" type nil nil nil) ("Q" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5646 5668]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5629 5669])
+                            ("<<=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5727 5736]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5709 5737])
+                            ("<<=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("U" type nil nil nil) ("Q" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5795 5817]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5777 5818])
+                            (">>=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5876 5885]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5858 5886])
+                            (">>=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("vec" type
+                                             (:template-specifier (("1") ("U" type nil nil nil) ("Q" type nil nil nil))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5944 5966]))                                  
+                                :type ("vec" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5926 5967]))                          
+                        :template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil)))
+                        (reparse-symbol namespacesubparts) [721 5971])
+                    ("+" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6073 6095]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6050 6096])
+                    ("-" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6171 6193]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6148 6194])
+                    ("+" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6297 6319])
+                            ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6320 6329]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6274 6330])
+                    ("+" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6405 6414])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6415 6437]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6382 6438])
+                    ("+" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6513 6536])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6537 6560]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6490 6561])
+                    ("-" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6636 6658])
+                            ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6659 6668]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6613 6669])
+                    ("-" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6744 6753])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6754 6776]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6721 6777])
+                    ("-" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6852 6875])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6876 6899]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6829 6900])
+                    ("" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6975 6997])
+                            ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6998 7007]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6952 7008])
+                    ("" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7083 7092])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7093 7115]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7060 7116])
+                    ("" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7191 7214])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7215 7238]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7168 7239])
+                    ("/" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7314 7336])
+                            ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7337 7346]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7291 7347])
+                    ("/" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7422 7431])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7432 7454]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7399 7455])
+                    ("/" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7530 7553])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7554 7577]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7507 7578])
+                    ("%" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7653 7675])
+                            ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7676 7685]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7630 7686])
+                    ("%" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7761 7770])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7771 7793]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7738 7794])
+                    ("%" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7869 7892])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7893 7916]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7846 7917])
+                    ("&" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7992 8014])
+                            ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8015 8024]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [7969 8025])
+                    ("&" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8100 8109])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8110 8132]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8077 8133])
+                    ("&" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8208 8231])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8232 8255]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8185 8256])
+                    ("|" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8331 8353])
+                            ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8354 8363]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8308 8364])
+                    ("|" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8439 8448])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8449 8471]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8416 8472])
+                    ("|" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8547 8570])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8571 8594]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8524 8595])
+                    ("^" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8670 8692])
+                            ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8693 8702]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8647 8703])
+                    ("^" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8778 8787])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8788 8810]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8755 8811])
+                    ("^" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8886 8909])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8910 8933]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8863 8934])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9010 9032])
+                            ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9033 9042]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8986 9043])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9119 9128])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9129 9151]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [9095 9152])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9228 9251])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9252 9275]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [9204 9276])
+                    (">>" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9352 9374])
+                            ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9375 9384]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [9328 9385])
+                    (">>" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("scalar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9461 9470])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9471 9493]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [9437 9494])
+                    (">>" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9570 9593])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9594 9617]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [9546 9618])
+                    ("~" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9693 9715]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [9670 9716])
+                    ("==" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9813 9836])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9837 9860]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [9797 9861])
+                    ("!=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9929 9952])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("T" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9953 9976]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [9913 9977])
+                    ("&&" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("bool" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10044 10070])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("bool" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10071 10097]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("bool" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10017 10098])
+                    ("||" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("bool" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10165 10191])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vec" type
+                                     (:template-specifier (("1") ("bool" type nil nil nil) ("Q" type nil nil nil))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10192 10218]))                          
+                        :type ("vec" type
+                             (:template-specifier (("1") ("bool" type nil nil nil) ("Q" type nil nil nil))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10138 10219])
+                    ("highp_vec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("float" type nil nil nil) ("highp" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [10362 10403])
+                    ("mediump_vec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("float" type nil nil nil) ("mediump" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [10548 10593])
+                    ("lowp_vec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("float" type nil nil nil) ("lowp" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [10735 10775])
+                    ("highp_dvec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("double" type nil nil nil) ("highp" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [10918 10961])
+                    ("mediump_dvec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("double" type nil nil nil) ("mediump" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [11106 11153])
+                    ("lowp_dvec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("double" type nil nil nil) ("lowp" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [11295 11336])
+                    ("highp_ivec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("int" type nil nil nil) ("highp" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [11414 11455])
+                    ("mediump_ivec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("int" type nil nil nil) ("mediump" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [11533 11577])
+                    ("lowp_ivec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("int" type nil nil nil) ("lowp" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [11655 11694])
+                    ("highp_uvec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("uint" type nil nil nil) ("highp" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [11774 11816])
+                    ("mediump_uvec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("uint" type nil nil nil) ("mediump" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [11896 11941])
+                    ("lowp_uvec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("uint" type nil nil nil) ("lowp" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [12021 12061])
+                    ("highp_bvec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("bool" type nil nil nil) ("highp" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [12128 12170])
+                    ("mediump_bvec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("bool" type nil nil nil) ("mediump" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [12237 12282])
+                    ("lowp_bvec1" type
+                       (:typedef ("vec" type
+                             (:template-specifier (("1") ("bool" type nil nil nil) ("lowp" type nil nil nil))
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [12349 12389]))                  
+                :type "namespace")
+                nil [669 12538])
+            ("../detail/type_vec1.inl" include nil nil [12585 12619]))          
+      :file "vec1.hpp"
+      :pointmax 12650
+      :fsize 12649
+      :lastmodtime '(23117 59366 723423 335000)
+      :unmatched-syntax '((symbol 10124 . 10137) (punctuation 10121 . 10122) (symbol 10120 . 10121) (symbol 10110 . 10119) (punctuation 10109 . 10110) (TEMPLATE 10101 . 10109) (symbol 10003 . 10016) (punctuation 10000 . 10001) (symbol 9999 . 10000) (symbol 9989 . 9998) (punctuation 9988 . 9989) (TEMPLATE 9980 . 9988) (symbol 9899 . 9912) (punctuation 9896 . 9897) (symbol 9895 . 9896) (symbol 9885 . 9894) (punctuation 9883 . 9884) (symbol 9882 . 9883) (TYPENAME 9873 . 9881) (punctuation 9872 . 9873) (TEMPLATE 9864 . 9872) (symbol 9783 . 9796) (punctuation 9780 . 9781) (symbol 9779 . 9780) (symbol 9769 . 9778) (punctuation 9767 . 9768) (symbol 9766 . 9767) (TYPENAME 9757 . 9765) (punctuation 9756 . 9757) (TEMPLATE 9748 . 9756) (symbol 9656 . 9669) (punctuation 9653 . 9654) (symbol 9652 . 9653) (symbol 9642 . 9651) (punctuation 9640 . 9641) (symbol 9639 . 9640) (TYPENAME 9630 . 9638) (punctuation 9629 . 9630) (TEMPLATE 9621 . 9629) (symbol 9532 . 9545) (punctuation 9529 . 9530) (symbol 9528 . 9529) (symbol 9518 . 9527) (punctuation 9516 . 9517) (symbol 9515 . 9516) (TYPENAME 9506 . 9514) (punctuation 9505 . 9506) (TEMPLATE 9497 . 9505) (symbol 9423 . 9436) (punctuation 9420 . 9421) (symbol 9419 . 9420) (symbol 9409 . 9418) (punctuation 9407 . 9408) (symbol 9406 . 9407) (TYPENAME 9397 . 9405) (punctuation 9396 . 9397) (TEMPLATE 9388 . 9396) (symbol 9314 . 9327) (punctuation 9311 . 9312) (symbol 9310 . 9311) (symbol 9300 . 9309) (punctuation 9298 . 9299) (symbol 9297 . 9298) (TYPENAME 9288 . 9296) (punctuation 9287 . 9288) (TEMPLATE 9279 . 9287) (symbol 9190 . 9203) (punctuation 9187 . 9188) (symbol 9186 . 9187) (symbol 9176 . 9185) (punctuation 9174 . 9175) (symbol 9173 . 9174) (TYPENAME 9164 . 9172) (punctuation 9163 . 9164) (TEMPLATE 9155 . 9163) (symbol 9081 . 9094) (punctuation 9078 . 9079) (symbol 9077 . 9078) (symbol 9067 . 9076) (punctuation 9065 . 9066) (symbol 9064 . 9065) (TYPENAME 9055 . 9063) (punctuation 9054 . 9055) (TEMPLATE 9046 . 9054) (symbol 8972 . 8985) (punctuation 8969 . 8970) (symbol 8968 . 8969) (symbol 8958 . 8967) (punctuation 8956 . 8957) (symbol 8955 . 8956) (TYPENAME 8946 . 8954) (punctuation 8945 . 8946) (TEMPLATE 8937 . 8945) (symbol 8849 . 8862) (punctuation 8846 . 8847) (symbol 8845 . 8846) (symbol 8835 . 8844) (punctuation 8833 . 8834) (symbol 8832 . 8833) (TYPENAME 8823 . 8831) (punctuation 8822 . 8823) (TEMPLATE 8814 . 8822) (symbol 8741 . 8754) (punctuation 8738 . 8739) (symbol 8737 . 8738) (symbol 8727 . 8736) (punctuation 8725 . 8726) (symbol 8724 . 8725) (TYPENAME 8715 . 8723) (punctuation 8714 . 8715) (TEMPLATE 8706 . 8714) (symbol 8633 . 8646) (punctuation 8630 . 8631) (symbol 8629 . 8630) (symbol 8619 . 8628) (punctuation 8617 . 8618) (symbol 8616 . 8617) (TYPENAME 8607 . 8615) (punctuation 8606 . 8607) (TEMPLATE 8598 . 8606) (symbol 8510 . 8523) (punctuation 8507 . 8508) (symbol 8506 . 8507) (symbol 8496 . 8505) (punctuation 8494 . 8495) (symbol 8493 . 8494) (TYPENAME 8484 . 8492) (punctuation 8483 . 8484) (TEMPLATE 8475 . 8483) (symbol 8402 . 8415) (punctuation 8399 . 8400) (symbol 8398 . 8399) (symbol 8388 . 8397) (punctuation 8386 . 8387) (symbol 8385 . 8386) (TYPENAME 8376 . 8384) (punctuation 8375 . 8376) (TEMPLATE 8367 . 8375) (symbol 8294 . 8307) (punctuation 8291 . 8292) (symbol 8290 . 8291) (symbol 8280 . 8289) (punctuation 8278 . 8279) (symbol 8277 . 8278) (TYPENAME 8268 . 8276) (punctuation 8267 . 8268) (TEMPLATE 8259 . 8267) (symbol 8171 . 8184) (punctuation 8168 . 8169) (symbol 8167 . 8168) (symbol 8157 . 8166) (punctuation 8155 . 8156) (symbol 8154 . 8155) (TYPENAME 8145 . 8153) (punctuation 8144 . 8145) (TEMPLATE 8136 . 8144) (symbol 8063 . 8076) (punctuation 8060 . 8061) (symbol 8059 . 8060) (symbol 8049 . 8058) (punctuation 8047 . 8048) (symbol 8046 . 8047) (TYPENAME 8037 . 8045) (punctuation 8036 . 8037) (TEMPLATE 8028 . 8036) (symbol 7955 . 7968) (punctuation 7952 . 7953) (symbol 7951 . 7952) (symbol 7941 . 7950) (punctuation 7939 . 7940) (symbol 7938 . 7939) (TYPENAME 7929 . 7937) (punctuation 7928 . 7929) (TEMPLATE 7920 . 7928) (symbol 7832 . 7845) (punctuation 7829 . 7830) (symbol 7828 . 7829) (symbol 7818 . 7827) (punctuation 7816 . 7817) (symbol 7815 . 7816) (TYPENAME 7806 . 7814) (punctuation 7805 . 7806) (TEMPLATE 7797 . 7805) (symbol 7724 . 7737) (punctuation 7721 . 7722) (symbol 7720 . 7721) (symbol 7710 . 7719) (punctuation 7708 . 7709) (symbol 7707 . 7708) (TYPENAME 7698 . 7706) (punctuation 7697 . 7698) (TEMPLATE 7689 . 7697) (symbol 7616 . 7629) (punctuation 7613 . 7614) (symbol 7612 . 7613) (symbol 7602 . 7611) (punctuation 7600 . 7601) (symbol 7599 . 7600) (TYPENAME 7590 . 7598) (punctuation 7589 . 7590) (TEMPLATE 7581 . 7589) (symbol 7493 . 7506) (punctuation 7490 . 7491) (symbol 7489 . 7490) (symbol 7479 . 7488) (punctuation 7477 . 7478) (symbol 7476 . 7477) (TYPENAME 7467 . 7475) (punctuation 7466 . 7467) (TEMPLATE 7458 . 7466) (symbol 7385 . 7398) (punctuation 7382 . 7383) (symbol 7381 . 7382) (symbol 7371 . 7380) (punctuation 7369 . 7370) (symbol 7368 . 7369) (TYPENAME 7359 . 7367) (punctuation 7358 . 7359) (TEMPLATE 7350 . 7358) (symbol 7277 . 7290) (punctuation 7274 . 7275) (symbol 7273 . 7274) (symbol 7263 . 7272) (punctuation 7261 . 7262) (symbol 7260 . 7261) (TYPENAME 7251 . 7259) (punctuation 7250 . 7251) (TEMPLATE 7242 . 7250) (symbol 7154 . 7167) (punctuation 7151 . 7152) (symbol 7150 . 7151) (symbol 7140 . 7149) (punctuation 7138 . 7139) (symbol 7137 . 7138) (TYPENAME 7128 . 7136) (punctuation 7127 . 7128) (TEMPLATE 7119 . 7127) (symbol 7046 . 7059) (punctuation 7043 . 7044) (symbol 7042 . 7043) (symbol 7032 . 7041) (punctuation 7030 . 7031) (symbol 7029 . 7030) (TYPENAME 7020 . 7028) (punctuation 7019 . 7020) (TEMPLATE 7011 . 7019) (symbol 6938 . 6951) (punctuation 6935 . 6936) (symbol 6934 . 6935) (symbol 6924 . 6933) (punctuation 6922 . 6923) (symbol 6921 . 6922) (TYPENAME 6912 . 6920) (punctuation 6911 . 6912) (TEMPLATE 6903 . 6911) (symbol 6815 . 6828) (punctuation 6812 . 6813) (symbol 6811 . 6812) (symbol 6801 . 6810) (punctuation 6799 . 6800) (symbol 6798 . 6799) (TYPENAME 6789 . 6797) (punctuation 6788 . 6789) (TEMPLATE 6780 . 6788) (symbol 6707 . 6720) (punctuation 6704 . 6705) (symbol 6703 . 6704) (symbol 6693 . 6702) (punctuation 6691 . 6692) (symbol 6690 . 6691) (TYPENAME 6681 . 6689) (punctuation 6680 . 6681) (TEMPLATE 6672 . 6680) (symbol 6599 . 6612) (punctuation 6596 . 6597) (symbol 6595 . 6596) (symbol 6585 . 6594) (punctuation 6583 . 6584) (symbol 6582 . 6583) (TYPENAME 6573 . 6581) (punctuation 6572 . 6573) (TEMPLATE 6564 . 6572) (symbol 6476 . 6489) (punctuation 6473 . 6474) (symbol 6472 . 6473) (symbol 6462 . 6471) (punctuation 6460 . 6461) (symbol 6459 . 6460) (TYPENAME 6450 . 6458) (punctuation 6449 . 6450) (TEMPLATE 6441 . 6449) (symbol 6368 . 6381) (punctuation 6365 . 6366) (symbol 6364 . 6365) (symbol 6354 . 6363) (punctuation 6352 . 6353) (symbol 6351 . 6352) (TYPENAME 6342 . 6350) (punctuation 6341 . 6342) (TEMPLATE 6333 . 6341) (symbol 6260 . 6273) (punctuation 6257 . 6258) (symbol 6256 . 6257) (symbol 6246 . 6255) (punctuation 6244 . 6245) (symbol 6243 . 6244) (TYPENAME 6234 . 6242) (punctuation 6233 . 6234) (TEMPLATE 6225 . 6233) (symbol 6134 . 6147) (punctuation 6131 . 6132) (symbol 6130 . 6131) (symbol 6120 . 6129) (punctuation 6118 . 6119) (symbol 6117 . 6118) (TYPENAME 6108 . 6116) (punctuation 6107 . 6108) (TEMPLATE 6099 . 6107) (symbol 6036 . 6049) (punctuation 6033 . 6034) (symbol 6032 . 6033) (symbol 6022 . 6031) (punctuation 6020 . 6021) (symbol 6019 . 6020) (TYPENAME 6010 . 6018) (punctuation 6009 . 6010) (TEMPLATE 6001 . 6009) (symbol 5912 . 5925) (punctuation 5908 . 5909) (symbol 5907 . 5908) (TYPENAME 5898 . 5906) (punctuation 5897 . 5898) (TEMPLATE 5889 . 5897) (symbol 5844 . 5857) (punctuation 5840 . 5841) (symbol 5839 . 5840) (TYPENAME 5830 . 5838) (punctuation 5829 . 5830) (TEMPLATE 5821 . 5829) (symbol 5763 . 5776) (punctuation 5759 . 5760) (symbol 5758 . 5759) (TYPENAME 5749 . 5757) (punctuation 5748 . 5749) (TEMPLATE 5740 . 5748) (symbol 5695 . 5708) (punctuation 5691 . 5692) (symbol 5690 . 5691) (TYPENAME 5681 . 5689) (punctuation 5680 . 5681) (TEMPLATE 5672 . 5680) (symbol 5615 . 5628) (punctuation 5611 . 5612) (symbol 5610 . 5611) (TYPENAME 5601 . 5609) (punctuation 5600 . 5601) (TEMPLATE 5592 . 5600) (symbol 5548 . 5561) (punctuation 5544 . 5545) (symbol 5543 . 5544) (TYPENAME 5534 . 5542) (punctuation 5533 . 5534) (TEMPLATE 5525 . 5533) (symbol 5468 . 5481) (punctuation 5464 . 5465) (symbol 5463 . 5464) (TYPENAME 5454 . 5462) (punctuation 5453 . 5454) (TEMPLATE 5445 . 5453) (symbol 5401 . 5414) (punctuation 5397 . 5398) (symbol 5396 . 5397) (TYPENAME 5387 . 5395) (punctuation 5386 . 5387) (TEMPLATE 5378 . 5386) (symbol 5321 . 5334) (punctuation 5317 . 5318) (symbol 5316 . 5317) (TYPENAME 5307 . 5315) (punctuation 5306 . 5307) (TEMPLATE 5298 . 5306) (symbol 5254 . 5267) (punctuation 5250 . 5251) (symbol 5249 . 5250) (TYPENAME 5240 . 5248) (punctuation 5239 . 5240) (TEMPLATE 5231 . 5239) (symbol 5174 . 5187) (punctuation 5170 . 5171) (symbol 5169 . 5170) (TYPENAME 5160 . 5168) (punctuation 5159 . 5160) (TEMPLATE 5151 . 5159) (symbol 5107 . 5120) (punctuation 5103 . 5104) (symbol 5102 . 5103) (TYPENAME 5093 . 5101) (punctuation 5092 . 5093) (TEMPLATE 5084 . 5092) (symbol 5014 . 5027) (symbol 4977 . 4990) (symbol 4941 . 4954) (symbol 4905 . 4918) (symbol 4801 . 4814) (punctuation 4797 . 4798) (symbol 4796 . 4797) (TYPENAME 4787 . 4795) (punctuation 4786 . 4787) (TEMPLATE 4778 . 4786) (symbol 4734 . 4747) (punctuation 4730 . 4731) (symbol 4729 . 4730) (TYPENAME 4720 . 4728) (punctuation 4719 . 4720) (TEMPLATE 4711 . 4719) (symbol 4654 . 4667) (punctuation 4650 . 4651) (symbol 4649 . 4650) (TYPENAME 4640 . 4648) (punctuation 4639 . 4640) (TEMPLATE 4631 . 4639) (symbol 4587 . 4600) (punctuation 4583 . 4584) (symbol 4582 . 4583) (TYPENAME 4573 . 4581) (punctuation 4572 . 4573) (TEMPLATE 4564 . 4572) (symbol 4507 . 4520) (punctuation 4503 . 4504) (symbol 4502 . 4503) (TYPENAME 4493 . 4501) (punctuation 4492 . 4493) (TEMPLATE 4484 . 4492) (symbol 4440 . 4453) (punctuation 4436 . 4437) (symbol 4435 . 4436) (TYPENAME 4426 . 4434) (punctuation 4425 . 4426) (TEMPLATE 4417 . 4425) (symbol 4360 . 4373) (punctuation 4356 . 4357) (symbol 4355 . 4356) (TYPENAME 4346 . 4354) (punctuation 4345 . 4346) (TEMPLATE 4337 . 4345) (symbol 4293 . 4306) (punctuation 4289 . 4290) (symbol 4288 . 4289) (TYPENAME 4279 . 4287) (punctuation 4278 . 4279) (TEMPLATE 4270 . 4278) (symbol 4214 . 4227) (punctuation 4210 . 4211) (symbol 4209 . 4210) (TYPENAME 4200 . 4208) (punctuation 4199 . 4200) (TEMPLATE 4191 . 4199) (semantic-list 4160 . 4174) (punctuation 4159 . 4160) (OPERATOR 4151 . 4159) (punctuation 4149 . 4150) (symbol 4145 . 4148) (symbol 4131 . 4144) (symbol 3704 . 3722) (symbol 3690 . 3703) (punctuation 3686 . 3687) (symbol 3685 . 3686) (symbol 3675 . 3684) (punctuation 3673 . 3674) (symbol 3672 . 3673) (TYPENAME 3663 . 3671) (punctuation 3662 . 3663) (TEMPLATE 3654 . 3662) (symbol 3478 . 3496) (symbol 3464 . 3477) (punctuation 3460 . 3461) (symbol 3459 . 3460) (symbol 3449 . 3458) (punctuation 3447 . 3448) (symbol 3446 . 3447) (TYPENAME 3437 . 3445) (punctuation 3436 . 3437) (TEMPLATE 3428 . 3436) (symbol 3253 . 3271) (symbol 3239 . 3252) (punctuation 3235 . 3236) (symbol 3234 . 3235) (symbol 3224 . 3233) (punctuation 3222 . 3223) (symbol 3221 . 3222) (TYPENAME 3212 . 3220) (punctuation 3211 . 3212) (TEMPLATE 3203 . 3211) (symbol 3028 . 3046) (symbol 3014 . 3027) (punctuation 3010 . 3011) (symbol 3009 . 3010) (symbol 2999 . 3008) (punctuation 2997 . 2998) (symbol 2996 . 2997) (TYPENAME 2987 . 2995) (punctuation 2986 . 2987) (TEMPLATE 2978 . 2986) (EXPLICIT 2795 . 2803) (symbol 2776 . 2794) (symbol 2762 . 2775) (symbol 2658 . 2671) (punctuation 2654 . 2655) (symbol 2653 . 2654) (symbol 2643 . 2652) (punctuation 2642 . 2643) (TEMPLATE 2634 . 2642) (semantic-list 2604 . 2618) (symbol 2601 . 2604) (symbol 2582 . 2600) (symbol 2568 . 2581) (semantic-list 2550 . 2552) (symbol 2547 . 2550) (symbol 2528 . 2546) (symbol 2514 . 2527) (symbol 2415 . 2428) (symbol 2368 . 2381) (symbol 2319 . 2332) (STATIC 2312 . 2318) (symbol 2298 . 2311) (semantic-list 620 . 660) (symbol 613 . 620) (string 621 . 659) (symbol 606 . 612) (string 621 . 659) (punctuation 604 . 605) (symbol 266 . 270) (symbol 259 . 265) (punctuation 258 . 259))))
+  :file "!usr!include!glm!ext!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

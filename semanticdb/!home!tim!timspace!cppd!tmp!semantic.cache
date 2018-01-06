@@ -1,0 +1,401 @@
+;; Object tmp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tmp/"
+  :tables
+  (list
+    (semanticdb-table "call_return.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("wrap" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("iostream" include (:system-flag t) nil [31 50])
+                    ("string" include (:system-flag t) nil [51 68])
+                    ("_pointer" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [157 169])
+                    ("wrap" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("wrap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [177 190]))                          
+                        :type ("wrap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [172 191])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("wrap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [210 222]))                          
+                        :type ("wrap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [194 223])
+                    ("call_proxy" type
+                       (:members 
+                          ( ("_pointer" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [250 262])
+                            ("call_proxy" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [278 283]))                                  
+                                :type ("call_proxy" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [267 300])
+                            ("public" label nil (reparse-symbol classsubparts) [304 311])
+                            ("call_proxy" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [316 362])
+                            ("->" function
+                               (:operator-flag t
+                                :pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [367 419])
+                            ("wrap" friend nil (reparse-symbol classsubparts) [424 441]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [227 450])
+                    ("public" label nil (reparse-symbol classsubparts) [453 460])
+                    ("wrap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [468 473]))                          
+                        :type ("wrap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [463 490])
+                    ("->" function
+                       (:operator-flag t
+                        :type ("call_proxy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [493 585]))                  )
+                nil [120 588])
+            ("puts" function
+               (:arguments 
+                  ( ("cs" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [600 621]))                  
+                :type "void")
+                nil [590 657])
+            ("object" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [682 689])
+                    ("test" function (:type "void") (reparse-symbol classsubparts) [692 727])
+                    ("after" function (:type "void") (reparse-symbol classsubparts) [730 767])
+                    ("before" function (:type "void") (reparse-symbol classsubparts) [770 809]))                  
+                :type "class")
+                nil [667 812])
+            ("main" function (:type "int") nil [814 878]))          
+      :file "call_return.cpp"
+      :pointmax 879
+      :fsize 960
+      :lastmodtime '(23111 13936 689203 350000)
+      :unmatched-syntax nil)
+    (semanticdb-table "blit.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("pixel" type
+               (:prototype t
+                :type "class")
+                nil [31 43])
+            ("_blit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56 67])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68 85])
+                    ("s" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86 95]))                  
+                :type "void")
+                nil [45 96])
+            ("_blit_mask" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [126 137])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [138 155])
+                    ("s" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [156 165]))                  
+                :type "void")
+                nil [110 166])
+            ("pixel" type (:type "class") nil [204 219])
+            ("_blit" function
+               (:arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [232 243])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [244 261])
+                    ("s" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [262 271]))                  
+                :type "void")
+                nil [221 355])
+            ("_blit_mask" function
+               (:arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [374 385])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [386 403])
+                    ("s" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [404 413]))                  
+                :type "void")
+                nil [358 555])
+            ("_blit" function
+               (:arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [577 588])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [589 606])
+                    ("s" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [607 616])
+                    ("mask_blit" variable (:type "bool") (reparse-symbol arg-sub-list) [617 632]))                  
+                :type "void")
+                nil [566 826])
+            ("_blit" function
+               (:template 
+                  ( ("bool" type nil nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [884 895])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [896 913])
+                    ("s" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [914 923]))                  )
+                nil [847 1117])
+            ("blit" function
+               (:arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1143 1154])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1155 1172])
+                    ("s" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1173 1182]))                  
+                :type "void")
+                nil [1133 1229])
+            ("_blit_mask" function
+               (:arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1247 1258])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pixel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1259 1276])
+                    ("s" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1277 1286]))                  
+                :type "void")
+                nil [1231 1354])
+            ("main" function (:type "int") nil [1394 1420]))          
+      :file "blit.cpp"
+      :pointmax 1421
+      :fsize 1794
+      :lastmodtime '(23111 15463 529176 7000)
+      :unmatched-syntax nil)
+    (semanticdb-table "sort.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [31 50])
+            ("compare_swap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [83 90])
+                    ("b" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [91 98]))                  
+                :type "void")
+                nil [65 99])
+            ("compare_swap_ptr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [122 129])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [130 137]))                  
+                :type "void")
+                nil [100 138])
+            ("print_array" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [156 163])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [164 170]))                  
+                :type "void")
+                nil [139 171])
+            ("compare_swap" function
+               (:arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [192 199])
+                    ("b" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [200 207]))                  
+                :type "void")
+                nil [174 281])
+            ("compare_swap_ptr" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [305 312])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [313 320]))                  
+                :type "void")
+                nil [283 399])
+            ("sort" function
+               (:arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [411 418])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [419 425]))                  
+                :type "void")
+                nil [401 576])
+            ("print_array" function
+               (:arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [597 604])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [605 611]))                  
+                :type "void")
+                nil [580 681])
+            ("main" function (:type "int") nil [683 1106]))          
+      :file "sort.cpp"
+      :pointmax 1107
+      :fsize 1226
+      :lastmodtime '(23114 20518 387894 343000)
+      :unmatched-syntax nil)
+    (semanticdb-table "sort_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [30 49])
+            ("sort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("A" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [61 69])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [70 76]))                  
+                :type "void")
+                nil [51 77])
+            ("swap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("v1" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [88 96])
+                    ("v2" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [97 105]))                  
+                :type "void")
+                nil [78 106])
+            ("print_array" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("A" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [124 132])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [133 139]))                  
+                :type "void")
+                nil [107 140])
+            ("sort" function
+               (:arguments 
+                  ( ("A" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [152 160])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [161 167]))                  
+                :type "void")
+                nil [142 267])
+            ("swap" function
+               (:arguments 
+                  ( ("v1" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [280 288])
+                    ("v2" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [289 297]))                  
+                :type "void")
+                nil [270 367])
+            ("print_array" function
+               (:arguments 
+                  ( ("A" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [386 394])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [395 401]))                  
+                :type "void")
+                nil [369 492])
+            ("main" function (:type "int") nil [494 775]))          
+      :file "sort_test.cpp"
+      :pointmax 776
+      :fsize 775
+      :lastmodtime '(23115 29477 451960 343000)
+      :unmatched-syntax nil))
+  :file "!home!tim!timspace!cppd!tmp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

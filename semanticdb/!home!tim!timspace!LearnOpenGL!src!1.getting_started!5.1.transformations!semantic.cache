@@ -1,0 +1,229 @@
+;; Object 5.1.transformations/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "5.1.transformations/"
+  :tables
+  (list
+    (semanticdb-table "matrix_math.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [158 175])
+            ("iostream" include (:system-flag t) nil [176 195])
+            ("PI" variable (:constant-flag t) nil [338 340])
+            ("dot_product" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec1" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [371 384])
+                    ("vec2" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [385 398]))                  
+                :type "float")
+                nil [353 399])
+            ("length" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec1" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [413 426])
+                    ("vec2" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [427 440]))                  
+                :type "float")
+                nil [400 441])
+            ("angle" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [454 466]))                  
+                :type "float")
+                nil [442 467])
+            ("cross_product" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("vec1" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [489 502])
+                    ("vec2" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [503 516]))                  
+                :type "float")
+                nil [468 517])
+            ("revise_array" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("A" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [536 544]))                  
+                :type "void")
+                nil [518 545])
+            ("dot_product" function
+               (:arguments 
+                  ( ("vec1" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [566 579])
+                    ("vec2" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [580 593]))                  
+                :type "float")
+                nil [548 686])
+            ("length" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [701 713]))                  
+                :type "float")
+                nil [688 769])
+            ("angle" function
+               (:arguments 
+                  ( ("vec1" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [783 796])
+                    ("vec2" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [797 810]))                  
+                :type "float")
+                nil [771 959])
+            ("cross_product" function
+               (:arguments 
+                  ( ("vec1" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [980 993])
+                    ("vec2" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [994 1007])
+                    ("vec_r" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1008 1022]))                  
+                :type "void")
+                nil [961 1345])
+            ("translate" function
+               (:arguments 
+                  ( ("trans" variable
+                       (:dereference 2
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1364 1382])
+                    ("vec" variable
+                       (:dereference 2
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1383 1399]))                  
+                :type "void")
+                nil [1349 2463])
+            ("revise_array" function
+               (:arguments 
+                  ( ("A" variable
+                       (:dereference 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2483 2495]))                  
+                :type "void")
+                nil [2465 2569])
+            ("test_array" function (:type "void") nil [2571 2803])
+            ("main" function (:type "int") nil [2805 4081]))          
+      :file "matrix_math.cpp"
+      :pointmax 4082
+      :fsize 4129
+      :lastmodtime '(23118 3719 704998 764000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PI" . ((number "3.1415926" 341 . 350) (punctuation ";" 350 . 351)))
+          )
+)
+    (semanticdb-table "transformations.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [196 207])
+            ("GL/glew.h" include (:system-flag t) nil [208 228])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [237 260])
+            ("STB_IMAGE_IMPLEMENTATION" variable (:constant-flag t) nil [284 308])
+            ("stb_image.h" include (:system-flag t) nil [309 331])
+            ("learnopengl/shader_s.h" include (:system-flag t) nil [333 366])
+            ("math.h" include (:system-flag t) nil [367 384])
+            ("iostream" include (:system-flag t) nil [385 404])
+            ("glm/glm.hpp" include (:system-flag t) nil [421 443])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [444 483])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [484 515])
+            ("framebuffer_size_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [570 589])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [590 600])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [601 612]))                  
+                :type "void")
+                nil [539 613])
+            ("processInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [632 651]))                  
+                :type "void")
+                nil [614 652])
+            ("test_glm" function
+               (:prototype-flag t
+                :type "void")
+                nil [653 669])
+            ("WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [692 731])
+            ("HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [692 731])
+            ("main" function (:type "int") nil [747 7140])
+            ("framebuffer_size_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7173 7192])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [7193 7203])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [7204 7215]))                  
+                :type "void")
+                nil [7142 7317])
+            ("processInput" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7337 7356]))                  
+                :type "void")
+                nil [7319 7517])
+            ("test_glm" function (:type "void") nil [7519 7949]))          
+      :file "transformations.cpp"
+      :pointmax 7951
+      :fsize 8742
+      :lastmodtime '(23118 12675 356868 223000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLEW_STATIC")
+          ("STB_IMAGE_IMPLEMENTATION")
+          )
+))
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!5.1.transformations!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

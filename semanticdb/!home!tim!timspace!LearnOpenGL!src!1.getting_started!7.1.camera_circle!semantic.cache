@@ -1,0 +1,81 @@
+;; Object 7.1.camera_circle/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "7.1.camera_circle/"
+  :tables
+  (list
+    (semanticdb-table "camera_circle.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [184 195])
+            ("GL/glew.h" include (:system-flag t) nil [196 216])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [225 248])
+            ("STB_IMAGE_IMPLEMENTATION" variable (:constant-flag t) nil [272 296])
+            ("stb_image.h" include (:system-flag t) nil [297 319])
+            ("learnopengl/shader_s.h" include (:system-flag t) nil [321 354])
+            ("math.h" include (:system-flag t) nil [355 372])
+            ("iostream" include (:system-flag t) nil [373 392])
+            ("glm/glm.hpp" include (:system-flag t) nil [409 431])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [432 471])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [472 503])
+            ("framebuffer_size_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [558 577])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [578 588])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [589 600]))                  
+                :type "void")
+                nil [527 601])
+            ("processInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [620 639]))                  
+                :type "void")
+                nil [602 640])
+            ("WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [663 702])
+            ("HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [663 702])
+            ("main" function (:type "int") nil [776 8804])
+            ("framebuffer_size_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8837 8856])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [8857 8867])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [8868 8879]))                  
+                :type "void")
+                nil [8806 8981])
+            ("processInput" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9001 9020]))                  
+                :type "void")
+                nil [8983 9181]))          
+      :file "camera_circle.cpp"
+      :pointmax 9218
+      :fsize 10021
+      :lastmodtime '(23120 20979 542284 246000)
+      :unmatched-syntax '((symbol 9210 . 9214) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (symbol 9210 . 9214) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (symbol 9210 . 9214) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (symbol 9210 . 9214) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (punctuation 9209 . 9210) (punctuation 9208 . 9209) (symbol 9205 . 9208) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (punctuation 9203 . 9204) (symbol 9189 . 9202) (VOID 9184 . 9188) (symbol 9189 . 9199) (VOID 9184 . 9188) (string 1761 . 1780) (string 1740 . 1759) (number 7107 . 7111) (number 7075 . 7079))
+      :lexical-table 
+        '(("GLEW_STATIC")
+          ("STB_IMAGE_IMPLEMENTATION")
+          )
+))
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!7.1.camera_circle!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

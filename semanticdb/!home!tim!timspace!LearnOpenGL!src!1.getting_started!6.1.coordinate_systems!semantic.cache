@@ -1,0 +1,122 @@
+;; Object 6.1.coordinate_systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "6.1.coordinate_systems/"
+  :tables
+  (list
+    (semanticdb-table "coordinate_systems.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [394 405])
+            ("GL/glew.h" include (:system-flag t) nil [406 426])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [435 458])
+            ("STB_IMAGE_IMPLEMENTATION" variable (:constant-flag t) nil [482 506])
+            ("stb_image.h" include (:system-flag t) nil [507 529])
+            ("learnopengl/shader_s.h" include (:system-flag t) nil [531 564])
+            ("math.h" include (:system-flag t) nil [565 582])
+            ("iostream" include (:system-flag t) nil [583 602])
+            ("glm/glm.hpp" include (:system-flag t) nil [619 641])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [642 681])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [682 713])
+            ("framebuffer_size_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [768 787])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [788 798])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [799 810]))                  
+                :type "void")
+                nil [737 811])
+            ("processInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [830 849]))                  
+                :type "void")
+                nil [812 850])
+            ("WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [873 912])
+            ("HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [873 912])
+            ("main" function (:type "int") nil [986 8742])
+            ("glDeleteVertexArrays" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("VAO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8630 8634]))                  
+                :type "int")
+                nil [8605 8635])
+            ("glDeleteBuffers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("VBO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8658 8662]))                  
+                :type "int")
+                nil [8638 8663])
+            ("glDeleteBuffers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EBO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8686 8690]))                  
+                :type "int")
+                nil [8666 8691])
+            ("glfwTerminate" function
+               (:prototype-flag t
+                :type "int")
+                nil [8712 8728])
+            ("glViewport" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("width" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8902 8908])
+                    ("" variable (:type ("height" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8909 8916]))                  
+                :type "int")
+                nil [8885 8917])
+            ("glfwSetWindowShouldClose" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("window" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9103 9110])
+                    ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9111 9116]))                  
+                :type "int")
+                nil [9078 9117]))          
+      :file "coordinate_systems.cpp"
+      :pointmax 9122
+      :fsize 10103
+      :lastmodtime '(23119 11464 677430 595000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLEW_STATIC")
+          )
+))
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!6.1.coordinate_systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

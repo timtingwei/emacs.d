@@ -1,0 +1,81 @@
+;; Object 4.7.textures_exercise4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "4.7.textures_exercise4/"
+  :tables
+  (list
+    (semanticdb-table "textures_exercise4.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [244 255])
+            ("GL/glew.h" include (:system-flag t) nil [256 276])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [285 308])
+            ("STB_IMAGE_IMPLEMENTATION" variable (:constant-flag t) nil [332 356])
+            ("stb_image.h" include (:system-flag t) nil [357 379])
+            ("learnopengl/shader_s.h" include (:system-flag t) nil [381 414])
+            ("iostream" include (:system-flag t) nil [415 434])
+            ("framebuffer_size_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [490 509])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [510 520])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [521 532]))                  
+                :type "void")
+                nil [459 533])
+            ("processInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [552 571]))                  
+                :type "void")
+                nil [534 572])
+            ("WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [595 634])
+            ("HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [595 634])
+            ("VISIB_VALUE" variable
+               (:default-value "0.5f"
+                :type "float")
+                nil [652 677])
+            ("main" function (:type "int") nil [692 6496])
+            ("framebuffer_size_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6529 6548])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [6549 6559])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [6560 6571]))                  
+                :type "void")
+                nil [6498 6673])
+            ("processInput" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6693 6712]))                  
+                :type "void")
+                nil [6675 7106]))          
+      :file "textures_exercise4.cpp"
+      :pointmax 7107
+      :fsize 7984
+      :lastmodtime '(23116 44798 524216 116000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLEW_STATIC")
+          ("STB_IMAGE_IMPLEMENTATION")
+          )
+))
+  :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!4.7.textures_exercise4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,98 @@
+;; Object 13.Templates/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "13.Templates/"
+  :tables
+  (list
+    (semanticdb-table "temp_string.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("String" type
+               (:members 
+                  ( ("Srep" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol classsubparts) [254 266])
+                    ("rep" variable
+                       (:pointer 1
+                        :type ("Srep" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [280 290])
+                    ("public" label nil (reparse-symbol classsubparts) [307 314])
+                    ("Cref" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol classsubparts) [317 328])
+                    ("Range" type (:type "class") (reparse-symbol classsubparts) [348 363]))                  
+                :type "class")
+                nil [237 385])
+            ("Srep" type
+               (:parent "String"
+                :members 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [429 437])
+                    ("sz" variable (:type "int") (reparse-symbol classsubparts) [466 473])
+                    ("n" variable (:type "int") (reparse-symbol classsubparts) [501 507])
+                    ("Srep" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("nsz" variable (:type "int") (reparse-symbol arg-sub-list) [542 550])
+                            ("p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [551 565]))                          
+                        :type ("Srep" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [537 653])
+                    ("Srep" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [657 678])
+                    ("get_own_copy" function
+                       (:pointer 1
+                        :type ("Srep" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [682 774])
+                    ("assign" function
+                       (:arguments 
+                          ( ("nsz" variable (:type "int") (reparse-symbol arg-sub-list) [790 798])
+                            ("p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [799 813]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [778 924])
+                    ("private" label nil (reparse-symbol classsubparts) [927 935])
+                    ("Srep" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Srep" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [968 980]))                          
+                        :type ("Srep" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [963 981])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Srep" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1001 1013]))                          
+                        :type ("Srep" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [984 1014]))                  
+                :type "struct")
+                nil [405 1017])
+            ("main" function (:type "int") nil [1020 1144]))          
+      :file "temp_string.cpp"
+      :pointmax 1145
+      :fsize 436
+      :lastmodtime '(23116 19386 483010 371000)
+      :unmatched-syntax nil))
+  :file "!home!tim!timspace!cppd!CPL!13.Templates!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
