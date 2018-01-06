@@ -154,10 +154,10 @@
 ;;turn on Semantic
 (semantic-mode 1)
 ;;close Semantic
-(setq semantic-mode nil)
+;(setq semantic-mode nil)
 ;;let's define a function which add semantic as a suggestion backend to auto complete
-;and hook this function to c-mode-common-hook
-;(defun my:add-semantic-to-autocomplete()
+;;and hook this function to c-mode-common-hook
+(defun my:add-semantic-to-autocomplete()
   (add-to-list 'ac-sources 'ac-source-semantic)
 )
 (add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
