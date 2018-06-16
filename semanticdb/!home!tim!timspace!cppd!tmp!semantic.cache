@@ -395,6 +395,672 @@
       :pointmax 776
       :fsize 775
       :lastmodtime '(23115 29477 451960 343000)
+      :unmatched-syntax nil)
+    (semanticdb-table "switch.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [153 172])
+            ("Camera_Movement" type
+               (:members 
+                  ( ("FORWARD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [198 206])
+                    ("BACKWARD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [209 218])
+                    ("LEFT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [221 226])
+                    ("RIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [229 236]))                  
+                :type "enum")
+                nil [173 237])
+            ("main" function (:type "int") nil [239 929]))          
+      :file "switch.cpp"
+      :pointmax 930
+      :fsize 929
+      :lastmodtime '(23122 11296 605168 201000)
+      :unmatched-syntax nil)
+    (semanticdb-table "template_class.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Vector" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class")
+                nil [279 318])
+            ("BinTree" type (:type "class") nil [319 337])
+            ("Tree" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class")
+                nil [338 375])
+            ("main" function (:type "int") nil [377 601]))          
+      :file "template_class.cpp"
+      :pointmax 604
+      :fsize 619
+      :lastmodtime '(23123 27379 988919 948000)
+      :unmatched-syntax nil)
+    (semanticdb-table "increment.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [235 254])
+            ("equal" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [344 350])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [351 357]))                  
+                :type "bool")
+                nil [333 502])
+            ("f" function (:type "void") nil [504 786])
+            ("f2" function (:type "void") nil [788 921])
+            ("main" function (:type "int") nil [924 1022]))          
+      :file "increment.cpp"
+      :pointmax 1148
+      :fsize 1261
+      :lastmodtime '(23124 33356 428785 717000)
+      :unmatched-syntax nil)
+    (semanticdb-table "class_function.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [266 285])
+            ("Vector" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [325 333])
+                    ("_elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [336 345])
+                    ("_size" variable (:type "int") (reparse-symbol classsubparts) [346 356])
+                    ("_capacity" variable (:type "int") (reparse-symbol classsubparts) [357 371])
+                    ("public" label nil (reparse-symbol classsubparts) [373 380])
+                    ("Vector" function
+                       (:template-specifier 
+                          ( ("T" type nil nil nil))                          
+                        :constructor-flag t
+                        :arguments 
+                          ( ("tarr" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [403 411])
+                            ("lo" variable (:type "int") (reparse-symbol arg-sub-list) [412 419])
+                            ("hi" variable (:type "int") (reparse-symbol arg-sub-list) [420 427]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [393 461])
+                    ("copyFrom" function
+                       (:arguments 
+                          ( ("tarr" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [504 512])
+                            ("lo" variable (:type "int") (reparse-symbol arg-sub-list) [513 520])
+                            ("hi" variable (:type "int") (reparse-symbol arg-sub-list) [521 528]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [490 765])
+                    ("[]" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [818 824]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [802 851])
+                    ("traverse" function
+                       (:template 
+                          ( ("VST" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [902 912]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [864 913])
+                    ("++" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [944 948]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [928 949])
+                    ("print_vector" function (:type "void") (reparse-symbol classsubparts) [953 1209]))                  )
+                nil [287 1212])
+            ("traverse" function
+               (:template 
+                  ( ("VST" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1285 1295]))                  
+                :parent "Vector")
+                nil [1236 1372])
+            ("Increase" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1676 1681]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1660 1688]))                  )
+                nil [1588 1728])
+            ("increase" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1857 1869]))                  )
+                nil [1821 1902])
+            ("Sum" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1958 1965])
+                    ("sum" variable (:type "int") (reparse-symbol classsubparts) [1968 1976])
+                    ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("iarr" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1995 2005])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2006 2012]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1979 2119]))                  
+                :type "class")
+                nil [1946 2122])
+            ("f" function
+               (:template 
+                  ( ("CLS" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("c" variable (:type ("CLS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2173 2179]))                  )
+                nil [2142 2239])
+            ("main" function (:type "int") nil [2243 2557]))          
+      :file "class_function.cpp"
+      :pointmax 2558
+      :fsize 2795
+      :lastmodtime '(23126 17877 703970 546000)
+      :unmatched-syntax '((punctuation 1234 . 1235) (symbol 1233 . 1234) (TYPENAME 1224 . 1232) (punctuation 1223 . 1224) (TEMPLATE 1214 . 1222)))
+    (semanticdb-table "input_two_elements_to_array.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [301 320])
+            ("Name" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :prototype t)
+                nil [321 354])
+            ("print_instance_data_in_array" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nArr" variable
+                       (:pointer 1
+                        :type ("Name" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [389 405])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [406 415]))                  
+                :type "void")
+                nil [355 416])
+            ("print_arr_b" function
+               (:arguments 
+                  ( ("ppArr" variable
+                       (:pointer 3
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [634 647]))                  
+                :type "void")
+                nil [617 909])
+            ("f_array" function (:type "void") nil [912 1488])
+            ("Name" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("_c" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1528 1537])
+                    ("_length" variable (:type "int") (reparse-symbol classsubparts) [1538 1550])
+                    ("_capacity" variable (:type "int") (reparse-symbol classsubparts) [1551 1565])
+                    ("public" label nil (reparse-symbol classsubparts) [1567 1574])
+                    ("Name" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1582 1590])
+                            ("length" variable (:type "int") (reparse-symbol arg-sub-list) [1591 1602]))                          
+                        :type ("Name" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1577 1629])
+                    ("getName" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1632 1654])
+                    ("getLength" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1657 1679]))                  )
+                nil [1491 1682])
+            ("getName" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "char"
+                :parent "Name"
+                :pointer 1)
+                nil [1684 1753])
+            ("getLength" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Name")
+                nil [1755 1829])
+            ("class_array" function (:type "void") nil [1833 2093])
+            ("f" function (:type "void") nil [2095 2181])
+            ("print_instance_data_in_array" function
+               (:arguments 
+                  ( ("nArr" variable
+                       (:pointer 1
+                        :type ("Name" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2217 2233])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [2234 2243]))                  
+                :type "void")
+                nil [2183 2440])
+            ("main" function (:type "int") nil [2443 2520]))          
+      :file "input_two_elements_to_array.cpp"
+      :pointmax 2522
+      :fsize 4478
+      :lastmodtime '(23125 44457 933779 770000)
+      :unmatched-syntax nil)
+    (semanticdb-table "overload_members.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [248 267])
+            ("mycontainer" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("element" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [414 424])
+                    ("public" label nil (reparse-symbol classsubparts) [426 433])
+                    ("mycontainer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [448 458]))                          
+                        :type ("mycontainer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [436 474])
+                    ("increase" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [477 509])
+                    ("getElement" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [528 566]))                  )
+                nil [370 586])
+            ("mycontainer" type
+               (:type "class"
+                :members 
+                  ( ("element" variable (:type "char") (reparse-symbol classsubparts) [629 642])
+                    ("public" label nil (reparse-symbol classsubparts) [644 651])
+                    ("mycontainer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [666 679]))                          
+                        :type ("mycontainer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [654 694])
+                    ("increase" function (:type "char") (reparse-symbol classsubparts) [697 732])
+                    ("getElement" function (:type "char") (reparse-symbol classsubparts) [748 789])
+                    ("uppercase" function (:type "char") (reparse-symbol classsubparts) [809 1036]))                  
+                :template-specifier 
+                  ( ("char" type nil nil nil))                  )
+                nil [589 1039])
+            ("print_ele" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("e" variable (:type ("mycontainer" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1081 1098]))                  )
+                nil [1044 1162])
+            ("f" function (:type "void") nil [1201 1527])
+            ("f_char" function (:type "void") nil [1529 1693])
+            ("main" function (:type "int") nil [1695 1743]))          
+      :file "overload_members.cpp"
+      :pointmax 1744
+      :fsize 1392
+      :lastmodtime '(23125 59710 533506 625000)
+      :unmatched-syntax nil)
+    (semanticdb-table "new_and_delete.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [240 259])
+            ("Table" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("_elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [299 308])
+                    ("_size" variable (:type "int") (reparse-symbol classsubparts) [309 319])
+                    ("_capacity" variable (:type "int") (reparse-symbol classsubparts) [320 334])
+                    ("public" label nil (reparse-symbol classsubparts) [336 343])
+                    ("Table" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("iarr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [352 366])
+                            ("lo" variable (:type "int") (reparse-symbol arg-sub-list) [367 374])
+                            ("hi" variable (:type "int") (reparse-symbol arg-sub-list) [375 382]))                          
+                        :type ("Table" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [346 408])
+                    ("copyFrom" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("iarr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [425 439])
+                            ("lo" variable (:type "int") (reparse-symbol arg-sub-list) [440 447])
+                            ("hi" variable (:type "int") (reparse-symbol arg-sub-list) [448 455]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [411 456])
+                    ("print_elem" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [459 483]))                  )
+                nil [261 486])
+            ("copyFrom" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("iarr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [534 548])
+                    ("lo" variable (:type "int") (reparse-symbol arg-sub-list) [549 556])
+                    ("hi" variable (:type "int") (reparse-symbol arg-sub-list) [557 564]))                  
+                :parent "Table")
+                nil [488 671])
+            ("print_elem" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Table")
+                nil [674 824])
+            ("main" function (:type "int") nil [825 960]))          
+      :file "new_and_delete.cpp"
+      :pointmax 961
+      :fsize 960
+      :lastmodtime '(23126 19064 263949 297000)
+      :unmatched-syntax nil)
+    (semanticdb-table "static.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [287 306])
+            ("MyStatic" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [393 400])
+                    ("i_stc" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [403 420])
+                    ("set_static" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [472 478]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [449 491])
+                    ("set_static_member" function
+                       (:arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [517 523]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [494 536])
+                    ("increment" function (:type "void") (reparse-symbol classsubparts) [539 569]))                  
+                :type "class")
+                nil [308 653])
+            ("MyStatic::i_stc" variable
+               (:default-value "0"
+                :type "int")
+                nil [655 679])
+            ("f" function (:type "void") nil [706 957])
+            ("f1" function (:type "void") nil [959 1054])
+            ("main" function (:type "int") nil [1057 1106]))          
+      :file "static.cpp"
+      :pointmax 1107
+      :fsize 1284
+      :lastmodtime '(23126 60551 855090 186000)
+      :unmatched-syntax nil)
+    (semanticdb-table "return_ptr.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [240 259])
+            ("f_break" function (:type "void") nil [261 739])
+            ("f_continue" function (:type "void") nil [741 1005])
+            ("main" function (:type "int") nil [1007 1073]))          
+      :file "return_ptr.cpp"
+      :pointmax 786
+      :fsize 978
+      :lastmodtime '(23128 9732 488368 897000)
+      :unmatched-syntax nil)
+    (semanticdb-table "bool_int_convert.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [275 294])
+            ("f_to_other_type" function (:type "void") nil [334 699])
+            ("f_to_bool" function (:type "void") nil [762 1357])
+            ("f" function (:type "void") nil [1359 1593])
+            ("f_size" function (:type "void") nil [1595 1675])
+            ("main" function (:type "int") nil [1701 1770]))          
+      :file "bool_int_convert.cpp"
+      :pointmax 1771
+      :fsize 1926
+      :lastmodtime '(23128 8092 588398 265000)
+      :unmatched-syntax nil)
+    (semanticdb-table "rand.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [240 259])
+            ("f_else" function (:type "void") nil [299 494])
+            ("f_else_if" function (:type "void") nil [496 684])
+            ("f_if" function (:type "void") nil [686 813])
+            ("fun" function (:type "void") nil [815 1462])
+            ("if_fun" function (:type "int") nil [1464 1540])
+            ("main" function (:type "int") nil [1542 1626]))          
+      :file "rand.cpp"
+      :pointmax 1627
+      :fsize 470
+      :lastmodtime '(23128 43303 72055 111000)
+      :unmatched-syntax nil)
+    (semanticdb-table "class_private_protected.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [248 267])
+            ("Base" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [334 342])
+                    ("i" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [345 355])
+                    ("f_priv" function (:type "void") (reparse-symbol classsubparts) [358 430])
+                    ("protected" label nil (reparse-symbol classsubparts) [432 442])
+                    ("f_prot" function (:type "void") (reparse-symbol classsubparts) [445 519])
+                    ("public" label nil (reparse-symbol classsubparts) [521 528])
+                    ("f" function (:type "void") (reparse-symbol classsubparts) [531 614]))                  
+                :type "class")
+                nil [320 617])
+            ("Derived" type
+               (:superclasses 
+                  ( ("Base" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [643 650])
+                    ("call_f_prot" function (:type "void") (reparse-symbol classsubparts) [653 683]))                  
+                :type "class")
+                nil [619 746])
+            ("main" function (:type "int") nil [748 924]))          
+      :file "class_private_protected.cpp"
+      :pointmax 926
+      :fsize 1031
+      :lastmodtime '(23129 38959 722593 764000)
+      :unmatched-syntax nil)
+    (semanticdb-table "for_simplify.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [237 256])
+            ("f" function (:type "void") nil [444 764])
+            ("main" function (:type "int") nil [766 800]))          
+      :file "for_simplify.cpp"
+      :pointmax 802
+      :fsize 891
+      :lastmodtime '(23129 40275 658570 198000)
+      :unmatched-syntax nil)
+    (semanticdb-table "reference_const.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [240 259])
+            ("f" function
+               (:prototype-flag t
+                :type "void")
+                nil [457 466])
+            ("f1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [475 486]))                  
+                :type "void")
+                nil [467 487])
+            ("f2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [531 542]))                  
+                :type "void")
+                nil [523 543])
+            ("f" function (:type "void") nil [628 1667])
+            ("f1" function
+               (:arguments 
+                  ( ("ic" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1812 1826]))                  
+                :type "void")
+                nil [1804 1866])
+            ("f2" function (:type "void") nil [1868 2681])
+            ("f3" function (:type "void") nil [2683 2787])
+            ("main" function (:type "int") nil [2789 2837]))          
+      :file "reference_const.cpp"
+      :pointmax 2839
+      :fsize 3478
+      :lastmodtime '(23130 7159 606771 592000)
+      :unmatched-syntax nil)
+    (semanticdb-table "structure_compute.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [243 262])
+            ("math.h" include (:system-flag t) nil [263 280])
+            ("PI" variable (:constant-flag t) nil [290 292])
+            ("f" function (:type "void") nil [304 756])
+            ("main" function (:type "int") nil [758 791]))          
+      :file "structure_compute.cpp"
+      :pointmax 792
+      :fsize 791
+      :lastmodtime '(23131 16650 943442 114000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PI" . ((number "3.1415926" 293 . 302)))
+          )
+)
+    (semanticdb-table "array_size.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [236 255])
+            ("ARRAY_SIZE" variable (:constant-flag t) nil [292 302])
+            ("f" function (:type "void") nil [305 671])
+            ("main" function (:type "int") nil [673 714]))          
+      :file "array_size.cpp"
+      :pointmax 716
+      :fsize 715
+      :lastmodtime '(23128 12366 248321 732000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARRAY_SIZE" . ((number "5" 303 . 304)))
+          )
+)
+    (semanticdb-table "class_templates.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [490 509])
+            ("Date_and_time" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [534 542])
+                    ("d" variable (:type ("Date" type (:type "class") nil nil)) (reparse-symbol classsubparts) [545 552])
+                    ("t" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [555 562])
+                    ("public" label nil (reparse-symbol classsubparts) [564 571])
+                    ("Date_and_time" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("d" variable (:type ("Date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [588 595])
+                            ("t" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [596 603]))                          
+                        :type ("Date_and_time" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [574 604])
+                    ("Date_and_time" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("d" variable (:type "int") (reparse-symbol arg-sub-list) [621 627])
+                            ("m" variable (:type ("Date::Month" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [628 642])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [643 649])
+                            ("t" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [650 657]))                          
+                        :type ("Date_and_time" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [607 658]))                  
+                :type "class")
+                nil [511 661])
+            ("f" function (:type "void") nil [663 696])
+            ("main" function (:type "int") nil [698 719]))          
+      :file "class_templates.cpp"
+      :pointmax 720
+      :fsize 1008
+      :lastmodtime '(23125 61486 33474 829000)
       :unmatched-syntax nil))
   :file "!home!tim!timspace!cppd!tmp!semantic.cache"
   :semantic-tag-version "2.0"

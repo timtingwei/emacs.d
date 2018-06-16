@@ -1,0 +1,185 @@
+;; Object en/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "en/"
+  :tables
+  (list
+    (semanticdb-table "index.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("cppreference.com" section nil nil [71 654])
+            ("if(window.mw){
+mw.config.set({\"wgCanonicalNamespace\":\"\",\"wgCanonicalSpecialPageName\":false,\"wgNamespaceNumber\":0,\"wgPageName\":\"Main_Page\",\"wgTitle\":\"Main Page\",\"wgCurRevisionId\":91185,\"wgArticleId\":1,\"wgIsArticle\":true,\"wgAction\":\"view\",\"wgUserName\":null,\"wgUserGroups\":[\"*\"],\"wgCategories\":[],\"wgBreakFrames\":false,\"wgPageContentLanguage\":\"en\",\"wgSeparatorTransformTable\":[\"\",\"\"],\"wgDigitTransformTable\":[\"\",\"\"],\"wgDefaultDateFormat\":\"dmy\",\"wgMonthNames\":[\"\",\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"wgMonthNamesShort\":[\"\",\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"wgRelevantPageName\":\"Main_Page\",\"wgRestrictionEdit\":[\"autoconfirmed\"],\"wgRestrictionMove\":[\"autoconfirmed\"],\"wgIsMainPage\":true});
+}" section nil nil [654 707])
+            ("if(window.mw){
+mw.config.set({\"wgCanonicalNamespace\":\"\",\"wgCanonicalSpecialPageName\":false,\"wgNamespaceNumber\":0,\"wgPageName\":\"Main_Page\",\"wgTitle\":\"Main Page\",\"wgCurRevisionId\":91185,\"wgArticleId\":1,\"wgIsArticle\":true,\"wgAction\":\"view\",\"wgUserName\":null,\"wgUserGroups\":[\"*\"],\"wgCategories\":[],\"wgBreakFrames\":false,\"wgPageContentLanguage\":\"en\",\"wgSeparatorTransformTable\":[\"\",\"\"],\"wgDigitTransformTable\":[\"\",\"\"],\"wgDefaultDateFormat\":\"dmy\",\"wgMonthNames\":[\"\",\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"wgMonthNamesShort\":[\"\",\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"wgRelevantPageName\":\"Main_Page\",\"wgRestrictionEdit\":[\"autoconfirmed\"],\"wgRestrictionMove\":[\"autoconfirmed\"],\"wgIsMainPage\":true});
+}" section nil nil [707 1525])
+            ("if(window.mw){
+mw.loader.implement(\"user.options\",function(){mw.user.options.set({\"ccmeonemails\":0,\"cols\":80,\"date\":\"default\",\"diffonly\":0,\"disablemail\":0,\"disablesuggest\":0,\"editfont\":\"default\",\"editondblclick\":0,\"editsection\":0,\"editsectiononrightclick\":0,\"enotifminoredits\":0,\"enotifrevealaddr\":0,\"enotifusertalkpages\":1,\"enotifwatchlistpages\":0,\"extendwatchlist\":0,\"externaldiff\":0,\"externaleditor\":0,\"fancysig\":0,\"forceeditsummary\":0,\"gender\":\"unknown\",\"hideminor\":0,\"hidepatrolled\":0,\"imagesize\":2,\"justify\":0,\"math\":1,\"minordefault\":0,\"newpageshidepatrolled\":0,\"nocache\":0,\"noconvertlink\":0,\"norollbackdiff\":0,\"numberheadings\":0,\"previewonfirst\":0,\"previewontop\":1,\"quickbar\":5,\"rcdays\":7,\"rclimit\":50,\"rememberpassword\":0,\"rows\":25,\"searchlimit\":20,\"showhiddencats\":0,\"showjumplinks\":1,\"shownumberswatching\":1,\"showtoc\":0,\"showtoolbar\":1,\"skin\":\"cppreference2\",\"stubthreshold\":0,\"thumbsize\":2,\"underline\":2,\"uselivepreview\":0,\"usenewrc\":0,\"watchcreations\":0,\"watchdefault\":0,\"watchdeletion\":0,
+\"watchlistdays\":3,\"watchlisthideanons\":0,\"watchlisthidebots\":0,\"watchlisthideliu\":0,\"watchlisthideminor\":0,\"watchlisthideown\":0,\"watchlisthidepatrolled\":0,\"watchmoves\":0,\"wllimit\":250,\"variant\":\"en\",\"language\":\"en\",\"searchNs0\":true,\"searchNs1\":false,\"searchNs2\":false,\"searchNs3\":false,\"searchNs4\":false,\"searchNs5\":false,\"searchNs6\":false,\"searchNs7\":false,\"searchNs8\":false,\"searchNs9\":false,\"searchNs10\":false,\"searchNs11\":false,\"searchNs12\":false,\"searchNs13\":false,\"searchNs14\":false,\"searchNs15\":false,\"gadget-ColiruCompiler\":1});;},{},{});mw.loader.implement(\"user.tokens\",function(){mw.user.tokens.set({\"editToken\":\"+\\\\\",\"patrolToken\":false,\"watchToken\":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:ca03345b1e2c4d90a25d968753a73b92 */
+}" section nil nil [1525 3328])
+            ("if(window.mw){
+mw.loader.load([\"mediawiki.page.startup\",\"mediawiki.legacy.wikibits\",\"mediawiki.legacy.ajax\"]);
+}" section nil nil [3328 3591])
+            ("C and C++ reference" section (:members 
+              ( ("C and C++ reference" section (:members 
+                  ( ("C++ reference" anchor nil nil [4797 4800])
+                    ("ASCII chart" anchor nil nil [5028 5031])
+                    ("Compiler support" anchor nil nil [5110 5113])
+                    ("Language" anchor nil nil [5215 5218])
+                    ("Preprocessor" anchor nil nil [5318 5321])
+                    ("Keywords" anchor nil nil [5397 5400])
+                    ("Operator precedence" anchor nil nil [5463 5466])
+                    ("Escape sequences" anchor nil nil [5581 5584])
+                    ("Fundamental types" anchor nil nil [5670 5673])
+                    ("Headers" anchor nil nil [5772 5775])
+                    ("Library concepts" anchor nil nil [5844 5847])
+                    ("Utilities library" anchor nil nil [5927 5930])
+                    ("Type support" anchor nil nil [6035 6038])
+                    ("Dynamic memory management" anchor nil nil [6100 6103])
+                    ("Error handling" anchor nil nil [6180 6183])
+                    ("Program utilities" anchor nil nil [6247 6250])
+                    ("Date and time" anchor nil nil [6337 6340])
+                    ("bitset" anchor nil nil [6405 6408])
+                    ("Function objects" anchor nil nil [6490 6493])
+                    ("pair" anchor nil nil [6585 6588])
+                    ("tuple" anchor nil nil [6665 6668])
+                    ("integer_sequence" anchor nil nil [6801 6804])
+                    ("optional" anchor nil nil [6970 6973])
+                    ("any" anchor nil nil [7115 7118])
+                    ("variant" anchor nil nil [7245 7248])
+                    ("Strings library" anchor nil nil [7412 7415])
+                    ("basic_string" anchor nil nil [7516 7519])
+                    ("basic_string_view" anchor nil nil [7617 7620])
+                    ("Null-terminated byte strings" anchor nil nil [7787 7790])
+                    ("Null-terminated multibyte strings" anchor nil nil [7880 7883])
+                    ("Null-terminated wide strings" anchor nil nil [7988 7991])
+                    ("Containers library" anchor nil nil [8095 8098])
+                    ("array" anchor nil nil [8208 8211])
+                    ("vector" anchor nil nil [8348 8351])
+                    ("deque" anchor nil nil [8438 8441])
+                    ("list" anchor nil nil [8524 8527])
+                    ("forward_list" anchor nil nil [8607 8610])
+                    ("set" anchor nil nil [8768 8771])
+                    ("multiset" anchor nil nil [8848 8851])
+                    ("map" anchor nil nil [8943 8946])
+                    ("multimap" anchor nil nil [9023 9026])
+                    ("unordered_set" anchor nil nil [9118 9121])
+                    ("unordered_multiset" anchor nil nil [9282 9285])
+                    ("unordered_map" anchor nil nil [9461 9464])
+                    ("unordered_multimap" anchor nil nil [9625 9628])
+                    ("stack" anchor nil nil [9804 9807])
+                    ("queue" anchor nil nil [9890 9893])
+                    ("priority_queue" anchor nil nil [9976 9979])
+                    ("Algorithms library" anchor nil nil [10103 10106])
+                    ("Iterators library" anchor nil nil [10192 10195])
+                    ("Numerics library" anchor nil nil [10278 10281])
+                    ("Common mathematical functions" anchor nil nil [10385 10388])
+                    ("Special mathematical functions" anchor nil nil [10481 10484])
+                    ("Complex numbers" anchor nil nil [10648 10651])
+                    ("Pseudo-random number generation" anchor nil nil [10736 10739])
+                    ("Input/output library" anchor nil nil [10863 10866])
+                    ("basic_streambuf" anchor nil nil [10964 10967])
+                    ("basic_filebuf" anchor nil nil [11066 11069])
+                    ("basic_stringbuf" anchor nil nil [11162 11165])
+                    ("ios_base" anchor nil nil [11264 11267])
+                    ("basic_ios" anchor nil nil [11345 11348])
+                    ("basic_istream" anchor nil nil [11429 11432])
+                    ("basic_ostream" anchor nil nil [11525 11528])
+                    ("basic_iostream" anchor nil nil [11621 11624])
+                    ("basic_ifstream" anchor nil nil [11720 11723])
+                    ("basic_ofstream" anchor nil nil [11819 11822])
+                    ("basic_fstream" anchor nil nil [11918 11921])
+                    ("basic_istringstream" anchor nil nil [12014 12017])
+                    ("basic_ostringstream" anchor nil nil [12128 12131])
+                    ("basic_stringstream" anchor nil nil [12242 12245])
+                    ("I/O manipulators" anchor nil nil [12353 12356])
+                    ("C-style I/O" anchor nil nil [12428 12431])
+                    ("Localizations library" anchor nil nil [12505 12508])
+                    ("Regular expressions library" anchor nil nil [12591 12594])
+                    ("Atomic operations library" anchor nil nil [12735 12738])
+                    ("Thread support library" anchor nil nil [12879 12882])
+                    ("Filesystem library" anchor nil nil [13020 13023])
+                    ("Technical specifications" anchor nil nil [13207 13210])
+                    ("Standard library extensions" anchor nil nil [13310 13313])
+                    ("Standard library extensions v2" anchor nil nil [13523 13526])
+                    ("propagate_const" anchor nil nil [13781 13784])
+                    ("not_fn" anchor nil nil [13901 13904])
+                    ("observer_ptr" anchor nil nil [13995 13998])
+                    ("source_location" anchor nil nil [14108 14111])
+                    ("ostream_joiner" anchor nil nil [14228 14231])
+                    ("detection idiom" anchor nil nil [14347 14350])
+                    ("uniform container erasure" anchor nil nil [14450 14453])
+                    ("Parallelism library extensions" anchor nil nil [14617 14620])
+                    ("Concurrency library extensions" anchor nil nil [14830 14833])
+                    ("Concepts" anchor nil nil [15043 15046])
+                    ("Ranges" anchor nil nil [15217 15220])
+                    ("Transactional Memory" anchor nil nil [15386 15389])
+                    ("External Links" anchor nil nil [15622 15625])
+                    ("Non-ANSI/ISO Libraries" anchor nil nil [15688 15691])
+                    ("Index" anchor nil nil [15772 15775])
+                    ("std Symbol Index" anchor nil nil [15829 15832])
+                    ("C reference" anchor nil nil [16018 16021])
+                    ("ASCII chart" anchor nil nil [16228 16231])
+                    ("Language" anchor nil nil [16320 16323])
+                    ("Preprocessor" anchor nil nil [16419 16422])
+                    ("Keywords" anchor nil nil [16494 16497])
+                    ("Operator precedence" anchor nil nil [16555 16558])
+                    ("Escape sequences" anchor nil nil [16669 16672])
+                    ("Headers" anchor nil nil [16768 16771])
+                    ("Type support" anchor nil nil [16836 16839])
+                    ("Dynamic memory management" anchor nil nil [16919 16922])
+                    ("Error handling" anchor nil nil [17005 17008])
+                    ("Program utilities" anchor nil nil [17078 17081])
+                    ("Variadic functions" anchor nil nil [17158 17161])
+                    ("Date and time utilities" anchor nil nil [17241 17244])
+                    ("Strings library" anchor nil nil [17325 17328])
+                    ("Null-terminated byte strings" anchor nil nil [17425 17428])
+                    ("Null-terminated multibyte strings" anchor nil nil [17514 17517])
+                    ("Null-terminated wide strings" anchor nil nil [17618 17621])
+                    ("Algorithms" anchor nil nil [17721 17724])
+                    ("Numerics" anchor nil nil [17810 17813])
+                    ("Common mathematical functions" anchor nil nil [17905 17908])
+                    ("Floating-point environment" anchor nil nil [17997 18000])
+                    ("Pseudo-random number generation" anchor nil nil [18136 18139])
+                    ("Complex number arithmetic" anchor nil nil [18234 18237])
+                    ("Type-generic math" anchor nil nil [18378 18381])
+                    ("Input/output support" anchor nil nil [18526 18529])
+                    ("Localization support" anchor nil nil [18599 18602])
+                    ("Atomic operations library" anchor nil nil [18680 18683])
+                    ("Thread support library" anchor nil nil [18816 18819])
+                    ("Technical specifications" anchor nil nil [18991 18994])
+                    ("Dynamic memory extensions" anchor nil nil [19086 19089])
+                    ("Floating-point extensions, Part 1" anchor nil nil [19281 19284])
+                    ("Floating-point extensions, Part 4" anchor nil nil [19475 19478])
+                    ("External Links" anchor nil nil [19724 19727])
+                    ("Non-ANSI/ISO Libraries" anchor nil nil [19786 19789])
+                    ("offline archive" anchor nil nil [20215 20218])
+                    ("offline archive" anchor nil nil [20382 20385])
+                    ("offline archive" anchor nil nil [20550 20553])
+                    ("http://en.cppreference.com/mwiki/index.php?title=Main_Page&amp;oldid=91185" anchor nil nil [21346 21349]))                  ) nil [4007 22146]))              ) nil [3591 22146])
+            ("if(window.mw){
+mw.loader.state({\"site\":\"loading\",\"user\":\"missing\",\"user.groups\":\"ready\"});
+}" section nil nil [22146 22256])
+            ("if(window.mw){
+mw.loader.load([\"mediawiki.action.view.postEdit\",\"mediawiki.user\",\"mediawiki.page.ready\",\"mediawiki.searchSuggest\",\"mediawiki.hidpi\",\"ext.gadget.ColiruCompiler\"], null, true);
+}" section nil nil [22256 22306])
+            ("if(window.mw){
+mw.loader.load([\"mediawiki.action.view.postEdit\",\"mediawiki.user\",\"mediawiki.page.ready\",\"mediawiki.searchSuggest\",\"mediawiki.hidpi\",\"ext.gadget.ColiruCompiler\"], null, true);
+}" section nil nil [22306 22516])
+            ("var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);" section nil nil [22516 22566])
+            ("var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);" section nil nil [22566 22834]))          
+      :file "index.html"
+      :pointmax 22834
+      :fsize 22955
+      :lastmodtime '(23127 14528 291330 648000)
+      :unmatched-syntax nil))
+  :file "!home!tim!ref!reference!en!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

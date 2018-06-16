@@ -1,0 +1,217 @@
+;; Object 10.4.Objects/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "10.4.Objects/"
+  :tables
+  (list
+    (semanticdb-table "class_dtor.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [236 255])
+            ("Name" type
+               (:members 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [272 286]))                  
+                :type "class")
+                nil [257 289])
+            ("Table" type
+               (:members 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Name" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [307 315])
+                    ("sz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [318 328])
+                    ("public" label nil (reparse-symbol classsubparts) [330 337])
+                    ("Table" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:default-value "15"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [346 359]))                          
+                        :type ("Table" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [340 539])
+                    ("Table" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [542 671])
+                    ("lookup" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [687 699]))                          
+                        :type ("Name" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [674 700])
+                    ("insert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Name" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [715 721]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [703 722]))                  
+                :type "class")
+                nil [291 725])
+            ("main" function (:type "int") nil [727 765]))          
+      :file "class_dtor.cpp"
+      :pointmax 766
+      :fsize 765
+      :lastmodtime '(23123 23569 107945 492000)
+      :unmatched-syntax nil)
+    (semanticdb-table "class_copy.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [240 259])
+            ("string.h" include (:system-flag t) nil [260 279])
+            ("Name" type
+               (:members 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [296 310]))                  
+                :type "class")
+                nil [281 313])
+            ("Table" type
+               (:members 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Name" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [331 339])
+                    ("sz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [342 352])
+                    ("public" label nil (reparse-symbol classsubparts) [354 361])
+                    ("Table" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:default-value "15"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [379 392]))                          
+                        :type ("Table" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [373 612])
+                    ("Table" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [615 756])
+                    ("lookup" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [772 784]))                          
+                        :type ("Name" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [759 785])
+                    ("insert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Name" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [800 806]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [788 807])
+                    ("Table" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [830 843]))                          
+                        :type ("Table" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [824 844])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [887 900]))                          
+                        :type ("Table" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [870 901]))                  
+                :type "class")
+                nil [315 914])
+            ("Table" function
+               (:constructor-flag t
+                :parent "Table"
+                :arguments 
+                  ( ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Table" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [929 944]))                  
+                :type ("Table" type (:type "class") nil nil))
+                nil [916 1031])
+            ("=" function
+               (:operator-flag t
+                :parent "Table"
+                :arguments 
+                  ( ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Table" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1057 1072]))                  
+                :type ("Table" type (:type "class") nil nil))
+                nil [1033 1228])
+            ("Date" type (:type "class") nil [1230 1243])
+            ("Club" type
+               (:members 
+                  ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1277 1294])
+                    ("members" variable (:type ("Table" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1297 1311])
+                    ("officers" variable (:type ("Table" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1314 1329])
+                    ("founded" variable (:type ("Date" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1332 1345])
+                    ("public" label nil (reparse-symbol classsubparts) [1356 1363])
+                    ("Club" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1371 1392])
+                            ("fd" variable (:type ("Date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1393 1401]))                          
+                        :type ("Club" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1366 1402]))                  
+                :type "class")
+                nil [1262 1405])
+            ("Club" function
+               (:constructor-flag t
+                :parent "Club"
+                :arguments 
+                  ( ("n" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1418 1439])
+                    ("fd" variable (:type ("Date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1440 1448]))                  
+                :type ("Club" type (:type "class") nil nil))
+                nil [1407 1487])
+            ("X" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1629 1636]))                  
+                :type "class")
+                nil [1489 1729])
+            ("h" function (:type "void") nil [1731 1898])
+            ("main" function (:type "int") nil [1901 1945]))          
+      :file "class_copy.cpp"
+      :pointmax 1946
+      :fsize 2063
+      :lastmodtime '(23135 23462 130432 668000)
+      :unmatched-syntax nil))
+  :file "!home!tim!timspace!cppd!CPL!10.Classes!10.4.Objects!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

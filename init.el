@@ -161,6 +161,9 @@
 ;  (add-to-list 'ac-sources 'ac-source-semantic)
 ;)
 ;(add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
+;;close Semantic
+(semantic-mode -1)
+
 
 ;;turn on ede mode-line
 (global-ede-mode 1)
@@ -376,3 +379,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+;; 注释与反注释
+(global-set-key [?\C-c ?\C-/] 'comment-or-uncomment-region)  

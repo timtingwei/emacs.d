@@ -6,106 +6,160 @@
     (semanticdb-table "camera_mouse_zoom.cpp"
       :major-mode 'c++-mode
       :tags 
-        '( ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GLEW_STATIC" variable (:constant-flag t) nil [227 238])
-            ("GL/glew.h" include (:system-flag t) nil [239 259])
-            ("GLFW/glfw3.h" include (:system-flag t) nil [268 291])
-            ("STB_IMAGE_IMPLEMENTATION" variable (:constant-flag t) nil [315 339])
-            ("stb_image.h" include (:system-flag t) nil [340 362])
-            ("learnopengl/shader_s.h" include (:system-flag t) nil [364 397])
-            ("math.h" include (:system-flag t) nil [398 415])
-            ("iostream" include (:system-flag t) nil [416 435])
-            ("glm/glm.hpp" include (:system-flag t) nil [452 474])
-            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [475 514])
-            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [515 546])
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [230 241])
+            ("GL/glew.h" include (:system-flag t) nil [242 262])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [271 294])
+            ("STB_IMAGE_IMPLEMENTATION" variable (:constant-flag t) nil [318 342])
+            ("stb_image.h" include (:system-flag t) nil [343 365])
+            ("learnopengl/shader_s.h" include (:system-flag t) nil [367 400])
+            ("math.h" include (:system-flag t) nil [401 418])
+            ("iostream" include (:system-flag t) nil [419 438])
+            ("glm/glm.hpp" include (:system-flag t) nil [455 477])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [478 517])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [518 549])
             ("framebuffer_size_callback" function
                (:prototype-flag t
                 :arguments 
                   ( ("window" variable
                        (:pointer 1
                         :type ("GLFWwindow" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [601 620])
-                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [621 631])
-                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [632 643]))                  
+                        (reparse-symbol arg-sub-list) [604 623])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [624 634])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [635 646]))                  
                 :type "void")
-                nil [570 644])
+                nil [573 647])
             ("processInput" function
                (:prototype-flag t
                 :arguments 
                   ( ("window" variable
                        (:pointer 1
                         :type ("GLFWwindow" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [663 682]))                  
+                        (reparse-symbol arg-sub-list) [666 685]))                  
                 :type "void")
-                nil [645 683])
+                nil [648 686])
+            ("mouse_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [707 726])
+                    ("xpos" variable (:type "double") (reparse-symbol arg-sub-list) [727 739])
+                    ("ypos" variable (:type "double") (reparse-symbol arg-sub-list) [740 752]))                  
+                :type "void")
+                nil [687 753])
+            ("scroll_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [775 794])
+                    ("xoffset" variable (:type "double") (reparse-symbol arg-sub-list) [795 810])
+                    ("yoffset" variable (:type "double") (reparse-symbol arg-sub-list) [811 826]))                  
+                :type "void")
+                nil [754 827])
             ("WIDTH" variable
                (:constant-flag t
                 :default-value "800"
                 :type ("GLuint" type (:type "class") nil nil))
-                nil [706 745])
+                nil [850 889])
             ("HEIGHT" variable
                (:constant-flag t
                 :default-value "600"
                 :type ("GLuint" type (:type "class") nil nil))
-                nil [706 745])
+                nil [850 889])
             ("cameraPos" variable
                (:default-value "glm::vec3(0.0f, 0.0f, 3.0f)"
                 :type ("glm::vec3" type (:type "class") nil nil))
-                nil [747 797])
+                nil [901 951])
             ("cameraFront" variable
                (:default-value "glm::vec3(0.0f, 0.0f, -1.0f)"
                 :type ("glm::vec3" type (:type "class") nil nil))
-                nil [798 851])
+                nil [952 1005])
             ("cameraUp" variable
                (:default-value "glm::vec3(0.0f, 1.0f, 0.0f)"
                 :type ("glm::vec3" type (:type "class") nil nil))
-                nil [852 901])
+                nil [1006 1055])
             ("deltaTime" variable
                (:default-value "0.0f"
                 :type "float")
-                nil [903 926])
+                nil [1067 1090])
             ("lastFrame" variable
                (:default-value "0.0f"
                 :type "float")
-                nil [927 950])
-            ("main" function (:type "int") nil [966 8711])
+                nil [1110 1133])
+            ("firstMouse" variable
+               (:default-value "true"
+                :type "bool")
+                nil [1135 1158])
+            ("pitch" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1193 1227])
+            ("yaw" variable
+               (:default-value "-90.0f"
+                :type "float")
+                nil [1193 1227])
+            ("lastX" variable
+               (:default-value "WIDTH / 2"
+                :type "float")
+                nil [1247 1291])
+            ("lastY" variable
+               (:default-value "HEIGHT / 2"
+                :type "float")
+                nil [1247 1291])
+            ("fov" variable
+               (:default-value "45.0f"
+                :type "float")
+                nil [1302 1320])
+            ("main" function (:type "int") nil [1371 9312])
             ("framebuffer_size_callback" function
                (:arguments 
                   ( ("window" variable
                        (:pointer 1
                         :type ("GLFWwindow" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [8744 8763])
-                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [8764 8774])
-                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [8775 8786]))                  
+                        (reparse-symbol arg-sub-list) [9345 9364])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [9365 9375])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [9376 9387]))                  
                 :type "void")
-                nil [8713 8888])
+                nil [9314 9489])
             ("processInput" function
                (:arguments 
                   ( ("window" variable
                        (:pointer 1
                         :type ("GLFWwindow" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [8908 8927]))                  
+                        (reparse-symbol arg-sub-list) [9509 9528]))                  
                 :type "void")
-                nil [8890 9719]))          
+                nil [9491 10320])
+            ("mouse_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10342 10361])
+                    ("xpos" variable (:type "double") (reparse-symbol arg-sub-list) [10362 10374])
+                    ("ypos" variable (:type "double") (reparse-symbol arg-sub-list) [10375 10387]))                  
+                :type "void")
+                nil [10322 11335])
+            ("scroll_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11358 11377])
+                    ("xoffset" variable (:type "double") (reparse-symbol arg-sub-list) [11378 11393])
+                    ("yoffset" variable (:type "double") (reparse-symbol arg-sub-list) [11394 11409]))                  
+                :type "void")
+                nil [11337 11528]))          
       :file "camera_mouse_zoom.cpp"
-      :pointmax 9723
-      :fsize 10438
-      :lastmodtime '(23120 50863 207987 515000)
+      :pointmax 11529
+      :fsize 12610
+      :lastmodtime '(23121 33359 460256 445000)
       :unmatched-syntax nil
       :lexical-table 
         '(("GLEW_STATIC")
+          ("STB_IMAGE_IMPLEMENTATION")
           )
 ))
   :file "!home!tim!timspace!LearnOpenGL!src!1.getting_started!7.3.camera_mouse_zoom!semantic.cache"

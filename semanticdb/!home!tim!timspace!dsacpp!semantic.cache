@@ -534,6 +534,119 @@
       :lexical-table 
         '(("DEAFAULT_CAPACITY" . ((number "3" 332 . 333)))
           )
+)
+    (semanticdb-table "vector.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [232 251])
+            ("vector" include (:system-flag t) nil [252 269])
+            ("Rank" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [271 288])
+            ("DEAFAULT_CAPACITY" variable (:constant-flag t) nil [314 331])
+            ("Vector" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [396 404])
+                    ("_size" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol classsubparts) [407 418])
+                    ("_capacity" variable (:type "int") (reparse-symbol classsubparts) [419 433])
+                    ("_elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [434 443])
+                    ("protected" label nil (reparse-symbol classsubparts) [462 472])
+                    ("public" label nil (reparse-symbol classsubparts) [490 497])
+                    ("copyFrom" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [531 542])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [543 551])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [552 560]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [517 561])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:default-value "DEAFAULT_CAPACITY"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [571 596]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [564 642])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [662 673])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [674 682])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [683 691]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [655 735])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [745 764])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [765 773])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [774 782]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [738 819])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [829 848]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [822 913])
+                    ("Vector" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [942 970]))                  )
+                nil [347 1057])
+            ("copyFrom" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1106 1117])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1118 1126])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1127 1135]))                  
+                :parent "Vector")
+                nil [1059 1284])
+            ("main" function (:type "int") nil [1286 1986]))          
+      :file "vector.cpp"
+      :pointmax 1989
+      :fsize 2154
+      :lastmodtime '(23120 17742 482342 216000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEAFAULT_CAPACITY" . ((number "3" 332 . 333)))
+          )
 ))
   :file "!home!tim!timspace!dsacpp!semantic.cache"
   :semantic-tag-version "2.0"

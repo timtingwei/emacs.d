@@ -1,0 +1,189 @@
+;; Object 6.Functions/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "6.Functions/"
+  :tables
+  (list
+    (semanticdb-table "pointes_to_functions.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [246 265])
+            ("compareInt" function
+               (:arguments 
+                  ( ("i1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [284 298])
+                    ("i2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [299 313]))                  
+                :type "bool")
+                nil [268 374])
+            ("otherCompare" function
+               (:arguments 
+                  ( ("i1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [394 408])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [409 420]))                  
+                :type "bool")
+                nil [376 432])
+            ("pf" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [460 471])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [472 483]))                  
+                :type "bool")
+                nil [449 484])
+            ("getLarger" function
+               (:arguments 
+                  ( ("i1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [512 526])
+                    ("i2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [527 541]))                  
+                :type "int")
+                nil [498 593])
+            ("increment" function
+               (:arguments 
+                  ( ("i_original" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [609 631]))                  
+                :type "int")
+                nil [595 660])
+            ("ff" function
+               (:arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [670 675]))                  
+                :type "void")
+                nil [662 685])
+            ("ff" function
+               (:arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [694 707]))                  
+                :type "void")
+                nil [686 717])
+            ("useBigger" function
+               (:arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [746 757])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [758 769])
+                    ("pf" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [781 792])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [793 804]))                          
+                        :type "bool")
+                        nil nil))                  
+                :type "void")
+                nil [731 819])
+            ("Func2" variable (:type "int") nil [864 870])
+            ("FuncP2" variable
+               (:pointer 1
+                :type "int")
+                nil [900 908])
+            ("useBigger2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [934 945])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [946 957])
+                    ("" variable (:type ("FuncP2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [958 965]))                  
+                :type "void")
+                nil [918 966])
+            ("useBigger3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [983 994])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [995 1006])
+                    ("" variable (:type ("Func2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1007 1013]))                  
+                :type "void")
+                nil [967 1014])
+            ("" function
+               (:prototype-flag t
+                :operator-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1107 1112])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1113 1117]))                  
+                :type "int")
+                nil [1100 1118])
+            ("f1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1142 1146]))                  
+                :type ("PF" type (:type "class") nil nil))
+                nil [1136 1147])
+            ("f1" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1229 1233]))                  
+                :type ("F" type (:type "class") nil nil))
+                nil [1223 1234])
+            ("main" function (:type "int") nil [1260 2149]))          
+      :file "pointes_to_functions.cpp"
+      :pointmax 2151
+      :fsize 2486
+      :lastmodtime '(23125 25114 198661 294000)
+      :unmatched-syntax '((USING 1089 . 1094) (punctuation 1068 . 1069) (semantic-list 1057 . 1068) (INT 1054 . 1057) (USING 1044 . 1049) (semantic-list 887 . 899) (symbol 879 . 887) (TYPEDEF 871 . 878) (semantic-list 851 . 863) (symbol 843 . 851) (TYPEDEF 835 . 842))))
+  :file "!home!tim!timspace!cppd!Primer!6.Functions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

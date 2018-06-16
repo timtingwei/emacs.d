@@ -1,0 +1,71 @@
+;; Object 14.Overloaded_operations/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "14.Overloaded_operations/"
+  :tables
+  (list
+    (semanticdb-table "increment_and_decrement_operators.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [258 277])
+            ("StrBlobPtr" type
+               (:members 
+                  ( ("curr" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [301 318])
+                    ("public" label nil (reparse-symbol classsubparts) [320 327])
+                    ("curr_i" variable
+                       (:default-value "5"
+                        :type "int")
+                        (reparse-symbol classsubparts) [330 345])
+                    ("++" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :type ("StrBlobPtr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [348 373])
+                    ("--" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :type ("StrBlobPtr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [390 415])
+                    ("++" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [440 444]))                          
+                        :type ("StrBlobPtr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [418 445])
+                    ("StrBlobPtr" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [459 473]))                          
+                        :type ("StrBlobPtr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [448 486])
+                    ("print_curr" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [490 514]))                  
+                :type "class")
+                nil [280 517])
+            ("++" function
+               (:operator-flag t
+                :parent "StrBlobPtr"
+                :type ("StrBlobPtr" type (:type "class") nil nil))
+                nil [519 597])
+            ("++" function
+               (:operator-flag t
+                :parent "StrBlobPtr"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [649 653]))                  
+                :type ("StrBlobPtr" type (:type "class") nil nil))
+                nil [615 819])
+            ("print_curr" function
+               (:parent "StrBlobPtr"
+                :type "void")
+                nil [868 999])
+            ("main" function (:type "int") nil [1004 1646]))          
+      :file "increment_and_decrement_operators.cpp"
+      :pointmax 1892
+      :fsize 2113
+      :lastmodtime '(23124 49707 740007 631000)
+      :unmatched-syntax '((punctuation 1646 . 1647))))
+  :file "!home!tim!timspace!cppd!Primer!14.Overloaded_operations!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

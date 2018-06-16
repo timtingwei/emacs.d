@@ -69,7 +69,265 @@
       :pointmax 1617
       :fsize 2405
       :lastmodtime '(23103 5849 475938 172000)
-      :unmatched-syntax '((close-paren 1615 . 1616) (punctuation 1613 . 1614) (number 1612 . 1613) (RETURN 1605 . 1611) (punctuation 1522 . 1523) (punctuation 1500 . 1501) (open-paren 1248 . 1249) (close-paren 1246 . 1247) (open-paren 1245 . 1246) (symbol 1241 . 1245) (INT 1237 . 1240) (close-paren 1232 . 1233) (punctuation 1226 . 1227) (punctuation 1225 . 1226) (symbol 1224 . 1225) (RETURN 1217 . 1223) (semantic-list 1161 . 1214) (semantic-list 1147 . 1160) (IF 1144 . 1146) (open-paren 1140 . 1141) (CONST 1134 . 1139) (close-paren 1132 . 1133) (open-paren 1131 . 1132) (symbol 1121 . 1131) (punctuation 1120 . 1121) (punctuation 1119 . 1120) (symbol 1115 . 1119) (symbol 1108 . 1114) (punctuation 1107 . 1108) (punctuation 1106 . 1107) (symbol 1103 . 1106) (punctuation 1100 . 1101) (close-paren 1099 . 1100) (punctuation 1001 . 1002) (semantic-list 987 . 1001) (symbol 983 . 987) (EXPLICIT 974 . 982) (punctuation 970 . 971) (PUBLIC 964 . 970) (symbol 867 . 871) (CLASS 861 . 866) (EXPLICIT 704 . 712) (punctuation 1100 . 1101) (close-paren 1099 . 1100) (punctuation 1001 . 1002) (semantic-list 987 . 1001) (symbol 983 . 987) (EXPLICIT 974 . 982) (punctuation 970 . 971) (PUBLIC 964 . 970) (symbol 867 . 871) (CLASS 861 . 866))))
+      :unmatched-syntax '((close-paren 1615 . 1616) (punctuation 1613 . 1614) (number 1612 . 1613) (RETURN 1605 . 1611) (punctuation 1522 . 1523) (punctuation 1500 . 1501) (open-paren 1248 . 1249) (close-paren 1246 . 1247) (open-paren 1245 . 1246) (symbol 1241 . 1245) (INT 1237 . 1240) (close-paren 1232 . 1233) (punctuation 1226 . 1227) (punctuation 1225 . 1226) (symbol 1224 . 1225) (RETURN 1217 . 1223) (semantic-list 1161 . 1214) (semantic-list 1147 . 1160) (IF 1144 . 1146) (open-paren 1140 . 1141) (CONST 1134 . 1139) (close-paren 1132 . 1133) (open-paren 1131 . 1132) (symbol 1121 . 1131) (punctuation 1120 . 1121) (punctuation 1119 . 1120) (symbol 1115 . 1119) (symbol 1108 . 1114) (punctuation 1107 . 1108) (punctuation 1106 . 1107) (symbol 1103 . 1106) (punctuation 1100 . 1101) (close-paren 1099 . 1100) (punctuation 1001 . 1002) (semantic-list 987 . 1001) (symbol 983 . 987) (EXPLICIT 974 . 982) (punctuation 970 . 971) (PUBLIC 964 . 970) (symbol 867 . 871) (CLASS 861 . 866) (EXPLICIT 704 . 712) (punctuation 1100 . 1101) (close-paren 1099 . 1100) (punctuation 1001 . 1002) (semantic-list 987 . 1001) (symbol 983 . 987) (EXPLICIT 974 . 982) (punctuation 970 . 971) (PUBLIC 964 . 970) (symbol 867 . 871) (CLASS 861 . 866)))
+    (semanticdb-table "class_this.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [93 112])
+            ("Date" type
+               (:members 
+                  ( ("d" variable (:type "int") (reparse-symbol classsubparts) [130 142])
+                    ("m" variable (:type "int") (reparse-symbol classsubparts) [130 142])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [130 142])
+                    ("default_date" variable
+                       (:typemodifiers ("static")
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [145 170])
+                    ("public" label nil (reparse-symbol classsubparts) [172 179])
+                    ("set_default" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [206 210])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [211 215])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [216 220]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [182 221])
+                    ("Date" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("dd" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [239 249])
+                            ("mm" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [252 262])
+                            ("yy" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [264 274]))                          
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [234 276])
+                    ("Date" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [309 321]))                          
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [304 322])
+                    ("add_day" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [404 410]))                          
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [390 411])
+                    ("add_month" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [462 468]))                          
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [446 469])
+                    ("add_year" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [519 525]))                          
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [504 526])
+                    ("print_date" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [561 579])
+                    ("day" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [627 643])
+                    ("month" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [673 691])
+                    ("year" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [719 736]))                  
+                :type "class")
+                nil [115 765])
+            ("default_date" function
+               (:prototype-flag t
+                :parent "Date"
+                :type ("Date" type (:type "class") nil nil))
+                nil [798 835])
+            ("set_default" function
+               (:parent "Date"
+                :arguments 
+                  ( ("dd" variable (:type "int") (reparse-symbol arg-sub-list) [859 866])
+                    ("mm" variable (:type "int") (reparse-symbol arg-sub-list) [867 874])
+                    ("yy" variable (:type "int") (reparse-symbol arg-sub-list) [875 882]))                  
+                :type "void")
+                nil [836 933])
+            ("today" variable
+               (:default-value "Date()"
+                :type ("Date" type (:type "class") nil nil))
+                nil [934 954])
+            ("add_day" function
+               (:parent "Date"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [983 989]))                  
+                :type ("Date" type (:type "class") nil nil))
+                nil [956 1095])
+            ("add_month" function
+               (:parent "Date"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1126 1132]))                  
+                :type ("Date" type (:type "class") nil nil))
+                nil [1097 1176])
+            ("add_year" function
+               (:parent "Date"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1206 1212]))                  
+                :type ("Date" type (:type "class") nil nil))
+                nil [1178 1309])
+            ("Date" function
+               (:constructor-flag t
+                :parent "Date"
+                :arguments 
+                  ( ("dd" variable (:type "int") (reparse-symbol arg-sub-list) [1325 1332])
+                    ("mm" variable (:type "int") (reparse-symbol arg-sub-list) [1333 1340])
+                    ("yy" variable (:type "int") (reparse-symbol arg-sub-list) [1341 1348]))                  
+                :type ("Date" type (:type "class") nil nil))
+                nil [1314 1512])
+            ("print_date" function
+               (:parent "Date"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [1515 1744])
+            ("day" function
+               (:parent "Date"
+                :typemodifiers ("inline")
+                :type "int")
+                nil [1747 1824])
+            ("month" function
+               (:parent "Date"
+                :typemodifiers ("inline")
+                :type "int")
+                nil [1826 1872])
+            ("year" function
+               (:parent "Date"
+                :typemodifiers ("inline")
+                :type "int")
+                nil [1874 1919])
+            ("main" function (:type "int") nil [1922 2069]))          
+      :file "class_this.cpp"
+      :pointmax 2070
+      :fsize 2455
+      :lastmodtime '(23104 9952 423800 572000)
+      :unmatched-syntax '((number 829 . 833) (number 825 . 827) (number 822 . 823) (EXPLICIT 225 . 233)))
+    (semanticdb-table "class_const.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [103 122])
+            ("string" include (:system-flag t) nil [123 140])
+            ("Date" type
+               (:members 
+                  ( ("cache_valid" variable (:type "bool") (reparse-symbol classsubparts) [157 174])
+                    ("cache" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [177 195])
+                    ("compute_cache_value" function (:type "void") (reparse-symbol classsubparts) [198 227])
+                    ("public" label nil (reparse-symbol classsubparts) [242 249])
+                    ("Date" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("bc" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [257 272])
+                            ("c" variable
+                               (:default-value "\"tim\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [274 295]))                          
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [252 333])
+                    ("string_rep" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [336 367]))                  
+                :type "class")
+                nil [142 370])
+            ("string_rep" function
+               (:parent "Date"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [372 764])
+            ("main" function (:type "int") nil [766 981]))          
+      :file "class_const.cpp"
+      :pointmax 982
+      :fsize 1109
+      :lastmodtime '(23104 12374 111757 204000)
+      :unmatched-syntax nil)
+    (semanticdb-table "class_mutable.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [187 206])
+            ("string" include (:system-flag t) nil [207 224])
+            ("cache" type
+               (:members 
+                  ( ("cache" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("cb" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [719 733])
+                            ("cs" variable
+                               (:default-value "\"tim\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [735 757]))                          
+                        :type ("cache" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [713 788])
+                    ("valid" variable (:type "bool") (reparse-symbol classsubparts) [791 802])
+                    ("rep" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [840 856]))                  
+                :type "struct")
+                nil [670 859])
+            ("Date" type
+               (:members 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("cache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [912 921])
+                    ("public" label nil (reparse-symbol classsubparts) [965 972])
+                    ("Date" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c_smp" variable
+                               (:pointer 1
+                                :type ("cache" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [989 1002]))                          
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [984 1014])
+                    ("compute_cache_value" function (:type "void") (reparse-symbol classsubparts) [1017 1052])
+                    ("string_rep" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1068 1099]))                  
+                :type "class")
+                nil [861 1102])
+            ("string_rep" function
+               (:parent "Date"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1104 1234])
+            ("main" function (:type "int") nil [1238 1617]))          
+      :file "class_mutable.cpp"
+      :pointmax 1618
+      :fsize 1945
+      :lastmodtime '(23104 15838 743695 159000)
+      :unmatched-syntax '((EXPLICIT 975 . 983) (EXPLICIT 704 . 712))))
   :file "!home!tim!timspace!cppd!CPL!10.Classes!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

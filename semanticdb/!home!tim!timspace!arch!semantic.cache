@@ -1,0 +1,2156 @@
+;; Object arch/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "arch/"
+  :tables
+  (list
+    (semanticdb-table "spaceOrder.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [386 397])
+            ("GL/glew.h" include (:system-flag t) nil [398 418])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [427 450])
+            ("time.h" include (:system-flag t) nil [453 470])
+            ("math.h" include (:system-flag t) nil [471 488])
+            ("cassert" include (:system-flag t) nil [489 507])
+            ("iostream" include (:system-flag t) nil [508 527])
+            ("vector" include (:system-flag t) nil [528 545])
+            ("initializer_list" include (:system-flag t) nil [546 573])
+            ("circle.h" include nil nil [574 593])
+            ("Rank" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [630 647])
+            ("DEAFAULT_CAPACITY" variable (:constant-flag t) nil [679 696])
+            ("getRandData" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("min" variable (:type "int") (reparse-symbol arg-sub-list) [2184 2192])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [2193 2201]))                  
+                :type "double")
+                nil [2165 2202])
+            ("celling" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2215 2230])
+                    ("b" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2231 2246]))                  
+                :type "int")
+                nil [2203 2247])
+            ("floor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2258 2273])
+                    ("b" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2274 2289]))                  
+                :type "int")
+                nil [2248 2290])
+            ("getPosition" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("room1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2308 2321])
+                    ("room2" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2322 2336])
+                    ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [2354 2367])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [2368 2380]))                  
+                :type "void")
+                nil [2291 2381])
+            ("rotateCircle" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("room1" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2401 2415])
+                    ("room2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2416 2429])
+                    ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [2448 2461]))                  
+                :type "void")
+                nil [2383 2462])
+            ("surround" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("circle" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2478 2492])
+                    ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2493 2510])
+                    ("area_arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2525 2542])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2543 2549])
+                    ("direction" variable (:type "double") (reparse-symbol arg-sub-list) [2564 2581])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [2582 2594]))                  
+                :type "void")
+                nil [2464 2595])
+            ("orientate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("room1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2614 2627])
+                    ("room2" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2628 2642])
+                    ("direction_basic" variable (:type "double") (reparse-symbol arg-sub-list) [2660 2683])
+                    ("offset" variable (:type "double") (reparse-symbol arg-sub-list) [2684 2698])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [2716 2728]))                  
+                :type "double")
+                nil [2597 2729])
+            ("judgeCircleRelationship" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r1" variable (:type "double") (reparse-symbol arg-sub-list) [2759 2769])
+                    ("r2" variable (:type "double") (reparse-symbol arg-sub-list) [2770 2780])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [2781 2793]))                  
+                :type "int")
+                nil [2731 2794])
+            ("orientate_surround_combine" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("room1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2833 2846])
+                    ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2851 2868])
+                    ("area_arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2869 2886])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2887 2893])
+                    ("direction" variable (:type "double") (reparse-symbol arg-sub-list) [2898 2915])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [2916 2928])
+                    ("offset" variable (:type "double") (reparse-symbol arg-sub-list) [2929 2943]))                  
+                :type "void")
+                nil [2796 2944])
+            ("getDistance" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pos1" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2966 2979])
+                    ("pos2" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2980 2993]))                  
+                :type "double")
+                nil [2947 2994])
+            ("getDistance" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3015 3025])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3026 3036]))                  
+                :type "double")
+                nil [2996 3037])
+            ("getShareDegree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("room1" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3061 3075])
+                    ("room2" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3076 3090]))                  
+                :type "double")
+                nil [3039 3091])
+            ("getRadian" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("area" variable (:type "double") (reparse-symbol arg-sub-list) [3110 3122])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [3123 3135]))                  
+                :type "double")
+                nil [3093 3136])
+            ("getRadian" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3155 3165])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3166 3176]))                  
+                :type "double")
+                nil [3138 3177])
+            ("getDirection" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("room1_pos" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3199 3217])
+                    ("room2_pos" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3218 3236]))                  
+                :type "double")
+                nil [3179 3237])
+            ("getDirection" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3258 3268])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3269 3279]))                  
+                :type "double")
+                nil [3238 3280])
+            ("is_sortedVec" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("i_vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3320 3343]))                  
+                :type "bool")
+                nil [3302 3344])
+            ("sortedVec" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("i_vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3372 3396]))                  
+                :type "void")
+                nil [3357 3397])
+            ("removeVec" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec1" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3429 3451])
+                    ("vec2" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3452 3474])
+                    ("vec3" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3475 3498]))                  
+                :type "void")
+                nil [3414 3499])
+            ("setVector" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3535 3556])
+                    ("vec_union" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3557 3585]))                  
+                :type "void")
+                nil [3520 3586])
+            ("flattenDoubleVec" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("doubleVec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3627 3667])
+                    ("resultVec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3690 3718]))                  
+                :type "void")
+                nil [3605 3719])
+            ("printVector" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3737 3758]))                  
+                :type "void")
+                nil [3720 3759])
+            ("addVector" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3792 3821])
+                    ("vec2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3822 3851])
+                    ("vec_added" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3852 3880]))                  
+                :type "void")
+                nil [3777 3881])
+            ("is_unboard" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3899 3908])
+                    ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3909 3919])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3920 3930]))                  
+                :type "bool")
+                nil [3883 3931])
+            ("reviseUnboard" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3951 3960])
+                    ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3961 3971])
+                    ("c2" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3972 3983]))                  
+                :type "void")
+                nil [3932 3984])
+            ("collide" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4015 4025])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4026 4036])
+                    ("c2_new" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4037 4052]))                  
+                :type "void")
+                nil [4002 4053])
+            ("getUnboardRooms" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4075 4085])
+                    ("unboardRooms" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4086 4111])
+                    ("room_count" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4112 4133]))                  
+                :type "void")
+                nil [4054 4134])
+            ("collide_cluster" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clst1" variable (:type ("Circle_lst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4157 4174])
+                    ("clst2" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4175 4193]))                  
+                :type "void")
+                nil [4136 4194])
+            ("angleResourceArrange" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("i_vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4222 4260])
+                    ("parentCircle" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4287 4307])
+                    ("childCircles" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4334 4359])
+                    ("area_arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4386 4403])
+                    ("dist_arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4404 4421])
+                    ("arr_n" variable (:type "int") (reparse-symbol arg-sub-list) [4422 4432]))                  
+                :type "void")
+                nil [4196 4433])
+            ("searchAngleResource" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("restIndex_vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4460 4505])
+                    ("resourceCount" variable (:type "int") (reparse-symbol arg-sub-list) [4531 4549])
+                    ("usedAngleIndex_vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [4575 4612]))                  
+                :type "void")
+                nil [4435 4613])
+            ("getResourceIndex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4658 4668])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4668 4678])
+                    ("resourceIndex_vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4679 4715]))                  
+                :type "void")
+                nil [4636 4716])
+            ("getGapResourceIndex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ivec1" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [4757 4780])
+                    ("ivec2" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [4806 4842])
+                    ("gapIndex_vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4867 4898]))                  
+                :type "int")
+                nil [4733 4899])
+            ("reviseParentUnboard" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4950 4960])
+                    ("C1" variable (:type ("Circle_lst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4961 4975])
+                    ("P2" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5001 5012])
+                    ("C2" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5013 5028])
+                    ("i_vec1" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5054 5093]))                  
+                :type "void")
+                nil [4925 5094])
+            ("reviseChildUnboard" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5152 5162])
+                    ("C1" variable (:type ("Circle_lst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5163 5177])
+                    ("P2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5202 5212])
+                    ("C2_i" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5213 5226])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [5227 5237])
+                    ("i_vec1" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5262 5300])
+                    ("i_vec2" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5325 5364])
+                    ("mobility" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [5389 5404]))                  
+                :type "void")
+                nil [5128 5405])
+            ("getAngleFromResourceIndex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5456 5466])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5500 5510])
+                    ("c" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5544 5553])
+                    ("c1_vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5587 5611])
+                    ("c2_vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5645 5669])
+                    ("unitRadian" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5703 5727]))                  
+                :type "double")
+                nil [5423 5728])
+            ("angleResourceDynamicWeight" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P1" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5761 5772])
+                    ("P2" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5773 5784])
+                    ("C1" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5817 5832])
+                    ("C2" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5833 5848])
+                    ("i_vec1" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5881 5918])
+                    ("i_vec2" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5951 5989])
+                    ("P2_vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Circle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6022 6050])
+                    ("i_vec2_resultWeight" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6083 6147]))                  
+                :type "void")
+                nil [5729 6148])
+            ("getWorkableResourceIndexArrangement" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("setVec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [6196 6248])
+                    ("workableResouceIndex_3vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6253 6325]))                  
+                :type "void")
+                nil [6150 6326])
+            ("getWorkableResourceIndexArrangementForParent" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P1" variable
+                       (:reference 1
+                        :type ("ParentCircle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6394 6411])
+                    ("C" variable
+                       (:reference 1
+                        :type ("ChildCircle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6416 6431])
+                    ("workableResouceIndex_2vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6436 6494]))                  
+                :type "void")
+                nil [6339 6495])
+            ("getWorkableResourceIndexArrangementForParent" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P1" variable
+                       (:reference 1
+                        :type ("ParentCircle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6563 6580])
+                    ("P2" variable
+                       (:reference 1
+                        :type ("ParentCircle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6581 6598])
+                    ("C" variable
+                       (:reference 1
+                        :type ("ChildCircle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6603 6618])
+                    ("C1" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6619 6634])
+                    ("workableResouceIndex_2vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6639 6697]))                  
+                :type "void")
+                nil [6508 6698])
+            ("test_surround" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6720 6737]))                  
+                :type "void")
+                nil [6701 6738])
+            ("test_shareDegree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6761 6778]))                  
+                :type "void")
+                nil [6739 6779])
+            ("test_orientate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6800 6817]))                  
+                :type "void")
+                nil [6780 6818])
+            ("test_orientate_surround_combine" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6856 6873]))                  
+                :type "void")
+                nil [6819 6874])
+            ("test_coverDegree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6897 6914]))                  
+                :type "void")
+                nil [6875 6915])
+            ("test_unboard" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6934 6951]))                  
+                :type "void")
+                nil [6916 6952])
+            ("test_align" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6969 6986]))                  
+                :type "void")
+                nil [6953 6987])
+            ("test_align_surround" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7013 7030]))                  
+                :type "void")
+                nil [6988 7031])
+            ("test_collide" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7050 7067]))                  
+                :type "void")
+                nil [7032 7068])
+            ("test_moveCircles" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7091 7108]))                  
+                :type "void")
+                nil [7069 7109])
+            ("test_clusterConnection" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7138 7156]))                  
+                :type "void")
+                nil [7110 7157])
+            ("test_angleResourceArrange" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7189 7207]))                  
+                :type "void")
+                nil [7158 7208])
+            ("test_newObject" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7229 7247]))                  
+                :type "void")
+                nil [7209 7248])
+            ("test_getWorkableResourceIndexArrangement" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7295 7313]))                  
+                :type "void")
+                nil [7249 7314])
+            ("test_getWorkableResourceIndexArrangementForParent" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7370 7388]))                  
+                :type "void")
+                nil [7315 7389])
+            ("test_generateChildCircles" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7421 7439]))                  
+                :type "void")
+                nil [7390 7440])
+            ("drawPoint" function
+               (:prototype-flag t
+                :type "void")
+                nil [7442 7459])
+            ("drawLine" function
+               (:prototype-flag t
+                :type "void")
+                nil [7460 7476])
+            ("drawCircle" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [7493 7502])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [7503 7512])
+                    ("radius" variable (:type "double") (reparse-symbol arg-sub-list) [7513 7527])
+                    ("color" variable (:type "int") (reparse-symbol arg-sub-list) [7528 7538]))                  
+                :type "void")
+                nil [7477 7539])
+            ("scroll_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7561 7580])
+                    ("xoffset" variable (:type "double") (reparse-symbol arg-sub-list) [7581 7596])
+                    ("yoffset" variable (:type "double") (reparse-symbol arg-sub-list) [7597 7612]))                  
+                :type "void")
+                nil [7540 7613])
+            ("main_draw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctre" variable (:type ("Circle_tree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7628 7645]))                  
+                :type "int")
+                nil [7614 7646])
+            ("getDistance" function
+               (:arguments 
+                  ( ("pos1" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [7668 7681])
+                    ("pos2" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [7682 7695]))                  
+                :type "double")
+                nil [7649 7827])
+            ("getDistance" function
+               (:arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7848 7858])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7859 7869]))                  
+                :type "double")
+                nil [7829 7979])
+            ("getPosition" function
+               (:arguments 
+                  ( ("room1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7998 8011])
+                    ("room2" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8012 8026])
+                    ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [8044 8057])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [8058 8070]))                  
+                :type "void")
+                nil [7981 8200])
+            ("judgeCircleRelationship" function
+               (:arguments 
+                  ( ("r1" variable (:type "double") (reparse-symbol arg-sub-list) [8230 8240])
+                    ("r2" variable (:type "double") (reparse-symbol arg-sub-list) [8241 8251])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [8252 8264]))                  
+                :type "int")
+                nil [8202 8856])
+            ("appendCircles" function
+               (:arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8878 8895])
+                    ("clst_new" variable (:type ("Circle_lst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8896 8916]))                  
+                :type "void")
+                nil [8859 9139])
+            ("surround" function
+               (:arguments 
+                  ( ("circle" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9191 9205])
+                    ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9206 9223])
+                    ("area_arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9238 9255])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [9256 9262])
+                    ("direction" variable (:type "double") (reparse-symbol arg-sub-list) [9277 9294])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [9295 9307]))                  
+                :type "void")
+                nil [9177 10482])
+            ("getDirection" function
+               (:arguments 
+                  ( ("room1_pos" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [10565 10583])
+                    ("room2_pos" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [10584 10602]))                  
+                :type "double")
+                nil [10545 10719])
+            ("getDirection" function
+               (:arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10741 10751])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10752 10762]))                  
+                :type "double")
+                nil [10721 11164])
+            ("getCoverDegree" function
+               (:arguments 
+                  ( ("room1_pos" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [11188 11206])
+                    ("room2_pos" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [11207 11225])
+                    ("r2" variable (:type "double") (reparse-symbol arg-sub-list) [11226 11236]))                  
+                :type "double")
+                nil [11166 11721])
+            ("orientate" function
+               (:arguments 
+                  ( ("room1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11775 11788])
+                    ("room2" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11789 11803])
+                    ("direction_basic" variable (:type "double") (reparse-symbol arg-sub-list) [11821 11844])
+                    ("offset" variable (:type "double") (reparse-symbol arg-sub-list) [11845 11859])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [11877 11889]))                  
+                :type "double")
+                nil [11758 12442])
+            ("getShareDegree" function
+               (:arguments 
+                  ( ("room1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12477 12490])
+                    ("room2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12491 12504]))                  
+                :type "double")
+                nil [12455 14251])
+            ("orientate_surround_combine" function
+               (:arguments 
+                  ( ("room1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14307 14320])
+                    ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14325 14342])
+                    ("area_arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [14343 14360])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [14361 14367])
+                    ("direction" variable (:type "double") (reparse-symbol arg-sub-list) [14372 14389])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [14390 14402])
+                    ("offset" variable (:type "double") (reparse-symbol arg-sub-list) [14403 14417]))                  
+                :type "void")
+                nil [14270 14791])
+            ("getRadian" function
+               (:arguments 
+                  ( ("area" variable (:type "double") (reparse-symbol arg-sub-list) [14810 14822])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [14823 14835]))                  
+                :type "double")
+                nil [14793 14948])
+            ("getRadian" function
+               (:arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14967 14977])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14978 14988]))                  
+                :type "double")
+                nil [14950 15195])
+            ("appendCircle" function
+               (:parent "Circle_lst"
+                :arguments 
+                  ( ("c_new" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15229 15242]))                  
+                :type "void")
+                nil [15199 15325])
+            ("appendCircles" function
+               (:parent "Circle_lst"
+                :arguments 
+                  ( ("clst_new" variable (:type ("Circle_lst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15358 15378]))                  
+                :type "void")
+                nil [15327 15537])
+            ("is_unboard" function
+               (:arguments 
+                  ( ("c" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15555 15564])
+                    ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15565 15575])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15576 15586]))                  
+                :type "bool")
+                nil [15539 16542])
+            ("reviseUnboard" function
+               (:arguments 
+                  ( ("c" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16563 16572])
+                    ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16573 16583])
+                    ("c2" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16584 16595]))                  
+                :type "void")
+                nil [16544 18345])
+            ("align" function
+               (:arguments 
+                  ( ("circle" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18358 18372])
+                    ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18373 18390])
+                    ("area_arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [18402 18419])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [18420 18426])
+                    ("direction" variable (:type "double") (reparse-symbol arg-sub-list) [18438 18455])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [18456 18468]))                  
+                :type "void")
+                nil [18347 19179])
+            ("rotateCircle" function
+               (:arguments 
+                  ( ("room1" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19201 19215])
+                    ("room2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19216 19229])
+                    ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [19248 19261]))                  
+                :type "void")
+                nil [19183 19541])
+            ("getRandData" function
+               (:arguments 
+                  ( ("min" variable (:type "int") (reparse-symbol arg-sub-list) [19562 19570])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [19571 19579]))                  
+                :type "double")
+                nil [19543 19927])
+            ("collide" function
+               (:arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19942 19952])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19953 19963])
+                    ("c2_new" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19964 19979]))                  
+                :type "void")
+                nil [19929 20379])
+            ("collide_cluster" function
+               (:arguments 
+                  ( ("clst1" variable (:type ("Circle_lst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20402 20419])
+                    ("clst2" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20420 20438]))                  
+                :type "void")
+                nil [20381 21067])
+            ("getCoverCircle" function
+               (:parent "Circle_lst"
+                :type "void")
+                nil [21069 22027])
+            ("moveCircles" function
+               (:parent "Circle_lst"
+                :arguments 
+                  ( ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [22058 22071])
+                    ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [22072 22084]))                  
+                :type "void")
+                nil [22029 22451])
+            ("printCircles" function
+               (:parent "Circle_lst"
+                :type "void")
+                nil [22453 22692])
+            ("getFarthestCircle" function
+               (:parent "Circle_lst"
+                :arguments 
+                  ( ("P" variable
+                       (:constant-flag t
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22731 22746]))                  
+                :type ("Circle" type (:type "class") nil nil))
+                nil [22694 23072])
+            ("drawCircles" function
+               (:parent "Circle_lst"
+                :arguments 
+                  ( ("childrenColor" variable (:type "int") (reparse-symbol arg-sub-list) [23102 23120]))                  
+                :type "void")
+                nil [23073 23440])
+            ("appendClst" function
+               (:parent "Circle_tree"
+                :arguments 
+                  ( ("clst" variable (:type ("Circle_lst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23471 23487]))                  
+                :type "void")
+                nil [23442 23571])
+            ("printTreeCircles" function
+               (:parent "Circle_tree"
+                :type "void")
+                nil [23573 23827])
+            ("getUnboardRooms" function
+               (:arguments 
+                  ( ("c" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23850 23859])
+                    ("unboardRooms" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23860 23885])
+                    ("room_count" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23886 23907]))                  
+                :type "void")
+                nil [23829 25499])
+            ("getUnboardRooms" function
+               (:arguments 
+                  ( ("c" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25522 25531])
+                    ("unboardRooms" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25532 25557])
+                    ("restRooms" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25558 25580]))                  
+                :type "void")
+                nil [25501 26261])
+            ("angleResourceArrange" function
+               (:arguments 
+                  ( ("i_vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26290 26328])
+                    ("parentCircle" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26355 26375])
+                    ("childCircles" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26402 26427])
+                    ("area_arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [26454 26471])
+                    ("dist_arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [26472 26489])
+                    ("arr_n" variable (:type "int") (reparse-symbol arg-sub-list) [26490 26500]))                  
+                :type "void")
+                nil [26264 31748])
+            ("celling" function
+               (:arguments 
+                  ( ("a" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [31762 31777])
+                    ("b" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [31778 31793]))                  
+                :type "int")
+                nil [31750 31927])
+            ("floor" function
+               (:arguments 
+                  ( ("a" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [31939 31954])
+                    ("b" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [31955 31970]))                  
+                :type "int")
+                nil [31929 32098])
+            ("searchAngleResource" function
+               (:arguments 
+                  ( ("restIndex_vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32126 32171])
+                    ("resourceCount" variable (:type "int") (reparse-symbol arg-sub-list) [32197 32215])
+                    ("usedAngleIndex_vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [32241 32277]))                  
+                :type "void")
+                nil [32101 34208])
+            ("is_sortedVec" function
+               (:arguments 
+                  ( ("i_vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [34228 34251]))                  
+                :type "bool")
+                nil [34210 34515])
+            ("sortedVec" function
+               (:arguments 
+                  ( ("i_vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34532 34556]))                  
+                :type "void")
+                nil [34517 35078])
+            ("flattenDoubleVec" function
+               (:arguments 
+                  ( ("doubleVec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [35102 35142])
+                    ("resultVec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35165 35193]))                  
+                :type "void")
+                nil [35080 35579])
+            ("getGapResourceIndex" function
+               (:arguments 
+                  ( ("ivec1" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [35606 35629])
+                    ("ivec2" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [35655 35691])
+                    ("gapIndex_vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35717 35748]))                  
+                :type "int")
+                nil [35582 36388])
+            ("removeVec" function
+               (:arguments 
+                  ( ("vec1" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [36405 36427])
+                    ("vec2" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [36428 36450])
+                    ("vec3" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36451 36474]))                  
+                :type "void")
+                nil [36390 37234])
+            ("yield" function
+               (:arguments 
+                  ( ("P1" variable
+                       (:constant-flag t
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37247 37263])
+                    ("P2" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37264 37275])
+                    ("C2" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37276 37291])
+                    ("unit_dist" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [37292 37315]))                  
+                :type "void")
+                nil [37236 37453])
+            ("angleResourceDynamicWeight" function
+               (:arguments 
+                  ( ("P1" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37493 37504])
+                    ("P2" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37505 37516])
+                    ("C1" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37549 37564])
+                    ("C2" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37565 37580])
+                    ("i_vec1" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [37613 37650])
+                    ("i_vec2" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37683 37721])
+                    ("P2_vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Circle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37754 37782])
+                    ("i_vec2_resultWeight" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37815 37879]))                  
+                :type "void")
+                nil [37461 40036])
+            ("getResourceIndex" function
+               (:arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40061 40071])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40071 40081])
+                    ("resourceIndex_vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40082 40118]))                  
+                :type "void")
+                nil [40039 40586])
+            ("reviseParentUnboard" function
+               (:arguments 
+                  ( ("P1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40614 40624])
+                    ("C1" variable (:type ("Circle_lst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40625 40639])
+                    ("P2" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40665 40676])
+                    ("C2" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40677 40692])
+                    ("i_vec1" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40718 40757]))                  
+                :type "void")
+                nil [40589 42855])
+            ("reviseChildUnboard" function
+               (:arguments 
+                  ( ("P1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42883 42893])
+                    ("C1" variable (:type ("Circle_lst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42894 42908])
+                    ("P2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42933 42943])
+                    ("C2_i" variable
+                       (:reference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42944 42957])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [42958 42968])
+                    ("i_vec1" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [42993 43031])
+                    ("i_vec2" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43056 43095])
+                    ("mobility" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [43120 43135]))                  
+                :type "void")
+                nil [42859 45531])
+            ("getAngleFromResourceIndex" function
+               (:arguments 
+                  ( ("c1" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45566 45576])
+                    ("c2" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45610 45620])
+                    ("c" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45654 45663])
+                    ("c1_vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [45697 45721])
+                    ("c2_vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [45755 45779])
+                    ("unitRadian" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [45813 45837]))                  
+                :type "double")
+                nil [45533 46014])
+            ("angleResourceDynamicWeight" function
+               (:arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46048 46066]))                  
+                :type "void")
+                nil [46016 50168])
+            ("getWorkableResourceIndexArrangementForParent" function
+               (:arguments 
+                  ( ("P1" variable
+                       (:reference 1
+                        :type ("ParentCircle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50225 50242])
+                    ("C" variable
+                       (:reference 1
+                        :type ("ChildCircle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50247 50262])
+                    ("workableResouceIndex_2vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50267 50325]))                  
+                :type "void")
+                nil [50170 50851])
+            ("getWorkableResourceIndexArrangementForParent" function
+               (:arguments 
+                  ( ("P1" variable
+                       (:reference 1
+                        :type ("ParentCircle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50937 50954])
+                    ("P2" variable
+                       (:reference 1
+                        :type ("ParentCircle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50955 50972])
+                    ("C" variable
+                       (:reference 1
+                        :type ("ChildCircle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50977 50992])
+                    ("C1" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50993 51008])
+                    ("workableResouceIndex_2vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [51013 51071]))                  
+                :type "void")
+                nil [50882 55809])
+            ("getWorkableResourceIndexArrangement" function
+               (:arguments 
+                  ( ("setVec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [55858 55910])
+                    ("workableResouceIndex_3vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [55915 56029]))                  
+                :type "void")
+                nil [55812 58476])
+            ("addVector" function
+               (:arguments 
+                  ( ("vec1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [58493 58522])
+                    ("vec2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [58523 58552])
+                    ("vec_added" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [58553 58581]))                  
+                :type "void")
+                nil [58478 58685])
+            ("setVector" function
+               (:arguments 
+                  ( ("vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [58702 58723])
+                    ("vec_union" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [58724 58752]))                  
+                :type "void")
+                nil [58687 59236])
+            ("printVector" function
+               (:arguments 
+                  ( ("vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [59255 59276]))                  
+                :type "void")
+                nil [59238 59440])
+            ("main" function (:type "int") nil [59546 60423])
+            ("test_generateChildCircles" function
+               (:arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60456 60474]))                  
+                :type "void")
+                nil [60425 61329])
+            ("test_getWorkableResourceIndexArrangementForParent" function
+               (:arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61386 61404]))                  
+                :type "void")
+                nil [61331 63675])
+            ("test_getWorkableResourceIndexArrangement" function
+               (:arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63724 63742]))                  
+                :type "void")
+                nil [63678 64089])
+            ("test_angleResourceArrange" function
+               (:arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64123 64141]))                  
+                :type "void")
+                nil [64092 66130])
+            ("test_newObject" function
+               (:arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66152 66170]))                  
+                :type "void")
+                nil [66132 66491])
+            ("test_clusterConnection" function
+               (:arguments 
+                  ( ("ctre" variable
+                       (:reference 1
+                        :type ("Circle_tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66521 66539]))                  
+                :type "void")
+                nil [66493 72725])
+            ("test_moveCircles" function
+               (:arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72749 72766]))                  
+                :type "void")
+                nil [72727 73325])
+            ("test_align" function
+               (:arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73343 73360]))                  
+                :type "void")
+                nil [73327 74066])
+            ("test_surround" function
+               (:arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74088 74105]))                  
+                :type "void")
+                nil [74069 74858])
+            ("test_shareDegree" function
+               (:arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74882 74899]))                  
+                :type "void")
+                nil [74860 75094])
+            ("test_orientate" function
+               (:arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75116 75133]))                  
+                :type "void")
+                nil [75096 75680])
+            ("test_orientate_surround_combine" function
+               (:arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75719 75736]))                  
+                :type "void")
+                nil [75682 76528])
+            ("test_coverDegree" function
+               (:arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76552 76569]))                  
+                :type "void")
+                nil [76530 77201])
+            ("test_unboard" function
+               (:arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77221 77238]))                  
+                :type "void")
+                nil [77203 79785])
+            ("test_align_surround" function
+               (:arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79812 79829]))                  
+                :type "void")
+                nil [79787 81341])
+            ("test_collide" function
+               (:arguments 
+                  ( ("clst" variable
+                       (:reference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81361 81378]))                  
+                :type "void")
+                nil [81343 81985])
+            ("SCALE" variable
+               (:constant-flag t
+                :default-value "2e4"
+                :type "int")
+                nil [82053 82075])
+            ("zoom" variable
+               (:default-value "1"
+                :type "double")
+                nil [82076 82092])
+            ("scroll_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82116 82135])
+                    ("xoffset" variable (:type "double") (reparse-symbol arg-sub-list) [82136 82151])
+                    ("yoffset" variable (:type "double") (reparse-symbol arg-sub-list) [82152 82167]))                  
+                :type "void")
+                nil [82095 82350])
+            ("drawPoint" function (:type "void") nil [82352 82606])
+            ("drawLine" function (:type "void") nil [82608 82892])
+            ("drawCircle" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [82910 82919])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [82920 82929])
+                    ("radius" variable (:type "double") (reparse-symbol arg-sub-list) [82930 82944])
+                    ("color" variable (:type "int") (reparse-symbol arg-sub-list) [82945 82955]))                  
+                :type "void")
+                nil [82894 83710])
+            ("main_draw" function
+               (:arguments 
+                  ( ("ctre" variable (:type ("Circle_tree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83726 83743]))                  
+                :type "int")
+                nil [83712 85029]))          
+      :file "spaceOrder.cpp"
+      :pointmax 85031
+      :fsize 91522
+      :lastmodtime '(23320 42155 675947 400000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLEW_STATIC")
+          ("DEAFAULT_CAPACITY" . ((number "3" 697 . 698)))
+          )
+)
+    (semanticdb-table "circle.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [365 384])
+            ("vector" include (:system-flag t) nil [385 402])
+            ("PI" variable
+               (:constant-flag t
+                :default-value "3.1415926f"
+                :type "double")
+                nil [404 433])
+            ("Circle" type
+               (:members 
+                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [453 468])
+                    ("y" variable (:type "double") (reparse-symbol classsubparts) [453 468])
+                    ("r" variable (:type "double") (reparse-symbol classsubparts) [453 468])
+                    ("resourceCount" variable
+                       (:default-value "20"
+                        :type "int")
+                        (reparse-symbol classsubparts) [472 495])
+                    ("resourceCount" variable (:type "int") (reparse-symbol classsubparts) [554 568])
+                    ("moveCircle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("angle" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [602 621])
+                            ("dist" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [622 640]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [586 641])
+                    ("getRadian" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Circle" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [694 711])
+                            ("is_main" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [712 732]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [677 733])
+                    ("getDistance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Circle" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [774 791]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [755 792])
+                    ("getDirection" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Circle" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [848 865])
+                            ("is_main" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [866 886]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [828 887]))                  
+                :type "struct")
+                nil [435 891])
+            ("moveCircle" function
+               (:parent "Circle"
+                :arguments 
+                  ( ("angle" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [917 936])
+                    ("dist" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [937 955]))                  
+                :type "void")
+                nil [893 1052])
+            ("getRadian" function
+               (:parent "Circle"
+                :arguments 
+                  ( ("c2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1080 1097])
+                    ("is_main" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1098 1118]))                  
+                :type "double")
+                nil [1055 1327])
+            ("getDistance" function
+               (:parent "Circle"
+                :arguments 
+                  ( ("c2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1358 1375]))                  
+                :type "double")
+                nil [1331 1497])
+            ("getDirection" function
+               (:parent "Circle"
+                :arguments 
+                  ( ("c2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1527 1544])
+                    ("is_main" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1545 1565]))                  
+                :type "double")
+                nil [1499 2099])
+            ("Circle_lst" type
+               (:members 
+                  ( ("circles" variable
+                       (:dereference 1
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2124 2143])
+                    ("n" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [2146 2156])
+                    ("coverCircle" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2159 2178])
+                    ("appendCircle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2200 2207]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2182 2208])
+                    ("appendCircles" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("Circle_lst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2230 2241]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2211 2242])
+                    ("getCoverCircle" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2245 2267])
+                    ("moveCircles" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [2287 2300])
+                            ("dist" variable (:type "double") (reparse-symbol arg-sub-list) [2301 2313]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2270 2314])
+                    ("getFarthestCircle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("P" variable
+                               (:constant-flag t
+                                :type ("Circle" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2342 2357]))                          
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2317 2358])
+                    ("printCircles" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2362 2382])
+                    ("drawCircles" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("childrenColor" variable (:type "int") (reparse-symbol arg-sub-list) [2402 2420]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2385 2421]))                  
+                :type "struct")
+                nil [2102 2424])
+            ("Circle_tree" type
+               (:members 
+                  ( ("clsts_arr" variable
+                       (:dereference 1
+                        :type ("Circle_lst" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2449 2474])
+                    ("n" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [2477 2487])
+                    ("appendClst" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("Circle_lst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2507 2518]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2491 2519])
+                    ("printTreeCircles" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2523 2547]))                  
+                :type "struct")
+                nil [2426 2550])
+            ("ChildCircle_lst" type
+               (:superclasses 
+                  ( ("Circle_lst" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2597 2604])
+                    ("rsrcIndex_2vec" variable
+                       (:default-value "{}"
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2616 2667])
+                    ("dist_vec" variable
+                       (:default-value "{}"
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2689 2723])
+                    ("childCircles" variable
+                       (:default-value "{}"
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Circle" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2727 2765])
+                    ("private" label nil (reparse-symbol classsubparts) [2768 2776]))                  
+                :type "class")
+                nil [2552 2803])
+            ("ParentCircle" type
+               (:superclasses 
+                  ( ("Circle" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2844 2851])
+                    ("ParentCircle" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("p_x" variable (:type "double") (reparse-symbol arg-sub-list) [2905 2916])
+                            ("p_y" variable (:type "double") (reparse-symbol arg-sub-list) [2917 2928])
+                            ("p_r" variable (:type "double") (reparse-symbol arg-sub-list) [2929 2940]))                          
+                        :type ("ParentCircle" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2892 2977])
+                    ("getChildrenClst" function (:type ("Circle_lst" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2981 3032])
+                    ("getDist_vec" function
+                       (:prototype-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3056 3090])
+                    ("getResourceOccupy_2vec" function
+                       (:prototype-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3110 3166])
+                    ("resourceOccupy_2vec" variable
+                       (:default-value "{}"
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3192 3248])
+                    ("childrenClst" variable (:type ("ChildCircle_lst" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3251 3280])
+                    ("dist_vec" variable
+                       (:default-value "{}"
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3331 3365])
+                    ("private" label nil (reparse-symbol classsubparts) [3367 3375]))                  
+                :type "class")
+                nil [2806 3381])
+            ("getDist_vec" function
+               (:parent "ParentCircle"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3401 3681])
+            ("ChildCircle" type
+               (:superclasses 
+                  ( ("Circle" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4054 4061])
+                    ("parentCircle" function
+                       (:arguments 
+                          ( ("" variable (:type ("P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4186 4188]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4173 4275])
+                    ("ChildCircle" function
+                       (:arguments 
+                          ( ("P" variable (:type ("ParentCircle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4350 4365])
+                            ("r_i_v" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [4366 4389])
+                            ("area" variable (:type "double") (reparse-symbol arg-sub-list) [4390 4402])
+                            ("d" variable (:type "double") (reparse-symbol arg-sub-list) [4403 4412]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4338 4581])
+                    ("ChildCircle" function
+                       (:arguments 
+                          ( ("C" variable (:type ("Circle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4627 4636]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4615 4706])
+                    ("updateChildCircle" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4730 4755])
+                    ("initResourceIndex" function (:type "void") (reparse-symbol classsubparts) [4759 5035])
+                    ("getParentCircle" function (:type ("ParentCircle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5039 5092])
+                    ("getResourceIndex" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5156 5215])
+                    ("getResourceOccupyCount" function (:type "int") (reparse-symbol classsubparts) [5219 5416])
+                    ("getPointAngle" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [5434 5457])
+                    ("getRadian" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [5482 5501])
+                    ("reviseCircleFromRsrcIndex" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5589 5607]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5558 5608])
+                    ("getCircleDataFromParent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("new_p" variable (:type ("ParentCircle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5696 5715]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5667 5716])
+                    ("parentCircle" variable (:type ("ParentCircle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5720 5746])
+                    ("dist" variable
+                       (:default-value "0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [5785 5801])
+                    ("resourceOccupyCount" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [5823 5851])
+                    ("rsrcIndex_vec" variable
+                       (:default-value "{}"
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5873 5909])
+                    ("pointAngle" variable (:type "double") (reparse-symbol classsubparts) [5925 5943])
+                    ("radian" variable
+                       (:default-value "0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [5965 5983])
+                    ("private" label nil (reparse-symbol classsubparts) [5986 5994]))                  
+                :type "class")
+                nil [4017 5998])
+            ("getPointAngle" function
+               (:parent "ChildCircle"
+                :type "double")
+                nil [6012 6210])
+            ("reviseCircleFromRsrcIndex" function
+               (:parent "ChildCircle"
+                :arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6307 6329]))                  
+                :type "void")
+                nil [6263 6773])
+            ("getCircleDataFromParent" function
+               (:parent "ChildCircle"
+                :arguments 
+                  ( ("new_P" variable (:type ("ParentCircle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6871 6890]))                  
+                :type "void")
+                nil [6829 7942])
+            ("getRadian" function
+               (:parent "ChildCircle"
+                :type "double")
+                nil [7944 8114]))          
+      :file "circle.h"
+      :pointmax 8117
+      :fsize 9010
+      :lastmodtime '(23319 36394 802560 978000)
+      :unmatched-syntax nil))
+  :file "!home!tim!timspace!arch!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

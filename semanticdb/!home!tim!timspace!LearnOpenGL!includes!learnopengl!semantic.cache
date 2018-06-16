@@ -99,6 +99,99 @@
       :lexical-table 
         '(("SHADER_H")
           )
+)
+    (semanticdb-table "camera.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CAMERA_H" variable (:constant-flag t) nil [282 290])
+            ("CAMERA_H" variable (:constant-flag t) nil [282 290])
+            ("CAMERA_H" variable (:constant-flag t) nil [282 290])
+            ("CAMERA_H" variable (:constant-flag t) nil [282 290])
+            ("CAMERA_H" variable (:constant-flag t) nil [282 290])
+            ("CAMERA_H" variable (:constant-flag t) nil [282 290])
+            ("CAMERA_H" variable (:constant-flag t) nil [282 290])
+            ("CAMERA_H" variable (:constant-flag t) nil [282 290])
+            ("glm/glm.hpp" include (:system-flag t) nil [307 329])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [330 369])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [370 401])
+            ("Camera_Movement" type
+               (:members 
+                  ( ("FORWARD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [428 436])
+                    ("BACKWARD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [439 448])
+                    ("LEFT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [451 456])
+                    ("RIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [459 466]))                  
+                :type "enum")
+                nil [403 467])
+            ("YAW" variable
+               (:constant-flag t
+                :default-value "-90.0f"
+                :type "float")
+                nil [481 506])
+            ("PITCH" variable
+               (:constant-flag t
+                :default-value "0.0f"
+                :type "float")
+                nil [516 541])
+            ("SPEED" variable
+               (:constant-flag t
+                :default-value "2.0f"
+                :type "float")
+                nil [550 575])
+            ("SENSITIVITY" variable
+               (:constant-flag t
+                :default-value "0.2f"
+                :type "float")
+                nil [602 633])
+            ("SCROLL" variable
+               (:constant-flag t
+                :default-value "1.5f"
+                :type "float")
+                nil [651 677])
+            ("ZOOM" variable
+               (:constant-flag t
+                :default-value "45.0f"
+                :type "float")
+                nil [701 726])
+            ("mouse_move" function
+               (:arguments 
+                  ( ("xoffset" variable (:type "double") (reparse-symbol arg-sub-list) [2478 2493])
+                    ("yoffset" variable (:type "double") (reparse-symbol arg-sub-list) [2494 2509]))                  
+                :type "void")
+                nil [2462 2733])
+            ("scroll_move" function
+               (:arguments 
+                  ( ("xoffset" variable (:type "double") (reparse-symbol arg-sub-list) [2755 2770])
+                    ("yoffset" variable (:type "double") (reparse-symbol arg-sub-list) [2771 2786]))                  
+                :type "void")
+                nil [2738 2955])
+            ("myLookAt" function
+               (:arguments 
+                  ( ("position" variable (:type ("glm::vec3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2979 2998])
+                    ("target" variable (:type ("glm::vec3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2999 3016])
+                    ("up" variable (:type ("glm::vec3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3017 3030]))                  
+                :type ("glm::mat4" type (:type "class") nil nil))
+                nil [2960 3920])
+            ("updateCameraVectors" function (:type "void") nil [3935 4338]))          
+      :file "camera.h"
+      :pointmax 4347
+      :fsize 4594
+      :lastmodtime '(23122 9666 641197 391000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CAMERA_H")
+          )
 ))
   :file "!home!tim!timspace!LearnOpenGL!includes!learnopengl!semantic.cache"
   :semantic-tag-version "2.0"

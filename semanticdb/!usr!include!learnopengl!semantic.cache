@@ -13,10 +13,13 @@
             ("sstream" include (:system-flag t) nil [194 212])
             ("string" include (:system-flag t) nil [213 230])
             ("iostream" include (:system-flag t) nil [231 250])
+            ("glm/glm.hpp" include (:system-flag t) nil [267 289])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [290 329])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [330 361])
             ("Shader" type
                (:members 
-                  ( ("public" label nil (reparse-symbol classsubparts) [268 275])
-                    ("ID" variable (:type "unsigned int") (reparse-symbol classsubparts) [288 304])
+                  ( ("public" label nil (reparse-symbol classsubparts) [380 387])
+                    ("ID" variable (:type "unsigned int") (reparse-symbol classsubparts) [400 416])
                     ("Shader" function
                        (:constructor-flag t
                         :arguments 
@@ -24,64 +27,74 @@
                                (:pointer 1
                                 :constant-flag t
                                 :type ("GLchar" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [332 357])
+                                (reparse-symbol arg-sub-list) [444 469])
                             ("fragmentPath" variable
                                (:pointer 1
                                 :constant-flag t
                                 :type ("GLchar" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [358 385]))                          
+                                (reparse-symbol arg-sub-list) [470 497]))                          
                         :type ("Shader" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [325 2139])
-                    ("use" function (:type "void") (reparse-symbol classsubparts) [2155 2216])
+                        (reparse-symbol classsubparts) [437 2251])
+                    ("use" function (:type "void") (reparse-symbol classsubparts) [2267 2328])
                     ("setBool" function
                        (:arguments 
-                          ( ("ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2249 2265])
+                          ( ("ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2361 2377])
                             ("name" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("std::string" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2266 2290])
-                            ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [2291 2302]))                          
+                                (reparse-symbol arg-sub-list) [2378 2402])
+                            ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [2403 2414]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2236 2383])
+                        (reparse-symbol classsubparts) [2348 2495])
                     ("setInt" function
                        (:arguments 
-                          ( ("ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2398 2414])
+                          ( ("ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2510 2526])
                             ("name" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("std::string" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2415 2439])
-                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2440 2450]))                          
+                                (reparse-symbol arg-sub-list) [2527 2551])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2552 2562]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2386 2526])
+                        (reparse-symbol classsubparts) [2498 2638])
                     ("setFloat" function
                        (:arguments 
-                          ( ("ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2543 2559])
+                          ( ("ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2655 2671])
                             ("name" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("std::string" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2560 2584])
-                            ("value" variable (:type "float") (reparse-symbol arg-sub-list) [2585 2597]))                          
+                                (reparse-symbol arg-sub-list) [2672 2696])
+                            ("value" variable (:type "float") (reparse-symbol arg-sub-list) [2697 2709]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2529 2673])
-                    ("private" label nil (reparse-symbol classsubparts) [2676 2684])
+                        (reparse-symbol classsubparts) [2641 2785])
+                    ("setMat4" function
+                       (:arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2801 2825])
+                            ("value" variable (:type ("glm::mat4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2826 2842]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2788 2992])
+                    ("private" label nil (reparse-symbol classsubparts) [2995 3003])
                     ("checkCompileErrors" function
                        (:arguments 
-                          ( ("shader" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2780 2800])
+                          ( ("shader" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3099 3119])
                             ("type" variable
                                (:constant-flag t
                                 :type ("std::string" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2801 2824]))                          
+                                (reparse-symbol arg-sub-list) [3120 3143]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2756 3556]))                  
+                        (reparse-symbol classsubparts) [3075 3875]))                  
                 :type "class")
-                nil [252 3559]))          
+                nil [364 3878]))          
       :file "shader_s.h"
-      :pointmax 3567
-      :fsize 3838
-      :lastmodtime '(23105 54935 486307 388000)
+      :pointmax 3886
+      :fsize 4157
+      :lastmodtime '(23120 26691 766181 951000)
       :unmatched-syntax nil
       :lexical-table 
         '(("SHADER_H")

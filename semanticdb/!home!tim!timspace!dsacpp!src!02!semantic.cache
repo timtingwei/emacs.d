@@ -1,0 +1,3418 @@
+;; Object 02/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "02/"
+  :tables
+  (list
+    (semanticdb-table "vector.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [232 251])
+            ("vector" include (:system-flag t) nil [252 269])
+            ("Rank" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [271 288])
+            ("DEAFAULT_CAPACITY" variable (:constant-flag t) nil [314 331])
+            ("Vector" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [396 404])
+                    ("_size" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol classsubparts) [407 418])
+                    ("_capacity" variable (:type "int") (reparse-symbol classsubparts) [419 433])
+                    ("_elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [434 443])
+                    ("protected" label nil (reparse-symbol classsubparts) [462 472])
+                    ("public" label nil (reparse-symbol classsubparts) [490 497])
+                    ("copyFrom" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [531 542])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [543 551])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [552 560]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [517 561])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:default-value "DEAFAULT_CAPACITY"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [571 596]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [564 642])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [662 673])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [674 682])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [683 691]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [655 735])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [745 764])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [765 773])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [774 782]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [738 819])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [829 848]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [822 913])
+                    ("Vector" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [942 970]))                  )
+                nil [347 1057])
+            ("copyFrom" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1106 1117])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1118 1126])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1127 1135]))                  
+                :parent "Vector")
+                nil [1059 1284])
+            ("main" function (:type "int") nil [1286 1986]))          
+      :file "vector.cpp"
+      :pointmax 1989
+      :fsize 2154
+      :lastmodtime '(23122 55828 625122 760000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEAFAULT_CAPACITY" . ((number "3" 332 . 333)))
+          )
+)
+    (semanticdb-table "vector_disordered.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [285 304])
+            ("vector" include (:system-flag t) nil [305 322])
+            ("cassert" include (:system-flag t) nil [323 341])
+            ("Rank" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [343 360])
+            ("DEAFAULT_CAPACITY" variable (:constant-flag t) nil [386 403])
+            ("Vector" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [468 476])
+                    ("_size" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol classsubparts) [479 490])
+                    ("_capacity" variable (:type "int") (reparse-symbol classsubparts) [491 505])
+                    ("_elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [506 515])
+                    ("protected" label nil (reparse-symbol classsubparts) [534 544])
+                    ("public" label nil (reparse-symbol classsubparts) [562 569])
+                    ("copyFrom" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [596 607])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [608 616])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [617 625]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [582 626])
+                    ("expand" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [639 653])
+                    ("shrunk" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [666 680])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [716 723]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [702 730])
+                    ("++" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [748 764])
+                    ("++" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [796 800]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [782 801])
+                    ("--" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [844 860])
+                    ("--" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [892 898]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [878 899])
+                    ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [914 918])
+                    ("insert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:constant-flag t
+                                :type ("Rank" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [943 956])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [957 968]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [931 969])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [995 1003])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1004 1012]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [984 1013])
+                    ("find" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1046 1054])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1055 1063])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1064 1075]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1036 1082])
+                    ("t_f" variable
+                       (:default-value "8"
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1099 1109])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1136 1143]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1126 1144])
+                    ("deduplicate" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1156 1174])
+                    ("traverse" function
+                       (:template 
+                          ( ("VST" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1216 1226]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1178 1227])
+                    ("traverse" function
+                       (:template 
+                          ( ("VST" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1335 1345])
+                            ("e" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1346 1351]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1299 1352])
+                    ("print_vector" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1381 1407])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:default-value "DEAFAULT_CAPACITY"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1438 1463]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1431 1509])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1529 1540])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1541 1549])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1550 1558]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1522 1602])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1612 1631])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1632 1640])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1641 1649]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1605 1686])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1696 1715]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1689 1780])
+                    ("Vector" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1801 1829]))                  )
+                nil [419 1908])
+            ("copyFrom" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1957 1968])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1969 1977])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1978 1986]))                  
+                :parent "Vector")
+                nil [1910 2135])
+            ("expand" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [2137 2514])
+            ("shrunk" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [3024 3367])
+            ("[]" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3568 3575]))                  
+                :parent "Vector"
+                :operator-flag t)
+                nil [3521 3698])
+            ("insert" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("r" variable
+                       (:constant-flag t
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4067 4080])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4081 4092]))                  
+                :parent "Vector")
+                nil [4022 4351])
+            ("print_vector" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [4353 4660])
+            ("remove" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5067 5075])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5076 5084]))                  
+                :parent "Vector")
+                nil [5023 5386])
+            ("find" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5905 5913])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5914 5922])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5923 5934]))                  
+                :parent "Vector")
+                nil [5862 6076])
+            ("remove" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6362 6369]))                  
+                :parent "Vector")
+                nil [6285 6497])
+            ("deduplicate" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [6804 7112])
+            ("++" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :parent "Vector"
+                :operator-flag t)
+                nil [7128 7277])
+            ("++" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [7339 7345]))                  
+                :parent "Vector"
+                :pointer 1
+                :operator-flag t)
+                nil [7292 7525])
+            ("Increase" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7609 7614]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7585 7621]))                  )
+                nil [7543 7652])
+            ("traverse" function
+               (:template 
+                  ( ("VST" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7725 7735]))                  
+                :parent "Vector")
+                nil [7676 7811])
+            ("increase" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7850 7864]))                  )
+                nil [7814 7897])
+            ("--" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :parent "Vector"
+                :operator-flag t)
+                nil [7900 8114])
+            ("--" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [8292 8298]))                  
+                :parent "Vector"
+                :pointer 1
+                :operator-flag t)
+                nil [8245 8397])
+            ("Decrease" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8745 8750]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8721 8757]))                  )
+                nil [8679 8760])
+            ("decrease" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9008 9022]))                  )
+                nil [8972 9055])
+            ("Double_value" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9285 9290]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9261 9300]))                  )
+                nil [9215 9318])
+            ("double_value" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9360 9373]))                  )
+                nil [9320 9432])
+            ("Sum" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9516 9527])
+                            ("sumPtr" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9528 9538]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9492 9556]))                  )
+                nil [9455 9559])
+            ("traverse" function
+               (:template 
+                  ( ("VST" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9631 9641])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9642 9647]))                  
+                :parent "Vector")
+                nil [9584 9788])
+            ("sum_ptr" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9826 9839]))                  )
+                nil [9791 10052])
+            ("Sum_static" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("sum_t" variable
+                       (:typemodifiers ("static")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10119 10134])
+                    ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10188 10193]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10164 10324]))                  )
+                nil [10075 10327])
+            ("Sum_static::sum_t" variable
+               (:default-value "0"
+                :type ("T" type (:type "class") nil nil))
+                nil [10329 10378])
+            ("sum_static" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [10434 10446]))                  )
+                nil [10396 10617])
+            ("main" function (:type "int") nil [10619 14331]))          
+      :file "vector_disordered.cpp"
+      :pointmax 14334
+      :fsize 17429
+      :lastmodtime '(23128 55397 269265 799000)
+      :unmatched-syntax '((punctuation 9582 . 9583) (symbol 9581 . 9582) (TYPENAME 9572 . 9580) (punctuation 9571 . 9572) (TEMPLATE 9562 . 9570) (punctuation 7674 . 7675) (symbol 7673 . 7674) (TYPENAME 7664 . 7672) (punctuation 7663 . 7664) (TEMPLATE 7654 . 7662))
+      :lexical-table 
+        '(("DEAFAULT_CAPACITY" . ((number "3" 404 . 405)))
+          )
+)
+    (semanticdb-table "vector_dynamic.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [270 289])
+            ("vector" include (:system-flag t) nil [290 307])
+            ("Rank" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [309 326])
+            ("DEAFAULT_CAPACITY" variable (:constant-flag t) nil [352 369])
+            ("Vector" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [434 442])
+                    ("_size" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol classsubparts) [445 456])
+                    ("_capacity" variable (:type "int") (reparse-symbol classsubparts) [457 471])
+                    ("_elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [472 481])
+                    ("protected" label nil (reparse-symbol classsubparts) [500 510])
+                    ("public" label nil (reparse-symbol classsubparts) [528 535])
+                    ("copyFrom" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [562 573])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [574 582])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [583 591]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [548 592])
+                    ("expand" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [605 619])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:default-value "DEAFAULT_CAPACITY"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [649 674]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [642 720])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [740 751])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [752 760])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [761 769]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [733 813])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [823 842])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [843 851])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [852 860]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [816 897])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [907 926]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [900 991])
+                    ("Vector" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1012 1040]))                  )
+                nil [385 1119])
+            ("copyFrom" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1168 1179])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1180 1188])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1189 1197]))                  
+                :parent "Vector")
+                nil [1121 1346])
+            ("expand" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [1679 2048])
+            ("main" function (:type "int") nil [2559 3259]))          
+      :file "vector_dynamic.cpp"
+      :pointmax 3262
+      :fsize 3935
+      :lastmodtime '(23122 58457 169063 607000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEAFAULT_CAPACITY" . ((number "3" 370 . 371)))
+          )
+)
+    (semanticdb-table "vector_ordered.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [263 282])
+            ("vector" include (:system-flag t) nil [283 300])
+            ("cassert" include (:system-flag t) nil [301 319])
+            ("ctime" include (:system-flag t) nil [320 336])
+            ("Rank" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [366 383])
+            ("DEAFAULT_CAPACITY" variable (:constant-flag t) nil [409 426])
+            ("Vector" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [491 499])
+                    ("_size" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol classsubparts) [502 513])
+                    ("_capacity" variable (:type "int") (reparse-symbol classsubparts) [514 528])
+                    ("_elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [529 538])
+                    ("protected" label nil (reparse-symbol classsubparts) [558 568])
+                    ("public" label nil (reparse-symbol classsubparts) [586 593])
+                    ("copyFrom" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [620 631])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [632 640])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [641 649]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [606 650])
+                    ("expand" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [663 677])
+                    ("shrunk" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [690 704])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [740 747]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [726 754])
+                    ("++" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [772 788])
+                    ("++" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [820 824]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [806 825])
+                    ("--" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [868 884])
+                    ("--" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [916 922]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [902 923])
+                    ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [938 942])
+                    ("insert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:constant-flag t
+                                :type ("Rank" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [967 980])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [981 992]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [955 993])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1019 1027])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1028 1036]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1008 1037])
+                    ("find" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1070 1078])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1079 1087])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1088 1099]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1060 1106])
+                    ("t_f" variable
+                       (:default-value "8"
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1123 1133])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1160 1167]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1150 1168])
+                    ("deduplicate" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1180 1198])
+                    ("traverse" function
+                       (:template 
+                          ( ("VST" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1240 1250]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1202 1251])
+                    ("traverse" function
+                       (:template 
+                          ( ("VST" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1359 1369])
+                            ("e" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1370 1375]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1323 1376])
+                    ("print_vector" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1405 1431])
+                    ("disordered" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1506 1529])
+                    ("deduplicate_lower" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rm_arr" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1567 1580]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1545 1581])
+                    ("get_size" function (:type "int") (reparse-symbol classsubparts) [1616 1652])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rm_arr" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1715 1728])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1729 1735]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1703 1736])
+                    ("uniquify" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1800 1815])
+                    ("uniquify_faster" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1836 1858])
+                    ("search" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1884 1895])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1896 1904])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1905 1913]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1872 1920])
+                    ("binSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1954 1962])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1963 1974])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1975 1983])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1984 1992]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1939 1999])
+                    ("fibSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2017 2025])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2026 2037])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2038 2046])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2047 2055]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2002 2062])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:default-value "DEAFAULT_CAPACITY"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2094 2119]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2087 2165])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2185 2196])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2197 2205])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2206 2214]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2178 2258])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2268 2287])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2288 2296])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2297 2305]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2261 2342])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2352 2371]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2345 2436])
+                    ("Vector" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2457 2485]))                  )
+                nil [442 2564])
+            ("copyFrom" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2613 2624])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2625 2633])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2634 2642]))                  
+                :parent "Vector")
+                nil [2566 2791])
+            ("expand" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [2793 3170])
+            ("shrunk" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [3680 4023])
+            ("[]" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4224 4231]))                  
+                :parent "Vector"
+                :operator-flag t)
+                nil [4177 4354])
+            ("insert" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("r" variable
+                       (:constant-flag t
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4723 4736])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4737 4748]))                  
+                :parent "Vector")
+                nil [4678 5007])
+            ("print_vector" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [5009 5316])
+            ("remove" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5723 5731])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5732 5740]))                  
+                :parent "Vector")
+                nil [5679 6042])
+            ("find" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6561 6569])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6570 6578])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6579 6590]))                  
+                :parent "Vector")
+                nil [6518 6732])
+            ("remove" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7018 7025]))                  
+                :parent "Vector")
+                nil [6941 7153])
+            ("deduplicate" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [7460 7768])
+            ("++" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :parent "Vector"
+                :operator-flag t)
+                nil [7784 7933])
+            ("++" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [7995 8001]))                  
+                :parent "Vector"
+                :pointer 1
+                :operator-flag t)
+                nil [7948 8181])
+            ("Increase" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8265 8270]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8241 8277]))                  )
+                nil [8199 8308])
+            ("traverse" function
+               (:template 
+                  ( ("VST" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8381 8391]))                  
+                :parent "Vector")
+                nil [8332 8467])
+            ("increase" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8506 8520]))                  )
+                nil [8470 8553])
+            ("--" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :parent "Vector"
+                :operator-flag t)
+                nil [8556 8770])
+            ("--" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [8948 8954]))                  
+                :parent "Vector"
+                :pointer 1
+                :operator-flag t)
+                nil [8901 9053])
+            ("Decrease" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9401 9406]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9377 9413]))                  )
+                nil [9335 9416])
+            ("decrease" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9664 9678]))                  )
+                nil [9628 9711])
+            ("Double_value" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9941 9946]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9917 9956]))                  )
+                nil [9871 9974])
+            ("double_value" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10016 10029]))                  )
+                nil [9976 10088])
+            ("Sum" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10172 10183])
+                            ("sumPtr" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10184 10194]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10148 10212]))                  )
+                nil [10111 10215])
+            ("traverse" function
+               (:template 
+                  ( ("VST" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10287 10297])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10298 10303]))                  
+                :parent "Vector")
+                nil [10240 10444])
+            ("sum_ptr" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10482 10495]))                  )
+                nil [10447 10708])
+            ("Sum_static" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("sum_t" variable
+                       (:typemodifiers ("static")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10775 10790])
+                    ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10844 10849]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10820 10980]))                  )
+                nil [10731 10983])
+            ("Sum_static::sum_t" variable
+               (:default-value "0"
+                :type ("T" type (:type "class") nil nil))
+                nil [10985 11034])
+            ("sum_static" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [11090 11102]))                  )
+                nil [11052 11273])
+            ("disordered" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [11501 11704])
+            ("deduplicate_lower" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("rm_arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11761 11774]))                  
+                :parent "Vector")
+                nil [11706 12204])
+            ("remove" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("rm_arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12286 12299])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [12300 12306]))                  
+                :parent "Vector")
+                nil [12241 12735])
+            ("uniquify" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [12748 12967])
+            ("uniquify_faster" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [13426 13710])
+            ("search" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13989 14000])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14001 14009])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14010 14018]))                  
+                :parent "Vector")
+                nil [13944 14277])
+            ("binSearch" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14356 14364])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14365 14376])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14377 14385])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14386 14394]))                  
+                :parent "Vector")
+                nil [14308 14732])
+            ("binSearch" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14784 14792])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14793 14804])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14805 14813])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14814 14822]))                  
+                :parent "Vector")
+                nil [14736 15190])
+            ("fibSearch" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15240 15248])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15249 15260])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15261 15269])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15270 15278]))                  
+                :parent "Vector")
+                nil [15192 15354])
+            ("f_disordered" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [15467 15479]))                  )
+                nil [15427 15640])
+            ("f_dedepulicate_lower" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [15691 15703]))                  )
+                nil [15643 15998])
+            ("f_uniquify" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [16038 16050]))                  )
+                nil [16000 16245])
+            ("f_uniquify_faster" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [16292 16304]))                  )
+                nil [16247 16513])
+            ("f_search" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [16551 16563]))                  )
+                nil [16515 16841])
+            ("main" function (:type "int") nil [16843 21069]))          
+      :file "vector_ordered.cpp"
+      :pointmax 21072
+      :fsize 23058
+      :lastmodtime '(23128 2888 899878 22000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEAFAULT_CAPACITY" . ((number "3" 382 . 383)))
+          )
+)
+    (semanticdb-table "vector_ordered_search.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [253 272])
+            ("vector" include (:system-flag t) nil [273 290])
+            ("cassert" include (:system-flag t) nil [291 309])
+            ("ctime" include (:system-flag t) nil [310 326])
+            ("Rank" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [356 373])
+            ("DEAFAULT_CAPACITY" variable (:constant-flag t) nil [399 416])
+            ("Vector" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [481 489])
+                    ("_size" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol classsubparts) [492 503])
+                    ("_capacity" variable (:type "int") (reparse-symbol classsubparts) [504 518])
+                    ("_elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [519 528])
+                    ("protected" label nil (reparse-symbol classsubparts) [548 558])
+                    ("copyFrom" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [601 612])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [613 621])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [622 630]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [587 631])
+                    ("expand" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [665 679])
+                    ("shrunk" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [692 706])
+                    ("public" label nil (reparse-symbol classsubparts) [709 716])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:default-value "DEAFAULT_CAPACITY"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [743 768])
+                            ("s" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [770 779])
+                            ("v" variable
+                               (:default-value "0"
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [781 788]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [736 877])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [897 908])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [909 917])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [918 926]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [890 971])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [981 992])
+                            ("n" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [993 1000]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [974 1053])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1063 1082])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1083 1091])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1092 1100]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1056 1137])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1147 1166]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1140 1231])
+                    ("Vector" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1251 1279])
+                    ("size" function (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1335 1368])
+                    ("empty" function (:type "bool") (reparse-symbol classsubparts) [1379 1414])
+                    ("disordered" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1427 1450])
+                    ("find" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1489 1497])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1498 1506])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1507 1518]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1479 1525])
+                    ("find" function
+                       (:arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1552 1563]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1542 1603])
+                    ("print_vector" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1632 1658])
+                    ("search" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1684 1695])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1696 1704])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1705 1713]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1672 1720])
+                    ("binSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1754 1762])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1763 1774])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1775 1783])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1784 1792]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1739 1799])
+                    ("fibSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1817 1825])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1826 1837])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1838 1846])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1847 1855]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1802 1862])
+                    ("binBlcSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1897 1905])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1906 1917])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1918 1926])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1927 1935]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1879 1942])
+                    ("fib" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2006 2019])
+                            ("fib_lst" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2020 2034]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1998 2041])
+                    ("is_exist" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2073 2085]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2059 2092])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2145 2152]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2131 2159])
+                    ("insert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:constant-flag t
+                                :type ("Rank" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2184 2197])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2198 2209]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2172 2210])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2236 2244])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2245 2253]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2225 2254])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2281 2288]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2271 2289])
+                    ("deduplicate" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2301 2319])
+                    ("deduplicate_lower" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rm_arr" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2357 2370]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2335 2371])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rm_arr" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2416 2429])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2430 2436]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2404 2437])
+                    ("uniquify" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2458 2473])
+                    ("uniquify_faster" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2494 2516])
+                    ("sort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2540 2548])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2549 2557]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2530 2558])
+                    ("bubbleSort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2587 2595])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2596 2604]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2571 2605])
+                    ("mergeSort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2633 2641])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2642 2650]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2618 2651])
+                    ("selectionSort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2683 2691])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2692 2700]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2664 2701])
+                    ("heapSort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2727 2735])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2736 2744]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2713 2745])
+                    ("quickSort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2773 2781])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2782 2790]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2758 2791])
+                    ("traverse" function
+                       (:template 
+                          ( ("VST" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2851 2861]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [2813 2862])
+                    ("traverse" function
+                       (:template 
+                          ( ("VST" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2970 2980])
+                            ("e" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2981 2986]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [2934 2987]))                  )
+                nil [432 3053])
+            ("Fib" type
+               (:members 
+                  ( ("_size" variable (:type "int") (reparse-symbol classsubparts) [4248 4258])
+                    ("public" label nil (reparse-symbol classsubparts) [4261 4268])
+                    ("Fib" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4284 4290]))                          
+                        :type ("Fib" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4280 4304])
+                    ("createFib" function
+                       (:arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4417 4423]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4403 4611])
+                    ("get" function (:type "int") (reparse-symbol classsubparts) [4626 4803])
+                    ("prev" function (:type "int") (reparse-symbol classsubparts) [4818 5053]))                  
+                :type "class")
+                nil [4234 5056])
+            ("test_fib" function (:type "void") nil [5058 5360])
+            ("swap" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("e1" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5394 5400])
+                    ("e2" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5401 5407]))                  )
+                nil [5362 5451])
+            ("permute" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5488 5501]))                  )
+                nil [5453 5614])
+            ("copyFrom" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5663 5674])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5675 5683])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5684 5692]))                  
+                :parent "Vector")
+                nil [5616 5841])
+            ("expand" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [5843 6220])
+            ("shrunk" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [6730 7073])
+            ("[]" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7274 7281]))                  
+                :parent "Vector"
+                :operator-flag t)
+                nil [7227 7408])
+            ("insert" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("r" variable
+                       (:constant-flag t
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7777 7790])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7791 7802]))                  
+                :parent "Vector")
+                nil [7732 8061])
+            ("print_vector" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [8063 8370])
+            ("remove" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8777 8785])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8786 8794]))                  
+                :parent "Vector")
+                nil [8733 9096])
+            ("find" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9615 9623])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9624 9632])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9633 9644]))                  
+                :parent "Vector")
+                nil [9572 9786])
+            ("remove" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10072 10079]))                  
+                :parent "Vector")
+                nil [9995 10207])
+            ("deduplicate" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [10514 10822])
+            ("Increase" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11323 11328]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11299 11335]))                  )
+                nil [11257 11366])
+            ("traverse" function
+               (:template 
+                  ( ("VST" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11439 11449]))                  
+                :parent "Vector")
+                nil [11390 11525])
+            ("increase" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11564 11578]))                  )
+                nil [11528 11611])
+            ("Decrease" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12469 12474]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12445 12481]))                  )
+                nil [12403 12484])
+            ("decrease" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12732 12746]))                  )
+                nil [12696 12779])
+            ("Double_value" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13009 13014]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12985 13024]))                  )
+                nil [12939 13042])
+            ("double_value" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13084 13097]))                  )
+                nil [13044 13156])
+            ("Sum" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13240 13251])
+                            ("sumPtr" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13252 13262]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13216 13280]))                  )
+                nil [13179 13283])
+            ("traverse" function
+               (:template 
+                  ( ("VST" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13355 13365])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13366 13371]))                  
+                :parent "Vector")
+                nil [13308 13512])
+            ("sum_ptr" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13550 13563]))                  )
+                nil [13515 13776])
+            ("Sum_static" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("sum_t" variable
+                       (:typemodifiers ("static")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13843 13858])
+                    ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13912 13917]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13888 14048]))                  )
+                nil [13799 14051])
+            ("Sum_static::sum_t" variable
+               (:default-value "0"
+                :type ("T" type (:type "class") nil nil))
+                nil [14053 14102])
+            ("sum_static" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [14158 14170]))                  )
+                nil [14120 14341])
+            ("disordered" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [14569 14772])
+            ("deduplicate_lower" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("rm_arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14829 14842]))                  
+                :parent "Vector")
+                nil [14774 15272])
+            ("remove" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("rm_arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15354 15367])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [15368 15374]))                  
+                :parent "Vector")
+                nil [15309 15803])
+            ("uniquify" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [15816 16035])
+            ("uniquify_faster" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [16494 16778])
+            ("is_exist" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("e" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [17050 17062]))                  
+                :parent "Vector")
+                nil [17003 17085])
+            ("search" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17141 17152])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17153 17161])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17162 17170]))                  
+                :parent "Vector")
+                nil [17096 17670])
+            ("binSearch" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18178 18186])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18187 18198])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18199 18207])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18208 18216]))                  
+                :parent "Vector")
+                nil [18130 18524])
+            ("binBlcSearch" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20347 20355])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20356 20367])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20368 20376])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20377 20385]))                  
+                :parent "Vector")
+                nil [20296 20632])
+            ("sort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20717 20725])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20726 20734]))                  
+                :parent "Vector")
+                nil [20674 21039])
+            ("bubbleSort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21098 21106])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21107 21115]))                  
+                :parent "Vector")
+                nil [21049 21119])
+            ("mergeSort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21177 21185])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21186 21194]))                  
+                :parent "Vector")
+                nil [21129 21198])
+            ("selectionSort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21260 21268])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21269 21277]))                  
+                :parent "Vector")
+                nil [21208 21281])
+            ("heapSort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21337 21345])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21346 21354]))                  
+                :parent "Vector")
+                nil [21290 21358])
+            ("quickSort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21416 21424])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21425 21433]))                  
+                :parent "Vector")
+                nil [21368 21437])
+            ("f_disordered" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [21549 21561]))                  )
+                nil [21509 21722])
+            ("f_dedepulicate_lower" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [21773 21785]))                  )
+                nil [21725 22053])
+            ("f_uniquify" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [22093 22105]))                  )
+                nil [22055 22300])
+            ("f_uniquify_faster" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [22347 22359]))                  )
+                nil [22302 22568])
+            ("fibSearch" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22620 22628])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22629 22640])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22641 22649])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22650 22658]))                  
+                :parent "Vector")
+                nil [22572 23057])
+            ("f_search" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [23095 23107]))                  )
+                nil [23059 23434])
+            ("f_permute" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [23473 23485]))                  )
+                nil [23436 23579])
+            ("f_sort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [23615 23627]))                  )
+                nil [23581 23756])
+            ("main" function (:type "int") nil [23825 27779]))          
+      :file "vector_ordered_search.cpp"
+      :pointmax 27782
+      :fsize 31297
+      :lastmodtime '(23140 20470 994878 599000)
+      :unmatched-syntax '((punctuation 13306 . 13307) (symbol 13305 . 13306) (TYPENAME 13296 . 13304) (punctuation 13295 . 13296) (TEMPLATE 13286 . 13294) (punctuation 11388 . 11389) (symbol 11387 . 11388) (TYPENAME 11378 . 11386) (punctuation 11377 . 11378) (TEMPLATE 11368 . 11376) (EXPLICIT 4271 . 4279))
+      :lexical-table 
+        '(("DEAFAULT_CAPACITY" . ((number "3" 417 . 418)))
+          )
+)
+    (semanticdb-table "vector_sort.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [253 272])
+            ("vector" include (:system-flag t) nil [273 290])
+            ("cassert" include (:system-flag t) nil [291 309])
+            ("ctime" include (:system-flag t) nil [310 326])
+            ("Rank" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [356 373])
+            ("DEAFAULT_CAPACITY" variable (:constant-flag t) nil [399 416])
+            ("Vector" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [481 489])
+                    ("_size" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol classsubparts) [492 503])
+                    ("_capacity" variable (:type "int") (reparse-symbol classsubparts) [504 518])
+                    ("_elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [519 528])
+                    ("protected" label nil (reparse-symbol classsubparts) [548 558])
+                    ("copyFrom" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [601 612])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [613 621])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [622 630]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [587 631])
+                    ("expand" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [665 679])
+                    ("shrunk" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [692 706])
+                    ("public" label nil (reparse-symbol classsubparts) [709 716])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:default-value "DEAFAULT_CAPACITY"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [743 768])
+                            ("s" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [770 779])
+                            ("v" variable
+                               (:default-value "0"
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [781 788]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [736 877])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [897 908])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [909 917])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [918 926]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [890 971])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("A" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [981 992])
+                            ("n" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [993 1000]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [974 1053])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1063 1082])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1083 1091])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1092 1100]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1056 1137])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1147 1166]))                          
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1140 1231])
+                    ("Vector" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1251 1279])
+                    ("size" function (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1335 1368])
+                    ("empty" function (:type "bool") (reparse-symbol classsubparts) [1379 1414])
+                    ("disordered" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1427 1450])
+                    ("find" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1489 1497])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1498 1506])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1507 1518]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1479 1525])
+                    ("find" function
+                       (:arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1552 1563]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1542 1603])
+                    ("print_vector" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1632 1658])
+                    ("search" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1684 1695])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1696 1704])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1705 1713]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1672 1720])
+                    ("binSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1754 1762])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1763 1774])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1775 1783])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1784 1792]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1739 1799])
+                    ("fibSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1817 1825])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1826 1837])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1838 1846])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1847 1855]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1802 1862])
+                    ("binBlcSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1897 1905])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1906 1917])
+                            ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1918 1926])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1927 1935]))                          
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1879 1942])
+                    ("fib" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2006 2019])
+                            ("fib_lst" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2020 2034]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1998 2041])
+                    ("is_exist" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2073 2085]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2059 2092])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2145 2152]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2131 2159])
+                    ("insert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:constant-flag t
+                                :type ("Rank" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2184 2197])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2198 2209]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2172 2210])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2236 2244])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2245 2253]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2225 2254])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2281 2288]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2271 2289])
+                    ("deduplicate" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2301 2319])
+                    ("deduplicate_lower" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rm_arr" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2357 2370]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2335 2371])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rm_arr" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2416 2429])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2430 2436]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2404 2437])
+                    ("uniquify" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2458 2473])
+                    ("uniquify_faster" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2494 2516])
+                    ("sort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2540 2548])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2549 2557]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2530 2558])
+                    ("bubbleSort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2628 2636])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2637 2645]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2612 2646])
+                    ("mergeSort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2674 2682])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2683 2691]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2659 2692])
+                    ("selectionSort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2724 2732])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2733 2741]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2705 2742])
+                    ("heapSort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2768 2776])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2777 2785]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2754 2786])
+                    ("quickSort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2814 2822])
+                            ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2823 2831]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2799 2832])
+                    ("traverse" function
+                       (:template 
+                          ( ("VST" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2892 2902]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [2854 2903])
+                    ("traverse" function
+                       (:template 
+                          ( ("VST" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3011 3021])
+                            ("e" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3022 3027]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [2975 3028]))                  )
+                nil [432 3094])
+            ("Fib" type
+               (:members 
+                  ( ("_size" variable (:type "int") (reparse-symbol classsubparts) [4289 4299])
+                    ("public" label nil (reparse-symbol classsubparts) [4302 4309])
+                    ("Fib" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4325 4331]))                          
+                        :type ("Fib" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4321 4345])
+                    ("createFib" function
+                       (:arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4458 4464]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4444 4652])
+                    ("get" function (:type "int") (reparse-symbol classsubparts) [4667 4844])
+                    ("prev" function (:type "int") (reparse-symbol classsubparts) [4859 5094]))                  
+                :type "class")
+                nil [4275 5097])
+            ("test_fib" function (:type "void") nil [5099 5401])
+            ("swap" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("e1" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5435 5441])
+                    ("e2" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5442 5448]))                  )
+                nil [5403 5492])
+            ("permute" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5529 5542]))                  )
+                nil [5494 5655])
+            ("copyFrom" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5704 5715])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5716 5724])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5725 5733]))                  
+                :parent "Vector")
+                nil [5657 5882])
+            ("expand" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [5884 6261])
+            ("shrunk" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [6771 7114])
+            ("[]" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7315 7322]))                  
+                :parent "Vector"
+                :operator-flag t)
+                nil [7268 7449])
+            ("insert" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("r" variable
+                       (:constant-flag t
+                        :type ("Rank" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7818 7831])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7832 7843]))                  
+                :parent "Vector")
+                nil [7773 8102])
+            ("print_vector" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Vector")
+                nil [8104 8411])
+            ("remove" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8818 8826])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8827 8835]))                  
+                :parent "Vector")
+                nil [8774 9137])
+            ("find" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9656 9664])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9665 9673])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9674 9685]))                  
+                :parent "Vector")
+                nil [9613 9827])
+            ("remove" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("r" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10113 10120]))                  
+                :parent "Vector")
+                nil [10036 10248])
+            ("deduplicate" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [10555 10863])
+            ("Increase" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11364 11369]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11340 11376]))                  )
+                nil [11298 11407])
+            ("traverse" function
+               (:template 
+                  ( ("VST" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11480 11490]))                  
+                :parent "Vector")
+                nil [11431 11566])
+            ("increase" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11605 11619]))                  )
+                nil [11569 11652])
+            ("Decrease" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12510 12515]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12486 12522]))                  )
+                nil [12444 12525])
+            ("decrease" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12773 12787]))                  )
+                nil [12737 12820])
+            ("Double_value" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13050 13055]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13026 13065]))                  )
+                nil [12980 13083])
+            ("double_value" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13125 13138]))                  )
+                nil [13085 13197])
+            ("Sum" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13281 13292])
+                            ("sumPtr" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13293 13303]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13257 13321]))                  )
+                nil [13220 13324])
+            ("traverse" function
+               (:template 
+                  ( ("VST" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("visit" variable (:type ("VST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13396 13406])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13407 13412]))                  
+                :parent "Vector")
+                nil [13349 13553])
+            ("sum_ptr" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13591 13604]))                  )
+                nil [13556 13817])
+            ("Sum_static" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("sum_t" variable
+                       (:typemodifiers ("static")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13884 13899])
+                    ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13953 13958]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13929 14089]))                  )
+                nil [13840 14092])
+            ("Sum_static::sum_t" variable
+               (:default-value "0"
+                :type ("T" type (:type "class") nil nil))
+                nil [14094 14143])
+            ("sum_static" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("V" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [14199 14211]))                  )
+                nil [14161 14382])
+            ("disordered" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [14610 14813])
+            ("deduplicate_lower" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("rm_arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14870 14883]))                  
+                :parent "Vector")
+                nil [14815 15313])
+            ("remove" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("rm_arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15395 15408])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [15409 15415]))                  
+                :parent "Vector")
+                nil [15350 15844])
+            ("uniquify" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [15857 16076])
+            ("uniquify_faster" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Vector")
+                nil [16535 16819])
+            ("is_exist" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("e" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [17091 17103]))                  
+                :parent "Vector")
+                nil [17044 17126])
+            ("search" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17182 17193])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17194 17202])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17203 17211]))                  
+                :parent "Vector")
+                nil [17137 17711])
+            ("binSearch" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18219 18227])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18228 18239])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18240 18248])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18249 18257]))                  
+                :parent "Vector")
+                nil [18171 18565])
+            ("binBlcSearch" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20388 20396])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20397 20408])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20409 20417])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20418 20426]))                  
+                :parent "Vector")
+                nil [20337 20673])
+            ("sort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20758 20766])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20767 20775]))                  
+                :parent "Vector")
+                nil [20715 21080])
+            ("bubbleSort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21147 21155])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21156 21164]))                  
+                :parent "Vector")
+                nil [21098 21385])
+            ("bubbleSort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21446 21454])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21455 21463]))                  
+                :parent "Vector")
+                nil [21397 22097])
+            ("mergeSort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22157 22165])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22166 22174]))                  
+                :parent "Vector")
+                nil [22109 22178])
+            ("selectionSort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22240 22248])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22249 22257]))                  
+                :parent "Vector")
+                nil [22188 22261])
+            ("heapSort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22317 22325])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22326 22334]))                  
+                :parent "Vector")
+                nil [22270 22338])
+            ("quickSort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22396 22404])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22405 22413]))                  
+                :parent "Vector")
+                nil [22348 22417])
+            ("f_disordered" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [22529 22541]))                  )
+                nil [22489 22702])
+            ("f_dedepulicate_lower" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [22753 22765]))                  )
+                nil [22705 23033])
+            ("f_uniquify" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [23073 23085]))                  )
+                nil [23035 23280])
+            ("f_uniquify_faster" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [23327 23339]))                  )
+                nil [23282 23548])
+            ("fibSearch" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Rank" type (:type "class") nil nil)
+                :arguments 
+                  ( ("elem" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23600 23608])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23609 23620])
+                    ("lo" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23621 23629])
+                    ("hi" variable (:type ("Rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23630 23638]))                  
+                :parent "Vector")
+                nil [23552 24037])
+            ("f_search" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [24075 24087]))                  )
+                nil [24039 24414])
+            ("f_permute" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [24453 24465]))                  )
+                nil [24416 24559])
+            ("f_sort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("v" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [24596 24608]))                  )
+                nil [24562 24737])
+            ("main" function (:type "int") nil [24806 28817]))          
+      :file "vector_sort.cpp"
+      :pointmax 28820
+      :fsize 33925
+      :lastmodtime '(23185 30389 855422 2000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEAFAULT_CAPACITY" . ((number "3" 417 . 418)))
+          )
+))
+  :file "!home!tim!timspace!dsacpp!src!02!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

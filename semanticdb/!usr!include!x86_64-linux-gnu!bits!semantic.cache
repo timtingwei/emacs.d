@@ -2106,6 +2106,189 @@
           ("AIO_PRIO_DELTA_MAX" . ((number "20" 2628 . 2630)))
           ("PTHREAD_STACK_MIN" . ((number "16384" 2735 . 2740)))
           )
+)
+    (semanticdb-table "waitstatus.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__WEXITSTATUS" variable (:constant-flag t) nil [1103 1116])
+            ("__WTERMSIG" variable (:constant-flag t) nil [1216 1226])
+            ("__WSTOPSIG" variable (:constant-flag t) nil [1327 1337])
+            ("__WIFEXITED" variable (:constant-flag t) nil [1432 1443])
+            ("__WIFSIGNALED" variable (:constant-flag t) nil [1547 1560])
+            ("__WIFSTOPPED" variable (:constant-flag t) nil [1690 1702])
+            ("__WCOREDUMP" variable (:constant-flag t) nil [2041 2052])
+            ("__W_EXITCODE" variable (:constant-flag t) nil [2141 2153])
+            ("__W_STOPCODE" variable (:constant-flag t) nil [2193 2205])
+            ("__W_CONTINUED" variable (:constant-flag t) nil [2239 2252])
+            ("__WCOREFLAG" variable (:constant-flag t) nil [2269 2280])
+            ("endian.h" include (:system-flag t) nil [2307 2327])
+            ("wait" type
+               (:members 
+                  ( ("w_status" variable (:type "int") (reparse-symbol classsubparts) [2348 2361])
+                    ("__wait_terminated" variable (:type ("" type
+                         (:members 
+                            ( ("__w_termsig" variable
+                                 (:suffix ":7"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2419 2446])
+                              ("__w_coredump" variable
+                                 (:suffix ":1"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2475 2503])
+                              ("__w_retcode" variable
+                                 (:suffix ":8"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2532 2559])
+                              ("__w_retcode" variable
+                                 (:suffix ":8"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2703 2730])
+                              ("__w_coredump" variable
+                                 (:suffix ":1"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2732 2760])
+                              ("__w_termsig" variable
+                                 (:suffix ":7"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2762 2789]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2366 2846])
+                    ("__wait_stopped" variable (:type ("" type
+                         (:members 
+                            ( ("__w_stopval" variable
+                                 (:suffix ":8"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2904 2931])
+                              ("__w_stopsig" variable
+                                 (:suffix ":8"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2962 2989])
+                              ("__w_stopsig" variable
+                                 (:suffix ":8"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [3118 3145])
+                              ("__w_stopval" variable
+                                 (:suffix ":8"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [3171 3198]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2851 3281]))                  
+                :type "union")
+                nil [2329 3286])
+            ("w_termsig" variable (:constant-flag t) nil [3297 3306])
+            ("w_coredump" variable (:constant-flag t) nil [3346 3356])
+            ("w_retcode" variable (:constant-flag t) nil [3397 3406])
+            ("w_stopsig" variable (:constant-flag t) nil [3446 3455])
+            ("w_stopval" variable (:constant-flag t) nil [3492 3501]))          
+      :file "waitstatus.h"
+      :pointmax 3553
+      :fsize 3552
+      :lastmodtime '(21321 5871 0 0)
+      :unmatched-syntax '((punctuation 3115 . 3116) (number 3113 . 3115) (punctuation 3112 . 3113) (INT 3109 . 3112) (UNSIGNED 3100 . 3108) (punctuation 3030 . 3031) (number 3028 . 3030) (punctuation 3027 . 3028) (INT 3024 . 3027) (UNSIGNED 3015 . 3023) (punctuation 2700 . 2701) (number 2698 . 2700) (punctuation 2697 . 2698) (INT 2694 . 2697) (UNSIGNED 2685 . 2693) (punctuation 2615 . 2616) (number 2613 . 2615) (punctuation 2612 . 2613) (INT 2609 . 2612) (UNSIGNED 2600 . 2608) (string 893 . 964) (symbol 887 . 892) (punctuation 885 . 886))
+      :lexical-table 
+        '(("__WTERMSIG" (spp-arg-list ("status") 1226 . 1234) . ((semantic-list "((status) & 0x7f)" 1235 . 1252)))
+          ("w_coredump" . 
+              ((symbol "__wait_terminated" 3357 . 3374) (punctuation "." 3374 . 3375) (symbol "__w_coredump" 3375 . 3387)))
+          ("__W_CONTINUED" . ((number "0xffff" 2254 . 2260)))
+          ("w_retcode" . 
+              ((symbol "__wait_terminated" 3407 . 3424) (punctuation "." 3424 . 3425) (symbol "__w_retcode" 3425 . 3436)))
+          ("w_stopval" . 
+              ((symbol "__wait_stopped" 3502 . 3516) (punctuation "." 3516 . 3517) (symbol "__w_stopval" 3517 . 3528)))
+          ("__WCOREFLAG" . ((number "0x80" 2282 . 2286)))
+          ("w_stopsig" . 
+              ((symbol "__wait_stopped" 3456 . 3470) (punctuation "." 3470 . 3471) (symbol "__w_stopsig" 3471 . 3482)))
+          ("__WIFSTOPPED" (spp-arg-list ("status") 1702 . 1710) . ((semantic-list "(((status) & 0xff) == 0x7f)" 1711 . 1738)))
+          ("__W_EXITCODE" (spp-arg-list ("ret" "sig") 2153 . 2163) . ((semantic-list "((ret) << 8 | (sig))" 2164 . 2184)))
+          ("w_termsig" . 
+              ((symbol "__wait_terminated" 3307 . 3324) (punctuation "." 3324 . 3325) (symbol "__w_termsig" 3325 . 3336)))
+          ("__WEXITSTATUS" (spp-arg-list ("status") 1116 . 1124) . ((semantic-list "(((status) & 0xff00) >> 8)" 1125 . 1151)))
+          ("__WIFEXITED" (spp-arg-list ("status") 1443 . 1451) . ((semantic-list "(__WTERMSIG(status) == 0)" 1452 . 1477)))
+          ("__WCOREDUMP" (spp-arg-list ("status") 2052 . 2060) . ((semantic-list "((status) & __WCOREFLAG)" 2061 . 2085)))
+          ("__W_STOPCODE" (spp-arg-list ("sig") 2205 . 2210) . ((semantic-list "((sig) << 8 | 0x7f)" 2211 . 2230)))
+          ("__WSTOPSIG" (spp-arg-list ("status") 1337 . 1345) . ((symbol "__WEXITSTATUS" 1346 . 1359) (semantic-list "(status)" 1359 . 1367)))
+          ("__WIFSIGNALED" (spp-arg-list ("status") 1560 . 1568) . ((semantic-list "(((signed char) (((status) & 0x7f) + 1) >> 1) > 0)" 1573 . 1623)))
+          )
+)
+    (semanticdb-table "waitflags.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("WNOHANG" variable (:constant-flag t) nil [1030 1037])
+            ("WUNTRACED" variable (:constant-flag t) nil [1077 1086])
+            ("WSTOPPED" variable (:constant-flag t) nil [1188 1196])
+            ("WEXITED" variable (:constant-flag t) nil [1255 1262])
+            ("WCONTINUED" variable (:constant-flag t) nil [1300 1310])
+            ("WNOWAIT" variable (:constant-flag t) nil [1352 1359])
+            ("__WNOTHREAD" variable (:constant-flag t) nil [1418 1429])
+            ("__WALL" variable (:constant-flag t) nil [1523 1529])
+            ("__WCLONE" variable (:constant-flag t) nil [1577 1585])
+            ("__ENUM_IDTYPE_T" variable (:constant-flag t) nil [1799 1814])
+            ("idtype_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("P_ALL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2004 2010])
+                          ("P_PID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2041 2047])
+                          ("P_PGID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2086 2137]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1987 2147]))          
+      :file "waitflags.h"
+      :pointmax 2163
+      :fsize 2162
+      :lastmodtime '(21321 5871 0 0)
+      :unmatched-syntax '((string 894 . 964) (symbol 888 . 893) (punctuation 886 . 887))
+      :lexical-table 
+        '(("WCONTINUED" . ((number "8" 1311 . 1312)))
+          ("__ENUM_IDTYPE_T" . ((number "1" 1815 . 1816)))
+          ("WUNTRACED" . ((number "2" 1087 . 1088)))
+          ("WSTOPPED" . ((number "2" 1197 . 1198)))
+          ("__WNOTHREAD" . ((number "0x20000000" 1434 . 1444)))
+          ("WEXITED" . ((number "4" 1264 . 1265)))
+          ("__WALL" . ((number "0x40000000" 1531 . 1541)))
+          ("__WCLONE" . ((number "0x80000000" 1586 . 1596)))
+          ("WNOHANG" . ((number "1" 1039 . 1040)))
+          ("WNOWAIT" . ((number "0x01000000" 1361 . 1371)))
+          )
+)
+    (semanticdb-table "select.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("bits/wordsize.h" include (:system-flag t) nil [898 924])
+            ("__FD_ZERO_STOS" variable (:constant-flag t) nil [1038 1052])
+            ("__FD_ZERO" variable (:constant-flag t) nil [1079 1088])
+            ("__FD_SET" variable (:constant-flag t) nil [1850 1858])
+            ("__FD_CLR" variable (:constant-flag t) nil [1938 1946])
+            ("__FD_ISSET" variable (:constant-flag t) nil [2027 2037]))          
+      :file "select.h"
+      :pointmax 2106
+      :fsize 2105
+      :lastmodtime '(21321 5872 0 0)
+      :unmatched-syntax '((string 820 . 889) (symbol 814 . 819) (punctuation 812 . 813))
+      :lexical-table 
+        '(("__FD_ZERO_STOS" . ((string "\"stosl\"" 1053 . 1060)))
+          ("__FD_ISSET" (spp-arg-list ("d" "set") 2037 . 2045) . ((semantic-list "((__FDS_BITS (set)[__FD_ELT (d)] & __FD_MASK (d)) != 0)" 2050 . 2105)))
+          ("__FD_SET" (spp-arg-list ("d" "set") 1858 . 1866) . ((semantic-list "((void) (__FDS_BITS (set)[__FD_ELT (d)] |= __FD_MASK (d)))" 1871 . 1929)))
+          ("__FD_ZERO" (spp-arg-list ("fdsp") 1088 . 1094) . 
+              ((DO "do" 1099 . 1101) (semantic-list "{									      \\
+    int __d0, __d1;							      \\
+    __asm__ __volatile__ (\"cld; rep; \" __FD_ZERO_STOS			      \\
+			  : \"=c\" (__d0), \"=D\" (__d1)			      \\
+			  : \"a\" (0), \"0\" (sizeof (fd_set)		      \\
+					  / sizeof (__fd_mask)),	      \\
+			    \"1\" (&__FDS_BITS (fdsp)[0])			      \\
+			  : \"memory\");					      \\
+  }" 1102 . 1422) (WHILE "while" 1423 . 1428) (semantic-list "(0)" 1429 . 1432)))
+          ("__FD_CLR" (spp-arg-list ("d" "set") 1946 . 1954) . ((semantic-list "((void) (__FDS_BITS (set)[__FD_ELT (d)] &= ~__FD_MASK (d)))" 1959 . 2018)))
+          )
 ))
   :file "!usr!include!x86_64-linux-gnu!bits!semantic.cache"
   :semantic-tag-version "2.0"

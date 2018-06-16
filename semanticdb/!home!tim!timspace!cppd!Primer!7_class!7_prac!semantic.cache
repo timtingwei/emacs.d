@@ -1,0 +1,132 @@
+;; Object 7_prac/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "7_prac/"
+  :tables
+  (list
+    (semanticdb-table "ex7_24.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CP5_ex7_24_h" variable (:constant-flag t) nil [259 271])
+            ("iostream" include (:system-flag t) nil [273 292])
+            ("vector" include (:system-flag t) nil [293 310])
+            ("Screen" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [381 388])
+                    ("std::string::size_type" variable (:type "int") (reparse-symbol classsubparts) [403 426])
+                    ("Screen" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ht" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [481 488])
+                            ("wd" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [489 496]))                          
+                        :type ("Screen" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [474 553])
+                    ("Screen" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ht" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [590 597])
+                            ("wd" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [598 605])
+                            ("c" variable (:type "char") (reparse-symbol arg-sub-list) [606 613]))                          
+                        :type ("Screen" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [583 668])
+                    ("get" function
+                       (:prototype-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [686 703])
+                    ("get" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [735 739])
+                            ("" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [740 744]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [726 751])
+                    ("print" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [772 791])
+                    ("move" function
+                       (:arguments 
+                          ( ("ht" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [842 849])
+                            ("wd" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [850 857]))                          
+                        :type ("Screen" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [829 885])
+                    ("set" function
+                       (:arguments 
+                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [924 931]))                          
+                        :type ("Screen" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [912 955])
+                    ("set" function
+                       (:arguments 
+                          ( ("ht" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [996 1003])
+                            ("wd" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1004 1011])
+                            ("c" variable (:type "char") (reparse-symbol arg-sub-list) [1012 1019]))                          
+                        :type ("Screen" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [984 1052])
+                    ("display" function
+                       (:arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1102 1119]))                          
+                        :type ("Screen" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1086 1169])
+                    ("private" label nil (reparse-symbol classsubparts) [1174 1182])
+                    ("height" variable
+                       (:default-value "0"
+                        :type ("pos" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1185 1211])
+                    ("width" variable
+                       (:default-value "0"
+                        :type ("pos" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1185 1211])
+                    ("cursor" variable
+                       (:default-value "0"
+                        :type ("pos" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1214 1229])
+                    ("contents" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1232 1253])
+                    ("do_display" function
+                       (:arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1306 1323]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1290 1347]))                  
+                :type "class")
+                nil [365 1350])
+            ("print" function
+               (:parent "Screen"
+                :type "void")
+                nil [1352 1579])
+            ("get" function
+               (:parent "Screen"
+                :typemodifiers ("inline")
+                :type "char")
+                nil [1581 1643])
+            ("get" function
+               (:parent "Screen"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("ht" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1669 1676])
+                    ("wd" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1677 1684]))                  
+                :type "char")
+                nil [1645 1730]))          
+      :file "ex7_24.h"
+      :pointmax 1739
+      :fsize 1372
+      :lastmodtime '(23329 58075 325279 978000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CP5_ex7_24_h")
+          )
+)
+    (semanticdb-table "ex7_27.h"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ex7_27.h"
+      :pointmax 1
+      :fsize 1372
+      :lastmodtime '(23329 59255 849258 837000)
+      :unmatched-syntax nil))
+  :file "!home!tim!timspace!cppd!Primer!7_class!7_prac!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

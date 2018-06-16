@@ -1,0 +1,18 @@
+;; Object 7_class/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "7_class/"
+  :tables
+  (list
+    (semanticdb-table "7.3.1_againMember.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ex7_24.h" include nil nil [256 275])
+            ("main" function (:type "int") nil [277 426]))          
+      :file "7.3.1_againMember.cpp"
+      :pointmax 427
+      :fsize 1906
+      :lastmodtime '(23327 31285 5228 172000)
+      :unmatched-syntax nil))
+  :file "!home!tim!timspace!cppd!Primer!7_class!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
